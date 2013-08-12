@@ -1,0 +1,30 @@
+--Roger Ebert--
+star rating 0-8
+review text
+headline
+review date
+
+--IMDB--
+aspect ratio
+gross
+budget
+rating
+stars
+title
+year
+directors
+writers
+length
+genres
+tagline
+
+--TV--
+prev episode
+next episode
+episodes
+stars
+creators
+start year
+end year
+
+torrent link
