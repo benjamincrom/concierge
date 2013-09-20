@@ -33,7 +33,7 @@ http://ondras.zarovi.cz/sql/demo/
     <type label="Year" length="0" sql="YEAR" quote=""/>
     <type label="Timestamp" length="0" sql="TIMESTAMP" quote="'"/>
   </group>
-
+  
   <group label="Miscellaneous" color="rgb(200,200,255)">
     <type label="ENUM" length="1" sql="ENUM" quote=""/>
     <type label="SET" length="1" sql="SET" quote=""/>
@@ -89,11 +89,17 @@ http://ondras.zarovi.cz/sql/demo/
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="ebert_review" row="ebert_review_id" />
 </row>
+<row name="poster_url" null="1" autoincrement="0">
+<datatype>VARCHAR(512)</datatype>
+<default>NULL</default></row>
+<row name="plot" null="1" autoincrement="0">
+<datatype>VARCHAR(512)</datatype>
+<default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>video_id</part>
 </key>
 </table>
-<table x="903" y="552" name="rating">
+<table x="905" y="553" name="rating">
 <row name="rating_id" null="0" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -174,7 +180,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>ebert_review_id</part>
 </key>
 </table>
-<table x="1101" y="450" name="score">
+<table x="1104" y="453" name="score">
 <row name="score_id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -221,7 +227,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>collection_video_id</part>
 </key>
 </table>
-<table x="902" y="449" name="video_scores">
+<table x="903" y="453" name="video_scores">
 <row name="score_id" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="score" row="score_id" />
@@ -237,3 +243,4 @@ http://ondras.zarovi.cz/sql/demo/
 </key>
 </table>
 </sql>
+
