@@ -39,7 +39,7 @@ http://ondras.zarovi.cz/sql/demo/
     <type label="SET" length="1" sql="SET" quote=""/>
     <type label="Bit" length="0" sql="bit" quote=""/>
   </group>
-</datatypes><table x="205" y="405" name="person">
+</datatypes><table x="57" y="556" name="person">
 <row name="person_id" null="0" autoincrement="1">
 <datatype>INTEGER</datatype>
 </row>
@@ -53,23 +53,19 @@ http://ondras.zarovi.cz/sql/demo/
 <part>person_id</part>
 </key>
 </table>
-<table x="655" y="455" name="video">
+<table x="806" y="369" name="video">
 <row name="video_id" null="0" autoincrement="1">
 <datatype>INTEGER</datatype>
 </row>
 <row name="aspect_ratio" null="1" autoincrement="0">
 <datatype>DOUBLE</datatype>
 <default>NULL</default></row>
-<row name="gross" null="1" autoincrement="0">
-<datatype>DECIMAL</datatype>
-<default>NULL</default></row>
 <row name="budget" null="1" autoincrement="0">
 <datatype>DECIMAL</datatype>
 <default>NULL</default></row>
-<row name="rating_id" null="0" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default><relation table="rating" row="rating_id" />
-</row>
+<row name="gross" null="1" autoincrement="0">
+<datatype>DOUBLE</datatype>
+<default>NULL</default></row>
 <row name="year" null="1" autoincrement="0">
 <datatype>YEAR</datatype>
 <default>NULL</default></row>
@@ -82,35 +78,25 @@ http://ondras.zarovi.cz/sql/demo/
 <row name="tagline" null="1" autoincrement="0">
 <datatype>VARCHAR(1024)</datatype>
 <default>NULL</default></row>
-<row name="new field" null="1" autoincrement="0">
-<datatype>TINYINT</datatype>
-<default>NULL</default></row>
-<row name="ebert_review_id" null="0" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default><relation table="ebert_review" row="ebert_review_id" />
-</row>
 <row name="poster_url" null="1" autoincrement="0">
 <datatype>VARCHAR(512)</datatype>
 <default>NULL</default></row>
 <row name="plot" null="1" autoincrement="0">
 <datatype>VARCHAR(512)</datatype>
 <default>NULL</default></row>
+<row name="rating_id" null="0" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default><relation table="rating" row="rating_id" />
+</row>
+<row name="type_id" null="0" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default><relation table="type" row="type_id" />
+</row>
 <key type="PRIMARY" name="">
 <part>video_id</part>
 </key>
 </table>
-<table x="905" y="553" name="rating">
-<row name="rating_id" null="0" autoincrement="1">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="rating" null="1" autoincrement="0">
-<datatype>VARCHAR</datatype>
-<default>NULL</default></row>
-<key type="PRIMARY" name="">
-<part>rating_id</part>
-</key>
-</table>
-<table x="177" y="505" name="occupation">
+<table x="57" y="660" name="occupation">
 <row name="occupation_id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -121,11 +107,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>occupation_id</part>
 </key>
 </table>
-<table x="351" y="411" name="person_occupation_video">
-<row name="video_id" null="0" autoincrement="0">
-<datatype>INTEGER</datatype>
-<relation table="video" row="video_id" />
-</row>
+<table x="410" y="558" name="person_occupation_video">
 <row name="person_id" null="0" autoincrement="0">
 <datatype>INTEGER</datatype>
 <relation table="person" row="person_id" />
@@ -134,10 +116,14 @@ http://ondras.zarovi.cz/sql/demo/
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="occupation" row="occupation_id" />
 </row>
+<row name="video_id" null="0" autoincrement="0">
+<datatype>INTEGER</datatype>
+<relation table="video" row="video_id" />
+</row>
 <key type="PRIMARY" name="">
 </key>
 </table>
-<table x="206" y="626" name="genre">
+<table x="60" y="457" name="genre">
 <row name="genre_id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -148,73 +134,54 @@ http://ondras.zarovi.cz/sql/demo/
 <part>genre_id</part>
 </key>
 </table>
-<table x="352" y="616" name="genre_video">
-<row name="video_id" null="0" autoincrement="0">
-<datatype>INTEGER</datatype>
-<relation table="video" row="video_id" />
-</row>
+<table x="410" y="460" name="genre_video">
 <row name="genre_id" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="genre" row="genre_id" />
 </row>
+<row name="video_id" null="0" autoincrement="0">
+<datatype>INTEGER</datatype>
+<relation table="video" row="video_id" />
+</row>
 <key type="PRIMARY" name="">
 </key>
 </table>
-<table x="904" y="635" name="ebert_review">
-<row name="ebert_review_id" null="0" autoincrement="1">
-<datatype>INTEGER</datatype>
+<table x="235" y="105" name="review">
+<row name="review_id" null="1" autoincrement="1">
+<datatype>TINYINT</datatype>
 <default>NULL</default></row>
-<row name="ebert_star_rating" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<row name="review_source_id" null="0" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default><relation table="review_source" row="review_source_id" />
+</row>
+<row name="review_percent_score" null="1" autoincrement="0">
+<datatype>DOUBLE</datatype>
 <default>NULL</default></row>
-<row name="ebert_review_text" null="1" autoincrement="0">
-<datatype>MEDIUMTEXT</datatype>
+<row name="review_headline" null="1" autoincrement="0">
+<datatype>VARCHAR(1024)</datatype>
 <default>NULL</default></row>
-<row name="headline" null="1" autoincrement="0">
-<datatype>VARCHAR</datatype>
+<row name="review_text" null="1" autoincrement="0">
+<datatype>MEDIUMTEXT(4096)</datatype>
 <default>NULL</default></row>
-<row name="publish_date" null="1" autoincrement="0">
+<row name="review_date" null="1" autoincrement="0">
 <datatype>DATE</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
-<part>ebert_review_id</part>
+<part>review_id</part>
 </key>
 </table>
-<table x="1104" y="453" name="score">
-<row name="score_id" null="1" autoincrement="1">
-<datatype>TINYINT</datatype>
-<default>NULL</default></row>
-<row name="score_source" null="1" autoincrement="0">
-<datatype>VARCHAR</datatype>
-<default>NULL</default></row>
-<row name="score" null="1" autoincrement="0">
-<datatype>DOUBLE</datatype>
-<default>NULL</default></row>
-<key type="PRIMARY" name="">
-<part>score_id</part>
-</key>
-</table>
-<table x="652" y="224" name="collection">
+<table x="55" y="305" name="collection">
 <row name="collection_id" null="0" autoincrement="1">
 <datatype>INT</datatype>
 </row>
-<row name="show_name" null="1" autoincrement="0">
+<row name="collection_name" null="1" autoincrement="0">
 <datatype>VARCHAR(256)</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>collection_id</part>
 </key>
 </table>
-<table x="655" y="304" name="collection_video">
-<row name="collection_video_id" null="0" autoincrement="1">
-<datatype>INT</datatype>
-<default>NULL</default></row>
-<row name="series" null="0" autoincrement="0">
-<datatype>TINYINT</datatype>
-<default>NULL</default></row>
-<row name="episode" null="1" autoincrement="0">
-<datatype>TINYINT</datatype>
-<default>NULL</default></row>
+<table x="409" y="307" name="collection_video">
 <row name="collection_id" null="0" autoincrement="0">
 <datatype>INT</datatype>
 <relation table="collection" row="collection_id" />
@@ -223,23 +190,61 @@ http://ondras.zarovi.cz/sql/demo/
 <datatype>INTEGER</datatype>
 <relation table="video" row="video_id" />
 </row>
+<row name="season" null="0" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="episode" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="index" null="1" autoincrement="0">
+<datatype>MEDIUMINT</datatype>
+<default>NULL</default></row>
 <key type="PRIMARY" name="">
-<part>collection_video_id</part>
 </key>
 </table>
-<table x="903" y="453" name="video_scores">
-<row name="score_id" null="1" autoincrement="0">
+<table x="407" y="105" name="video_review">
+<row name="review_id" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
-<default>NULL</default><relation table="score" row="score_id" />
+<default>NULL</default><relation table="review" row="review_id" />
 </row>
 <row name="video_id" null="0" autoincrement="0">
 <datatype>INTEGER</datatype>
 <relation table="video" row="video_id" />
 </row>
-<row name="metascore" null="1" autoincrement="0">
-<datatype>DOUBLE</datatype>
+<key type="PRIMARY" name="">
+</key>
+</table>
+<table x="55" y="105" name="review_source">
+<row name="review_source_id" null="0" autoincrement="1">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="review_source" null="1" autoincrement="0">
+<datatype>VARCHAR(128)</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
+<part>review_source_id</part>
+</key>
+</table>
+<table x="957" y="705" name="type">
+<row name="type_id" null="0" autoincrement="1">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="type" null="1" autoincrement="0">
+<datatype>VARCHAR(128)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>type_id</part>
+</key>
+</table>
+<table x="956" y="602" name="rating">
+<row name="rating_id" null="0" autoincrement="1">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="rating" null="1" autoincrement="0">
+<datatype>VARCHAR(128)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>rating_id</part>
 </key>
 </table>
 </sql>
