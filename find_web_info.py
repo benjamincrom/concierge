@@ -42,15 +42,25 @@ class Video:
         return json.loads(json_str)
 
 if __name__ == '__main__':
-    g = Video('The Terminal')
+    g = Video('The Matrix')
     print g.title
-    print g.rating
-    print g.plot
-    print g.poster_url
-    print g.writer_list
-    print g.director_list
-    print g.actor_list
-    print g.genre_list
     print g.year
     print g.length
+    # print g.budget
+    # print g.gross
+    # print g.tagline
+    print g.poster_url
+    print g.plot
+    # print g.aspect_ratio
+    print g.rating
     print g.video_type
+
+    # print g.reviews
+
+    # print g.collection (if exists)
+
+    print g.genre_list
+
+    print g.writer_list
+    print g.director_list
+    print g.actor_list     
