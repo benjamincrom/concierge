@@ -53,27 +53,24 @@ http://ondras.zarovi.cz/sql/demo/
 <part>person_id</part>
 </key>
 </table>
-<table x="806" y="369" name="video">
+<table x="805" y="370" name="video">
 <row name="video_id" null="0" autoincrement="1">
 <datatype>INTEGER</datatype>
 </row>
-<row name="aspect_ratio" null="1" autoincrement="0">
-<datatype>DOUBLE</datatype>
+<row name="title" null="1" autoincrement="0">
+<datatype>VARCHAR(512)</datatype>
+<default>NULL</default></row>
+<row name="year" null="1" autoincrement="0">
+<datatype>YEAR</datatype>
+<default>NULL</default></row>
+<row name="length" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="budget" null="1" autoincrement="0">
 <datatype>DECIMAL</datatype>
 <default>NULL</default></row>
 <row name="gross" null="1" autoincrement="0">
 <datatype>DOUBLE</datatype>
-<default>NULL</default></row>
-<row name="year" null="1" autoincrement="0">
-<datatype>YEAR</datatype>
-<default>NULL</default></row>
-<row name="title" null="1" autoincrement="0">
-<datatype>VARCHAR(512)</datatype>
-<default>NULL</default></row>
-<row name="length" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="tagline" null="1" autoincrement="0">
 <datatype>VARCHAR(1024)</datatype>
@@ -84,6 +81,10 @@ http://ondras.zarovi.cz/sql/demo/
 <row name="plot" null="1" autoincrement="0">
 <datatype>VARCHAR(512)</datatype>
 <default>NULL</default></row>
+<row name="aspect_ratio_id" null="0" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default><relation table="aspect_ratio" row="aspect_ratio_id" />
+</row>
 <row name="rating_id" null="0" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="rating" row="rating_id" />
@@ -225,7 +226,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>review_source_id</part>
 </key>
 </table>
-<table x="957" y="705" name="type">
+<table x="962" y="713" name="type">
 <row name="type_id" null="0" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -236,7 +237,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>type_id</part>
 </key>
 </table>
-<table x="956" y="602" name="rating">
+<table x="960" y="634" name="rating">
 <row name="rating_id" null="0" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -245,6 +246,17 @@ http://ondras.zarovi.cz/sql/demo/
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>rating_id</part>
+</key>
+</table>
+<table x="960" y="554" name="aspect_ratio">
+<row name="aspect_ratio_id" null="0" autoincrement="1">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="aspect_ratio" null="1" autoincrement="0">
+<datatype>DOUBLE</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>aspect_ratio_id</part>
 </key>
 </table>
 </sql>
