@@ -110,4 +110,6 @@ if __name__ == '__main__':
         f = open('test.html','w')
         f.write(review_obj.content)
         f.close()
+        print ""
+        print ""
     print "=============================="
