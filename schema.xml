@@ -33,13 +33,13 @@ http://ondras.zarovi.cz/sql/demo/
     <type label="Year" length="0" sql="YEAR" quote=""/>
     <type label="Timestamp" length="0" sql="TIMESTAMP" quote="'"/>
   </group>
-  
+
   <group label="Miscellaneous" color="rgb(200,200,255)">
     <type label="ENUM" length="1" sql="ENUM" quote=""/>
     <type label="SET" length="1" sql="SET" quote=""/>
     <type label="Bit" length="0" sql="bit" quote=""/>
   </group>
-</datatypes><table x="57" y="556" name="person">
+</datatypes><table x="58" y="558" name="person">
 <row name="person_id" null="0" autoincrement="1">
 <datatype>INTEGER</datatype>
 </row>
@@ -53,7 +53,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>person_id</part>
 </key>
 </table>
-<table x="805" y="370" name="video">
+<table x="804" y="370" name="video">
 <row name="video_id" null="0" autoincrement="1">
 <datatype>INTEGER</datatype>
 </row>
@@ -66,25 +66,12 @@ http://ondras.zarovi.cz/sql/demo/
 <row name="length" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="budget" null="1" autoincrement="0">
-<datatype>DECIMAL</datatype>
-<default>NULL</default></row>
-<row name="gross" null="1" autoincrement="0">
-<datatype>DOUBLE</datatype>
-<default>NULL</default></row>
-<row name="tagline" null="1" autoincrement="0">
-<datatype>VARCHAR(1024)</datatype>
-<default>NULL</default></row>
 <row name="poster_url" null="1" autoincrement="0">
 <datatype>VARCHAR(512)</datatype>
 <default>NULL</default></row>
 <row name="plot" null="1" autoincrement="0">
 <datatype>VARCHAR(512)</datatype>
 <default>NULL</default></row>
-<row name="aspect_ratio_id" null="0" autoincrement="0">
-<datatype>TINYINT</datatype>
-<default>NULL</default><relation table="aspect_ratio" row="aspect_ratio_id" />
-</row>
 <row name="rating_id" null="0" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="rating" row="rating_id" />
@@ -93,6 +80,22 @@ http://ondras.zarovi.cz/sql/demo/
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="type" row="type_id" />
 </row>
+<row name="=========" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
+<row name="aspect_ratio_id" null="0" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default><relation table="aspect_ratio" row="aspect_ratio_id" />
+</row>
+<row name="gross" null="1" autoincrement="0">
+<datatype>DOUBLE</datatype>
+<default>NULL</default></row>
+<row name="budget" null="1" autoincrement="0">
+<datatype>DECIMAL</datatype>
+<default>NULL</default></row>
+<row name="tagline" null="1" autoincrement="0">
+<datatype>VARCHAR(1024)</datatype>
+<default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>video_id</part>
 </key>
@@ -124,7 +127,7 @@ http://ondras.zarovi.cz/sql/demo/
 <key type="PRIMARY" name="">
 </key>
 </table>
-<table x="60" y="457" name="genre">
+<table x="61" y="460" name="genre">
 <row name="genre_id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -147,7 +150,7 @@ http://ondras.zarovi.cz/sql/demo/
 <key type="PRIMARY" name="">
 </key>
 </table>
-<table x="235" y="105" name="review">
+<table x="55" y="110" name="review">
 <row name="review_id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -161,17 +164,20 @@ http://ondras.zarovi.cz/sql/demo/
 <row name="review_headline" null="1" autoincrement="0">
 <datatype>VARCHAR(1024)</datatype>
 <default>NULL</default></row>
-<row name="review_text" null="1" autoincrement="0">
+<row name="review_content" null="1" autoincrement="0">
 <datatype>MEDIUMTEXT(4096)</datatype>
 <default>NULL</default></row>
 <row name="review_date" null="1" autoincrement="0">
 <datatype>DATE</datatype>
 <default>NULL</default></row>
+<row name="author" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>review_id</part>
 </key>
 </table>
-<table x="55" y="305" name="collection">
+<table x="58" y="307" name="collection">
 <row name="collection_id" null="0" autoincrement="1">
 <datatype>INT</datatype>
 </row>
@@ -203,7 +209,7 @@ http://ondras.zarovi.cz/sql/demo/
 <key type="PRIMARY" name="">
 </key>
 </table>
-<table x="407" y="105" name="video_review">
+<table x="412" y="110" name="video_review">
 <row name="review_id" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="review" row="review_id" />
@@ -215,7 +221,7 @@ http://ondras.zarovi.cz/sql/demo/
 <key type="PRIMARY" name="">
 </key>
 </table>
-<table x="55" y="105" name="review_source">
+<table x="232" y="159" name="review_source">
 <row name="review_source_id" null="0" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -226,7 +232,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>review_source_id</part>
 </key>
 </table>
-<table x="962" y="713" name="type">
+<table x="953" y="496" name="type">
 <row name="type_id" null="0" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -237,7 +243,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>type_id</part>
 </key>
 </table>
-<table x="960" y="634" name="rating">
+<table x="954" y="411" name="rating">
 <row name="rating_id" null="0" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -248,7 +254,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>rating_id</part>
 </key>
 </table>
-<table x="960" y="554" name="aspect_ratio">
+<table x="934" y="608" name="aspect_ratio">
 <row name="aspect_ratio_id" null="0" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -260,4 +266,3 @@ http://ondras.zarovi.cz/sql/demo/
 </key>
 </table>
 </sql>
-
