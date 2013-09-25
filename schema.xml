@@ -150,7 +150,7 @@ http://ondras.zarovi.cz/sql/demo/
 <key type="PRIMARY" name="">
 </key>
 </table>
-<table x="55" y="110" name="review">
+<table x="60" y="93" name="review">
 <row name="review_id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -158,14 +158,11 @@ http://ondras.zarovi.cz/sql/demo/
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="review_source" row="review_source_id" />
 </row>
-<row name="review_percent_score" null="1" autoincrement="0">
-<datatype>DOUBLE</datatype>
-<default>NULL</default></row>
-<row name="review_headline" null="1" autoincrement="0">
-<datatype>VARCHAR(1024)</datatype>
-<default>NULL</default></row>
 <row name="review_content" null="1" autoincrement="0">
 <datatype>MEDIUMTEXT(4096)</datatype>
+<default>NULL</default></row>
+<row name="review_percent_score" null="1" autoincrement="0">
+<datatype>DOUBLE</datatype>
 <default>NULL</default></row>
 <row name="review_date" null="1" autoincrement="0">
 <datatype>DATE</datatype>
@@ -209,7 +206,7 @@ http://ondras.zarovi.cz/sql/demo/
 <key type="PRIMARY" name="">
 </key>
 </table>
-<table x="412" y="110" name="video_review">
+<table x="416" y="93" name="video_review">
 <row name="review_id" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="review" row="review_id" />
@@ -221,7 +218,7 @@ http://ondras.zarovi.cz/sql/demo/
 <key type="PRIMARY" name="">
 </key>
 </table>
-<table x="232" y="159" name="review_source">
+<table x="233" y="145" name="review_source">
 <row name="review_source_id" null="0" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -266,3 +263,4 @@ http://ondras.zarovi.cz/sql/demo/
 </key>
 </table>
 </sql>
+

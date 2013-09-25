@@ -1,13 +1,18 @@
 #!/usr/bin/python
 
+from datetime import datetime
 import json
 import re
+import string
 import urllib
 
 class Review:
-    def __init__(self, content, source):
+    def __init__(self, content, author, source, date, percent_score):
         self.content = content
+        self.author = author
         self.source = source
+        self.date = date
+        self.percent_score = percent_score
 
 
 class Video:
@@ -16,7 +21,13 @@ class Video:
     EBERT_REVIEW_NOT_FOUND = "There is no review on rogerebert.com for this title: %s"
     EBERT_REVIEWS_URL = "http://www.rogerebert.com/reviews/%s"
     EBERT_SITE_TITLE = "RogerEbert.com"
+    EBERT_FULL_STAR = 'icon-star-full'
+    EBERT_HALF_STAR = 'icon-star-half'
+
     EBERT_REVIEW_REGEX = re.compile('<div itemprop="reviewBody">(.+?)</div>', re.DOTALL)
+    EBERT_AUTHOR_REGEX = re.compile('<meta content="(.+?)" name="author">')
+    EBERT_DATE_REGEX = re.compile('itemprop="datePublished">(.+?)</time>')
+    EBERT_STARS_REGEX = re.compile('itemprop="reviewRating"(.+?)</span>', re.DOTALL)
 
     def __init__(self, title):
         """This class will pull metadata from remote sources and store it in a video object"""
@@ -56,20 +67,57 @@ class Video:
     def set_rogerebert_data(self):
         """ Search for rogerbert.com review by querying '[title]-[year]', '[title]-[year+1]', and '[title]-[year-1]'"""
         year_list = [self.year - 1, self.year, self.year + 1]
-        for year in year_list:
-            lowercase_hyphenated_title = self.title.lower().replace(' ', '-')
-            url_formatted_title = urllib.quote("%s-%s" %(lowercase_hyphenated_title, year))
-            ebert_review_url = self.EBERT_REVIEWS_URL %(url_formatted_title)
+        for selected_year in year_list:
+            ebert_review_url = self.get_ebert_review_url(self.title, selected_year)
             ebert_review_html = urllib.urlopen(ebert_review_url).read()
-            review_match = self.EBERT_REVIEW_REGEX.search(ebert_review_html)
-            if review_match:
-                review_text = review_match.groups()[0]
-                # remove newline characters from review
-                review_text = review_text.replace('\n', '')
-                # turn local links into fully qualified links
-                review_text = review_text.replace(self.LOCAL_LINK_PREFIX, self.EBERT_LINK_PREFIX)
-                new_review_obj = Review(review_text, self.EBERT_SITE_TITLE)
+
+            review_text_match = self.EBERT_REVIEW_REGEX.search(ebert_review_html)
+            if review_text_match:
+                review_text = review_text_match.groups()[0]
+                formatted_review_text = self.format_ebert_review_text(review_text)
+
+                review_author_match = self.EBERT_AUTHOR_REGEX.search(ebert_review_html)
+                review_author = review_author_match.groups()[0]
+
+                review_date_match = self.EBERT_DATE_REGEX.search(ebert_review_html)
+                review_date_string = review_date_match.groups()[0]
+                review_date = datetime.strptime(review_date_string, '%B %d, %Y')
+
+                review_stars_match = self.EBERT_STARS_REGEX.search(ebert_review_html)
+                review_stars_string = review_stars_match.groups()[0]
+                review_percent_score = self.get_ebert_percent_score(review_stars_string)
+
+                new_review_obj = Review(
+                                    formatted_review_text,
+                                    review_author,
+                                    self.EBERT_SITE_TITLE,
+                                    review_date,
+                                    review_percent_score,
+                                    )
+
                 self.review_obj_list.append(new_review_obj)
+
+    @classmethod
+    def get_ebert_percent_score(cls, review_stars_string):
+        full_stars = len(re.findall(cls.EBERT_FULL_STAR, review_stars_string))
+        half_stars = len(re.findall(cls.EBERT_HALF_STAR, review_stars_string))
+        review_percent_score = 100*(full_stars*2 + half_stars)/8.0
+        return review_percent_score
+
+    @classmethod
+    def get_ebert_review_url(cls, title, year):
+        title_str = str(title)
+        sanitized_title = title_str.translate(string.maketrans("",""), string.punctuation)
+        lowercase_hyphenated_title = sanitized_title.lower().replace(' ', '-')
+        url_formatted_title = urllib.quote("%s-%s" %(lowercase_hyphenated_title, year))
+        ebert_review_url = cls.EBERT_REVIEWS_URL %(url_formatted_title)
+        return ebert_review_url
+
+    @classmethod
+    def format_ebert_review_text(cls, review_text):
+        review_text = review_text.replace('\n', '')
+        formatted_review_text = review_text.replace(cls.LOCAL_LINK_PREFIX, cls.EBERT_LINK_PREFIX)
+        return formatted_review_text
 
     @classmethod
     def calculate_length_from_runtime_str(cls, runtime_str):
@@ -81,7 +129,7 @@ class Video:
 
 
 if __name__ == '__main__':
-    g = Video('Now You See Me')
+    g = Video('Men in Black II')
     print g.title
     print g.year
     print g.length
@@ -103,13 +151,7 @@ if __name__ == '__main__':
         print "Review: "
         print review_obj.content
         print review_obj.source
-        # print review_obj.author =
-        # print review_obj.percentage_score =
-        # print review_obj.headline =
-        # print review_obj.date =
-        f = open('test.html','w')
-        f.write(review_obj.content)
-        f.close()
-        print ""
-        print ""
+        print review_obj.author
+        print review_obj.percent_score
+        print review_obj.date
     print "=============================="
