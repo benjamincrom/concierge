@@ -8,10 +8,7 @@ class Review:
     def __init__(self, content, source):
         self.content = content
         self.source = source
-        # self.author =
-        # self.percent_score =
-        # self.headline =
-        # self.date =
+
 
 class Video:
     LOCAL_LINK_PREFIX = '<a href="'
@@ -104,7 +101,12 @@ if __name__ == '__main__':
     print "=============================="
     for review_obj in g.review_obj_list: # (review_obj properties: source, percent_score, headline, text)
         print "Review: "
-        print review_obj.__dict__
+        print review_obj.content
+        print review_obj.source
+        # print review_obj.author =
+        # print review_obj.percentage_score =
+        # print review_obj.headline =
+        # print review_obj.date =
         f = open('test.html','w')
         f.write(review_obj.content)
         f.close()
