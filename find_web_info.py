@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
-import urllib
 import json
 import re
+import urllib
 
 class Review:
     def __init__(self, content, source):
@@ -30,25 +30,6 @@ class Video:
         self.set_imdb_metadata(title)
         self.set_rogerebert_metadata()
 
-    def set_rogerebert_metadata(self):
-        """ Search for rogerbert.com review by querying '[title]-[year]', '[title]-[year+1]', and '[title]-[year-1]'"""
-        # make title lowercase, replace spaces with hypens, and append year to satisfy rogerebert.com URL requirements
-        year_list = [self.year - 1, self.year, self.year + 1]
-        for year in year_list:
-            lowercase_hyphenated_title = self.title.lower().replace(' ', '-')
-            url_formatted_title = urllib.quote("%s-%s" %(lowercase_hyphenated_title, year))
-            ebert_review_url = self.EBERT_REVIEWS_URL %(url_formatted_title)
-            ebert_review_html = urllib.urlopen(ebert_review_url).read()
-            review_match = self.EBERT_REVIEW_REGEX.search(ebert_review_html)
-            if review_match:
-                review_text = review_match.groups()[0]
-                # remove newline characters from review
-                review_text = review_text.replace('\n', '')
-                # turn local links into remote links
-                review_text = review_text.replace(self.LOCAL_LINK_PREFIX, self.EBERT_LINK_PREFIX)
-                new_review_obj = Review(review_text, self.EBERT_SITE_TITLE)
-                self.review_obj_list.append(new_review_obj)
-
     def set_imdb_metadata(self, title):
         """ Pull down JSON data for this title from the IMDB API and store in imdb_json_dict """
         imdb_json_str = urllib.urlopen("http://www.omdbapi.com/?t=%s" %(urllib.quote(title))).read()
@@ -74,6 +55,24 @@ class Video:
         self.director_list = [str(director_name.strip()) for director_name in imdb_json_dict['Director'].split(',')]
         self.actor_list = [str(actor_name.strip()) for actor_name in imdb_json_dict['Actors'].split(',')]
         self.genre_list = [str(genre_name.strip()) for genre_name in imdb_json_dict['Genre'].split(',')]
+
+    def set_rogerebert_metadata(self):
+        """ Search for rogerbert.com review by querying '[title]-[year]', '[title]-[year+1]', and '[title]-[year-1]'"""
+        year_list = [self.year - 1, self.year, self.year + 1]
+        for year in year_list:
+            lowercase_hyphenated_title = self.title.lower().replace(' ', '-')
+            url_formatted_title = urllib.quote("%s-%s" %(lowercase_hyphenated_title, year))
+            ebert_review_url = self.EBERT_REVIEWS_URL %(url_formatted_title)
+            ebert_review_html = urllib.urlopen(ebert_review_url).read()
+            review_match = self.EBERT_REVIEW_REGEX.search(ebert_review_html)
+            if review_match:
+                review_text = review_match.groups()[0]
+                # remove newline characters from review
+                review_text = review_text.replace('\n', '')
+                # turn local links into fully qualified links
+                review_text = review_text.replace(self.LOCAL_LINK_PREFIX, self.EBERT_LINK_PREFIX)
+                new_review_obj = Review(review_text, self.EBERT_SITE_TITLE)
+                self.review_obj_list.append(new_review_obj)
 
     @classmethod
     def calculate_length_from_runtime_str(cls, runtime_str):
