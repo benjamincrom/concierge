@@ -27,10 +27,10 @@ class Video:
         self.review_obj_list = []
 
         # populate object with data
-        self.set_imdb_metadata(title)
-        self.set_rogerebert_metadata()
+        self.set_imdb_data(title)
+        self.set_rogerebert_data()
 
-    def set_imdb_metadata(self, title):
+    def set_imdb_data(self, title):
         """ Pull down JSON data for this title from the IMDB API and store in imdb_json_dict """
         imdb_json_str = urllib.urlopen("http://www.omdbapi.com/?t=%s" %(urllib.quote(title))).read()
         imdb_json_dict = json.loads(imdb_json_str)
@@ -56,7 +56,7 @@ class Video:
         self.actor_list = [str(actor_name.strip()) for actor_name in imdb_json_dict['Actors'].split(',')]
         self.genre_list = [str(genre_name.strip()) for genre_name in imdb_json_dict['Genre'].split(',')]
 
-    def set_rogerebert_metadata(self):
+    def set_rogerebert_data(self):
         """ Search for rogerbert.com review by querying '[title]-[year]', '[title]-[year+1]', and '[title]-[year-1]'"""
         year_list = [self.year - 1, self.year, self.year + 1]
         for year in year_list:
