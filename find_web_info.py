@@ -13,14 +13,13 @@ class Review:
         # self.headline =
         # self.date =
 
-
 class Video:
-    EBERT_REVIEW_NOT_FOUND = "There is no review on rogerebert.com for this title: %s"
-    EBERT_SITE_TITLE = "RogerEbert.com"
-    EBERT_REVIEWS_URL = "http://www.rogerebert.com/reviews/%s"
-    EBERT_REVIEW_REGEX = re.compile('<div itemprop="reviewBody">(.+?)</div>', re.DOTALL)
     LOCAL_LINK_PREFIX = '<a href="'
     EBERT_LINK_PREFIX = '<a href="http://www.rogerebert.com'
+    EBERT_REVIEW_NOT_FOUND = "There is no review on rogerebert.com for this title: %s"
+    EBERT_REVIEWS_URL = "http://www.rogerebert.com/reviews/%s"
+    EBERT_SITE_TITLE = "RogerEbert.com"
+    EBERT_REVIEW_REGEX = re.compile('<div itemprop="reviewBody">(.+?)</div>', re.DOTALL)
 
     def __init__(self, title):
         """This class will pull metadata from remote sources and store it in a video object"""
