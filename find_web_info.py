@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 from datetime import datetime
+
 import json
 import re
 import string
@@ -16,14 +17,24 @@ class Review:
 
 
 class Video:
+    IMDB_API_TITLE_404 = '{"code":404, "error":"Film not found"}'
+    IMDB_API_URL = ("http://mymovieapi.com/?title=%s&type=json&plot=simple&episode=1&limit=1&yg=0"
+                    "&mt=none&lang=en-US&offset=&aka=simple&release=simple&business=1&tech=1")
+    IMDB_URL_DELIMITER = '+'
+
     LOCAL_LINK_PREFIX = '<a href="'
     EBERT_LINK_PREFIX = '<a href="http://www.rogerebert.com'
-    EBERT_REVIEW_NOT_FOUND = "There is no review on rogerebert.com for this title: %s"
-    EBERT_REVIEWS_URL = "http://www.rogerebert.com/reviews/%s"
-    EBERT_SITE_TITLE = "RogerEbert.com"
     EBERT_FULL_STAR = 'icon-star-full'
     EBERT_HALF_STAR = 'icon-star-half'
+    EBERT_REVIEW_NOT_FOUND = "There is no review on rogerebert.com for this title: %s"
+    EBERT_REVIEW_URL = "http://www.rogerebert.com/reviews/%s"
+    EBERT_SITE_TITLE = "RogerEbert.com"
+    EBERT_URL_DELIMITER = '-'
 
+    IMDB_RUNTIME_REGEX = re.compile("(\d+) min")
+    IMDB_RATING_REGEX = re.compile("itemprop=\"contentRating\" content=\"(.+?)\"></span>")
+    IMDB_TITLE_REGEX = re.compile(".*\"(.+?)\".*", re.DOTALL)
+    IMDB_TAGLINE_REGEX = re.compile("Taglines:</h4>\n(.+?)\s*<span class=", re.DOTALL)
     EBERT_REVIEW_REGEX = re.compile('<div itemprop="reviewBody">(.+?)</div>', re.DOTALL)
     EBERT_AUTHOR_REGEX = re.compile('<meta content="(.+?)" name="author">')
     EBERT_DATE_REGEX = re.compile('itemprop="datePublished">(.+?)</time>')
@@ -31,38 +42,48 @@ class Video:
 
     def __init__(self, title):
         """This class will pull metadata from remote sources and store it in a video object"""
-        # initialize empty lists
         self.review_obj_list = []
-
-        # populate object with data
         self.set_imdb_data(title)
         self.set_rogerebert_data()
 
     def set_imdb_data(self, title):
         """ Pull down JSON data for this title from the IMDB API and store in imdb_json_dict """
-        imdb_json_str = urllib.urlopen("http://www.omdbapi.com/?t=%s" %(urllib.quote(title))).read()
-        imdb_json_dict = json.loads(imdb_json_str)
+        # Get JSON dictionary from IMDB API for this title and scrape IMDB html for this title
+        sanitized_title = self.sanitize_url_segment(title, self.IMDB_URL_DELIMITER)
+        imdb_json_str = urllib.urlopen(self.IMDB_API_URL %(sanitized_title)).read()
+        if imdb_json_str == self.IMDB_API_TITLE_404:
+            raise Exception(self.IMDB_API_TITLE_404)
+        imdb_json_dict = json.loads(imdb_json_str)[0]
+        imdb_html = urllib.urlopen(imdb_json_dict['imdb_url']).read()
 
-        # Check to see that the query returned a valid response
-        if imdb_json_dict['Response'] == 'False':
-            raise Exception(imdb_json_dict['Error'])
+        self.budget = imdb_json_dict['business']['budget'][0]['money']
+        self.gross = imdb_json_dict['business']['gross'][0]['money']
+        self.plot = imdb_json_dict['plot_simple']
+        self.poster_url = imdb_json_dict['poster']['cover']
+        self.video_type = imdb_json_dict['type']
+        self.year = int(imdb_json_dict['year'])
 
-        # Store the following IMDB metadata directly in video object
-        self.title = imdb_json_dict['Title']
-        self.rating = imdb_json_dict['Rated']
-        self.plot = imdb_json_dict['Plot']
-        self.poster_url = imdb_json_dict['Poster']
-        self.year = int(imdb_json_dict['Year'])
-        self.video_type = imdb_json_dict['Type']
+        self.actor_list = [actor.encode('ascii','ignore') for actor in imdb_json_dict['actors']]
+        self.director_list = [director.encode('ascii','ignore') for director in imdb_json_dict['directors']]
+        self.genre_list = [genre.encode('ascii','ignore') for genre in imdb_json_dict['genres']]
+        self.writer_list = [writer.encode('ascii','ignore') for writer in imdb_json_dict['writers']]
 
-        # Convert the following IMDB metadata into the correct format and then store it in video object
-        self.length = self.calculate_length_from_runtime_str(imdb_json_dict['Runtime'])
+        self.aspect_ratio = self.get_aspect_ratio_float_from_str(imdb_json_dict['technical']['aspect_ratio'][0])
 
-        # Split comma separated fields into python lists
-        self.writer_list = [str(writer_name.strip()) for writer_name in imdb_json_dict['Writer'].split(',')]
-        self.director_list = [str(director_name.strip()) for director_name in imdb_json_dict['Director'].split(',')]
-        self.actor_list = [str(actor_name.strip()) for actor_name in imdb_json_dict['Actors'].split(',')]
-        self.genre_list = [str(genre_name.strip()) for genre_name in imdb_json_dict['Genre'].split(',')]
+        title_match = self.IMDB_TITLE_REGEX.search(imdb_json_dict['title'])
+        self.title = title_match.groups()[0]
+
+        # Extract the length in number of minutes as an int from this type of string: '135 min'
+        length_match = self.IMDB_RUNTIME_REGEX.search(imdb_json_dict['runtime'][0].encode('ascii','ignore'))
+        self.length = int(length_match.groups()[0])
+
+        # Extract the rating and tagline from the scraped IMDB html since the API sucks at this
+        rating_match = self.IMDB_RATING_REGEX.search(imdb_html)
+        self.rating = rating_match.groups()[0]
+
+        tagline_match = self.IMDB_TAGLINE_REGEX.search(imdb_html)
+        self.tagline = tagline_match.groups()[0]
+
 
     def set_rogerebert_data(self):
         """ Search for rogerbert.com review by querying '[title]-[year]', '[title]-[year+1]', and '[title]-[year-1]'"""
@@ -88,14 +109,32 @@ class Video:
                 review_percent_score = self.get_ebert_percent_score(review_stars_string)
 
                 new_review_obj = Review(
-                                    formatted_review_text,
-                                    review_author,
-                                    self.EBERT_SITE_TITLE,
-                                    review_date,
-                                    review_percent_score,
-                                    )
-
+                                        formatted_review_text,
+                                        review_author,
+                                        self.EBERT_SITE_TITLE,
+                                        review_date,
+                                        review_percent_score,
+                                        )
                 self.review_obj_list.append(new_review_obj)
+
+    @classmethod
+    def get_aspect_ratio_float_from_str(cls, aspect_ratio_str):
+        width, height = aspect_ratio_str.split(' : ')
+        trimmed_height = height.split(' ')[0]
+        return float(width) / float(trimmed_height)
+
+    @classmethod
+    def sanitize_url_segment(cls, url_segment, delimiter):
+        url_str = url_segment.encode('ascii','ignore')
+        url_str_no_punctuation = url_str.translate(string.maketrans("",""), string.punctuation)
+        sanitized_url_str = url_str_no_punctuation.replace(' ', delimiter)
+        return sanitized_url_str
+
+    @classmethod
+    def format_ebert_review_text(cls, review_text):
+        review_text = review_text.replace('\n', '')
+        formatted_review_text = review_text.replace(cls.LOCAL_LINK_PREFIX, cls.EBERT_LINK_PREFIX)
+        return formatted_review_text
 
     @classmethod
     def get_ebert_percent_score(cls, review_stars_string):
@@ -106,30 +145,14 @@ class Video:
 
     @classmethod
     def get_ebert_review_url(cls, title, year):
-        title_str = str(title)
-        sanitized_title = title_str.translate(string.maketrans("",""), string.punctuation)
-        lowercase_hyphenated_title = sanitized_title.lower().replace(' ', '-')
-        url_formatted_title = urllib.quote("%s-%s" %(lowercase_hyphenated_title, year))
-        ebert_review_url = cls.EBERT_REVIEWS_URL %(url_formatted_title)
+        title_str = cls.sanitize_url_segment(title, cls.EBERT_URL_DELIMITER).lower()
+        url_formatted_title = urllib.quote("%s-%s" %(title_str, year))
+        ebert_review_url = cls.EBERT_REVIEW_URL %(url_formatted_title)
         return ebert_review_url
-
-    @classmethod
-    def format_ebert_review_text(cls, review_text):
-        review_text = review_text.replace('\n', '')
-        formatted_review_text = review_text.replace(cls.LOCAL_LINK_PREFIX, cls.EBERT_LINK_PREFIX)
-        return formatted_review_text
-
-    @classmethod
-    def calculate_length_from_runtime_str(cls, runtime_str):
-        """ Given a runtime of the format '2 h 24 min' return the length in minutes """
-        match_object = re.match("(\d+) h (\d+) min", runtime_str)
-        hours, minutes = match_object.groups()
-        length = int(hours)*60 + int(minutes)
-        return length
 
 
 if __name__ == '__main__':
-    g = Video('Men in Black II')
+    g = Video('Ocean\'s Eleven')
     print g.title
     print g.year
     print g.length
@@ -141,15 +164,18 @@ if __name__ == '__main__':
     print g.writer_list
     print g.director_list
     print g.actor_list
-    # print g.budget
-    # print g.gross
-    # print g.tagline
-    # print g.aspect_ratio
+    print g.budget
+    print g.gross
+    print g.aspect_ratio
+    print g.tagline
     # print g.collection_obj (if exists--properties: name, season, episode, index)
     print "=============================="
-    for review_obj in g.review_obj_list: # (review_obj properties: source, percent_score, headline, text)
+    for review_obj in g.review_obj_list:
         print "Review: "
         print review_obj.content
+        f = open('test.html','w')
+        f.write(review_obj.content)
+        f.close()
         print review_obj.source
         print review_obj.author
         print review_obj.percent_score
