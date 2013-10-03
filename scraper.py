@@ -21,6 +21,7 @@ class ImdbScraper:
     IMDB_TYPE_MOVIE = "Movie"
     IMDB_TYPE_TV_EPISODE = "TV Episode"
     IMDB_TYPE_TV_SERIES = "TV Series"
+    IMDB_URL_ERROR = "URL ('%s') is not a valid IMDB page"
 
     IMDB_ID_REGEX = re.compile("www\.imdb\.com/title/(.+?)/")
     IMDB_LENGTH_REGEX = re.compile("itemprop=\"duration\".*?>(\d+) min<")
@@ -41,7 +42,10 @@ class ImdbScraper:
     @classmethod
     def scrape_imdb_data(self, title):
         imdb_url = self.get_imdb_url_from_title(title)
-        imdb_html = urllib.urlopen(imdb_url).read()
+        try:
+            imdb_html = urllib.urlopen(imdb_url).read()
+        except AttributeError:
+            print self.IMDB_URL_ERROR % imdb_url
 
         # Type (not null)
         if self.IMDB_TV_EPISODE_REGEX.search(imdb_html):
@@ -101,7 +105,7 @@ def use_regex(given_regex, target_str, can_be_null):
     match = given_regex.search(target_str)
     try:
         return_str = match.groups()[0].strip()
-    except AttributeError:
+    except (AttributeError, IndexError):
         return_str = None
         if not can_be_null:
             print "Target regex '%s' not found--this value cannot be null" % given_regex
@@ -112,8 +116,12 @@ def use_regex(given_regex, target_str, can_be_null):
 def get_top_google_result_url(search_string):
     google_search_results = pygoogle(search_string)
     google_search_results.pages = 1
-    return google_search_results.get_urls()[0]
+    try:
+        return google_search_results.get_urls()[0]
+    except (AttributeError, IndexError):
+        print "Search string '%s' not found on Google" % search_string
+        raise
 
 
 if __name__ == '__main__':
-    ImdbScraper.scrape_imdb_data('Star Trek')
+    ImdbScraper.scrape_imdb_data('Aladdin')
