@@ -1,10 +1,11 @@
 #!/usr/bin/python
 
-import urllib2
 import re
+import urllib2
 
 from HTMLParser import HTMLParser
 from pygoogle import pygoogle
+
 
 class MLStripper(HTMLParser):
     def __init__(self):
@@ -17,22 +18,16 @@ class MLStripper(HTMLParser):
 
 
 class RogerEbertScraper:
-
-    def __init__(self):
-        return
+    pass
 
 
 class ImdbScraper:
-
-    def __init__(self):
-        return
-
     IMDB_BUDGET_URL = "http://www.imdb.com/title/%s/business"
     IMDB_GOOGLE_QUERY_STRING = "imdb %s"
-
     IMDB_TYPE_MOVIE = "Movie"
     IMDB_TYPE_TV_EPISODE = "TV Episode"
     IMDB_TYPE_TV_SERIES = "TV Series"
+    IMDB_INVALID_TYPE_ERROR = "Invalid video type for title '%s'"
 
     IMDB_ID_REGEX = re.compile("www\.imdb\.com/title/(.+?)/")
     IMDB_LENGTH_REGEX = re.compile("itemprop=\"duration\".*?>(\d+) min<")
@@ -42,27 +37,25 @@ class ImdbScraper:
     IMDB_TV_SERIES_REGEX = re.compile("\s+TV Series\s+")
 
     # These regexes require the DOTALL flag
+    IMDB_TV_SEASON_AND_EPISODE_REGEX = re.compile("<span class=\"nobr\">Season (\d+), Episode (\d+).+?</span>", re.DOTALL)
     IMDB_ASPECT_RATIO_REGEX = re.compile("<h4 class=\"inline\">Aspect Ratio:</h4>(.+?)<", re.DOTALL)
     IMDB_BUDGET_REGEX = re.compile("<h5>Budget</h5>.*?(\$.+?)<", re.DOTALL)
-
     IMDB_GROSS_REGEX = re.compile("<h5>Gross</h5>.*?(\$.+?) \(USA\)", re.DOTALL)
     IMDB_PLOT_REGEX = re.compile("itemprop=\"description\">(.+?)<div", re.DOTALL)
     IMDB_POSTER_REGEX = re.compile("<meta property='og:image' content=\"(.+?)\" />", re.DOTALL)
     IMDB_TAGLINE_REGEX = re.compile("Taglines:</h4>\n(.+?)\s*<", re.DOTALL)
-
     IMDB_GENRE_STR_REGEX = re.compile("<h4 class=\"inline\">Genres?:</h4>(.+?)</div>", re.DOTALL)
     IMDB_GENRE_LIST_REGEX = re.compile("<a.*?> *(.+?) *<", re.DOTALL)
-
     IMDB_DIRECTOR_STR_REGEX = re.compile("<h4 class=\"inline\">Directors?:</h4>(.+?)</div>", re.DOTALL)
     IMDB_CREATOR_STR_REGEX = re.compile("<h4 class=\"inline\">Creators?:</h4>(.+?)</div>", re.DOTALL)
     IMDB_STAR_STR_REGEX = re.compile("<h4 class=\"inline\">Stars?:</h4>(.+?)</div>", re.DOTALL)
     IMDB_WRITER_STR_REGEX = re.compile("<h4 class=\"inline\">Writers?:</h4>(.+?)</div>", re.DOTALL)
-    IMDB_NAME_LIST_REGEX = re.compile("itemprop=\"name\">(.+?)<")
-
+    IMDB_NAME_LIST_REGEX = re.compile("itemprop=\"name\">(.+?)<", re.DOTALL)
     IMDB_YEAR_REGEX = re.compile("itemprop=\"name\".+?<a href=\"/year/(\d+)/", re.DOTALL)
 
     @classmethod
     def scrape_imdb_data(self, title):
+        # Scrape IMDB page for this title
         imdb_url = self.get_imdb_url_from_title(title)
         imdb_html = retrieve_html_from_url(imdb_url)
 
@@ -71,11 +64,33 @@ class ImdbScraper:
         title = use_regex(self.IMDB_TITLE_REGEX, imdb_html, False)
         video_type = self.determine_imdb_video_type(imdb_html)
 
-        # Everything else (can be null)
+        # Scrape IMDB budget page
+        imdb_budget_url = self.IMDB_BUDGET_URL % imdb_id
+        imdb_budget_html = retrieve_html_from_url(imdb_budget_url)
+
+        # TV Episodes exclusively have episode, season
+        if video_type == self.IMDB_TYPE_TV_EPISODE:
+            season_and_episode_match = self.IMDB_TV_SEASON_AND_EPISODE_REGEX.search(imdb_html)
+            if season_and_episode_match:
+                (season, episode) = season_and_episode_match.groups()
+            else:
+                season = None
+                episode = None
+        # TV Series exclusively have creators
+        elif video_type == self.IMDB_TYPE_TV_SERIES:
+            creator_str = use_regex(self.IMDB_CREATOR_STR_REGEX, imdb_html, True)
+            creator_list = self.get_list_of_names(creator_str)
+        # Movies exclusively have gross
+        elif video_type == self.IMDB_TYPE_MOVIE:
+            gross = use_regex(self.IMDB_GROSS_REGEX, imdb_budget_html, True)
+        else:
+            raise Exception(self.IMDB_INVALID_TYPE_ERROR % title)
+
         imdb_poster_url = use_regex(self.IMDB_POSTER_REGEX, imdb_html, True)
         length = use_regex(self.IMDB_LENGTH_REGEX, imdb_html, True)
         rating = use_regex(self.IMDB_RATING_REGEX, imdb_html, True)
         year = use_regex(self.IMDB_YEAR_REGEX, imdb_html, True)
+        budget = use_regex(self.IMDB_BUDGET_REGEX, imdb_budget_html, True)
 
         aspect_ratio_str = use_regex(self.IMDB_ASPECT_RATIO_REGEX, imdb_html, True)
         aspect_ratio = self.get_aspect_ratio_float_from_str(aspect_ratio_str)
@@ -92,32 +107,29 @@ class ImdbScraper:
         star_str = use_regex(self.IMDB_STAR_STR_REGEX, imdb_html, True)
         star_list = self.get_list_of_names(star_str)
 
-        creator_str = use_regex(self.IMDB_CREATOR_STR_REGEX, imdb_html, True)
-        creator_list = self.get_list_of_names(creator_str)
-
         plot_html = use_regex(self.IMDB_PLOT_REGEX, imdb_html, True)
         plot = remove_html_tags(plot_html)
 
         tagline_html = use_regex(self.IMDB_TAGLINE_REGEX, imdb_html, True)
         tagline = remove_html_tags(tagline_html)
 
-        # Scrape IMDB budget page
-        imdb_budget_url = self.IMDB_BUDGET_URL % imdb_id
-        imdb_budget_html = retrieve_html_from_url(imdb_budget_url)
+        if video_type == self.IMDB_TYPE_TV_EPISODE:
+            print "Season %s, Episode %s" %(season, episode)
+        elif video_type == self.IMDB_TYPE_TV_SERIES:
+            print "Creators: "
+            print creator_list
+        elif video_type == self.IMDB_TYPE_MOVIE:
+            print "Gross: %s" % gross
 
-        gross = use_regex(self.IMDB_GROSS_REGEX, imdb_budget_html, True)
-        budget = use_regex(self.IMDB_BUDGET_REGEX, imdb_budget_html, True)
-
+        print "Video Type: %s" % video_type
         print "Aspect Ratio: %s" % aspect_ratio
         print "Budget: %s" % budget
-        print "Gross: %s" % gross
         print "ID: %s " % imdb_id
         print "Poster URL: %s " % imdb_poster_url
         print "Length: %s" % length
         print "Rating: %s" % rating
         print "Tagline: %s" % tagline
         print "Title: %s" % title
-        print "Video Type: %s" % video_type
         print "Year: %s" % year
         print "Genres: "
         print genre_list
@@ -125,8 +137,6 @@ class ImdbScraper:
         print writer_list
         print "Directors: "
         print director_list
-        print "Creators: "
-        print creator_list
         print "Stars: "
         print star_list
         print "Plot: "
@@ -216,4 +226,4 @@ def get_top_google_result_url(search_string):
 
 
 if __name__ == '__main__':
-    ImdbScraper.scrape_imdb_data('Gliding Over All')
+    ImdbScraper.scrape_imdb_data('The Sandlot')
