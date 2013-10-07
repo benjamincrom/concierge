@@ -24,12 +24,12 @@ class RogerEbertScraper:
 class ImdbScraper:
     IMDB_BUDGET_URL = "http://www.imdb.com/title/%s/business"
     IMDB_GOOGLE_QUERY_STRING = "imdb %s"
+    IMDB_INVALID_TYPE_ERROR = "Invalid video type for title '%s'"
     IMDB_TYPE_MOVIE = "Movie"
     IMDB_TYPE_TV_EPISODE = "TV Episode"
     IMDB_TYPE_TV_SERIES = "TV Series"
-    IMDB_INVALID_TYPE_ERROR = "Invalid video type for title '%s'"
 
-    IMDB_ID_REGEX = re.compile("www\.imdb\.com/title/(.+?)/")
+    IMDB_ID_REGEX = re.compile("www\.imdb\.com/title/(.+?)/")  # not null
     IMDB_LENGTH_REGEX = re.compile("itemprop=\"duration\".*?>(\d+) min<")
     IMDB_RATING_REGEX = re.compile("itemprop=\"contentRating\" content=\"(.+?)\"></span>")
     IMDB_TITLE_REGEX = re.compile("itemprop=\"name\">(.+?)</span>")  # not null
@@ -37,20 +37,22 @@ class ImdbScraper:
     IMDB_TV_SERIES_REGEX = re.compile("\s+TV Series\s+")
 
     # These regexes require the DOTALL flag
-    IMDB_TV_SEASON_AND_EPISODE_REGEX = re.compile("<span class=\"nobr\">Season (\d+), Episode (\d+).+?</span>", re.DOTALL)
     IMDB_ASPECT_RATIO_REGEX = re.compile("<h4 class=\"inline\">Aspect Ratio:</h4>(.+?)<", re.DOTALL)
     IMDB_BUDGET_REGEX = re.compile("<h5>Budget</h5>.*?(\$.+?)<", re.DOTALL)
+    IMDB_CREATOR_STR_REGEX = re.compile("<h4 class=\"inline\">Creators?:</h4>(.+?)</div>", re.DOTALL)
+    IMDB_DIRECTOR_STR_REGEX = re.compile("<h4 class=\"inline\">Directors?:</h4>(.+?)</div>", re.DOTALL)
+    IMDB_GENRE_LIST_REGEX = re.compile("<a.*?> *(.+?) *<", re.DOTALL)
+    IMDB_GENRE_STR_REGEX = re.compile("<h4 class=\"inline\">Genres?:</h4>(.+?)</div>", re.DOTALL)
     IMDB_GROSS_REGEX = re.compile("<h5>Gross</h5>.*?(\$.+?) \(USA\)", re.DOTALL)
+    IMDB_NAME_LIST_REGEX = re.compile("itemprop=\"name\">(.+?)<", re.DOTALL)
     IMDB_PLOT_REGEX = re.compile("itemprop=\"description\">(.+?)<div", re.DOTALL)
     IMDB_POSTER_REGEX = re.compile("<meta property='og:image' content=\"(.+?)\" />", re.DOTALL)
-    IMDB_TAGLINE_REGEX = re.compile("Taglines:</h4>\n(.+?)\s*<", re.DOTALL)
-    IMDB_GENRE_STR_REGEX = re.compile("<h4 class=\"inline\">Genres?:</h4>(.+?)</div>", re.DOTALL)
-    IMDB_GENRE_LIST_REGEX = re.compile("<a.*?> *(.+?) *<", re.DOTALL)
-    IMDB_DIRECTOR_STR_REGEX = re.compile("<h4 class=\"inline\">Directors?:</h4>(.+?)</div>", re.DOTALL)
-    IMDB_CREATOR_STR_REGEX = re.compile("<h4 class=\"inline\">Creators?:</h4>(.+?)</div>", re.DOTALL)
     IMDB_STAR_STR_REGEX = re.compile("<h4 class=\"inline\">Stars?:</h4>(.+?)</div>", re.DOTALL)
+    IMDB_TAGLINE_REGEX = re.compile("Taglines:</h4>\n(.+?)\s*<", re.DOTALL)
+    IMDB_TV_SEASON_AND_EPISODE_REGEX = re.compile("<span class=\"nobr\">Season (\d+), Episode (\d+).+?</span>",
+                                                  re.DOTALL)
+    IMDB_WIDTH_HEIGHT_REGEX = re.compile(".*?([0-9]*\.?[0-9]+).*?:.*?([0-9]*\.?[0-9]+).*?")
     IMDB_WRITER_STR_REGEX = re.compile("<h4 class=\"inline\">Writers?:</h4>(.+?)</div>", re.DOTALL)
-    IMDB_NAME_LIST_REGEX = re.compile("itemprop=\"name\">(.+?)<", re.DOTALL)
     IMDB_YEAR_REGEX = re.compile("itemprop=\"name\".+?<a href=\"/year/(\d+)/", re.DOTALL)
 
     @classmethod
@@ -64,7 +66,7 @@ class ImdbScraper:
         title = use_regex(self.IMDB_TITLE_REGEX, imdb_html, False)
         video_type = self.determine_imdb_video_type(imdb_html)
 
-        # Scrape IMDB budget page
+        # Scrape IMDB budget page for this title
         imdb_budget_url = self.IMDB_BUDGET_URL % imdb_id
         imdb_budget_html = retrieve_html_from_url(imdb_budget_url)
 
@@ -166,8 +168,7 @@ class ImdbScraper:
 
     @classmethod
     def get_aspect_ratio_float_from_str(cls, aspect_ratio_str):
-        width_height_regex = re.compile(".*?([0-9]*\.?[0-9]+).*?:.*?([0-9]*\.?[0-9]+).*?")
-        width_height_match = width_height_regex.search(aspect_ratio_str)
+        width_height_match = cls.IMDB_WIDTH_HEIGHT_REGEX.search(aspect_ratio_str)
         if width_height_match:
             (width, height) = width_height_match.groups()
             aspect_ratio = float(width) / float(height)
@@ -189,7 +190,7 @@ def retrieve_html_from_url(url):
         req = urllib2.Request(url, headers=spoofed_header)
         html = urllib2.urlopen(req).read()
     except AttributeError:
-        print "ERROR: URL '%s' is not a valid IMDB page "% imdb_budget_url
+        print "ERROR: URL '%s' is not a valid IMDB page " % imdb_budget_url
         raise
     return html
 
@@ -202,6 +203,7 @@ def remove_html_tags(str):
     else:
         return_str = None
     return return_str
+
 
 def use_regex(given_regex, target_str, can_be_null):
     match = given_regex.search(target_str)
@@ -226,4 +228,4 @@ def get_top_google_result_url(search_string):
 
 
 if __name__ == '__main__':
-    ImdbScraper.scrape_imdb_data('The Sandlot')
+    ImdbScraper.scrape_imdb_data('The Wire')
