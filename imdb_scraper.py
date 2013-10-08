@@ -32,6 +32,7 @@ IMDB_PLOT_REGEX = re.compile("itemprop=\"description\">(.+?)<div", re.DOTALL)
 IMDB_POSTER_REGEX = re.compile("<meta property='og:image' content=\"(.+?)\" />", re.DOTALL)
 IMDB_STAR_STR_REGEX = re.compile("<h4 class=\"inline\">Stars?:</h4>(.+?)</div>", re.DOTALL)
 IMDB_TAGLINE_REGEX = re.compile("Taglines:</h4>\n(.+?)\s*<", re.DOTALL)
+IMDB_TV_INDEX_TOTAL_REGEX = re.compile("<strong>(\d+)</strong>&nbsp;of.+?title=\"Full episode list for.+?>(\d+) Episodes</a>", re.DOTALL)
 IMDB_TV_TITLE_SEASON_EPISODE_REGEX = re.compile("<h2 class=\"tv_header\">.*?<a href=.*?> *(.+?) *</a>:.*?"
                                                 "<span class=\"nobr\">Season (\d+), Episode (\d+).+?</span>",
                                                 re.DOTALL)
@@ -54,7 +55,7 @@ def scrape_imdb_data(search_title, year=''):
     imdb_budget_url = IMDB_BUDGET_URL % imdb_id
     imdb_budget_html = html_manipulator.retrieve_html_from_url(imdb_budget_url)
 
-    # TV Episodes exclusively have show title, episode, season
+    # TV Episodes exclusively have show title, episode, season, index, total
     if video_type == IMDB_TYPE_TV_EPISODE:
         title_season_episode_match = IMDB_TV_TITLE_SEASON_EPISODE_REGEX.search(imdb_html)
         if title_season_episode_match:
@@ -63,6 +64,14 @@ def scrape_imdb_data(search_title, year=''):
             show_title = None
             season = None
             episode = None
+
+        tv_index_total_regex_match = IMDB_TV_INDEX_TOTAL_REGEX.search(imdb_html)
+        if tv_index_total_regex_match:
+            (tv_episode_index, tv_episode_total) = tv_index_total_regex_match.groups()
+        else:
+            tv_episode_index = None
+            tv_episode_total = None
+
     # TV Series exclusively have creators
     elif video_type == IMDB_TYPE_TV_SERIES:
         creator_str = html_manipulator.use_regex(IMDB_CREATOR_STR_REGEX, imdb_html, True)
@@ -108,6 +117,8 @@ def scrape_imdb_data(search_title, year=''):
         return_dict["season"] = season
         return_dict["episode"] = episode
         return_dict["show_title"] = show_title
+        return_dict["tv_episode_index"] = tv_episode_index
+        return_dict["tv_episode_total"] = tv_episode_total
     elif video_type == IMDB_TYPE_TV_SERIES:
         return_dict["creator_list"] = creator_list
     elif video_type == IMDB_TYPE_MOVIE:
