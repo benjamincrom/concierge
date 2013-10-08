@@ -40,7 +40,7 @@ IMDB_WRITER_STR_REGEX = re.compile("<h4 class=\"inline\">Writers?:</h4>(.+?)</di
 IMDB_YEAR_REGEX = re.compile("itemprop=\"name\".+?<a href=\"/year/(\d+)/", re.DOTALL)
 
 
-def scrape_imdb_data(search_title, year=None):
+def scrape_imdb_data(search_title, year=''):
     # Scrape IMDB page for this title
     imdb_url = html_manipulator.get_top_google_result_url(IMDB_GOOGLE_QUERY_STRING %(search_title, year))
     imdb_html = html_manipulator.retrieve_html_from_url(imdb_url)
