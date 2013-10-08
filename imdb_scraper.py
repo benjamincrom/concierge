@@ -18,6 +18,7 @@ IMDB_RATING_REGEX = re.compile("itemprop=\"contentRating\" content=\"(.+?)\"></s
 IMDB_TITLE_REGEX = re.compile("itemprop=\"name\">(.+?)</span>")  # not null
 IMDB_TV_EPISODE_REGEX = re.compile("\s+TV Episode\s+")
 IMDB_TV_SERIES_REGEX = re.compile("\s+TV Series\s+")
+IMDB_WIDTH_HEIGHT_REGEX = re.compile(".*?([0-9]*\.?[0-9]+).*?:.*?([0-9]*\.?[0-9]+).*?")
 
 IMDB_ASPECT_RATIO_REGEX = re.compile("<h4 class=\"inline\">Aspect Ratio:</h4>(.+?)<", re.DOTALL)
 IMDB_BUDGET_REGEX = re.compile("<h5>Budget</h5>.*?(\$.+?)<", re.DOTALL)
@@ -36,7 +37,6 @@ IMDB_TV_INDEX_TOTAL_REGEX = re.compile("<strong>(\d+)</strong>&nbsp;of.+?title=\
 IMDB_TV_TITLE_SEASON_EPISODE_REGEX = re.compile("<h2 class=\"tv_header\">.*?<a href=.*?> *(.+?) *</a>:.*?"
                                                 "<span class=\"nobr\">Season (\d+), Episode (\d+).+?</span>",
                                                 re.DOTALL)
-IMDB_WIDTH_HEIGHT_REGEX = re.compile(".*?([0-9]*\.?[0-9]+).*?:.*?([0-9]*\.?[0-9]+).*?")
 IMDB_WRITER_STR_REGEX = re.compile("<h4 class=\"inline\">Writers?:</h4>(.+?)</div>", re.DOTALL)
 IMDB_YEAR_REGEX = re.compile("itemprop=\"name\".+?<a href=\"/year/(\d+)/", re.DOTALL)
 
@@ -143,6 +143,7 @@ def scrape_imdb_data(search_title, year=''):
         return_dict["creator_list"] = creator_list
     elif video_type == IMDB_TYPE_MOVIE:
         return_dict["gross"] = gross
+
     return return_dict
 
 

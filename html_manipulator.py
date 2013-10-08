@@ -8,8 +8,8 @@ from HTMLParser import HTMLParser
 
 
 GOOGLE_QUERY_URL = "http://www.google.com/search?q=%s"
-RETRIEVE_HTML_ERROR = "ERROR: URL '%s' is not a valid page"
 REGEX_NOT_FOUND_ERROR = "ERROR: Target regex '%s' not found--this value cannot be null"
+RETRIEVE_HTML_ERROR = "ERROR: URL '%s' is not a valid page"
 
 SPOOFED_HEADERS = {
     'User-Agent':           'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko)'
@@ -39,7 +39,8 @@ class MLStripper(HTMLParser):
 def get_top_google_result_url(search_string):
     formatted_search_string = search_string.replace(' ', '+')
     html = retrieve_html_from_url(GOOGLE_QUERY_URL % formatted_search_string)
-    return use_regex(GOOGLE_REGEX, html, False)
+    top_result_url = use_regex(GOOGLE_REGEX, html, False)
+    return top_result_url
 
 
 def retrieve_html_from_url(url):
