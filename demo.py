@@ -4,7 +4,7 @@ import roger_ebert_scraper
 import imdb_scraper
 
 if __name__ == '__main__':
-    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data('It\'s a Wonderful Life')
+    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data('Star Trek 7')
     for i,j in imdb_title_obj_dict.iteritems():
         print i
         print j
@@ -14,10 +14,11 @@ if __name__ == '__main__':
     if imdb_title_obj_dict["video_type"] == "Movie":
         rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(imdb_title_obj_dict["title"],
                                                                          imdb_title_obj_dict["year"])
-        f = open('test.html', 'w')
-        f.write(rogerebert_obj_dict["formatted_review_text"])
-        f.close()
-        for i,j in rogerebert_obj_dict.iteritems():
-            print i
-            print j
-            print ''
+        if rogerebert_obj_dict:
+            f = open('test.html', 'w')
+            f.write(rogerebert_obj_dict["formatted_review_text"])
+            f.close()
+            for i,j in rogerebert_obj_dict.iteritems():
+                print i
+                print j
+                print ''
