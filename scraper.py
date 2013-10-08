@@ -6,6 +6,7 @@ import urllib2
 from datetime import datetime
 from HTMLParser import HTMLParser
 
+
 class MLStripper(HTMLParser):
     def __init__(self):
         self.reset()
@@ -33,15 +34,14 @@ class RogerEbertScraper:
     EBERT_STARS_REGEX = re.compile('itemprop="reviewRating"(.+?)</span>', re.DOTALL)
 
     @classmethod
-    def set_rogerebert_data(cls, title):
+    def scrape_rogerebert_data(cls, title):
         return_dict = None
-        ebert_review_url = cls.get_ebert_url_from_title(title)
-        ebert_review_html = urllib2.urlopen(ebert_review_url).read()
+        ebert_review_url = ManipulateHTML.get_top_google_result_url(cls.EBERT_GOOGLE_QUERY_STRING % title)
+        ebert_review_html = ManipulateHTML.retrieve_html_from_url(ebert_review_url)
         review_text_match = cls.EBERT_REVIEW_REGEX.search(ebert_review_html)
         if review_text_match:
             review_text = review_text_match.groups()[0]
-            review_unicode_text = cls.format_ebert_review_text(review_text)
-            formatted_review_text = ''.join([x for x in review_unicode_text if ord(x) < 128])  # Remove unicode chars
+            formatted_review_text = cls.format_ebert_review_text(review_text)
 
             review_author_match = cls.EBERT_AUTHOR_REGEX.search(ebert_review_html)
             review_author = review_author_match.groups()[0]
@@ -65,16 +65,6 @@ class RogerEbertScraper:
         return return_dict
 
     @classmethod
-    def get_ebert_url_from_title(cls, title):
-        return ManipulateHTML.get_top_google_result_url(cls.EBERT_GOOGLE_QUERY_STRING % title)
-
-    @classmethod
-    def format_ebert_review_text(cls, review_text):
-        review_text = review_text.replace('\n', '')
-        formatted_review_text = review_text.replace(cls.LOCAL_LINK_PREFIX, cls.EBERT_LINK_PREFIX)
-        return formatted_review_text
-
-    @classmethod
     def compute_ebert_percent_score(cls, review_stars_string):
         full_stars = len(re.findall(cls.EBERT_FULL_STAR, review_stars_string))
         half_stars = len(re.findall(cls.EBERT_HALF_STAR, review_stars_string))
@@ -82,12 +72,10 @@ class RogerEbertScraper:
         return review_percent_score
 
     @classmethod
-    def format_ebert_review_url(cls, title, year):
-        lowercase_title = title.lower()
-        title_str = lowercase_title.replace(' ', cls.EBERT_URL_DELIMITER)
-        url_formatted_title = "%s-%s" %(title_str, year)
-        ebert_review_url = cls.EBERT_REVIEW_URL %(url_formatted_title)
-        return ebert_review_url
+    def format_ebert_review_text(cls, review_text):
+        review_text = review_text.replace('\n', '')
+        formatted_review_text = review_text.replace(cls.LOCAL_LINK_PREFIX, cls.EBERT_LINK_PREFIX)
+        return formatted_review_text
 
 
 class ImdbScraper:
@@ -118,80 +106,85 @@ class ImdbScraper:
     IMDB_POSTER_REGEX = re.compile("<meta property='og:image' content=\"(.+?)\" />", re.DOTALL)
     IMDB_STAR_STR_REGEX = re.compile("<h4 class=\"inline\">Stars?:</h4>(.+?)</div>", re.DOTALL)
     IMDB_TAGLINE_REGEX = re.compile("Taglines:</h4>\n(.+?)\s*<", re.DOTALL)
-    IMDB_TV_SEASON_AND_EPISODE_REGEX = re.compile("<span class=\"nobr\">Season (\d+), Episode (\d+).+?</span>",
-                                                  re.DOTALL)
+    IMDB_TV_TITLE_SEASON_EPISODE_REGEX = re.compile("<h2 class=\"tv_header\">.*?<a href=.*?> *(.+?) *</a>:.*?"
+                                                    "<span class=\"nobr\">Season (\d+), Episode (\d+).+?</span>",
+                                                    re.DOTALL)
     IMDB_WIDTH_HEIGHT_REGEX = re.compile(".*?([0-9]*\.?[0-9]+).*?:.*?([0-9]*\.?[0-9]+).*?")
     IMDB_WRITER_STR_REGEX = re.compile("<h4 class=\"inline\">Writers?:</h4>(.+?)</div>", re.DOTALL)
     IMDB_YEAR_REGEX = re.compile("itemprop=\"name\".+?<a href=\"/year/(\d+)/", re.DOTALL)
 
     @classmethod
-    def scrape_imdb_data(self, title):
+    def scrape_imdb_data(cls, title):
         # Scrape IMDB page for this title
-        imdb_url = self.get_imdb_url_from_title(title)
+        imdb_url = ManipulateHTML.get_top_google_result_url(cls.IMDB_GOOGLE_QUERY_STRING % title)
         imdb_html = ManipulateHTML.retrieve_html_from_url(imdb_url)
 
         # These values cannot be null
-        imdb_id = ManipulateHTML.use_regex(self.IMDB_ID_REGEX, imdb_url, False)
-        title = ManipulateHTML.use_regex(self.IMDB_TITLE_REGEX, imdb_html, False)
-        video_type = self.determine_imdb_video_type(imdb_html)
+        imdb_id = ManipulateHTML.use_regex(cls.IMDB_ID_REGEX, imdb_url, False)
+        title = ManipulateHTML.use_regex(cls.IMDB_TITLE_REGEX, imdb_html, False)
+        video_type = cls.determine_imdb_video_type(imdb_html)
 
         # Scrape IMDB budget page for this title
-        imdb_budget_url = self.IMDB_BUDGET_URL % imdb_id
+        imdb_budget_url = cls.IMDB_BUDGET_URL % imdb_id
         imdb_budget_html = ManipulateHTML.retrieve_html_from_url(imdb_budget_url)
 
-        # TV Episodes exclusively have episode, season
-        if video_type == self.IMDB_TYPE_TV_EPISODE:
-            season_and_episode_match = self.IMDB_TV_SEASON_AND_EPISODE_REGEX.search(imdb_html)
-            if season_and_episode_match:
-                (season, episode) = season_and_episode_match.groups()
+        # TV Episodes exclusively have show title, episode, season
+        if video_type == cls.IMDB_TYPE_TV_EPISODE:
+            title_season_episode_match = cls.IMDB_TV_TITLE_SEASON_EPISODE_REGEX.search(imdb_html)
+            if title_season_episode_match:
+                (show_title, season, episode) = title_season_episode_match.groups()
             else:
+                show_title = None
                 season = None
                 episode = None
         # TV Series exclusively have creators
-        elif video_type == self.IMDB_TYPE_TV_SERIES:
-            creator_str = ManipulateHTML.use_regex(self.IMDB_CREATOR_STR_REGEX, imdb_html, True)
-            creator_list = self.get_list_of_names(creator_str)
+        elif video_type == cls.IMDB_TYPE_TV_SERIES:
+            creator_str = ManipulateHTML.use_regex(cls.IMDB_CREATOR_STR_REGEX, imdb_html, True)
+            creator_list = cls.get_list_of_names(creator_str)
         # Movies exclusively have gross
-        elif video_type == self.IMDB_TYPE_MOVIE:
-            gross = ManipulateHTML.use_regex(self.IMDB_GROSS_REGEX, imdb_budget_html, True)
+        elif video_type == cls.IMDB_TYPE_MOVIE:
+            gross = ManipulateHTML.use_regex(cls.IMDB_GROSS_REGEX, imdb_budget_html, True)
         else:
-            raise Exception(self.IMDB_INVALID_TYPE_ERROR % title)
+            raise Exception(cls.IMDB_INVALID_TYPE_ERROR % title)
 
-        imdb_poster_url = ManipulateHTML.use_regex(self.IMDB_POSTER_REGEX, imdb_html, True)
-        length = ManipulateHTML.use_regex(self.IMDB_LENGTH_REGEX, imdb_html, True)
-        rating = ManipulateHTML.use_regex(self.IMDB_RATING_REGEX, imdb_html, True)
-        year = int(ManipulateHTML.use_regex(self.IMDB_YEAR_REGEX, imdb_html, True))
-        budget = ManipulateHTML.use_regex(self.IMDB_BUDGET_REGEX, imdb_budget_html, True)
+        imdb_poster_url = ManipulateHTML.use_regex(cls.IMDB_POSTER_REGEX, imdb_html, True)
+        length = ManipulateHTML.use_regex(cls.IMDB_LENGTH_REGEX, imdb_html, True)
+        rating = ManipulateHTML.use_regex(cls.IMDB_RATING_REGEX, imdb_html, True)
+        budget = ManipulateHTML.use_regex(cls.IMDB_BUDGET_REGEX, imdb_budget_html, True)
 
-        aspect_ratio_str = ManipulateHTML.use_regex(self.IMDB_ASPECT_RATIO_REGEX, imdb_html, True)
-        aspect_ratio = self.get_aspect_ratio_float_from_str(aspect_ratio_str)
+        aspect_ratio_str = ManipulateHTML.use_regex(cls.IMDB_ASPECT_RATIO_REGEX, imdb_html, True)
+        aspect_ratio = cls.get_aspect_ratio_float_from_str(aspect_ratio_str)
 
-        genre_str = ManipulateHTML.use_regex(self.IMDB_GENRE_STR_REGEX, imdb_html, True)
-        genre_list = self.IMDB_GENRE_LIST_REGEX.findall(genre_str)
+        genre_str = ManipulateHTML.use_regex(cls.IMDB_GENRE_STR_REGEX, imdb_html, True)
+        genre_list = cls.IMDB_GENRE_LIST_REGEX.findall(genre_str)
 
-        director_str = ManipulateHTML.use_regex(self.IMDB_DIRECTOR_STR_REGEX, imdb_html, True)
-        director_list = self.get_list_of_names(director_str)
+        year = ManipulateHTML.use_regex(cls.IMDB_YEAR_REGEX, imdb_html, True)
+        if year: year = int(year)  # if year is not null then make it an int
 
-        writer_str = ManipulateHTML.use_regex(self.IMDB_WRITER_STR_REGEX, imdb_html, True)
-        writer_list = self.get_list_of_names(writer_str)
+        director_str = ManipulateHTML.use_regex(cls.IMDB_DIRECTOR_STR_REGEX, imdb_html, True)
+        director_list = cls.get_list_of_names(director_str)
 
-        star_str = ManipulateHTML.use_regex(self.IMDB_STAR_STR_REGEX, imdb_html, True)
-        star_list = self.get_list_of_names(star_str)
+        writer_str = ManipulateHTML.use_regex(cls.IMDB_WRITER_STR_REGEX, imdb_html, True)
+        writer_list = cls.get_list_of_names(writer_str)
 
-        plot_html = ManipulateHTML.use_regex(self.IMDB_PLOT_REGEX, imdb_html, True)
+        star_str = ManipulateHTML.use_regex(cls.IMDB_STAR_STR_REGEX, imdb_html, True)
+        star_list = cls.get_list_of_names(star_str)
+
+        plot_html = ManipulateHTML.use_regex(cls.IMDB_PLOT_REGEX, imdb_html, True)
         plot = ManipulateHTML.remove_html_tags(plot_html).strip()
 
-        tagline_html = ManipulateHTML.use_regex(self.IMDB_TAGLINE_REGEX, imdb_html, True)
+        tagline_html = ManipulateHTML.use_regex(cls.IMDB_TAGLINE_REGEX, imdb_html, True)
         tagline = ManipulateHTML.remove_html_tags(tagline_html)
 
         # Dump values into dictionary
         return_dict = {}
-        if video_type == self.IMDB_TYPE_TV_EPISODE:
+        if video_type == cls.IMDB_TYPE_TV_EPISODE:
             return_dict["season"] = season
             return_dict["episode"] = episode
-        elif video_type == self.IMDB_TYPE_TV_SERIES:
+            return_dict["show_title"] = show_title
+        elif video_type == cls.IMDB_TYPE_TV_SERIES:
             return_dict["creator_list"] = creator_list
-        elif video_type == self.IMDB_TYPE_MOVIE:
+        elif video_type == cls.IMDB_TYPE_MOVIE:
             return_dict["gross"] = gross
 
         return_dict["video_type"] = video_type
@@ -221,6 +214,16 @@ class ImdbScraper:
         return video_type
 
     @classmethod
+    def get_aspect_ratio_float_from_str(cls, aspect_ratio_str):
+        aspect_ratio = None
+        if aspect_ratio_str:
+            width_height_match = cls.IMDB_WIDTH_HEIGHT_REGEX.search(aspect_ratio_str)
+            if width_height_match:
+                (width, height) = width_height_match.groups()
+                aspect_ratio = float(width) / float(height)
+        return aspect_ratio
+
+    @classmethod
     def get_list_of_names(cls, name_str):
         if name_str:
             name_list = cls.IMDB_NAME_LIST_REGEX.findall(name_str)
@@ -228,21 +231,9 @@ class ImdbScraper:
             name_list = None
         return name_list
 
-    @classmethod
-    def get_imdb_url_from_title(cls, title):
-        return ManipulateHTML.get_top_google_result_url(cls.IMDB_GOOGLE_QUERY_STRING % title)
-
-    @classmethod
-    def get_aspect_ratio_float_from_str(cls, aspect_ratio_str):
-        width_height_match = cls.IMDB_WIDTH_HEIGHT_REGEX.search(aspect_ratio_str)
-        if width_height_match:
-            (width, height) = width_height_match.groups()
-            aspect_ratio = float(width) / float(height)
-        else:
-            aspect_ratio = None
-        return aspect_ratio
 
 class ManipulateHTML:
+    GOOGLE_QUERY_URL = "http://www.google.com/search?q=%s"
     SPOOFED_HEADERS = {
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
         'Accept': '``text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -251,15 +242,24 @@ class ManipulateHTML:
         'Accept-Language': 'en-US,en;q=0.8',
         'Connection': 'keep-alive'
     }
+    RETRIEVE_HTML_ERROR = "ERROR: URL '%s' is not a valid page"
+    REGEX_NOT_FOUND_ERROR = "ERROR: Target regex '%s' not found--this value cannot be null"
+
     GOOGLE_REGEX = re.compile("<h2 class=\"hd\">Search Results.*?<a href=\"(.+?)\"", re.DOTALL)
+
+    @classmethod
+    def get_top_google_result_url(cls, search_string):
+        formatted_search_string = search_string.replace(' ', '+')
+        html = cls.retrieve_html_from_url(cls.GOOGLE_QUERY_URL % formatted_search_string)
+        return cls.use_regex(cls.GOOGLE_REGEX, html, False)
 
     @classmethod
     def retrieve_html_from_url(cls, url):
         try:
             req = urllib2.Request(url, headers=cls.SPOOFED_HEADERS)
-            html = urllib2.urlopen(req).read()
+            html = urllib2.urlopen(req).read().decode('utf-8').encode('ascii','ignore')
         except AttributeError:
-            print "ERROR: URL '%s' is not a valid IMDB page " % url
+            print cls.RETRIEVE_HTML_ERROR % url
             raise
         return html
 
@@ -281,23 +281,25 @@ class ManipulateHTML:
         except (AttributeError, IndexError):
             return_str = None
             if not can_be_null:
-                print "ERROR: Target regex '%s' not found--this value cannot be null" % given_regex
+                print cls.REGEX_NOT_FOUND_ERROR % given_regex
                 raise
         return return_str
 
-    @classmethod
-    def get_top_google_result_url(cls, search_string):
-        formatted_search_string = search_string.replace(' ', '+')
-        html = cls.retrieve_html_from_url("http://www.google.com/search?q=%s" % formatted_search_string)
-        return cls.use_regex(cls.GOOGLE_REGEX, html, False)
 
 if __name__ == '__main__':
-    imdb_title_obj_dict = ImdbScraper.scrape_imdb_data('Terminator 2')
-    print imdb_title_obj_dict
+    imdb_title_obj_dict = ImdbScraper.scrape_imdb_data('Terminator 4')
+    for i,j in imdb_title_obj_dict.iteritems():
+        print i
+        print j
+        print ''
+    print '--------------------------------------'
 
     if imdb_title_obj_dict["video_type"] == "Movie":
-        rogerebert_obj_dict = RogerEbertScraper.set_rogerebert_data(imdb_title_obj_dict["title"])
-        print rogerebert_obj_dict
-        # f = open('test.html', 'w')
-        # f.write(rogerebert_obj_dict["formatted_review_text"])
-        # f.close()
+        rogerebert_obj_dict = RogerEbertScraper.scrape_rogerebert_data(imdb_title_obj_dict["title"])
+        f = open('test.html', 'w')
+        f.write(rogerebert_obj_dict["formatted_review_text"])
+        f.close()
+        for i,j in rogerebert_obj_dict.iteritems():
+            print i
+            print j
+            print ''
