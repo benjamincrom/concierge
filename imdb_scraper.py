@@ -19,7 +19,6 @@ IMDB_TITLE_REGEX = re.compile("itemprop=\"name\">(.+?)</span>")  # not null
 IMDB_TV_EPISODE_REGEX = re.compile("\s+TV Episode\s+")
 IMDB_TV_SERIES_REGEX = re.compile("\s+TV Series\s+")
 
-# These regexes require the DOTALL flag
 IMDB_ASPECT_RATIO_REGEX = re.compile("<h4 class=\"inline\">Aspect Ratio:</h4>(.+?)<", re.DOTALL)
 IMDB_BUDGET_REGEX = re.compile("<h5>Budget</h5>.*?(\$.+?)<", re.DOTALL)
 IMDB_CREATOR_STR_REGEX = re.compile("<h4 class=\"inline\">Creators?:</h4>(.+?)</div>", re.DOTALL)
@@ -32,7 +31,8 @@ IMDB_PLOT_REGEX = re.compile("itemprop=\"description\">(.+?)<div", re.DOTALL)
 IMDB_POSTER_REGEX = re.compile("<meta property='og:image' content=\"(.+?)\" />", re.DOTALL)
 IMDB_STAR_STR_REGEX = re.compile("<h4 class=\"inline\">Stars?:</h4>(.+?)</div>", re.DOTALL)
 IMDB_TAGLINE_REGEX = re.compile("Taglines:</h4>\n(.+?)\s*<", re.DOTALL)
-IMDB_TV_INDEX_TOTAL_REGEX = re.compile("<strong>(\d+)</strong>&nbsp;of.+?title=\"Full episode list for.+?>(\d+) Episodes</a>", re.DOTALL)
+IMDB_TV_INDEX_TOTAL_REGEX = re.compile("<strong>(\d+)</strong>&nbsp;of.+?title=\"Full episode list for.+?>(\d+)"
+                                       " Episodes</a>", re.DOTALL)
 IMDB_TV_TITLE_SEASON_EPISODE_REGEX = re.compile("<h2 class=\"tv_header\">.*?<a href=.*?> *(.+?) *</a>:.*?"
                                                 "<span class=\"nobr\">Season (\d+), Episode (\d+).+?</span>",
                                                 re.DOTALL)
@@ -76,9 +76,11 @@ def scrape_imdb_data(search_title, year=''):
     elif video_type == IMDB_TYPE_TV_SERIES:
         creator_str = html_manipulator.use_regex(IMDB_CREATOR_STR_REGEX, imdb_html, True)
         creator_list = _get_list_of_names(creator_str)
+
     # Movies exclusively have gross
     elif video_type == IMDB_TYPE_MOVIE:
         gross = html_manipulator.use_regex(IMDB_GROSS_REGEX, imdb_budget_html, True)
+
     else:
         raise Exception(IMDB_INVALID_TYPE_ERROR % title)
 
@@ -94,7 +96,8 @@ def scrape_imdb_data(search_title, year=''):
     genre_list = IMDB_GENRE_LIST_REGEX.findall(genre_str)
 
     year = html_manipulator.use_regex(IMDB_YEAR_REGEX, imdb_html, True)
-    if year: year = int(year)  # if year is not null then make it an int
+    if year:
+        year = int(year)  # if year is not null then make it an int
 
     director_str = html_manipulator.use_regex(IMDB_DIRECTOR_STR_REGEX, imdb_html, True)
     director_list = _get_list_of_names(director_str)
@@ -112,7 +115,24 @@ def scrape_imdb_data(search_title, year=''):
     tagline = html_manipulator.remove_html_tags(tagline_html)
 
     # Dump values into dictionary
-    return_dict = {}
+    return_dict = {
+        "video_type":           video_type,
+        "year":                 year,
+        "title":                title,
+        "tagline":              tagline,
+        "rating":               rating,
+        "length":               length,
+        "imdb_poster_url":      imdb_poster_url,
+        "imdb_id":              imdb_id,
+        "budget":               budget,
+        "plot":                 plot,
+        "aspect_ratio":         aspect_ratio,
+        "genre_list":           genre_list,
+        "writer_list":          writer_list,
+        "director_list":        director_list,
+        "star_list":            star_list,
+    }
+
     if video_type == IMDB_TYPE_TV_EPISODE:
         return_dict["season"] = season
         return_dict["episode"] = episode
@@ -123,22 +143,6 @@ def scrape_imdb_data(search_title, year=''):
         return_dict["creator_list"] = creator_list
     elif video_type == IMDB_TYPE_MOVIE:
         return_dict["gross"] = gross
-
-    return_dict["video_type"] = video_type
-    return_dict["year"] = year
-    return_dict["title"] = title
-    return_dict["tagline"] = tagline
-    return_dict["rating"] = rating
-    return_dict["length"] = length
-    return_dict["imdb_poster_url"] = imdb_poster_url
-    return_dict["imdb_id"] = imdb_id
-    return_dict["budget"] = budget
-    return_dict["plot"] = plot
-    return_dict["aspect_ratio"] = aspect_ratio
-    return_dict["genre_list"] = genre_list
-    return_dict["writer_list"] = writer_list
-    return_dict["director_list"] = director_list
-    return_dict["star_list"] = star_list
     return return_dict
 
 

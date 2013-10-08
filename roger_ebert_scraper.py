@@ -17,9 +17,10 @@ EBERT_REVIEW_URL = "http://www.rogerebert.com/reviews/%s"
 EBERT_SITE_TITLE = "RogerEbert.com"
 EBERT_URL_DELIMITER = '-'
 
-EBERT_REVIEW_REGEX = re.compile('<div itemprop="reviewBody">(.+?)</div>', re.DOTALL)
 EBERT_AUTHOR_REGEX = re.compile('<meta content="(.+?)" name="author">')
 EBERT_DATE_REGEX = re.compile('itemprop="datePublished">(.+?)</time>')
+
+EBERT_REVIEW_REGEX = re.compile('<div itemprop="reviewBody">(.+?)</div>', re.DOTALL)
 EBERT_STARS_REGEX = re.compile('itemprop="reviewRating"(.+?)</span>', re.DOTALL)
 
 
@@ -44,12 +45,13 @@ def scrape_rogerebert_data(title, year):
         review_stars_string = review_stars_match.groups()[0]
         review_percent_score = _compute_ebert_percent_score(review_stars_string)
 
-        return_dict = {}
-        return_dict["formatted_review_text"] = formatted_review_text
-        return_dict["review_author"] = review_author
-        return_dict["review_source"] = EBERT_SITE_TITLE
-        return_dict["review_date"] = review_date.strftime("%Y-%m-%d")
-        return_dict["review_percent_score"] = review_percent_score
+        return_dict = {
+            "formatted_review_text":    formatted_review_text,
+            "review_author":            review_author,
+            "review_source":            EBERT_SITE_TITLE,
+            "review_date":              review_date.strftime("%Y-%m-%d"),
+            "review_percent_score":     review_percent_score,
+        }
 
     return return_dict
 

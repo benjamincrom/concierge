@@ -4,7 +4,7 @@ import roger_ebert_scraper
 import imdb_scraper
 
 if __name__ == '__main__':
-    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data('Pilot Burn Notice')
+    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data('Terminator 2')
     for i,j in imdb_title_obj_dict.iteritems():
         print i
         print j
