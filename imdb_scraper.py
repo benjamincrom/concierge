@@ -6,7 +6,7 @@ import re
 
 
 IMDB_BUDGET_URL = "http://www.imdb.com/title/%s/business"
-IMDB_GOOGLE_QUERY_STRING = "imdb %s"
+IMDB_GOOGLE_QUERY_STRING = "imdb %s %s"
 IMDB_INVALID_TYPE_ERROR = "Invalid video type for title '%s'"
 IMDB_TYPE_MOVIE = "Movie"
 IMDB_TYPE_TV_EPISODE = "TV Episode"
@@ -40,9 +40,9 @@ IMDB_WRITER_STR_REGEX = re.compile("<h4 class=\"inline\">Writers?:</h4>(.+?)</di
 IMDB_YEAR_REGEX = re.compile("itemprop=\"name\".+?<a href=\"/year/(\d+)/", re.DOTALL)
 
 
-def scrape_imdb_data(title):
+def scrape_imdb_data(search_title, year=None):
     # Scrape IMDB page for this title
-    imdb_url = html_manipulator.get_top_google_result_url(IMDB_GOOGLE_QUERY_STRING % title)
+    imdb_url = html_manipulator.get_top_google_result_url(IMDB_GOOGLE_QUERY_STRING %(search_title, year))
     imdb_html = html_manipulator.retrieve_html_from_url(imdb_url)
 
     # These values cannot be null

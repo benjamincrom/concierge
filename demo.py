@@ -12,7 +12,8 @@ if __name__ == '__main__':
     print '--------------------------------------'
 
     if imdb_title_obj_dict["video_type"] == "Movie":
-        rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(imdb_title_obj_dict["title"])
+        rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(imdb_title_obj_dict["title"],
+                                                                         imdb_title_obj_dict["year"])
         f = open('test.html', 'w')
         f.write(rogerebert_obj_dict["formatted_review_text"])
         f.close()

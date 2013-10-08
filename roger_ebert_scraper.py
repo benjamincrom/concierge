@@ -10,7 +10,7 @@ from datetime import datetime
 LOCAL_LINK_PREFIX = '<a href="'
 EBERT_LINK_PREFIX = '<a href="http://www.rogerebert.com'
 EBERT_FULL_STAR = 'icon-star-full'
-EBERT_GOOGLE_QUERY_STRING = "rogerebert.com %s"
+EBERT_GOOGLE_QUERY_STRING = "rogerebert.com %s %s"
 EBERT_HALF_STAR = 'icon-star-half'
 EBERT_REVIEW_NOT_FOUND = "There is no review on rogerebert.com for this title: %s"
 EBERT_REVIEW_URL = "http://www.rogerebert.com/reviews/%s"
@@ -23,9 +23,9 @@ EBERT_DATE_REGEX = re.compile('itemprop="datePublished">(.+?)</time>')
 EBERT_STARS_REGEX = re.compile('itemprop="reviewRating"(.+?)</span>', re.DOTALL)
 
 
-def scrape_rogerebert_data(title):
+def scrape_rogerebert_data(title, year):
     return_dict = None
-    ebert_review_url = html_manipulator.get_top_google_result_url(EBERT_GOOGLE_QUERY_STRING % title)
+    ebert_review_url = html_manipulator.get_top_google_result_url(EBERT_GOOGLE_QUERY_STRING %(title, year))
     ebert_review_html = html_manipulator.retrieve_html_from_url(ebert_review_url)
     review_text_match = EBERT_REVIEW_REGEX.search(ebert_review_html)
     if review_text_match:
