@@ -4,7 +4,7 @@ import roger_ebert_scraper
 import imdb_scraper
 
 if __name__ == '__main__':
-    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data('Terminator 4')
+    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data('101 Dalmatians')
     for i,j in imdb_title_obj_dict.iteritems():
         print i
         print j

@@ -65,6 +65,6 @@ def use_regex(given_regex, target_str, can_be_null):
     except (AttributeError, IndexError):
         return_str = None
         if not can_be_null:
-            print REGEX_NOT_FOUND_ERROR % given_regex
+            print REGEX_NOT_FOUND_ERROR % given_regex.pattern
             raise
     return return_str
