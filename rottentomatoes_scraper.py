@@ -30,7 +30,6 @@ ROTTENTOMATOES_AUDIENCE_REGEX = re.compile(
 )
 
 def scrape_rottentomatoes(title, year):
-
     rottentomatoes_review_url = html_manipulator.get_top_google_result_url(ROTTENTOMATOES_QUERY_STRING %(title, year))
     rottentomatoes_review_html = html_manipulator.retrieve_html_from_url(rottentomatoes_review_url)
 
