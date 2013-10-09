@@ -39,7 +39,7 @@ http://ondras.zarovi.cz/sql/demo/
     <type label="SET" length="1" sql="SET" quote=""/>
     <type label="Bit" length="0" sql="bit" quote=""/>
   </group>
-</datatypes><table x="678" y="505" name="person">
+</datatypes><table x="695" y="507" name="person">
 <row name="person_id" null="0" autoincrement="1">
 <datatype>TINYINT</datatype>
 </row>
@@ -134,7 +134,7 @@ http://ondras.zarovi.cz/sql/demo/
 <key type="PRIMARY" name="">
 </key>
 </table>
-<table x="680" y="201" name="genre">
+<table x="692" y="201" name="genre">
 <row name="genre_id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -145,7 +145,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>genre_id</part>
 </key>
 </table>
-<table x="856" y="289" name="genre_video">
+<table x="849" y="257" name="genre_video">
 <row name="genre_id" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="genre" row="genre_id" />
@@ -164,10 +164,6 @@ http://ondras.zarovi.cz/sql/demo/
 <row name="video_id" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="video" row="video_id" />
-</row>
-<row name="series_id" null="1" autoincrement="0">
-<datatype>TINYINT</datatype>
-<default>NULL</default><relation table="series" row="series_id" />
 </row>
 <row name="season_id" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
@@ -193,7 +189,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>review_id</part>
 </key>
 </table>
-<table x="309" y="685" name="season">
+<table x="314" y="716" name="season">
 <row name="series_id" null="0" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="series" row="series_id" />
@@ -211,7 +207,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>season_id</part>
 </key>
 </table>
-<table x="34" y="369" name="review_source">
+<table x="35" y="345" name="review_source">
 <row name="review_source_id" null="0" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -255,7 +251,7 @@ http://ondras.zarovi.cz/sql/demo/
 <part>aspect_ratio_id</part>
 </key>
 </table>
-<table x="289" y="326" name="series">
+<table x="289" y="317" name="series">
 <row name="series_id" null="0" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -281,7 +277,7 @@ http://ondras.zarovi.cz/sql/demo/
 <key type="PRIMARY" name="">
 </key>
 </table>
-<table x="486" y="290" name="genre_series">
+<table x="496" y="256" name="genre_series">
 <row name="series_id" null="0" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="series" row="series_id" />
