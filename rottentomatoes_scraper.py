@@ -18,13 +18,13 @@ ROTTENTOMATOES_ALL_CRITICS_REGEX = re.compile(
 )
 ROTTENTOMATOES_TOP_CRITICS_REGEX = re.compile(
     "<span id=\"all-critics-meter\" class=\"meter .*? numeric \">(\d+)</span>.*?"
-	"<p class=\"critic_stats\">.*?Average Rating: <span>([0-9]*\.?[0-9]+)/10</span><br />.*?"
-	"Critic Reviews: (\d+)<br />.*?Fresh: (\d+) \| Rotten: (\d+)</p>.*?</div>",
+    "<p class=\"critic_stats\">.*?Average Rating: <span>([0-9]*\.?[0-9]+)/10</span><br />.*?"
+    "Critic Reviews: (\d+)<br />.*?Fresh: (\d+) \| Rotten: (\d+)</p>.*?</div>",
     re.DOTALL
 )
 ROTTENTOMATOES_AUDIENCE_REGEX = re.compile(
     "<span class=\"meter popcorn numeric \">(\d+)</span>.*?"
-	"<p class=\"critic_stats\">.*?<span class=\"subText liked_it\" >liked it</span><br/>.*?"
+    "<p class=\"critic_stats\">.*?<span class=\"subText liked_it\" >liked it</span><br/>.*?"
     "Average Rating: ([0-9]*\.?[0-9]+)/5<br/>.*?User Ratings: ([\d+,]*\d+).*?</p>",
     re.DOTALL
 )
@@ -59,6 +59,7 @@ def scrape_rottentomatoes(title, year):
 
             locale.setlocale(locale.LC_ALL, 'en_US.UTF8')
             return_dict["audience_total"] = locale.atoi(rottentomatoes_audience_match.groups()[2])
+
     else:
         return_dict = None
 
