@@ -251,21 +251,24 @@ http://ondras.zarovi.cz/sql/demo/
 <part>aspect_ratio_id</part>
 </key>
 </table>
-<table x="289" y="317" name="series">
+<table x="290" y="317" name="series">
 <row name="series_id" null="0" autoincrement="1">
-<datatype>TINYINT</datatype>
-<default>NULL</default></row>
-<row name="total_episodes_in_series" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
 <row name="series_name" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
+<row name="total_episodes_in_series" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="total_seasons_in_series" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>series_id</part>
 </key>
 </table>
-<table x="485" y="388" name="series_creators">
+<table x="495" y="388" name="series_creators">
 <row name="series_id" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="series" row="series_id" />
