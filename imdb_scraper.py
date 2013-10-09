@@ -33,6 +33,9 @@ IMDB_PLOT_REGEX = re.compile("itemprop=\"description\">(.+?)<div", re.DOTALL)
 IMDB_POSTER_REGEX = re.compile("<meta property='og:image' content=\"(.+?)\" />", re.DOTALL)
 IMDB_STAR_STR_REGEX = re.compile("<h4 class=\"inline\">Stars?:</h4>(.+?)</div>", re.DOTALL)
 IMDB_TAGLINE_REGEX = re.compile("Taglines:</h4>\n(.+?)\s*<", re.DOTALL)
+IMDB_TOTAL_SEASONS_REGEX = re.compile("<h4 class=\"inline\">Season:</h4>.*?"
+                                      "<a href=\"/title/.+?\" >(\d+)</a>",
+                                      re.DOTALL)
 IMDB_TV_INDEX_TOTAL_REGEX = re.compile("<strong>(\d+)</strong>&nbsp;of.+?title=\"Full episode list for.+?>(\d+)"
                                        " Episodes</a>", re.DOTALL)
 IMDB_TV_TITLE_SEASON_EPISODE_REGEX = re.compile("<h2 class=\"tv_header\">.*?<a href=.*?> *(.+?) *</a>:.*?"
@@ -77,6 +80,8 @@ def scrape_imdb_data(search_title, year=''):
     elif video_type == IMDB_TYPE_TV_SERIES:
         creator_str = html_manipulator.use_regex(IMDB_CREATOR_STR_REGEX, imdb_html, True)
         creator_list = _get_list_of_names(creator_str)
+
+        tv_total_seasons = html_manipulator.use_regex(IMDB_TOTAL_SEASONS_REGEX, imdb_html, True)
 
     # Movies exclusively have gross
     elif video_type == IMDB_TYPE_MOVIE:
@@ -144,6 +149,7 @@ def scrape_imdb_data(search_title, year=''):
         return_dict["tv_episode_total"] = tv_episode_total
     elif video_type == IMDB_TYPE_TV_SERIES:
         return_dict["creator_list"] = creator_list
+        return_dict["tv_total_seasons"] = tv_total_seasons
     elif video_type == IMDB_TYPE_MOVIE:
         return_dict["gross"] = gross
 

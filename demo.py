@@ -6,7 +6,7 @@ import imdb_scraper
 import metacritic_scraper
 
 if __name__ == '__main__':
-    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data('Gliding Over All')
+    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data('30 Rock')
 
     title = imdb_title_obj_dict["title"]
     type = imdb_title_obj_dict["video_type"]
