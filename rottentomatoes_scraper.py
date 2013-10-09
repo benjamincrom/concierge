@@ -36,7 +36,6 @@ def scrape_rottentomatoes(title, year):
 
     if re.search(title, rottentomatoes_review_html):
         return_dict = {}
-        print ROTTENTOMATOES_ALL_CRITICS_REGEX.pattern
         rottentomatoes_all_critics_match = ROTTENTOMATOES_ALL_CRITICS_REGEX.search(rottentomatoes_review_html)
         if rottentomatoes_all_critics_match:
             return_dict["all_critics_meter"] = float(rottentomatoes_all_critics_match.groups()[0]) / 100.0
