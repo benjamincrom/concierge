@@ -56,7 +56,7 @@ def retrieve_html_from_url(url):
 def remove_html_tags(html_str):
     if html_str:
         s = MLStripper()
-        s.feed(html_str)
+        s.feed(html_str.decode('latin-1').encode('ascii', 'ignore'))
         return_str = s.get_data()
     else:
         return_str = None
