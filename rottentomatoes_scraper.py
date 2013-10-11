@@ -25,7 +25,7 @@ ROTTENTOMATOES_TOP_CRITICS_REGEX = re.compile(
     re.DOTALL
 )
 ROTTENTOMATOES_AUDIENCE_REGEX = re.compile(
-    "<span class=\"meter popcorn numeric \">(\d+)</span>.*?"
+    "<span class=\"meter .*? numeric \">(\d+)</span>.*?"
     "<p class=\"critic_stats\">.*?<span class=\"subText liked_it\" >liked it</span><br/>.*?"
     "Average Rating: ([0-9]*\.?[0-9]+)/5<br/>.*?User Ratings: ([\d+,]*\d+).*?</p>",
     re.DOTALL
