@@ -47,7 +47,7 @@ IMDB_YEAR_REGEX = re.compile("itemprop=\"name\".+?<a href=\"/year/(\d+)/", re.DO
 
 def scrape_imdb_data(search_title, year=''):
     # Scrape IMDB page for this title
-    imdb_url = html_manipulator.get_top_google_result_url(IMDB_GOOGLE_QUERY_STRING %(search_title, year))
+    imdb_url = html_manipulator.get_top_google_result_url(IMDB_GOOGLE_QUERY_STRING % (search_title, year))
     imdb_html = html_manipulator.retrieve_html_from_url(imdb_url)
 
     # These values cannot be null
@@ -56,25 +56,27 @@ def scrape_imdb_data(search_title, year=''):
     video_type = _determine_imdb_video_type(imdb_html)
 
     # Scrape IMDB budget page for this title
+
+    # Initialize media_type exclusive data
     imdb_budget_url = IMDB_BUDGET_URL % imdb_id
     imdb_budget_html = html_manipulator.retrieve_html_from_url(imdb_budget_url)
-
+    tv_episode_index = None
+    tv_episode_total = None
+    show_title = None
+    season = None
+    episode = None
+    creator_list = None
+    tv_total_seasons = None
+    gross = None
     # TV Episodes exclusively have show title, episode, season, index, total
     if video_type == IMDB_TYPE_TV_EPISODE:
         title_season_episode_match = IMDB_TV_TITLE_SEASON_EPISODE_REGEX.search(imdb_html)
         if title_season_episode_match:
             (show_title, season, episode) = title_season_episode_match.groups()
-        else:
-            show_title = None
-            season = None
-            episode = None
 
         tv_index_total_regex_match = IMDB_TV_INDEX_TOTAL_REGEX.search(imdb_html)
         if tv_index_total_regex_match:
             (tv_episode_index, tv_episode_total) = tv_index_total_regex_match.groups()
-        else:
-            tv_episode_index = None
-            tv_episode_total = None
 
     # TV Series exclusively have creators
     elif video_type == IMDB_TYPE_TV_SERIES:

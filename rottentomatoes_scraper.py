@@ -1,8 +1,10 @@
 #!/usr/bin/python
 
+
 import locale
 import html_manipulator
 import re
+
 
 ROTTENTOMATOES_QUERY_STRING = "site:rottentomatoes.com %s %s"
 
@@ -29,8 +31,9 @@ ROTTENTOMATOES_AUDIENCE_REGEX = re.compile(
     re.DOTALL
 )
 
+
 def scrape_rottentomatoes(title, year):
-    rottentomatoes_review_url = html_manipulator.get_top_google_result_url(ROTTENTOMATOES_QUERY_STRING %(title, year))
+    rottentomatoes_review_url = html_manipulator.get_top_google_result_url(ROTTENTOMATOES_QUERY_STRING % (title, year))
     rottentomatoes_review_html = html_manipulator.retrieve_html_from_url(rottentomatoes_review_url)
 
     if re.search(title, rottentomatoes_review_html):
