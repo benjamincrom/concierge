@@ -21,8 +21,8 @@ METACRITIC_USERSCORE_REGEX = re.compile(
 def scrape_metacritic(title, year, type):
     metacritic_review_url = html_manipulator.get_top_google_result_url(METACRITIC_QUERY_STRING %(title, year))
     metacritic_review_html = html_manipulator.retrieve_html_from_url(metacritic_review_url)
-
-    if re.search(title, metacritic_review_html):
+    
+    if metacritic_review_html and re.search(title, metacritic_review_html):
         return_dict = {}
         metacritic_metascore_match = METACRITIC_METASCORE_REGEX.search(metacritic_review_html)
         if metacritic_metascore_match:

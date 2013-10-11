@@ -116,7 +116,7 @@ def scrape_imdb_data(search_title, year=''):
     star_list = _get_list_of_names(star_str)
 
     plot_html = html_manipulator.use_regex(IMDB_PLOT_REGEX, imdb_html, True)
-    plot = html_manipulator.remove_html_tags(plot_html).strip()
+    plot = html_manipulator.remove_html_tags(plot_html)
 
     tagline_html = html_manipulator.use_regex(IMDB_TAGLINE_REGEX, imdb_html, True)
     tagline = html_manipulator.remove_html_tags(tagline_html)

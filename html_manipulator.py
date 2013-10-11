@@ -39,17 +39,29 @@ class MLStripper(HTMLParser):
 def get_top_google_result_url(search_string):
     formatted_search_string = search_string.replace(' ', '+')
     html = retrieve_html_from_url(GOOGLE_QUERY_URL % formatted_search_string)
-    top_result_url = use_regex(GOOGLE_REGEX, html, False)
+    if html:
+        raw_top_result_url = use_regex(GOOGLE_REGEX, html, False)
+        if raw_top_result_url: 
+            top_result_url = raw_top_result_url.strip()    
+    else:
+        top_result_url = None
     return top_result_url
 
 
 def retrieve_html_from_url(url):
+    if not url: return None
+
+    html = None
     try:
         req = urllib2.Request(url, headers=SPOOFED_HEADERS)
         html = urllib2.urlopen(req).read().decode('latin-1').encode('ascii', 'ignore')
+        print html
+        exit(1)
     except (AttributeError, UnicodeDecodeError):
         print RETRIEVE_HTML_ERROR % url
         raise
+    except (urllib2.URLError):
+        print RETRIEVE_HTML_ERROR % url
     return html
 
 
