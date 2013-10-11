@@ -38,7 +38,6 @@ class MLStripper(HTMLParser):
 
 def get_top_google_result_url(search_string):
     formatted_search_string = search_string.replace(' ', '+').replace('&','')
-    print GOOGLE_QUERY_URL % formatted_search_string
     html = retrieve_html_from_url(GOOGLE_QUERY_URL % formatted_search_string)
     top_result_url = None
     if html:
