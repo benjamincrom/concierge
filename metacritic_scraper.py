@@ -5,7 +5,7 @@ import html_manipulator
 import re
 
 
-METACRITIC_QUERY_STRING = "site:metacritic.com %s Reviews"
+METACRITIC_QUERY_STRING = "site:metacritic.com %s - Metacritic"
 
 METACRITIC_METASCORE_REGEX = re.compile(
     "<span class=\"score_value\" itemprop=\"ratingValue\">(\d+)</span>.*?"
@@ -23,8 +23,11 @@ METACRITIC_USERSCORE_REGEX = re.compile(
 
 def scrape_metacritic(title):
     metacritic_review_url = html_manipulator.get_top_google_result_url(METACRITIC_QUERY_STRING % title)
+    print 'kljfkdlsjf'
+    print METACRITIC_QUERY_STRING % title
+    print metacritic_review_url
     metacritic_review_html = html_manipulator.retrieve_html_from_url(metacritic_review_url)
-    
+
     if metacritic_review_html and re.search(title, metacritic_review_html):
         return_dict = {}
         metacritic_metascore_match = METACRITIC_METASCORE_REGEX.search(metacritic_review_html)
