@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
+
 import roger_ebert_scraper
 import rottentomatoes_scraper
 import imdb_scraper
 import metacritic_scraper
-
 
 
 def printout(title):
@@ -29,6 +29,8 @@ def printout(title):
     if type == "Movie" and imdb_title_obj_dict["year"] > 1959:
         metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, year, type)
         if metacritic_obj_dict:
+            print '#########################################'
+            print ' METACRITIC '
             for i,j in metacritic_obj_dict.iteritems():
                 print "%s:\t\t%s" %(i, j)
             print '#########################################'
@@ -36,16 +38,19 @@ def printout(title):
 
         rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(title, year)
         if rogerebert_obj_dict:
-            f = open('test.html', 'w')
-            f.write(rogerebert_obj_dict["formatted_review_text"])
-            f.close()
+            print "============================================"
+            print ' ROGEREBERT '
             for i,j in rogerebert_obj_dict.iteritems():
                 print "%s:\t\t%s" %(i, j)
             print "============================================"
 
         rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title, year)
-        for i,j in rottentomatoes_obj_dict.iteritems():
-            print "%s:\t\t%s" %(i, j)
+        if rottentomatoes_obj_dict:
+            print "''''''''''''''''''''''''''''''''''''''''''''"
+            print ' ROTTEN TOMATOES '
+            for i,j in rottentomatoes_obj_dict.iteritems():
+                print "%s:\t\t%s" %(i, j)
+            print "''''''''''''''''''''''''''''''''''''''''''''"
 
 if __name__ == '__main__':
     names = open('test_list.txt').readlines()
