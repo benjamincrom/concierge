@@ -27,32 +27,32 @@ EBERT_STARS_REGEX = re.compile('itemprop="reviewRating"(.+?)</span>', re.DOTALL)
 def scrape_rogerebert_data(title, year):
     ebert_review_url = html_manipulator.get_top_google_result_url(EBERT_GOOGLE_QUERY_STRING %(title, year))
     ebert_review_html = html_manipulator.retrieve_html_from_url(ebert_review_url)
-    review_text_match = EBERT_REVIEW_REGEX.search(ebert_review_html)
-    if review_text_match:
-        review_text = review_text_match.groups()[0]
-        formatted_review_text = _format_ebert_review_text(review_text)
+    return_dict = None
+    if ebert_review_html:
+        review_text_match = EBERT_REVIEW_REGEX.search(ebert_review_html)
+        if review_text_match:
+            review_text = review_text_match.groups()[0]
+            formatted_review_text = _format_ebert_review_text(review_text)
 
-        review_author_match = EBERT_AUTHOR_REGEX.search(ebert_review_html)
-        review_author = review_author_match.groups()[0]
+            review_author_match = EBERT_AUTHOR_REGEX.search(ebert_review_html)
+            review_author = review_author_match.groups()[0]
 
-        review_date_match = EBERT_DATE_REGEX.search(ebert_review_html)
-        review_date_string = review_date_match.groups()[0]
-        review_datetime = datetime.strptime(review_date_string, '%B %d, %Y')
-        review_date = review_datetime.date()
+            review_date_match = EBERT_DATE_REGEX.search(ebert_review_html)
+            review_date_string = review_date_match.groups()[0]
+            review_datetime = datetime.strptime(review_date_string, '%B %d, %Y')
+            review_date = review_datetime.date()
 
-        review_stars_match = EBERT_STARS_REGEX.search(ebert_review_html)
-        review_stars_string = review_stars_match.groups()[0]
-        review_percent_score = _compute_ebert_percent_score(review_stars_string)
+            review_stars_match = EBERT_STARS_REGEX.search(ebert_review_html)
+            review_stars_string = review_stars_match.groups()[0]
+            review_percent_score = _compute_ebert_percent_score(review_stars_string)
 
-        return_dict = {
-            "formatted_review_text":    formatted_review_text,
-            "review_author":            review_author,
-            "review_source":            EBERT_SITE_TITLE,
-            "review_date":              review_date.strftime("%Y-%m-%d"),
-            "review_percent_score":     review_percent_score,
-        }
-    else:
-        return_dict = None
+            return_dict = {
+                "formatted_review_text":    formatted_review_text,
+                "review_author":            review_author,
+                "review_source":            EBERT_SITE_TITLE,
+                "review_date":              review_date.strftime("%Y-%m-%d"),
+                "review_percent_score":     review_percent_score,
+            }
 
     return return_dict
 
