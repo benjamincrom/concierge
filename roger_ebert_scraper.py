@@ -26,6 +26,9 @@ EBERT_STARS_REGEX = re.compile('itemprop="reviewRating"(.+?)</span>', re.DOTALL)
 
 def scrape_rogerebert_data(title, year):
     ebert_review_url = html_manipulator.get_top_google_result_url(EBERT_GOOGLE_QUERY_STRING %(title, year))
+    print 'fjklsfdf'
+    print ebert_review_url
+    exit(1)
     ebert_review_html = html_manipulator.retrieve_html_from_url(ebert_review_url)
 
     return_dict = None
