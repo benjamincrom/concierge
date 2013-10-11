@@ -23,9 +23,6 @@ METACRITIC_USERSCORE_REGEX = re.compile(
 
 def scrape_metacritic(title):
     metacritic_review_url = html_manipulator.get_top_google_result_url(METACRITIC_QUERY_STRING % title)
-    print 'kljfkdlsjf'
-    print METACRITIC_QUERY_STRING % title
-    print metacritic_review_url
     metacritic_review_html = html_manipulator.retrieve_html_from_url(metacritic_review_url)
 
     if metacritic_review_html and re.search(title, metacritic_review_html):
