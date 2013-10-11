@@ -27,7 +27,7 @@ def printout(title):
 
     # netacritic, rogerebert, and rottentomatoes only take movies
     if type == "Movie" and imdb_title_obj_dict["year"] > 1959:
-        metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, year, type)
+        metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, type)
         if metacritic_obj_dict:
             print '#########################################'
             print ' METACRITIC '
