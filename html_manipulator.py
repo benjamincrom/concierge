@@ -48,7 +48,8 @@ def get_top_google_result_url(search_string):
 
 
 def retrieve_html_from_url(url):
-    if not url: return None
+    if not url:
+        return None
 
     html = None
     try:
@@ -57,7 +58,7 @@ def retrieve_html_from_url(url):
     except (AttributeError, UnicodeDecodeError):
         print RETRIEVE_HTML_ERROR % url
         raise
-    except (urllib2.URLError):
+    except urllib2.URLError:
         print RETRIEVE_HTML_ERROR % url
     return html
 

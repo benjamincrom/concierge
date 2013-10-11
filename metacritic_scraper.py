@@ -21,7 +21,7 @@ METACRITIC_USERSCORE_REGEX = re.compile(
 )
 
 
-def scrape_metacritic(title, type):
+def scrape_metacritic(title):
     metacritic_review_url = html_manipulator.get_top_google_result_url(METACRITIC_QUERY_STRING % title)
     metacritic_review_html = html_manipulator.retrieve_html_from_url(metacritic_review_url)
     
@@ -41,4 +41,3 @@ def scrape_metacritic(title, type):
         return_dict = None
 
     return return_dict
-
