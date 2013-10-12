@@ -8,6 +8,7 @@ import metacritic_scraper
 
 
 def printout(ebert_link, title, year):
+    print "%s (%s)" % (title, year)
     imdb_title_obj_dict = imdb_scraper.scrape_imdb_data("%s (%s)" % (title, year))
 
     title = imdb_title_obj_dict["title"]
@@ -26,7 +27,7 @@ def printout(ebert_link, title, year):
         print "%s:\t\t%s" % (i, j)
 
     # netacritic, rogerebert, and rottentomatoes only take movies
-    if media_type == "Movie" and imdb_title_obj_dict["year"] > 1959:
+    if media_type == "Movie" and year > 1959:
         metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title)
         if metacritic_obj_dict:
             print '#########################################'
@@ -56,4 +57,4 @@ if __name__ == '__main__':
     lines = open('test_list.txt').readlines()
     for line in lines:
         (ebert_link, title, year) = line.split(';')
-        printout(ebert_link, title, year)
+        printout(ebert_link.strip(), title.strip(), year.strip())
