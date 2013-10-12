@@ -1,16 +1,16 @@
 #!/usr/bin/python
 
-
-import roger_ebert_scraper
-import rottentomatoes_scraper
+import html_manipulator
 import imdb_scraper
 import metacritic_scraper
+import roger_ebert_scraper
+import rottentomatoes_scraper
 
 
-def printout(ebert_link, title, year):
+def printout(ebert_link, search_title, search_year):
     print '***********************************************************************************'
-    print "%s (%s)" % (title, year)
-    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(title, year)
+    print "%s (%s)" % (search_title, search_year)
+    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, search_year)
 
     title = imdb_title_obj_dict["title"]
     media_type = imdb_title_obj_dict["video_type"]
@@ -45,6 +45,7 @@ def printout(ebert_link, title, year):
                 print "%s:\t\t%s" % (i, j)
             print "============================================"
 
+
         rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title, year)
         if rottentomatoes_obj_dict:
             print "''''''''''''''''''''''''''''''''''''''''''''"
@@ -57,5 +58,5 @@ def printout(ebert_link, title, year):
 if __name__ == '__main__':
     lines = open('test_list.txt').readlines()
     for line in lines:
-        (ebert_link, title, year) = line.split(';')
-        printout(ebert_link.strip(), title.strip(), year.strip())
+        (ebert_review_url, ebert_title, ebert_year) = line.split(';')
+        printout(ebert_review_url.strip(), ebert_title.strip(), ebert_year.strip())

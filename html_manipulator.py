@@ -38,54 +38,71 @@ class MLStripper(HTMLParser):
 
 
 def get_top_google_result_url(search_string):
-    formatted_search_string = search_string.replace(' ', '+').replace('&','')
-    html = retrieve_html_from_url(GOOGLE_QUERY_URL % formatted_search_string)
+    """Return the url for the top google result returned when using this search string as a query.
+
+    This method prefers the top entry of 'Results for Similar Searches' if that section is present on the page.
+    Returns None if no Google results are returned.
+    """
     top_result_url = None
+    formatted_search_string = search_string.replace(' ', '+').replace('&', '')
+    html = retrieve_html_from_url(GOOGLE_QUERY_URL % formatted_search_string)
     if html:
         top_result_url_similar_match = GOOGLE_REGEX_SIMILAR.search(html)
         if top_result_url_similar_match:
             top_result_url = top_result_url_similar_match.groups()[0]
+
         else:
             top_result_url_search_match = GOOGLE_REGEX_SEARCH.search(html)
             if top_result_url_search_match:
                 top_result_url = top_result_url_search_match.groups()[0]
+
     return top_result_url
 
 
 def retrieve_html_from_url(url):
-    if not url:
-        return None
-
+    """Return the raw html found at the given URL"""
     html = None
-    try:
-        req = urllib2.Request(url, headers=SPOOFED_HEADERS)
-        html = urllib2.urlopen(req).read().decode('latin-1').encode('ascii', 'ignore')
-    except (AttributeError, UnicodeDecodeError):
-        print RETRIEVE_HTML_ERROR % url
-        raise
-    except urllib2.URLError as e:
-        print RETRIEVE_HTML_ERROR % url
-        print e.reason
+    if url:
+        try:
+            req = urllib2.Request(url, headers=SPOOFED_HEADERS)
+            html = urllib2.urlopen(req).read().decode('latin-1').encode('ascii', 'ignore')
+
+        except (AttributeError, UnicodeDecodeError):
+            print RETRIEVE_HTML_ERROR % url
+            raise
+
+        except urllib2.URLError as e:
+            print RETRIEVE_HTML_ERROR % url
+            print e.reason
+
     return html
 
 
 def remove_html_tags(html_str):
+    """Removes all html tags from the given string"""
+    return_str = None
     if html_str:
         s = MLStripper()
         s.feed(html_str.decode('latin-1').encode('ascii', 'ignore'))
         return_str = s.get_data()
-    else:
-        return_str = None
+
     return return_str
 
 
 def use_regex(given_regex, target_str, can_be_null):
+    """Searches for given regex in target string and returns the first group if the regex is found.
+
+    Returns None if the given rexex is not found and can_be_null is True.
+    Throws exception if given regex is not found and can_be_null is False.
+    """
+    return_str = None
     match = given_regex.search(target_str)
     try:
         return_str = str(match.groups()[0]).strip()
+
     except (AttributeError, IndexError):
-        return_str = None
         if not can_be_null:
             print REGEX_NOT_FOUND_ERROR % given_regex.pattern
             raise
+
     return return_str

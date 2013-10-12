@@ -34,12 +34,14 @@ ROTTENTOMATOES_YEAR_REGEX = re.compile("<span itemprop=\"name\">.*?\((\d\d\d\d)\
 
 
 def scrape_rottentomatoes(title, year):
+    return_dict = {}
     rottentomatoes_review_url = html_manipulator.get_top_google_result_url(ROTTENTOMATOES_QUERY_STRING % title)
     rottentomatoes_review_html = html_manipulator.retrieve_html_from_url(rottentomatoes_review_url)
 
     if re.search(title, rottentomatoes_review_html):
-        return_dict = {}
-        rottentomatoes_year = int(html_manipulator.use_regex(ROTTENTOMATOES_YEAR_REGEX, rottentomatoes_review_html, False))
+        rottentomatoes_year_str = html_manipulator.use_regex(ROTTENTOMATOES_YEAR_REGEX, rottentomatoes_review_html,
+                                                             False)
+        rottentomatoes_year = int(rottentomatoes_year_str)
         if rottentomatoes_year == year:
             rottentomatoes_all_critics_match = ROTTENTOMATOES_ALL_CRITICS_REGEX.search(rottentomatoes_review_html)
             if rottentomatoes_all_critics_match:
@@ -64,8 +66,5 @@ def scrape_rottentomatoes(title, year):
 
                 locale.setlocale(locale.LC_ALL, 'en_US.UTF8')
                 return_dict["audience_total"] = locale.atoi(rottentomatoes_audience_match.groups()[2])
-
-    else:
-        return_dict = None
 
     return return_dict

@@ -26,14 +26,11 @@ METACRITIC_USERSCORE_REGEX = re.compile(
 
 
 def scrape_metacritic(title, year):
+    return_dict = {}
     metacritic_review_url = html_manipulator.get_top_google_result_url(METACRITIC_QUERY_STRING % title)
     metacritic_review_html = html_manipulator.retrieve_html_from_url(metacritic_review_url)
-
     if metacritic_review_html and re.search(title, metacritic_review_html):
-        return_dict = {}
-
         metacritic_release_year = int(html_manipulator.use_regex(METACRITIC_RELEASE_YEAR_REGEX, metacritic_review_html, False))
-
         if metacritic_release_year == year:
             metacritic_metascore_match = METACRITIC_METASCORE_REGEX.search(metacritic_review_html)
             if metacritic_metascore_match:
@@ -44,8 +41,5 @@ def scrape_metacritic(title, year):
             if metacritic_userscore_match:
                 return_dict["metacritic_userscore_meter"] = float(metacritic_userscore_match.groups()[0]) / 10.0
                 return_dict["metacritic_userscore_total"] = int(metacritic_userscore_match.groups()[1])
-
-    else:
-        return_dict = None
 
     return return_dict
