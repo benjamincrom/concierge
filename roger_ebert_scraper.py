@@ -49,15 +49,13 @@ def scrape_rogerebert_data(ebert_review_url):
             review_datetime = datetime.strptime(review_date_string, '%B %d, %Y')
             review_date = review_datetime.date()
 
-            potential_years = [range(year - 2, year + 2)]
-            if review_date.year in potential_years:
-                return_dict = {
-                    "formatted_review_text":    formatted_review_text,
-                    "review_author":            review_author,
-                    "review_source":            EBERT_SITE_TITLE,
-                    "review_date":              review_date.strftime("%Y-%m-%d"),
-                    "review_percent_score":     review_percent_score,
-                }
+            return_dict = {
+                "formatted_review_text":    formatted_review_text,
+                "review_author":            review_author,
+                "review_source":            EBERT_SITE_TITLE,
+                "review_date":              review_date.strftime("%Y-%m-%d"),
+                "review_percent_score":     review_percent_score,
+            }
 
     return return_dict
 
