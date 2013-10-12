@@ -24,8 +24,10 @@ EBERT_REVIEW_REGEX = re.compile('<div itemprop="reviewBody">(.+?)</div>', re.DOT
 EBERT_STARS_REGEX = re.compile('itemprop="reviewRating"(.+?)</span>', re.DOTALL)
 
 
-def scrape_rogerebert_data(ebert_link, title, year):
-    ebert_review_url = ebert_link
+def scrape_rogerebert_data(ebert_review_url):
+    print 'fjklsfjkldsjfkldsf'
+    print ebert_review_url
+    print 'fjklsfjkldsjfkldsf'
     ebert_review_html = html_manipulator.retrieve_html_from_url(ebert_review_url)
 
     return_dict = None
@@ -47,7 +49,7 @@ def scrape_rogerebert_data(ebert_link, title, year):
             review_datetime = datetime.strptime(review_date_string, '%B %d, %Y')
             review_date = review_datetime.date()
 
-            potential_years = [year - 2, year - 1, year, year + 1, year + 2]
+            potential_years = [range(year - 2, year + 2)]
             if review_date.year in potential_years:
                 return_dict = {
                     "formatted_review_text":    formatted_review_text,

@@ -8,8 +8,9 @@ import metacritic_scraper
 
 
 def printout(ebert_link, title, year):
+    print '***********************************************************************************'
     print "%s (%s)" % (title, year)
-    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data("%s (%s)" % (title, year))
+    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(title, year)
 
     title = imdb_title_obj_dict["title"]
     media_type = imdb_title_obj_dict["video_type"]
@@ -27,8 +28,8 @@ def printout(ebert_link, title, year):
         print "%s:\t\t%s" % (i, j)
 
     # netacritic, rogerebert, and rottentomatoes only take movies
-    if media_type == "Movie" and year > 1959:
-        metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title)
+    if media_type == "Movie":
+        metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, year)
         if metacritic_obj_dict:
             print '#########################################'
             print ' METACRITIC '
@@ -36,7 +37,7 @@ def printout(ebert_link, title, year):
                 print "%s:\t\t%s" % (i, j)
             print '#########################################'
 
-        rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(ebert_link, title, year)
+        rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(ebert_link)
         if rogerebert_obj_dict:
             print "============================================"
             print ' ROGEREBERT '
@@ -44,7 +45,7 @@ def printout(ebert_link, title, year):
                 print "%s:\t\t%s" % (i, j)
             print "============================================"
 
-        rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title)
+        rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title, year)
         if rottentomatoes_obj_dict:
             print "''''''''''''''''''''''''''''''''''''''''''''"
             print ' ROTTEN TOMATOES '
