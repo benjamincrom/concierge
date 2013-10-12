@@ -6,11 +6,11 @@ import html_manipulator
 import re
 
 
-ROTTENTOMATOES_QUERY_STRING = "site:rottentomatoes.com %s %s"
+ROTTENTOMATOES_QUERY_STRING = "site:rottentomatoes.com %s"
 
 ROTTENTOMATOES_ALL_CRITICS_REGEX = re.compile(
     "<span itemprop=\"ratingValue\" id=\"all-critics-meter\".*?"
-    "class=\"meter .*? numeric \">(\d+)</span>.*?"
+    "class=\"meter .*? numeric .*?\">(\d+)</span>.*?"
     "<meta itemprop=\"name\" content=\"Tomatometer Score\" />.*?"
     "<p class=\"critic_stats\">.*?"
     "Average Rating: <span>([0-9]*\.?[0-9]+)/10</span><br />.*?"
@@ -19,21 +19,21 @@ ROTTENTOMATOES_ALL_CRITICS_REGEX = re.compile(
     re.DOTALL
 )
 ROTTENTOMATOES_TOP_CRITICS_REGEX = re.compile(
-    "<span id=\"all-critics-meter\" class=\"meter .*? numeric \">(\d+)</span>.*?"
+    "<span id=\"all-critics-meter\" class=\"meter .*? numeric .*?\">(\d+)</span>.*?"
     "<p class=\"critic_stats\">.*?Average Rating: <span>([0-9]*\.?[0-9]+)/10</span><br />.*?"
     "Critic Reviews: (\d+)<br />.*?Fresh: (\d+) \| Rotten: (\d+)</p>.*?</div>",
     re.DOTALL
 )
 ROTTENTOMATOES_AUDIENCE_REGEX = re.compile(
-    "<span class=\"meter .*? numeric \">(\d+)</span>.*?"
+    "<span class=\"meter .*? numeric .*?\">(\d+)</span>.*?"
     "<p class=\"critic_stats\">.*?<span class=\"subText liked_it\" >liked it</span><br/>.*?"
     "Average Rating: ([0-9]*\.?[0-9]+)/5<br/>.*?User Ratings: ([\d+,]*\d+).*?</p>",
     re.DOTALL
 )
 
 
-def scrape_rottentomatoes(title, year):
-    rottentomatoes_review_url = html_manipulator.get_top_google_result_url(ROTTENTOMATOES_QUERY_STRING % (title, year))
+def scrape_rottentomatoes(title):
+    rottentomatoes_review_url = html_manipulator.get_top_google_result_url(ROTTENTOMATOES_QUERY_STRING % title)
     rottentomatoes_review_html = html_manipulator.retrieve_html_from_url(rottentomatoes_review_url)
 
     if re.search(title, rottentomatoes_review_html):

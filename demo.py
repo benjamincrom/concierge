@@ -7,8 +7,8 @@ import imdb_scraper
 import metacritic_scraper
 
 
-def printout(title):
-    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(title)
+def printout(ebert_link, title, year):
+    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data("%s (%s)" % (title, year))
 
     title = imdb_title_obj_dict["title"]
     media_type = imdb_title_obj_dict["video_type"]
@@ -35,7 +35,7 @@ def printout(title):
                 print "%s:\t\t%s" % (i, j)
             print '#########################################'
 
-        rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(title, year)
+        rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(ebert_link, title, year)
         if rogerebert_obj_dict:
             print "============================================"
             print ' ROGEREBERT '
@@ -43,7 +43,7 @@ def printout(title):
                 print "%s:\t\t%s" % (i, j)
             print "============================================"
 
-        rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title, year)
+        rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title)
         if rottentomatoes_obj_dict:
             print "''''''''''''''''''''''''''''''''''''''''''''"
             print ' ROTTEN TOMATOES '
@@ -53,6 +53,7 @@ def printout(title):
 
 
 if __name__ == '__main__':
-    names = open('test_list.txt').readlines()
-    for name in names:
-        printout(name.strip())
+    lines = open('test_list.txt').readlines()
+    for line in lines:
+        (ebert_link, title, year) = line.split(';')
+        printout(ebert_link, title, year)

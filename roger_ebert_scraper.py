@@ -24,9 +24,9 @@ EBERT_REVIEW_REGEX = re.compile('<div itemprop="reviewBody">(.+?)</div>', re.DOT
 EBERT_STARS_REGEX = re.compile('itemprop="reviewRating"(.+?)</span>', re.DOTALL)
 
 
-def scrape_rogerebert_data(title, year):
-    ebert_review_url = html_manipulator.get_top_google_result_url(EBERT_GOOGLE_QUERY_STRING % (title, year))
-    ebert_review_html = html_manipulator.retrieve_html_from_url(ebert_review_url)
+def scrape_rogerebert_data(ebert_link, title, year):
+    ebert_review_url = ebert_link
+    eert_review_html = html_manipulator.retrieve_html_from_url(ebert_review_url)
 
     return_dict = None
     if ebert_review_html:
