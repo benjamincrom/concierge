@@ -15,7 +15,6 @@ def parse_title(search_title, search_year='', ebert_link=''):
         search_year = int(search_year)
         search_year_list = [search_year, search_year - 1, search_year + 1, search_year - 2, search_year + 2]
         for current_search_year in search_year_list:
-            print "jklfdjsklf " + str(current_search_year) + " fkjldjskf"
             imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, current_search_year)
             if imdb_title_obj_dict:
                 break
@@ -43,7 +42,7 @@ def parse_title(search_title, search_year='', ebert_link=''):
         print '--------------------------------------'
 
         if media_type == "TV Series":
-            season_list = range(1, imdb_title_obj_dict["tv_total_seasons"])
+            season_list = range(1, imdb_title_obj_dict["tv_total_seasons"] + 1)
             season_title_list = ["Season %s" % season_index for season_index in season_list]
             # Print Metacritic data for each season
             for season_title in season_title_list:
