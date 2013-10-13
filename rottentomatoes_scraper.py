@@ -6,6 +6,10 @@ import html_manipulator
 import re
 
 
+# Set locale to UTF8 US English
+locale.setlocale(locale.LC_ALL, 'en_US.UTF8')
+
+
 ROTTENTOMATOES_QUERY_STRING = "site:rottentomatoes.com %s"
 
 ROTTENTOMATOES_ALL_CRITICS_REGEX = re.compile(
@@ -34,11 +38,13 @@ ROTTENTOMATOES_YEAR_REGEX = re.compile("<span itemprop=\"name\">.*?\((\d\d\d\d)\
 
 
 def scrape_rottentomatoes(title, year):
+    """Scrape rottentomatoes stats for a given title and year and return values in a dict.
+
+    Return empty dict if page is not found or does not match regex."""
     return_dict = {}
     rottentomatoes_review_url = html_manipulator.get_top_google_result_url(ROTTENTOMATOES_QUERY_STRING % title)
     rottentomatoes_review_html = html_manipulator.retrieve_html_from_url(rottentomatoes_review_url)
-
-    if re.search(title, rottentomatoes_review_html):
+    if rottentomatoes_review_html and re.search(title, rottentomatoes_review_html):
         rottentomatoes_year_str = html_manipulator.use_regex(ROTTENTOMATOES_YEAR_REGEX, rottentomatoes_review_html,
                                                              False)
         rottentomatoes_year = int(rottentomatoes_year_str)
@@ -63,8 +69,6 @@ def scrape_rottentomatoes(title, year):
             if rottentomatoes_audience_match:
                 return_dict["audience_meter"] = float(rottentomatoes_audience_match.groups()[0]) / 100.0
                 return_dict["audience_avg_score"] = float(rottentomatoes_audience_match.groups()[1]) / 5.0
-
-                locale.setlocale(locale.LC_ALL, 'en_US.UTF8')
                 return_dict["audience_total"] = locale.atoi(rottentomatoes_audience_match.groups()[2])
 
     return return_dict

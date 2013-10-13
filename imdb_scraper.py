@@ -46,6 +46,7 @@ IMDB_YEAR_REGEX = re.compile("itemprop=\"name\".+?<a href=\"/year/(\d+)/", re.DO
 
 
 def scrape_imdb_data(search_title, year=''):
+    """Return IMDB data for the given title and year in a dict"""
     # Scrape IMDB page for this title
     imdb_url = html_manipulator.get_top_google_result_url(IMDB_GOOGLE_QUERY_STRING % (search_title, year))
     imdb_html = html_manipulator.retrieve_html_from_url(imdb_url)
@@ -56,10 +57,10 @@ def scrape_imdb_data(search_title, year=''):
     video_type = _determine_imdb_video_type(imdb_html)
 
     # Scrape IMDB budget page for this title
-
-    # Initialize media_type exclusive data
     imdb_budget_url = IMDB_BUDGET_URL % imdb_id
     imdb_budget_html = html_manipulator.retrieve_html_from_url(imdb_budget_url)
+
+    # Initialize media_type exclusive data
     tv_episode_index = None
     tv_episode_total = None
     show_title = None
@@ -83,7 +84,8 @@ def scrape_imdb_data(search_title, year=''):
         creator_str = html_manipulator.use_regex(IMDB_CREATOR_STR_REGEX, imdb_html, True)
         creator_list = _get_list_of_names(creator_str)
 
-        tv_total_seasons = html_manipulator.use_regex(IMDB_TOTAL_SEASONS_REGEX, imdb_html, True)
+        tv_total_seasons_str = html_manipulator.use_regex(IMDB_TOTAL_SEASONS_REGEX, imdb_html, True)
+        tv_total_seasons = int(tv_total_seasons_str)
 
     # Movies exclusively have gross
     elif video_type == IMDB_TYPE_MOVIE:
@@ -104,10 +106,6 @@ def scrape_imdb_data(search_title, year=''):
     genre_str = html_manipulator.use_regex(IMDB_GENRE_STR_REGEX, imdb_html, True)
     genre_list = IMDB_GENRE_LIST_REGEX.findall(genre_str)
 
-    year = html_manipulator.use_regex(IMDB_YEAR_REGEX, imdb_html, True)
-    if year:
-        year = int(year)  # if year is not null then make it an int
-
     director_str = html_manipulator.use_regex(IMDB_DIRECTOR_STR_REGEX, imdb_html, True)
     director_list = _get_list_of_names(director_str)
 
@@ -122,6 +120,10 @@ def scrape_imdb_data(search_title, year=''):
 
     tagline_html = html_manipulator.use_regex(IMDB_TAGLINE_REGEX, imdb_html, True)
     tagline = html_manipulator.remove_html_tags(tagline_html)
+
+    year = html_manipulator.use_regex(IMDB_YEAR_REGEX, imdb_html, True)
+    if year:
+        year = int(year)
 
     # Dump values into dictionary
     return_dict = {
@@ -159,6 +161,7 @@ def scrape_imdb_data(search_title, year=''):
 
 
 def _determine_imdb_video_type(imdb_html):
+    """Return a string which describes the media type of this imdb html page ['Movie', 'TV Episode', or 'TV Series']"""
     if IMDB_TV_EPISODE_REGEX.search(imdb_html):
         video_type = IMDB_TYPE_TV_EPISODE
     elif IMDB_TV_SERIES_REGEX.search(imdb_html):
@@ -169,6 +172,7 @@ def _determine_imdb_video_type(imdb_html):
 
 
 def _get_aspect_ratio_float_from_str(aspect_ratio_str):
+    """Returns a float describing the aspect ratio given a text string describing the aspect ratio"""
     aspect_ratio = None
     if aspect_ratio_str:
         width_height_match = IMDB_WIDTH_HEIGHT_REGEX.search(aspect_ratio_str)
@@ -179,6 +183,7 @@ def _get_aspect_ratio_float_from_str(aspect_ratio_str):
 
 
 def _get_list_of_names(name_str):
+    """Returns a python list of names given an IMDB HTML list of names"""
     if name_str:
         name_list = IMDB_NAME_LIST_REGEX.findall(name_str)
     else:

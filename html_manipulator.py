@@ -50,7 +50,6 @@ def get_top_google_result_url(search_string):
         top_result_url_similar_match = GOOGLE_REGEX_SIMILAR.search(html)
         if top_result_url_similar_match:
             top_result_url = top_result_url_similar_match.groups()[0]
-
         else:
             top_result_url_search_match = GOOGLE_REGEX_SEARCH.search(html)
             if top_result_url_search_match:
@@ -66,11 +65,9 @@ def retrieve_html_from_url(url):
         try:
             req = urllib2.Request(url, headers=SPOOFED_HEADERS)
             html = urllib2.urlopen(req).read().decode('latin-1').encode('ascii', 'ignore')
-
         except (AttributeError, UnicodeDecodeError):
             print RETRIEVE_HTML_ERROR % url
             raise
-
         except urllib2.URLError as e:
             print RETRIEVE_HTML_ERROR % url
             print e.reason
@@ -99,7 +96,6 @@ def use_regex(given_regex, target_str, can_be_null):
     match = given_regex.search(target_str)
     try:
         return_str = str(match.groups()[0]).strip()
-
     except (AttributeError, IndexError):
         if not can_be_null:
             print REGEX_NOT_FOUND_ERROR % given_regex.pattern

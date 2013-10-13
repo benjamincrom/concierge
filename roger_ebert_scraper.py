@@ -25,9 +25,9 @@ EBERT_STARS_REGEX = re.compile('itemprop="reviewRating"(.+?)</span>', re.DOTALL)
 
 
 def scrape_rogerebert_data(ebert_review_url):
+    """Returns rogerebert data from a review in a dict given the review url."""
+    return_dict = {}
     ebert_review_html = html_manipulator.retrieve_html_from_url(ebert_review_url)
-
-    return_dict = None
     if ebert_review_html:
         review_text_match = EBERT_REVIEW_REGEX.search(ebert_review_html)
         if review_text_match:
@@ -58,13 +58,15 @@ def scrape_rogerebert_data(ebert_review_url):
 
 
 def _compute_ebert_percent_score(review_stars_string):
+    """Given a stars string from the ebert HTML page this returns the float score on a scale from 0.0 to 1.0"""
     full_stars = len(re.findall(EBERT_FULL_STAR, review_stars_string))
     half_stars = len(re.findall(EBERT_HALF_STAR, review_stars_string))
-    review_percent_score = (full_stars*2 + half_stars)/8.0
-    return review_percent_score
+    review_score = (full_stars*2 + half_stars)/8.0
+    return review_score
 
 
-def _format_ebert_review_text(review_text):
-    review_text = review_text.replace('\n', '')
-    formatted_review_text = review_text.replace(LOCAL_LINK_PREFIX, EBERT_LINK_PREFIX)
-    return formatted_review_text
+def _format_ebert_review_text(review_html):
+    """Remove newlines from ebert review HTML and change local links to global links so the HTML can be reused"""
+    review_html_no_newlines = review_html.replace('\n', '')
+    formatted_review_html = review_html_no_newlines.replace(LOCAL_LINK_PREFIX, EBERT_LINK_PREFIX)
+    return formatted_review_html
