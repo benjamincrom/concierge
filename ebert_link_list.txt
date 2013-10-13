@@ -119,7 +119,7 @@ http://www.rogerebert.com/reviews/across-the-universe-2007;Across the Universe;2
 http://www.rogerebert.com/reviews/act-of-valor-2012;Act of Valor;2012
 http://www.rogerebert.com/reviews/action-jackson-1988;Action Jackson;1988
 http://www.rogerebert.com/reviews/adam-2009;Adam;2009
-http://www.rogerebert.com/reviews/adam-and-steve-2006;Adam amp; Steve;2006
+http://www.rogerebert.com/reviews/adam-and-steve-2006;Adam  Steve;2006
 http://www.rogerebert.com/reviews/adam-sandlers-eight-crazy-nights-2002;Adam Sandler's Eight Crazy Nights;2002
 http://www.rogerebert.com/reviews/the-addams-family-1991;The Addams Family;1991
 http://www.rogerebert.com/reviews/addams-family-values-1993;Addams Family Values;1993
@@ -135,9 +135,9 @@ http://www.rogerebert.com/reviews/the-adventures-of-ford-fairlane-1990;The Adven
 http://www.rogerebert.com/reviews/the-adventures-of-huck-finn-1993;The Adventures of Huck Finn;1993
 http://www.rogerebert.com/reviews/the-adventures-of-pinocchio-1996;The Adventures of Pinocchio;1996
 http://www.rogerebert.com/reviews/the-adventures-of-priscilla-queen-of-the-desert-1994;The Adventures of Priscilla, Queen of the Desert;1994
-http://www.rogerebert.com/reviews/the-adventures-of-rocky-and-bullwinkle-2000;The Adventures of Rocky amp; Bullwinkle;2000
+http://www.rogerebert.com/reviews/the-adventures-of-rocky-and-bullwinkle-2000;The Adventures of Rocky  Bullwinkle;2000
 http://www.rogerebert.com/reviews/the-adventures-of-sebastian-cole-1999;The Adventures of Sebastian Cole;1999
-http://www.rogerebert.com/reviews/the-adventures-of-shark-boy-and-lava-girl-in-3-d-2005;The Adventures of Shark Boy amp; Lava Girl in 3-D;2005
+http://www.rogerebert.com/reviews/the-adventures-of-shark-boy-and-lava-girl-in-3-d-2005;The Adventures of Shark Boy  Lava Girl in 3-D;2005
 http://www.rogerebert.com/reviews/the-adventures-of-tintin-2011;The Adventures of Tintin;2011
 http://www.rogerebert.com/reviews/the-advocate-1994;The Advocate;1994
 http://www.rogerebert.com/reviews/an-affair-of-love-2000;An Affair Of Love;2000
@@ -159,7 +159,7 @@ http://www.rogerebert.com/reviews/agnes-of-god-1985;Agnes Of God;1985
 http://www.rogerebert.com/reviews/agora-2010;Agora;2010
 http://www.rogerebert.com/reviews/the-agronomist-2004;The Agronomist;2004
 http://www.rogerebert.com/reviews/aileen-life-and-death-of-a-serial-killer-2004;Aileen: Life and Death of a Serial Killer;2004
-http://www.rogerebert.com/reviews/aimee-and-jaguar-2000;Aimee amp; Jaguar;2000
+http://www.rogerebert.com/reviews/aimee-and-jaguar-2000;Aimee  Jaguar;2000
 http://www.rogerebert.com/reviews/air-bud-1997;Air Bud;1997
 http://www.rogerebert.com/reviews/air-bud-2-golden-receiver-1998;Air Bud: Golden Receiver;1998
 http://www.rogerebert.com/reviews/air-force-one-1997;Air Force One;1997
@@ -176,7 +176,7 @@ http://www.rogerebert.com/reviews/alamo-bay-1985;Alamo Bay;1985
 http://www.rogerebert.com/reviews/an-alan-smithee-film-burn-hollywood-burn-1998;An Alan Smithee Film Burn Hollywood Burn;1998
 http://www.rogerebert.com/reviews/albert-nobbs-2012;Albert Nobbs;2012
 http://www.rogerebert.com/reviews/albino-alligator-1997;Albino Alligator;1997
-http://www.rogerebert.com/reviews/alex-and-emma-2003;Alex amp; Emma;2003
+http://www.rogerebert.com/reviews/alex-and-emma-2003;Alex  Emma;2003
 http://www.rogerebert.com/reviews/alex-cross-2012;Alex Cross;2012
 http://www.rogerebert.com/reviews/alex-and-the-gypsy-1976;Alex and the Gypsy;1976
 http://www.rogerebert.com/reviews/alex-in-wonderland-1970;Alex in Wonderland;1970
@@ -238,7 +238,7 @@ http://www.rogerebert.com/reviews/amelia-2009;Amelia;2009
 http://www.rogerebert.com/reviews/amelie-2001;Amelie;2001
 http://www.rogerebert.com/reviews/america-the-beautiful-2008;America the Beautiful;2008
 http://www.rogerebert.com/reviews/america-the-beautiful-2-the-thin-commandments-2011;America the Beautiful 2: The Thin Commandments;2011
-http://www.rogerebert.com/reviews/americas-heart-and-soul-2004;America's Heart amp; Soul;2004
+http://www.rogerebert.com/reviews/americas-heart-and-soul-2004;America's Heart  Soul;2004
 http://www.rogerebert.com/reviews/americas-sweethearts-2001;America's Sweethearts;2001
 http://www.rogerebert.com/reviews/the-american-2010;The American;2010
 http://www.rogerebert.com/reviews/american-anthem-1986;American Anthem;1986
@@ -620,7 +620,7 @@ http://www.rogerebert.com/reviews/bend-it-like-beckham-2003;Bend It Like Beckham
 http://www.rogerebert.com/reviews/benefit-of-the-doubt-1993;Benefit Of The Doubt;1993
 http://www.rogerebert.com/reviews/benjamin-1968;Benjamin;1968
 http://www.rogerebert.com/reviews/benji-off-the-leash-2004;Benji: Off the Leash!;2004
-http://www.rogerebert.com/reviews/benny-and-joon-1993;Benny amp; Joon;1993
+http://www.rogerebert.com/reviews/benny-and-joon-1993;Benny  Joon;1993
 http://www.rogerebert.com/reviews/bent-1997;Bent;1997
 http://www.rogerebert.com/reviews/beowulf-2007;Beowulf;2007
 http://www.rogerebert.com/reviews/bernie-2012;Bernie;2012
@@ -696,7 +696,7 @@ http://www.rogerebert.com/reviews/big-trouble-in-little-china-1986;Big Trouble I
 http://www.rogerebert.com/reviews/the-big-uneasy-2011;The Big Uneasy;2011
 http://www.rogerebert.com/reviews/the-big-year-2011;The Big Year;2011
 http://www.rogerebert.com/reviews/bigger-stronger-faster-2008;Bigger, Stronger, Faster;2008
-http://www.rogerebert.com/reviews/biggie-and-tupac-2003;Biggie amp; Tupac;2003
+http://www.rogerebert.com/reviews/biggie-and-tupac-2003;Biggie  Tupac;2003
 http://www.rogerebert.com/reviews/biker-boyz-2002;Biker Boyz;2002
 http://www.rogerebert.com/reviews/bill-cunningham-new-york-2011;Bill Cunningham New York;2011
 http://www.rogerebert.com/reviews/bill-w-2012;Bill W.;2012
@@ -766,7 +766,7 @@ http://www.rogerebert.com/reviews/blindman-1972;Blindman;1972
 http://www.rogerebert.com/reviews/blindness-2008;Blindness;2008
 http://www.rogerebert.com/reviews/blink-1994;Blink;1994
 http://www.rogerebert.com/reviews/bliss-1997;Bliss;1997
-http://www.rogerebert.com/reviews/blood-and-wine-1997;Blood amp; Wine;1997
+http://www.rogerebert.com/reviews/blood-and-wine-1997;Blood  Wine;1997
 http://www.rogerebert.com/reviews/blood-done-sign-my-name-2010;Blood Done Sign My Name;2010
 http://www.rogerebert.com/reviews/blood-guts-bullets-and-octane-1999;Blood Guts Bullets And Octane;1999
 http://www.rogerebert.com/reviews/blood-simple-15th-anniversary-2000;Blood Simple;1985
@@ -1192,7 +1192,7 @@ http://www.rogerebert.com/reviews/chicago-joe-and-the-showgirl-1990;Chicago Joe 
 http://www.rogerebert.com/reviews/chicken-little-2005;Chicken Little;2005
 http://www.rogerebert.com/reviews/chicken-run-2000;Chicken Run;2000
 http://www.rogerebert.com/reviews/chicken-with-plums-2012;Chicken with Plums;2012
-http://www.rogerebert.com/reviews/chico-and-rita-2012;Chico amp; Rita;2012
+http://www.rogerebert.com/reviews/chico-and-rita-2012;Chico  Rita;2012
 http://www.rogerebert.com/reviews/childs-play-1973;Child's Play;1973
 http://www.rogerebert.com/reviews/childs-play-1988;Child's Play;1988
 http://www.rogerebert.com/reviews/children-of-heaven-1999;Children of Heaven;1999
@@ -1431,7 +1431,7 @@ http://www.rogerebert.com/reviews/cousin-cousine-1976;Cousin Cousine;1976
 http://www.rogerebert.com/reviews/cousins-1989;Cousins;1989
 http://www.rogerebert.com/reviews/the-cove-2009;The Cove;2009
 http://www.rogerebert.com/reviews/the-cowboys-1972;The Cowboys;1972
-http://www.rogerebert.com/reviews/cowboys-and-aliens-2011;Cowboys amp; Aliens;2011
+http://www.rogerebert.com/reviews/cowboys-and-aliens-2011;Cowboys  Aliens;2011
 http://www.rogerebert.com/reviews/coyote-ugly-2000;Coyote Ugly;2000
 http://www.rogerebert.com/reviews/cradle-2-the-grave-2003;Cradle 2 The Grave;2003
 http://www.rogerebert.com/reviews/cradle-will-rock-1999;Cradle Will Rock;1999
@@ -1817,7 +1817,7 @@ http://www.rogerebert.com/reviews/dr-seuss-how-the-grinch-stole-christmas-2000;D
 http://www.rogerebert.com/reviews/dr-seuss-the-cat-in-the-hat-2003;Dr. Seuss' The Cat in The Hat;2003
 http://www.rogerebert.com/reviews/dr-strangelove-restored-version-2004;Dr. Strangelove (Restored Version);2004
 http://www.rogerebert.com/reviews/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-1994;Dr. Strangelove Or: How I Learned to Stop Worrying and Love the Bomb;1994
-http://www.rogerebert.com/reviews/dr-t-and-the-women-2000;Dr. T amp; The Women;2000
+http://www.rogerebert.com/reviews/dr-t-and-the-women-2000;Dr. T  The Women;2000
 http://www.rogerebert.com/reviews/dracula;Dracula;1979
 http://www.rogerebert.com/reviews/dracula-a-d-1972-1972;Dracula A. D. 1972;1972
 http://www.rogerebert.com/reviews/dracula-pages-from-a-virgins-diary-2003;Dracula: Pages From A Virgin's Diary;2003
@@ -1870,7 +1870,7 @@ http://www.rogerebert.com/reviews/the-dukes-of-hazzard-2005;The Dukes of Hazzard
 http://www.rogerebert.com/reviews/duma-2005;Duma;2005
 http://www.rogerebert.com/reviews/dumb-and-dumber-1994;Dumb and Dumber;1994
 http://www.rogerebert.com/reviews/dune-1984;Dune;1984
-http://www.rogerebert.com/reviews/dungeons-and-dragons-2000;Dungeons amp; Dragons;2000
+http://www.rogerebert.com/reviews/dungeons-and-dragons-2000;Dungeons  Dragons;2000
 http://www.rogerebert.com/reviews/duplex-2003;Duplex;2003
 http://www.rogerebert.com/reviews/duplicity-2009;Duplicity;2009
 http://www.rogerebert.com/reviews/dust-to-glory-2005;Dust to Glory;2005
@@ -1950,7 +1950,7 @@ http://www.rogerebert.com/reviews/ella-enchanted-2004;Ella Enchanted;2004
 http://www.rogerebert.com/reviews/elles-2012;Elles;2012
 http://www.rogerebert.com/reviews/ellie-parker-2005;Ellie Parker;2005
 http://www.rogerebert.com/reviews/elling-2002;Elling;2002
-http://www.rogerebert.com/reviews/elsa-and-fred-2008;Elsa amp; Fred;2008
+http://www.rogerebert.com/reviews/elsa-and-fred-2008;Elsa  Fred;2008
 http://www.rogerebert.com/reviews/elvira-madigan-1967;Elvira Madigan;1967
 http://www.rogerebert.com/reviews/the-embalmer-2003;The Embalmer;2003
 http://www.rogerebert.com/reviews/the-emigrants-1973;The Emigrants;1973
@@ -2055,7 +2055,7 @@ http://www.rogerebert.com/reviews/extract-2009;Extract;2009
 http://www.rogerebert.com/reviews/extraordinary-measures-2010;Extraordinary Measures;2010
 http://www.rogerebert.com/reviews/extreme-measures-1996;Extreme Measures;1996
 http://www.rogerebert.com/reviews/extreme-prejudice-1987;Extreme Prejudice;1987
-http://www.rogerebert.com/reviews/extremely-loud-and-incredibly-close-2012;Extremely Loud amp; Incredibly Close;2012
+http://www.rogerebert.com/reviews/extremely-loud-and-incredibly-close-2012;Extremely Loud  Incredibly Close;2012
 http://www.rogerebert.com/reviews/the-eye-2003;The Eye;2003
 http://www.rogerebert.com/reviews/eye-for-an-eye-1996;Eye For An Eye;1996
 http://www.rogerebert.com/reviews/eye-of-god-1998;Eye of God;1998
@@ -2117,7 +2117,7 @@ http://www.rogerebert.com/reviews/farewell-to-the-king-1989;Farewell to the King
 http://www.rogerebert.com/reviews/farewell-my-lovely-1975;Farewell, My Lovely;1975
 http://www.rogerebert.com/reviews/farewell-my-queen-2012;Farewell, My Queen;2012
 http://www.rogerebert.com/reviews/farinelli-1995;Farinelli;1995
-http://www.rogerebert.com/reviews/fast-and-furious-2009;Fast amp; Furious;2009
+http://www.rogerebert.com/reviews/fast-and-furious-2009;Fast  Furious;2009
 http://www.rogerebert.com/reviews/fast-break-1979;Fast Break;1979
 http://www.rogerebert.com/reviews/fast-five-2011;Fast Five;2011
 http://www.rogerebert.com/reviews/fast-food-fast-women-2001;Fast Food, Fast Women;2001
@@ -2125,7 +2125,7 @@ http://www.rogerebert.com/reviews/the-fast-runner-2002;The Fast Runner;2002
 http://www.rogerebert.com/reviews/fast-times-at-ridgemont-high-1982;Fast Times at Ridgemont High;1982
 http://www.rogerebert.com/reviews/the-fast-and-the-furious-2001;The Fast and the Furious;2001
 http://www.rogerebert.com/reviews/the-fast-and-the-furious-tokyo-drift-2006;The Fast and the Furious: Tokyo Drift;2006
-http://www.rogerebert.com/reviews/fast-cheap-and-out-of-control-1997;Fast, Cheap amp; Out of Control;1997
+http://www.rogerebert.com/reviews/fast-cheap-and-out-of-control-1997;Fast, Cheap  Out of Control;1997
 http://www.rogerebert.com/reviews/faster-2010;Faster;2010
 http://www.rogerebert.com/reviews/faster-pussycat-kill-kill-1995;Faster Pussycat! Kill! Kill!;1995
 http://www.rogerebert.com/reviews/fat-albert-2004;Fat Albert;2004
@@ -2378,7 +2378,7 @@ http://www.rogerebert.com/reviews/friday-the-13th-2009;Friday the 13th;2009
 http://www.rogerebert.com/reviews/friday-the-13th-part-2-1981;Friday the 13th, Part 2;1981
 http://www.rogerebert.com/reviews/fried-green-tomatoes-1992;Fried Green Tomatoes;1992
 http://www.rogerebert.com/reviews/friends-1971;Friends;1971
-http://www.rogerebert.com/reviews/friends-and-lovers-1999;Friends amp; Lovers;1999
+http://www.rogerebert.com/reviews/friends-and-lovers-1999;Friends  Lovers;1999
 http://www.rogerebert.com/reviews/the-friends-of-eddie-coyle-1973;The Friends of Eddie Coyle;1973
 http://www.rogerebert.com/reviews/friends-with-benefits-2011;Friends with Benefits;2011
 http://www.rogerebert.com/reviews/friends-with-kids-2012;Friends with Kids;2012
@@ -2922,7 +2922,7 @@ http://www.rogerebert.com/reviews/higher-ground-2011;Higher Ground;2011
 http://www.rogerebert.com/reviews/higher-learning-1995;Higher Learning;1995
 http://www.rogerebert.com/reviews/highlander-2-the-quickening-1991;Highlander 2: The Quickening;1991
 http://www.rogerebert.com/reviews/highway-61-1992;Highway 61;1992
-http://www.rogerebert.com/reviews/hijacking-catastrophe-911-fear-and-selling-the-american-empire-2004;Hijacking Catastrophe: 9/11, Fear amp; Selling the American Empire;2004
+http://www.rogerebert.com/reviews/hijacking-catastrophe-911-fear-and-selling-the-american-empire-2004;Hijacking Catastrophe: 9/11, Fear  Selling the American Empire;2004
 http://www.rogerebert.com/reviews/hilary-and-jackie-1999;Hilary And Jackie;1999
 http://www.rogerebert.com/reviews/the-hills-have-eyes-2006;The Hills Have Eyes;2006
 http://www.rogerebert.com/reviews/himalaya-2001;Himalaya;2001
@@ -3047,7 +3047,7 @@ http://www.rogerebert.com/reviews/how-to-make-love-to-a-negro-without-getting-ti
 http://www.rogerebert.com/reviews/how-to-deal-2003;How to Deal;2003
 http://www.rogerebert.com/reviews/how-to-get-ahead-in-advertising-1989;How to Get Ahead in Advertising;1989
 http://www.rogerebert.com/reviews/how-to-live-forever-2011;How to Live Forever;2011
-http://www.rogerebert.com/reviews/how-to-lose-friends-and-alienate-people-2008;How to Lose Friends amp; Alienate People;2008
+http://www.rogerebert.com/reviews/how-to-lose-friends-and-alienate-people-2008;How to Lose Friends  Alienate People;2008
 http://www.rogerebert.com/reviews/how-to-save-a-marriage-and-ruin-your-life-1968;How to Save A Marriage and Ruin Your Life;1968
 http://www.rogerebert.com/reviews/how-to-survive-a-plague-2012;How to Survive a Plague;2012
 http://www.rogerebert.com/reviews/how-to-train-your-dragon-2010;How to Train Your Dragon;2010
@@ -3085,7 +3085,7 @@ http://www.rogerebert.com/reviews/husbands-1970;Husbands;1970
 http://www.rogerebert.com/reviews/husbands-and-wives-1992;Husbands And Wives;1992
 http://www.rogerebert.com/reviews/hush-1998;Hush;1998
 http://www.rogerebert.com/reviews/hustle-1976;Hustle;1976
-http://www.rogerebert.com/reviews/hustle-and-flow-2005;Hustle amp; Flow;2005
+http://www.rogerebert.com/reviews/hustle-and-flow-2005;Hustle  Flow;2005
 http://www.rogerebert.com/reviews/hyde-park-on-hudson-2012;Hyde Park on Hudson;2012
 http://www.rogerebert.com/reviews/hype-1997;Hype!;1997
 http://www.rogerebert.com/reviews/hysteria-2012;Hysteria;2012
@@ -3178,7 +3178,7 @@ http://www.rogerebert.com/reviews/images-1974;Images;1974
 http://www.rogerebert.com/reviews/the-imaginarium-of-dr-parnassus-2010;The Imaginarium of Dr. Parnassus;2010
 http://www.rogerebert.com/reviews/imaginary-crimes-1994;Imaginary Crimes;1994
 http://www.rogerebert.com/reviews/imaginary-heroes-2005;Imaginary Heroes;2005
-http://www.rogerebert.com/reviews/imagine-me-and-you-2006;Imagine Me amp; You;2006
+http://www.rogerebert.com/reviews/imagine-me-and-you-2006;Imagine Me  You;2006
 http://www.rogerebert.com/reviews/imagine-that-2009;Imagine That;2009
 http://www.rogerebert.com/reviews/imagine-john-lennon-1988;Imagine: John Lennon;1988
 http://www.rogerebert.com/reviews/immediate-family-1989;Immediate Family;1989
@@ -3190,7 +3190,7 @@ http://www.rogerebert.com/reviews/the-impossible-2012;The Impossible;2012
 http://www.rogerebert.com/reviews/the-impostors-1998;The Impostors;1998
 http://www.rogerebert.com/reviews/impromptu-1991;Impromptu;1991
 http://www.rogerebert.com/reviews/impulse-1990;Impulse;1990
-http://www.rogerebert.com/reviews/in-and-out-1997;In amp; Out;1997
+http://www.rogerebert.com/reviews/in-and-out-1997;In  Out;1997
 http://www.rogerebert.com/reviews/in-america-2003;In America;2003
 http://www.rogerebert.com/reviews/in-bruges-2008;In Bruges;2008
 http://www.rogerebert.com/reviews/in-country-1989;In Country;1989
@@ -3343,7 +3343,7 @@ http://www.rogerebert.com/reviews/jds-revenge-1976;J.D.'s Revenge;1976
 http://www.rogerebert.com/reviews/jcvd-2008;JCVD;2008
 http://www.rogerebert.com/reviews/johnson-family-vacation-2004;JOHNSON FAMILY VACATION;2004
 http://www.rogerebert.com/reviews/jack-1996;Jack;1996
-http://www.rogerebert.com/reviews/jack-and-sarah-1996;Jack amp; Sarah;1996
+http://www.rogerebert.com/reviews/jack-and-sarah-1996;Jack  Sarah;1996
 http://www.rogerebert.com/reviews/jack-frost-1998;Jack Frost;1998
 http://www.rogerebert.com/reviews/jack-goes-boating-2010;Jack Goes Boating;2010
 http://www.rogerebert.com/reviews/jack-johnson-1971;Jack Johnson;1971
@@ -3384,7 +3384,7 @@ http://www.rogerebert.com/reviews/jeepers-creepers-2-2003;Jeepers Creepers 2;200
 http://www.rogerebert.com/reviews/jeff-who-lives-at-home-2012;Jeff Who Lives at Home;2012
 http://www.rogerebert.com/reviews/jefferson-in-paris-1995;Jefferson In Paris;1995
 http://www.rogerebert.com/reviews/jeffrey-1995;Jeffrey;1995
-http://www.rogerebert.com/reviews/jekyll-and-hyde-together-again-1982;Jekyll amp; Hyde... Together Again;1982
+http://www.rogerebert.com/reviews/jekyll-and-hyde-together-again-1982;Jekyll  Hyde... Together Again;1982
 http://www.rogerebert.com/reviews/jellyfish-2008;Jellyfish;2008
 http://www.rogerebert.com/reviews/jennifer-8-1992;Jennifer 8;1992
 http://www.rogerebert.com/reviews/jennifers-body-2009;Jennifer's Body;2009
@@ -3453,7 +3453,7 @@ http://www.rogerebert.com/reviews/juice-1992;Juice;1992
 http://www.rogerebert.com/reviews/julia-1977;Julia;1977
 http://www.rogerebert.com/reviews/julia-2009;Julia;2009
 http://www.rogerebert.com/reviews/julia-and-julia-1988;Julia and Julia;1988
-http://www.rogerebert.com/reviews/julie-and-julia-2009;Julie amp; Julia;2009
+http://www.rogerebert.com/reviews/julie-and-julia-2009;Julie  Julia;2009
 http://www.rogerebert.com/reviews/julien-donkey-boy-1999;Julien Donkey-Boy;1999
 http://www.rogerebert.com/reviews/julius-caesar-1971;Julius Caesar;1971
 http://www.rogerebert.com/reviews/jumanji-1995;Jumanji;1995
@@ -3505,7 +3505,7 @@ http://www.rogerebert.com/reviews/kansas-city-1996;Kansas City;1996
 http://www.rogerebert.com/reviews/the-karate-kid-1984;The Karate Kid;1984
 http://www.rogerebert.com/reviews/the-karate-kid-2010;The Karate Kid;2010
 http://www.rogerebert.com/reviews/the-karate-kid-part-iii-1989;The Karate Kid Part III;1989
-http://www.rogerebert.com/reviews/kate-and-leopold-2001;Kate amp; Leopold;2001
+http://www.rogerebert.com/reviews/kate-and-leopold-2001;Kate  Leopold;2001
 http://www.rogerebert.com/reviews/katyn-2009;Katyn;2009
 http://www.rogerebert.com/reviews/kazaam-1996;Kazaam;1996
 http://www.rogerebert.com/reviews/keane-2005;Keane;2005
@@ -3518,7 +3518,7 @@ http://www.rogerebert.com/reviews/key-exchange-1985;Key Exchange;1985
 http://www.rogerebert.com/reviews/keyhole-2012;Keyhole;2012
 http://www.rogerebert.com/reviews/kick-ass-2010;Kick-Ass;2010
 http://www.rogerebert.com/reviews/kicked-in-the-head-1997;Kicked In The Head;1997
-http://www.rogerebert.com/reviews/kicking-and-screaming-2005;Kicking amp; Screaming;2005
+http://www.rogerebert.com/reviews/kicking-and-screaming-2005;Kicking  Screaming;2005
 http://www.rogerebert.com/reviews/kicking-and-screaming-1995;Kicking and Screaming;1995
 http://www.rogerebert.com/reviews/the-kid-stays-in-the-picture-2002;The Kid Stays in the Picture;2002
 http://www.rogerebert.com/reviews/the-kid-and-i-2005;The Kid and I;2005
@@ -3599,7 +3599,7 @@ http://www.rogerebert.com/reviews/kung-fu-hustle-2005;Kung Fu Hustle;2005
 http://www.rogerebert.com/reviews/kung-fu-panda-2008;Kung Fu Panda;2008
 http://www.rogerebert.com/reviews/kung-fu-panda-2-2011;Kung Fu Panda 2;2011
 http://www.rogerebert.com/reviews/kung-fu-master-1989;Kung-fu master!;1989
-http://www.rogerebert.com/reviews/kurt-and-courtney-1998;Kurt amp; Courtney;1998
+http://www.rogerebert.com/reviews/kurt-and-courtney-1998;Kurt  Courtney;1998
 http://www.rogerebert.com/reviews/kwik-stop-2002;Kwik Stop;2002
 http://www.rogerebert.com/reviews/ladolescente-1983;L'Adolescente;1983
 http://www.rogerebert.com/reviews/lenfant-2006;L'Enfant;2006
@@ -3757,7 +3757,7 @@ http://www.rogerebert.com/reviews/lebanon-2010;Lebanon;2010
 http://www.rogerebert.com/reviews/left-luggage-2001;Left Luggage;2001
 http://www.rogerebert.com/reviews/legal-eagles-1986;Legal Eagles;1986
 http://www.rogerebert.com/reviews/legally-blonde-2001;Legally Blonde;2001
-http://www.rogerebert.com/reviews/legally-blonde-2-red-white-and-blonde-2003;Legally Blonde 2: Red, White amp; Blonde;2003
+http://www.rogerebert.com/reviews/legally-blonde-2-red-white-and-blonde-2003;Legally Blonde 2: Red, White  Blonde;2003
 http://www.rogerebert.com/reviews/legend-1986;Legend;1986
 http://www.rogerebert.com/reviews/the-legend-of-1900-1999;The Legend Of 1900;1999
 http://www.rogerebert.com/reviews/the-legend-of-bagger-vance-2000;The Legend Of Bagger Vance;2000
@@ -3834,7 +3834,7 @@ http://www.rogerebert.com/reviews/like-father-like-son-1987;Like Father Like Son
 http://www.rogerebert.com/reviews/like-mike-2002;Like Mike;2002
 http://www.rogerebert.com/reviews/like-water-for-chocolate-1993;Like Water For Chocolate;1993
 http://www.rogerebert.com/reviews/lili-marleen-1981;Lili Marleen;1981
-http://www.rogerebert.com/reviews/lilo-and-stitch-2002;Lilo amp; Stitch;2002
+http://www.rogerebert.com/reviews/lilo-and-stitch-2002;Lilo  Stitch;2002
 http://www.rogerebert.com/reviews/lily-tomlin-1987;Lily Tomlin;1987
 http://www.rogerebert.com/reviews/lilya-4-ever-2003;Lilya 4-Ever;2003
 http://www.rogerebert.com/reviews/limbo-1999;Limbo;1999
@@ -3849,7 +3849,7 @@ http://www.rogerebert.com/reviews/the-lion-king-1994;The Lion King;1994
 http://www.rogerebert.com/reviews/the-lion-in-winter-1968;The Lion in Winter;1968
 http://www.rogerebert.com/reviews/lions-for-lambs-2007;Lions for Lambs;2007
 http://www.rogerebert.com/reviews/lipstick-1976;Lipstick;1976
-http://www.rogerebert.com/reviews/lipstick-and-dynamite-piss-and-vinegar-the-first-ladies-of-wrestling-2005;Lipstick amp; Dynamite, Piss amp; Vinegar: The First Ladies of Wrestling;2005
+http://www.rogerebert.com/reviews/lipstick-and-dynamite-piss-and-vinegar-the-first-ladies-of-wrestling-2005;Lipstick  Dynamite, Piss  Vinegar: The First Ladies of Wrestling;2005
 http://www.rogerebert.com/reviews/lisa-1990;Lisa;1990
 http://www.rogerebert.com/reviews/listen-up-the-lives-of-quincy-jones-1990;Listen Up: The Lives Of Quincy Jones;1990
 http://www.rogerebert.com/reviews/lisztomania-1975;Lisztomania;1975
@@ -3947,7 +3947,7 @@ http://www.rogerebert.com/reviews/the-losers-2010;The Losers;2010
 http://www.rogerebert.com/reviews/losing-isaiah-1995;Losing Isaiah;1995
 http://www.rogerebert.com/reviews/the-loss-of-sexual-innocence-1999;The Loss Of Sexual Innocence;1999
 http://www.rogerebert.com/reviews/the-loss-of-a-teardrop-diamond-2010;The Loss of a Teardrop Diamond;2010
-http://www.rogerebert.com/reviews/lost-and-found-1999;Lost amp; Found;1999
+http://www.rogerebert.com/reviews/lost-and-found-1999;Lost  Found;1999
 http://www.rogerebert.com/reviews/lost-and-delirious-2001;Lost And Delirious;2001
 http://www.rogerebert.com/reviews/lost-angels-1989;Lost Angels;1989
 http://www.rogerebert.com/reviews/the-lost-boys-1987;The Lost Boys;1987
@@ -3967,8 +3967,8 @@ http://www.rogerebert.com/reviews/lost-in-space-1998;Lost in Space;1998
 http://www.rogerebert.com/reviews/a-lot-like-love-2005;A Lot Like Love;2005
 http://www.rogerebert.com/reviews/louder-than-a-bomb-2011;Louder Than a Bomb;2011
 http://www.rogerebert.com/reviews/louie-bluie-1986;Louie Bluie;1986
-http://www.rogerebert.com/reviews/love-and-basketball-2000;Love amp; Basketball;2000
-http://www.rogerebert.com/reviews/love-and-sex-2000;Love amp; Sex;2000
+http://www.rogerebert.com/reviews/love-and-basketball-2000;Love  Basketball;2000
+http://www.rogerebert.com/reviews/love-and-sex-2000;Love  Sex;2000
 http://www.rogerebert.com/reviews/love-actually-2003;Love Actually;2003
 http://www.rogerebert.com/reviews/love-affair-1994;Love Affair;1994
 http://www.rogerebert.com/reviews/a-love-affair-of-sorts-2011;A Love Affair of Sorts;2011
@@ -4026,7 +4026,7 @@ http://www.rogerebert.com/reviews/the-lucky-ones-2008;The Lucky Ones;2008
 http://www.rogerebert.com/reviews/lucia-lucia-2003;Lucía, Lucía;2003
 http://www.rogerebert.com/reviews/ludwig-1973;Ludwig;1973
 http://www.rogerebert.com/reviews/lumiere-1977;Lumiere;1977
-http://www.rogerebert.com/reviews/lumiere-and-company-1996;Lumière amp; Company;1996
+http://www.rogerebert.com/reviews/lumiere-and-company-1996;Lumière  Company;1996
 http://www.rogerebert.com/reviews/lumumba-2001;Lumumba;2001
 http://www.rogerebert.com/reviews/luna-1979;Luna;1979
 http://www.rogerebert.com/reviews/lust-in-the-dust-1985;Lust In the Dust;1985
@@ -4149,7 +4149,7 @@ http://www.rogerebert.com/reviews/manic-2003;Manic;2003
 http://www.rogerebert.com/reviews/manito-2003;Manito;2003
 http://www.rogerebert.com/reviews/the-manitou-1978;The Manitou;1978
 http://www.rogerebert.com/reviews/mannequin-1987;Mannequin;1987
-http://www.rogerebert.com/reviews/manny-and-lo-1996;Manny amp; Lo;1996
+http://www.rogerebert.com/reviews/manny-and-lo-1996;Manny  Lo;1996
 http://www.rogerebert.com/reviews/manon-of-the-spring-1987;Manon of the Spring;1987
 http://www.rogerebert.com/reviews/mansfield-park-1999;Mansfield Park;1999
 http://www.rogerebert.com/reviews/the-manson-family-2004;The Manson Family;2004
@@ -4169,7 +4169,7 @@ http://www.rogerebert.com/reviews/marie-a-true-story-1985;Marie: A True Story;19
 http://www.rogerebert.com/reviews/marilyn-hotchkiss-ballroom-dancing-and-charm-school-2006;Marilyn Hotchkiss' Ballroom Dancing and Charm School;2006
 http://www.rogerebert.com/reviews/marius-and-jeannette-1998;Marius and Jeannette;1998
 http://www.rogerebert.com/reviews/marley-2012;Marley;2012
-http://www.rogerebert.com/reviews/marley-and-me-2008;Marley amp; Me;2008
+http://www.rogerebert.com/reviews/marley-and-me-2008;Marley  Me;2008
 http://www.rogerebert.com/reviews/marlowe-1969;Marlowe;1969
 http://www.rogerebert.com/reviews/marmaduke-2010;Marmaduke;2010
 http://www.rogerebert.com/reviews/marooned-1969;Marooned;1969
@@ -4183,7 +4183,7 @@ http://www.rogerebert.com/reviews/martha-and-ethel-1995;Martha And Ethel;1995
 http://www.rogerebert.com/reviews/martha-marcy-may-marlene-2011;Martha Marcy May Marlene;2011
 http://www.rogerebert.com/reviews/martian-child-2007;Martian Child;2007
 http://www.rogerebert.com/reviews/martin-lawrence-live-runteldat-2002;Martin Lawrence Live: Runteldat;2002
-http://www.rogerebert.com/reviews/marvin-and-tige-1985;Marvin amp; Tige;1985
+http://www.rogerebert.com/reviews/marvin-and-tige-1985;Marvin  Tige;1985
 http://www.rogerebert.com/reviews/marvins-room-1997;Marvin's Room;1997
 http://www.rogerebert.com/reviews/mary-reilly-1996;Mary Reilly;1996
 http://www.rogerebert.com/reviews/mary-shelleys-frankenstein-1994;Mary Shelley's Frankenstein;1994
@@ -4224,13 +4224,13 @@ http://www.rogerebert.com/reviews/maya-lin-a-strong-clear-vision-1996;Maya Lin: 
 http://www.rogerebert.com/reviews/maybe--maybe-not-1996;Maybe... Maybe Not;1996
 http://www.rogerebert.com/reviews/mayerling-1969;Mayerling;1969
 http://www.rogerebert.com/reviews/maze-2001;Maze;2001
-http://www.rogerebert.com/reviews/me-and-my-matchmaker-1996;Me amp; My Matchmaker;1996
+http://www.rogerebert.com/reviews/me-and-my-matchmaker-1996;Me  My Matchmaker;1996
 http://www.rogerebert.com/reviews/me-myself-i-2000;Me Myself I;2000
 http://www.rogerebert.com/reviews/me-without-you-2002;Me Without You;2002
 http://www.rogerebert.com/reviews/me-you-them-2001;Me You Them;2001
 http://www.rogerebert.com/reviews/me-and-orson-welles-2009;Me and Orson Welles;2009
 http://www.rogerebert.com/reviews/me-and-you-and-everyone-we-know-2005;Me and You and Everyone We Know;2005
-http://www.rogerebert.com/reviews/me-myself-and-irene-2000;Me, Myself amp; Irene;2000
+http://www.rogerebert.com/reviews/me-myself-and-irene-2000;Me, Myself  Irene;2000
 http://www.rogerebert.com/reviews/me-natalie-1969;Me, Natalie;1969
 http://www.rogerebert.com/reviews/mea-maxima-culpa-silence-in-the-house-of-god-2012;Mea Maxima Culpa: Silence In The House of God;2012
 http://www.rogerebert.com/reviews/mean-creek-2004;Mean Creek;2004
@@ -4450,7 +4450,7 @@ http://www.rogerebert.com/reviews/mouse-hunt-1997;Mouse Hunt;1997
 http://www.rogerebert.com/reviews/moving-midway-2008;Moving Midway;2008
 http://www.rogerebert.com/reviews/moving-the-mountain-1995;Moving The Mountain;1995
 http://www.rogerebert.com/reviews/mozarts-sister-2011;Mozart's Sister;2011
-http://www.rogerebert.com/reviews/mr-and-mrs-smith-2005;Mr. amp; Mrs. Smith;2005
+http://www.rogerebert.com/reviews/mr-and-mrs-smith-2005;Mr.  Mrs. Smith;2005
 http://www.rogerebert.com/reviews/mr-3000-2004;Mr. 3000;2004
 http://www.rogerebert.com/reviews/mr-baseball-1992;Mr. Baseball;1992
 http://www.rogerebert.com/reviews/mr-death-the-rise-and-fall-of-fred-a-leuchter-jr-2000;Mr. Death: The Rise And Fall Of Fred A. Leuchter, Jr.;2000
@@ -4655,7 +4655,7 @@ http://www.rogerebert.com/reviews/the-next-three-days-2010;The Next Three Days;2
 http://www.rogerebert.com/reviews/niagara-niagara-1998;Niagara Niagara;1998
 http://www.rogerebert.com/reviews/nicholas-nickleby-2003;Nicholas Nickleby;2003
 http://www.rogerebert.com/reviews/nicholas-and-alexandra-1972;Nicholas and Alexandra;1972
-http://www.rogerebert.com/reviews/nick-and-norahs-infinite-playlist-2008;Nick amp; Norah's Infinite Playlist;2008
+http://www.rogerebert.com/reviews/nick-and-norahs-infinite-playlist-2008;Nick  Norah's Infinite Playlist;2008
 http://www.rogerebert.com/reviews/nick-and-jane-1997;Nick And Jane;1997
 http://www.rogerebert.com/reviews/nick-nolte-no-exit-2010;Nick Nolte: No Exit;2010
 http://www.rogerebert.com/reviews/nick-of-time-1995;Nick Of Time;1995
@@ -4994,7 +4994,7 @@ http://www.rogerebert.com/reviews/pay-it-forward-2000;Pay It Forward;2000
 http://www.rogerebert.com/reviews/payback-1999;Payback;1999
 http://www.rogerebert.com/reviews/paycheck-2003;Paycheck;2003
 http://www.rogerebert.com/reviews/payday-1973;Payday;1973
-http://www.rogerebert.com/reviews/peace-love-and-misunderstanding-2012;Peace, Love amp; Misunderstanding;2012
+http://www.rogerebert.com/reviews/peace-love-and-misunderstanding-2012;Peace, Love  Misunderstanding;2012
 http://www.rogerebert.com/reviews/peaceful-warrior-2006;Peaceful Warrior;2006
 http://www.rogerebert.com/reviews/the-peacemaker-1997;The Peacemaker;1997
 http://www.rogerebert.com/reviews/pearl-harbor-2001;Pearl Harbor;2001
@@ -5008,7 +5008,7 @@ http://www.rogerebert.com/reviews/pennies-from-heaven-1981;Pennies from Heaven;1
 http://www.rogerebert.com/reviews/the-penthouse-1967;The Penthouse;1967
 http://www.rogerebert.com/reviews/people-like-us-2012;People Like Us;2012
 http://www.rogerebert.com/reviews/the-people-next-door-1970;The People Next Door;1970
-http://www.rogerebert.com/reviews/percy-jackson-and-the-olympians-the-lightning-thiefbr-2010;Percy Jackson amp; the Olympians: The Lightning Thief;2010
+http://www.rogerebert.com/reviews/percy-jackson-and-the-olympians-the-lightning-thiefbr-2010;Percy Jackson  the Olympians: The Lightning Thief;2010
 http://www.rogerebert.com/reviews/the-perez-family-1995;The Perez Family;1995
 http://www.rogerebert.com/reviews/a-perfect-candidate-1996;A Perfect Candidate;1996
 http://www.rogerebert.com/reviews/a-perfect-couple-1979;A Perfect Couple;1979
@@ -5185,7 +5185,7 @@ http://www.rogerebert.com/reviews/primary-colors-1998;Primary Colors;1998
 http://www.rogerebert.com/reviews/prime-2005;Prime;2005
 http://www.rogerebert.com/reviews/prime-cut-1972;Prime Cut;1972
 http://www.rogerebert.com/reviews/primer-2004;Primer;2004
-http://www.rogerebert.com/reviews/the-prince-and-me-2004;The Prince amp; Me;2004
+http://www.rogerebert.com/reviews/the-prince-and-me-2004;The Prince  Me;2004
 http://www.rogerebert.com/reviews/the-prince-of-egypt-1998;The Prince Of Egypt;1998
 http://www.rogerebert.com/reviews/prince-of-tides-1991;Prince Of Tides;1991
 http://www.rogerebert.com/reviews/prince-of-darkness-1987;Prince of Darkness;1987
@@ -5307,7 +5307,7 @@ http://www.rogerebert.com/reviews/the-rage-carrie-2-1999;The Rage: Carrie 2;1999
 http://www.rogerebert.com/reviews/raggedy-man-1981;Raggedy Man;1981
 http://www.rogerebert.com/reviews/ragtime-1981;Ragtime;1981
 http://www.rogerebert.com/reviews/the-raid-redemption-2012;The Raid: Redemption;2012
-http://www.rogerebert.com/reviews/rails-and-ties-2007;Rails amp; Ties;2007
+http://www.rogerebert.com/reviews/rails-and-ties-2007;Rails  Ties;2007
 http://www.rogerebert.com/reviews/rain-man-1988;Rain Man;1988
 http://www.rogerebert.com/reviews/the-rain-people-1969;The Rain People;1969
 http://www.rogerebert.com/reviews/rain-without-thunder-1993;Rain Without Thunder;1993
@@ -5426,7 +5426,7 @@ http://www.rogerebert.com/reviews/restless-2011;Restless;2011
 http://www.rogerebert.com/reviews/restoration-1996;Restoration;1996
 http://www.rogerebert.com/reviews/restrepo-2010;Restrepo;2010
 http://www.rogerebert.com/reviews/resurrect-dead-mystery-of-the-toynbee-tiles-2011;Resurrect Dead: Mystery of the Toynbee Tiles;2011
-http://www.rogerebert.com/reviews/resurrecting-the-champ-2007;Resurrecting the Champ;2007
+http://www.rogerebert.com/reviews/resurrecting-the-champ-2007;Resurrecting the Ch2007
 http://www.rogerebert.com/reviews/return-of-the-jedi-special-edition-1997;Return Of The Jedi (Special Edition);1997
 http://www.rogerebert.com/reviews/return-of-the-living-dead-1985;Return Of the Living Dead;1985
 http://www.rogerebert.com/reviews/return-to-me-2000;Return To Me;2000
@@ -5482,7 +5482,7 @@ http://www.rogerebert.com/reviews/the-river-niger-1976;The River Niger;1976
 http://www.rogerebert.com/reviews/a-river-runs-through-it-1992;A River Runs Through It;1992
 http://www.rogerebert.com/reviews/the-river-wild-1994;The River Wild;1994
 http://www.rogerebert.com/reviews/rivers-edge-1987;River's Edge;1987
-http://www.rogerebert.com/reviews/rivers-and-tides-andy-goldsworthy-working-with-time-2003;Rivers amp; Tides: Andy Goldsworthy Working With Time;2003
+http://www.rogerebert.com/reviews/rivers-and-tides-andy-goldsworthy-working-with-time-2003;Rivers  Tides: Andy Goldsworthy Working With Time;2003
 http://www.rogerebert.com/reviews/rize-2005;Rize;2005
 http://www.rogerebert.com/reviews/the-road-2009;The Road;2009
 http://www.rogerebert.com/reviews/road-house-1989;Road House;1989
@@ -5501,7 +5501,7 @@ http://www.rogerebert.com/reviews/robin-and-marian-1976;Robin and Marian;1976
 http://www.rogerebert.com/reviews/robocop-1987;RoboCop;1987
 http://www.rogerebert.com/reviews/robocop-2-1990;Robocop 2;1990
 http://www.rogerebert.com/reviews/robocop-3-1993;Robocop 3;1993
-http://www.rogerebert.com/reviews/robot-and-frank-2012;Robot amp; Frank;2012
+http://www.rogerebert.com/reviews/robot-and-frank-2012;Robot  Frank;2012
 http://www.rogerebert.com/reviews/robots-2005;Robots;2005
 http://www.rogerebert.com/reviews/the-rock-1996;The Rock;1996
 http://www.rogerebert.com/reviews/rock-school-2005;Rock School;2005
@@ -5609,7 +5609,7 @@ http://www.rogerebert.com/reviews/swat-2003;S.W.A.T.;2003
 http://www.rogerebert.com/reviews/simone-2002;S1m0ne;2002
 http://www.rogerebert.com/reviews/secret-things-2004;SECRET THINGS;2004
 http://www.rogerebert.com/reviews/slc-punk-1999;SLC Punk!;1999
-http://www.rogerebert.com/reviews/starsky-andamp-hutch-2004;STARSKY amp; HUTCH;2004
+http://www.rogerebert.com/reviews/starsky-andamp-hutch-2004;STARSKY  HUTCH;2004
 http://www.rogerebert.com/reviews/sabrina-1995;Sabrina;1995
 http://www.rogerebert.com/reviews/sacco-and-vanzetti-1971;Sacco and Vanzetti;1971
 http://www.rogerebert.com/reviews/sacrifice-2012;Sacrifice;2012
@@ -5705,7 +5705,7 @@ http://www.rogerebert.com/reviews/scream-blacula-scream-1973;Scream, Blacula, Sc
 http://www.rogerebert.com/reviews/screamers-1996;Screamers;1996
 http://www.rogerebert.com/reviews/screwballs-1983;Screwballs;1983
 http://www.rogerebert.com/reviews/scrooge-1970;Scrooge;1970
-http://www.rogerebert.com/reviews/scrooge-and-marley-2012;Scrooge amp; Marley;2012
+http://www.rogerebert.com/reviews/scrooge-and-marley-2012;Scrooge  Marley;2012
 http://www.rogerebert.com/reviews/scrooged-1988;Scrooged;1988
 http://www.rogerebert.com/reviews/the-sea-inside-2004;The Sea Inside;2004
 http://www.rogerebert.com/reviews/sea-of-love-1989;Sea of Love;1989
@@ -5879,7 +5879,7 @@ http://www.rogerebert.com/reviews/shuttle-2009;Shuttle;2009
 http://www.rogerebert.com/reviews/shy-people-1988;Shy People;1988
 http://www.rogerebert.com/reviews/sibling-rivalry-1990;Sibling Rivalry;1990
 http://www.rogerebert.com/reviews/the-sicilian-1987;The Sicilian;1987
-http://www.rogerebert.com/reviews/sick-the-life-and-death-of-bob-flanagan-supermasochist-1997;Sick: The Life amp; Death Of Bob Flanagan, Supermasochist;1997
+http://www.rogerebert.com/reviews/sick-the-life-and-death-of-bob-flanagan-supermasochist-1997;Sick: The Life  Death Of Bob Flanagan, Supermasochist;1997
 http://www.rogerebert.com/reviews/sicko-2007;Sicko;2007
 http://www.rogerebert.com/reviews/A-love-story-forged-in-hell;Sid and Nancy;1986
 http://www.rogerebert.com/reviews/siddhartha-1973;Siddhartha;1973
@@ -6029,7 +6029,7 @@ http://www.rogerebert.com/reviews/a-soldiers-daughter-never-cries-1998;A Soldier
 http://www.rogerebert.com/reviews/a-soldiers-story-1984;A Soldier's Story;1984
 http://www.rogerebert.com/reviews/solitary-man-2010;Solitary Man;2010
 http://www.rogerebert.com/reviews/the-soloist-2009;The Soloist;2009
-http://www.rogerebert.com/reviews/solomon-and-gaenor-2000;Solomon amp; Gaenor;2000
+http://www.rogerebert.com/reviews/solomon-and-gaenor-2000;Solomon  Gaenor;2000
 http://www.rogerebert.com/reviews/some-kind-of-wonderful-1987;Some Kind of Wonderful;1987
 http://www.rogerebert.com/reviews/some-mothers-son-1996;Some Mother’s Son;1996
 http://www.rogerebert.com/reviews/somebody-killed-her-husband-1978;Somebody Killed Her Husband;1978
@@ -6086,7 +6086,7 @@ http://www.rogerebert.com/reviews/space-chimps-2008;Space Chimps;2008
 http://www.rogerebert.com/reviews/space-cowboys-2000;Space Cowboys;2000
 http://www.rogerebert.com/reviews/space-jam-1996;Space Jam;1996
 http://www.rogerebert.com/reviews/spaceballs-1987;Spaceballs;1987
-http://www.rogerebert.com/reviews/spacecamp-1986;Spacecamp;1986
+http://www.rogerebert.com/reviews/spacecamp-1986;Spacec1986
 http://www.rogerebert.com/reviews/spaced-invaders-1990;Spaced Invaders;1990
 http://www.rogerebert.com/reviews/spanglish-2004;Spanglish;2004
 http://www.rogerebert.com/reviews/the-spanish-prisoner-1998;The Spanish Prisoner;1998
@@ -6295,7 +6295,7 @@ http://www.rogerebert.com/reviews/such-a-gorgeous-kid-like-me-1973;Such a Gorgeo
 http://www.rogerebert.com/reviews/sudden-death-1995;Sudden Death;1995
 http://www.rogerebert.com/reviews/sudden-impact-1983;Sudden Impact;1983
 http://www.rogerebert.com/reviews/sugar-2009;Sugar;2009
-http://www.rogerebert.com/reviews/sugar-and-spice-2001;Sugar amp; Spice;2001
+http://www.rogerebert.com/reviews/sugar-and-spice-2001;Sugar  Spice;2001
 http://www.rogerebert.com/reviews/sugar-cane-alley-1984;Sugar Cane Alley;1984
 http://www.rogerebert.com/reviews/sugar-town-1999;Sugar Town;1999
 http://www.rogerebert.com/reviews/the-sugarland-express-1974;The Sugarland Express;1974
@@ -6513,7 +6513,7 @@ http://www.rogerebert.com/reviews/thats-life-1986;That's Life!;1986
 http://www.rogerebert.com/reviews/thats-the-way-i-like-it-1999;That's The Way I Like It;1999
 http://www.rogerebert.com/reviews/the-host-2013;The Host;2013
 http://www.rogerebert.com/reviews/the-people-vs-larry-flynt-1996;The People vs. Larry Flynt;1996
-http://www.rogerebert.com/reviews/rudyard-kiplings-second-jungle-book-mowgli-and-baloo-1997;The Second Jungle Book: Mowgli amp; Baloo;1997
+http://www.rogerebert.com/reviews/rudyard-kiplings-second-jungle-book-mowgli-and-baloo-1997;The Second Jungle Book: Mowgli  Baloo;1997
 http://www.rogerebert.com/reviews/the-we-and-the-i-2013;The We and the I;2013
 http://www.rogerebert.com/reviews/the-widow-of-st-pierre-2001;The Widow of Saint-Pierre;2001
 http://www.rogerebert.com/reviews/theater-of-war-2009;Theater of War;2009
@@ -6749,7 +6749,7 @@ http://www.rogerebert.com/reviews/triple-cross-1967;Triple Cross;1967
 http://www.rogerebert.com/reviews/the-triplets-of-belleville-2003;The Triplets of Belleville;2003
 http://www.rogerebert.com/reviews/trippin-1999;Trippin';1999
 http://www.rogerebert.com/reviews/trishna-2012;Trishna;2012
-http://www.rogerebert.com/reviews/tristan-and-isolde-2006;Tristan amp; Isolde;2006
+http://www.rogerebert.com/reviews/tristan-and-isolde-2006;Tristan  Isolde;2006
 http://www.rogerebert.com/reviews/tristana-1970;Tristana;1970
 http://www.rogerebert.com/reviews/tristram-shandy-a-cock-and-bull-story-2006;Tristram Shandy: A Cock and Bull Story;2006
 http://www.rogerebert.com/reviews/triumph-of-love-2002;Triumph of Love;2002
@@ -6947,7 +6947,7 @@ http://www.rogerebert.com/reviews/valkyrie-2008;Valkyrie;2008
 http://www.rogerebert.com/reviews/valley-girl-1983;Valley Girl;1983
 http://www.rogerebert.com/reviews/valley-of-the-dolls-1967;Valley of the Dolls;1967
 http://www.rogerebert.com/reviews/valmont-1989;Valmont;1989
-http://www.rogerebert.com/reviews/vamp-1986;Vamp;1986
+http://www.rogerebert.com/reviews/vamp-1986;V1986
 http://www.rogerebert.com/reviews/vampire-in-brooklyn-1995;Vampire In Brooklyn;1995
 http://www.rogerebert.com/reviews/the-van-1997;The Van;1997
 http://www.rogerebert.com/reviews/van-helsing-2004;Van Helsing;2004
@@ -6971,7 +6971,7 @@ http://www.rogerebert.com/reviews/vertical-limit-2000;Vertical Limit;2000
 http://www.rogerebert.com/reviews/the-vertical-ray-of-the-sun-2001;The Vertical Ray Of The Sun;2001
 http://www.rogerebert.com/reviews/very-bad-things-1998;Very Bad Things;1998
 http://www.rogerebert.com/reviews/a-very-brady-sequel-1996;A Very Brady Sequel;1996
-http://www.rogerebert.com/reviews/a-very-harold-and-kumar-3d-christmas-2011;A Very Harold amp; Kumar 3D Christmas;2011
+http://www.rogerebert.com/reviews/a-very-harold-and-kumar-3d-christmas-2011;A Very Harold  Kumar 3D Christmas;2011
 http://www.rogerebert.com/reviews/a-very-long-engagement-2004;A Very Long Engagement;2004
 http://www.rogerebert.com/reviews/vibes-1988;Vibes;1988
 http://www.rogerebert.com/reviews/vice-versa-1988;Vice Versa;1988
@@ -6981,7 +6981,7 @@ http://www.rogerebert.com/reviews/vidal-sassoon-the-movie-2011;Vidal Sassoon: Th
 http://www.rogerebert.com/reviews/view-from-the-top-2003;View from the Top;2003
 http://www.rogerebert.com/reviews/villa-rides-1968;Villa Rides;1968
 http://www.rogerebert.com/reviews/the-village-2004;The Village;2004
-http://www.rogerebert.com/reviews/vincent-and-theo-1990;Vincent amp; Theo;1990
+http://www.rogerebert.com/reviews/vincent-and-theo-1990;Vincent  Theo;1990
 http://www.rogerebert.com/reviews/vincent-francois-paul-and-the-others-1976;Vincent, Francois, Paul and the Others;1976
 http://www.rogerebert.com/reviews/vincent-a-life-in-color-2010;Vincent: A Life in Color;2010
 http://www.rogerebert.com/reviews/vincent-the-life-and-death-of-vincent-van-gogh-1989;Vincent: The Life And Death Of Vincent Van Gogh;1989
@@ -7043,9 +7043,9 @@ http://www.rogerebert.com/reviews/wall-street-1987;Wall Street;1987
 http://www.rogerebert.com/reviews/wall-street-money-never-sleeps-2010;Wall Street: Money Never Sleeps;2010
 http://www.rogerebert.com/reviews/a-wall-in-jerusalem-1973;A Wall in Jerusalem;1973
 http://www.rogerebert.com/reviews/wall-e-2008;Wall-E;2008
-http://www.rogerebert.com/reviews/wallace-and-gromit-the-best-of-aardman-animations-1996;Wallace amp; Gromit: The Best Of Aardman Animations;1996
+http://www.rogerebert.com/reviews/wallace-and-gromit-the-best-of-aardman-animations-1996;Wallace  Gromit: The Best Of Aardman Animations;1996
 http://www.rogerebert.com/reviews/wallace-and-gromit-the-curse-of-the-were-rabbit-2005;Wallace and Gromit: The Curse of the Were-Rabbit;2005
-http://www.rogerebert.com/reviews/walt-and-el-grupo-2009;Walt amp; El Grupo;2009
+http://www.rogerebert.com/reviews/walt-and-el-grupo-2009;Walt  El Grupo;2009
 http://www.rogerebert.com/reviews/waltz-with-bashir-2009;Waltz with Bashir;2009
 http://www.rogerebert.com/reviews/wanted-2008;Wanted;2008
 http://www.rogerebert.com/reviews/wanted-dead-or-alive-1987;Wanted: Dead Or Alive;1987
@@ -7351,7 +7351,7 @@ http://www.rogerebert.com/reviews/wristcutters-a-love-story-2007;Wristcutters: A
 http://www.rogerebert.com/reviews/wuthering-heights-2012;Wuthering Heights;2012
 http://www.rogerebert.com/reviews/wyatt-earp-1994;Wyatt Earp;1994
 http://www.rogerebert.com/reviews/x-games-3d-the-movie-2009;X Games 3D: The Movie;2009
-http://www.rogerebert.com/reviews/x-y-and-zee-1972;X, Y amp; Zee;1972
+http://www.rogerebert.com/reviews/x-y-and-zee-1972;X, Y  Zee;1972
 http://www.rogerebert.com/reviews/the-x-files-1998;The X-Files;1998
 http://www.rogerebert.com/reviews/the-x-files-i-want-to-believe-2008;The X-Files: I Want to Believe;2008
 http://www.rogerebert.com/reviews/x-men-2000;X-Men;2000
@@ -7411,7 +7411,7 @@ http://www.rogerebert.com/reviews/youngblood-1986;Youngblood;1986
 http://www.rogerebert.com/reviews/your-friends-and-neighbors-1998;Your Friends and Neighbors;1998
 http://www.rogerebert.com/reviews/your-highness-2011;Your Highness;2011
 http://www.rogerebert.com/reviews/your-sisters-sister-2012;Your Sister's Sister;2012
-http://www.rogerebert.com/reviews/yours-mine-and-ours-2005;Yours, Mine amp; Ours;2005
+http://www.rogerebert.com/reviews/yours-mine-and-ours-2005;Yours, Mine  Ours;2005
 http://www.rogerebert.com/reviews/yours-mine-and-ours-1968;Yours, Mine and Ours;1968
 http://www.rogerebert.com/reviews/youssou-ndour-i-bring-what-i-love-2009;Youssou N’Dour: I Bring What I Love;2009
 http://www.rogerebert.com/reviews/youth-without-youth-2007;Youth Without Youth;2007

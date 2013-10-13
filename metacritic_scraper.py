@@ -39,8 +39,11 @@ def scrape_metacritic(title, year='', season=''):
         if not season:
             metacritic_release_year_str = html_manipulator.use_regex(METACRITIC_RELEASE_YEAR_REGEX,
                                                                      metacritic_review_html,
-                                                                     False)
-            metacritic_release_year = int(metacritic_release_year_str)
+                                                                     True)
+            if metacritic_release_year_str:
+                metacritic_release_year = int(metacritic_release_year_str)
+            else:
+                metacritic_release_year = None
 
         # Return values only if the movie release year matches the metacritic release year or if title is a TV Season
         if season or metacritic_release_year == year:

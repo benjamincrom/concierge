@@ -10,7 +10,7 @@ import re
 locale.setlocale(locale.LC_ALL, 'en_US.UTF8')
 
 
-ROTTENTOMATOES_QUERY_STRING = "site:rottentomatoes.com %s"
+ROTTENTOMATOES_QUERY_STRING = "site:rottentomatoes.com %s (%s)"
 
 ROTTENTOMATOES_ALL_CRITICS_REGEX = re.compile(
     "<span itemprop=\"ratingValue\" id=\"all-critics-meter\".*?"
@@ -40,14 +40,18 @@ ROTTENTOMATOES_YEAR_REGEX = re.compile("<span itemprop=\"name\">.*?\((\d\d\d\d)\
 def scrape_rottentomatoes(title, year):
     """Scrape rottentomatoes stats for a given title and year and return values in a dict.
 
-    Return empty dict if page is not found or does not match regex."""
+    Return empty dict if page is not found or does not match regex.
+    """
     return_dict = {}
-    rottentomatoes_review_url = html_manipulator.get_top_google_result_url(ROTTENTOMATOES_QUERY_STRING % title)
+    rottentomatoes_review_url = html_manipulator.get_top_google_result_url(ROTTENTOMATOES_QUERY_STRING % (title, year))
     rottentomatoes_review_html = html_manipulator.retrieve_html_from_url(rottentomatoes_review_url)
     if rottentomatoes_review_html and re.search(title, rottentomatoes_review_html):
-        rottentomatoes_year_str = html_manipulator.use_regex(ROTTENTOMATOES_YEAR_REGEX, rottentomatoes_review_html,
-                                                             False)
-        rottentomatoes_year = int(rottentomatoes_year_str)
+        rottentomatoes_year_str = html_manipulator.use_regex(ROTTENTOMATOES_YEAR_REGEX, rottentomatoes_review_html, 
+                                                             True)
+        if rottentomatoes_year_str:
+            rottentomatoes_year = int(rottentomatoes_year_str)
+        else:
+            rottentomatoes_year = None
         if rottentomatoes_year == year:
             rottentomatoes_all_critics_match = ROTTENTOMATOES_ALL_CRITICS_REGEX.search(rottentomatoes_review_html)
             if rottentomatoes_all_critics_match:
