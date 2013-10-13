@@ -16,10 +16,9 @@ def parse_title(search_title, search_year='', ebert_link=''):
         search_year_list = [search_year, search_year - 1, search_year + 1, search_year - 2, search_year + 2]
         for current_search_year in search_year_list:
             print "jklfdjsklf " + str(current_search_year) + " fkjldjskf"
-            try:
-                imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, current_search_year)
-            except AttributeError:
-                continue
+            imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, current_search_year)
+            if imdb_title_obj_dict:
+                break
 
     else:
         imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, search_year)
