@@ -9,15 +9,12 @@ import rottentomatoes_scraper
 def parse_title(search_title, search_year='', ebert_link=''):
     print '***********************************************************************************'
     print "%s (%s)" % (search_title, search_year)
-
     # Get IMDB data
-    print ebert_link
     # If we are relying on Roger Ebert for the year then we must check the range around the year to combat inaccuracy
     if ebert_link:
         search_year = int(search_year)
         search_year_list = [search_year, search_year - 1, search_year + 1, search_year - 2, search_year + 2]
         for current_search_year in search_year_list:
-            print "%s %s" % (search_title, current_search_year)
             try:
                 imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, current_search_year)
             except AttributeError:

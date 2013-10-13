@@ -56,8 +56,10 @@ def scrape_imdb_data(search_title, year=''):
     # These values cannot be null.  If they are null then return empty dict
     imdb_id = html_manipulator.use_regex(IMDB_ID_REGEX, imdb_url, True)
     title = html_manipulator.use_regex(IMDB_TITLE_REGEX, imdb_html, True)
-    print imdb_url
     if imdb_id and title:
+        print search_title
+        print year
+        print imdb_url
         # Set video type (cannot be null)
         video_type = _determine_imdb_video_type(imdb_html)
 
