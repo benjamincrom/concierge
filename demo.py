@@ -10,25 +10,23 @@ import rottentomatoes_scraper
 def parse_title(search_title, search_year='', ebert_link=''):
     print '***********************************************************************************'
     print "%s (%s)" % (search_title, search_year)
-    # Get IMDB data
-    # If we are relying on Roger Ebert for the year then we must check the range around the year to combat inaccuracy
-    if ebert_link:
+    # Get IMDB data 
+    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, search_year)
+    # If nothing is found then check the range around the search year to correct for inaccuracy
+    if search_year and not imdb_title_obj_dict:
         search_year = int(search_year)
-        search_year_list = [search_year, search_year - 1, search_year + 1, search_year - 2, search_year + 2]
+        search_year_list = [search_year - 1, search_year + 1, search_year - 2, search_year + 2]
         for current_search_year in search_year_list:
             imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, current_search_year)
             if imdb_title_obj_dict:
                 break
-
-    else:
-        imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, search_year)
 
     # If we can't get the IMDB scrape completed then there is no point in continuing
     if imdb_title_obj_dict:
         title = imdb_title_obj_dict["title"]
         media_type = imdb_title_obj_dict["video_type"]
         if imdb_title_obj_dict["year"]:
-            year = imdb_title_obj_dict["year"]
+            year = int(imdb_title_obj_dict["year"])
         else:
             year = ''
 

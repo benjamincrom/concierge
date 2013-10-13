@@ -1,2 +1,12 @@
-http://www.rogerebert.com/reviews/adam-and-steve-2006;Adam  Steve;2005
+http://www.rogerebert.com/reviews/act-of-valor-2012;Act of Valor;2012
+http://www.rogerebert.com/reviews/action-jackson-1988;Action Jackson;1988
+http://www.rogerebert.com/reviews/adam-2009;Adam;2009
+http://www.rogerebert.com/reviews/adam-and-steve-2006;Adam  Steve;2006
+http://www.rogerebert.com/reviews/adam-sandlers-eight-crazy-nights-2002;Adam Sandler's Eight Crazy Nights;2002
+http://www.rogerebert.com/reviews/the-addams-family-1991;The Addams Family;1991
+http://www.rogerebert.com/reviews/addams-family-values-1993;Addams Family Values;1993
 http://www.rogerebert.com/reviews/addicted-to-love-1997;Addicted to Love;1997
+http://www.rogerebert.com/reviews/addiction-incorporated-2012;Addiction Incorporated;2012
+http://www.rogerebert.com/reviews/the-adjuster-1992;The Adjuster;1992
+http://www.rogerebert.com/reviews/the-adjustment-bureau-2011;The Adjustment Bureau;2011
+

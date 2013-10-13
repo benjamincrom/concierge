@@ -22,7 +22,6 @@ SPOOFED_HEADERS = {
 }
 
 GOOGLE_REGEX_SEARCH = re.compile("<h2 class=\"hd\">Search Results.*?<a href=\"(.+?)\"", re.DOTALL)
-GOOGLE_REGEX_SIMILAR = re.compile("<h2 class=\"hd\">.*?Results for similar searches.*?<a href=\"(.+?)\"", re.DOTALL)
 
 
 class MLStripper(HTMLParser):
@@ -46,14 +45,7 @@ def get_top_google_result_url(search_string):
     top_result_url = None
     formatted_search_string = search_string.replace(' ', '+').replace('&', '')
     html = retrieve_html_from_url(GOOGLE_QUERY_URL % formatted_search_string)
-    if html:
-        top_result_url_similar_match = GOOGLE_REGEX_SIMILAR.search(html)
-        if top_result_url_similar_match:
-            top_result_url = top_result_url_similar_match.groups()[0]
-        else:
-            top_result_url_search_match = GOOGLE_REGEX_SEARCH.search(html)
-            if top_result_url_search_match:
-                top_result_url = top_result_url_search_match.groups()[0]
+    top_result_url = use_regex(GOOGLE_REGEX_SEARCH, html, True)
 
     return top_result_url
 
