@@ -93,12 +93,13 @@ def use_regex(given_regex, target_str, can_be_null):
     Throws exception if given regex is not found and can_be_null is False.
     """
     return_str = None
-    match = given_regex.search(target_str)
     try:
-        return_str = str(match.groups()[0]).strip()
-    except (AttributeError, IndexError):
+        match = given_regex.search(target_str)
+        if match:
+            return_str = str(match.groups()[0]).strip()
+
+    except (AttributeError, TypeError):
         if not can_be_null:
-            print REGEX_NOT_FOUND_ERROR % given_regex.pattern
-            raise
+            raise "REGEX_NOT_FOUND_ERROR % given_regex.pattern"
 
     return return_str

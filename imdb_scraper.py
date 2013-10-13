@@ -47,115 +47,120 @@ IMDB_YEAR_REGEX = re.compile("itemprop=\"name\".+?<a href=\"/year/(\d+)/", re.DO
 
 def scrape_imdb_data(search_title, year=''):
     """Return IMDB data for the given title and year in a dict"""
+    return_dict = {}
+
     # Scrape IMDB page for this title
     imdb_url = html_manipulator.get_top_google_result_url(IMDB_GOOGLE_QUERY_STRING % (search_title, year))
     imdb_html = html_manipulator.retrieve_html_from_url(imdb_url)
 
-    # These values cannot be null
-    imdb_id = html_manipulator.use_regex(IMDB_ID_REGEX, imdb_url, False)
-    title = html_manipulator.use_regex(IMDB_TITLE_REGEX, imdb_html, False)
-    video_type = _determine_imdb_video_type(imdb_html)
+    # These values cannot be null.  If they are null then return empty dict
+    imdb_id = html_manipulator.use_regex(IMDB_ID_REGEX, imdb_url, True)
+    title = html_manipulator.use_regex(IMDB_TITLE_REGEX, imdb_html, True)
+    print imdb_url
+    if imdb_id and title:
+        # Set video type (cannot be null)
+        video_type = _determine_imdb_video_type(imdb_html)
 
-    # Scrape IMDB budget page for this title
-    imdb_budget_url = IMDB_BUDGET_URL % imdb_id
-    imdb_budget_html = html_manipulator.retrieve_html_from_url(imdb_budget_url)
+        # Scrape IMDB budget page for this title
+        imdb_budget_url = IMDB_BUDGET_URL % imdb_id
+        imdb_budget_html = html_manipulator.retrieve_html_from_url(imdb_budget_url)
 
-    # Initialize media_type exclusive data
-    tv_episode_index = None
-    tv_episode_total = None
-    show_title = None
-    season = None
-    episode = None
-    creator_list = None
-    tv_total_seasons = None
-    gross = None
-    # TV Episodes exclusively have show title, episode, season, index, total
-    if video_type == IMDB_TYPE_TV_EPISODE:
-        title_season_episode_match = IMDB_TV_TITLE_SEASON_EPISODE_REGEX.search(imdb_html)
-        if title_season_episode_match:
-            (show_title, season, episode) = title_season_episode_match.groups()
+        # Initialize media_type exclusive data
+        tv_episode_index = None
+        tv_episode_total = None
+        show_title = None
+        season = None
+        episode = None
+        creator_list = None
+        tv_total_seasons = None
+        gross = None
+        # TV Episodes exclusively have show title, episode, season, index, total
+        if video_type == IMDB_TYPE_TV_EPISODE:
+            title_season_episode_match = IMDB_TV_TITLE_SEASON_EPISODE_REGEX.search(imdb_html)
+            if title_season_episode_match:
+                (show_title, season, episode) = title_season_episode_match.groups()
 
-        tv_index_total_regex_match = IMDB_TV_INDEX_TOTAL_REGEX.search(imdb_html)
-        if tv_index_total_regex_match:
-            (tv_episode_index, tv_episode_total) = tv_index_total_regex_match.groups()
+            tv_index_total_regex_match = IMDB_TV_INDEX_TOTAL_REGEX.search(imdb_html)
+            if tv_index_total_regex_match:
+                (tv_episode_index, tv_episode_total) = tv_index_total_regex_match.groups()
 
-    # TV Series exclusively have creators
-    elif video_type == IMDB_TYPE_TV_SERIES:
-        creator_str = html_manipulator.use_regex(IMDB_CREATOR_STR_REGEX, imdb_html, True)
-        creator_list = _get_list_of_names(creator_str)
+        # TV Series exclusively have creators
+        elif video_type == IMDB_TYPE_TV_SERIES:
+            creator_str = html_manipulator.use_regex(IMDB_CREATOR_STR_REGEX, imdb_html, True)
+            creator_list = _get_list_of_names(creator_str)
 
-        tv_total_seasons_str = html_manipulator.use_regex(IMDB_TOTAL_SEASONS_REGEX, imdb_html, True)
-        tv_total_seasons = int(tv_total_seasons_str)
+            tv_total_seasons_str = html_manipulator.use_regex(IMDB_TOTAL_SEASONS_REGEX, imdb_html, True)
+            tv_total_seasons = int(tv_total_seasons_str)
 
-    # Movies exclusively have gross
-    elif video_type == IMDB_TYPE_MOVIE:
-        gross = html_manipulator.use_regex(IMDB_GROSS_REGEX, imdb_budget_html, True)
+        # Movies exclusively have gross
+        elif video_type == IMDB_TYPE_MOVIE:
+            gross = html_manipulator.use_regex(IMDB_GROSS_REGEX, imdb_budget_html, True)
 
-    else:
-        raise Exception(IMDB_INVALID_TYPE_ERROR % title)
+        else:
+            raise Exception(IMDB_INVALID_TYPE_ERROR % title)
 
-    imdb_poster_url = html_manipulator.use_regex(IMDB_POSTER_REGEX, imdb_html, True)
-    length = html_manipulator.use_regex(IMDB_LENGTH_REGEX, imdb_html, True)
-    rating = html_manipulator.use_regex(IMDB_RATING_REGEX, imdb_html, True)
-    score = html_manipulator.use_regex(IMDB_SCORE_REGEX, imdb_html, True)
-    budget = html_manipulator.use_regex(IMDB_BUDGET_REGEX, imdb_budget_html, True)
+        imdb_poster_url = html_manipulator.use_regex(IMDB_POSTER_REGEX, imdb_html, True)
+        length = html_manipulator.use_regex(IMDB_LENGTH_REGEX, imdb_html, True)
+        rating = html_manipulator.use_regex(IMDB_RATING_REGEX, imdb_html, True)
+        score = html_manipulator.use_regex(IMDB_SCORE_REGEX, imdb_html, True)
+        budget = html_manipulator.use_regex(IMDB_BUDGET_REGEX, imdb_budget_html, True)
 
-    aspect_ratio_str = html_manipulator.use_regex(IMDB_ASPECT_RATIO_REGEX, imdb_html, True)
-    aspect_ratio = _get_aspect_ratio_float_from_str(aspect_ratio_str)
+        aspect_ratio_str = html_manipulator.use_regex(IMDB_ASPECT_RATIO_REGEX, imdb_html, True)
+        aspect_ratio = _get_aspect_ratio_float_from_str(aspect_ratio_str)
 
-    genre_str = html_manipulator.use_regex(IMDB_GENRE_STR_REGEX, imdb_html, True)
-    genre_list = IMDB_GENRE_LIST_REGEX.findall(genre_str)
+        genre_str = html_manipulator.use_regex(IMDB_GENRE_STR_REGEX, imdb_html, True)
+        genre_list = IMDB_GENRE_LIST_REGEX.findall(genre_str)
 
-    director_str = html_manipulator.use_regex(IMDB_DIRECTOR_STR_REGEX, imdb_html, True)
-    director_list = _get_list_of_names(director_str)
+        director_str = html_manipulator.use_regex(IMDB_DIRECTOR_STR_REGEX, imdb_html, True)
+        director_list = _get_list_of_names(director_str)
 
-    writer_str = html_manipulator.use_regex(IMDB_WRITER_STR_REGEX, imdb_html, True)
-    writer_list = _get_list_of_names(writer_str)
+        writer_str = html_manipulator.use_regex(IMDB_WRITER_STR_REGEX, imdb_html, True)
+        writer_list = _get_list_of_names(writer_str)
 
-    star_str = html_manipulator.use_regex(IMDB_STAR_STR_REGEX, imdb_html, True)
-    star_list = _get_list_of_names(star_str)
+        star_str = html_manipulator.use_regex(IMDB_STAR_STR_REGEX, imdb_html, True)
+        star_list = _get_list_of_names(star_str)
 
-    plot_html = html_manipulator.use_regex(IMDB_PLOT_REGEX, imdb_html, True)
-    plot = html_manipulator.remove_html_tags(plot_html)
+        plot_html = html_manipulator.use_regex(IMDB_PLOT_REGEX, imdb_html, True)
+        plot = html_manipulator.remove_html_tags(plot_html)
 
-    tagline_html = html_manipulator.use_regex(IMDB_TAGLINE_REGEX, imdb_html, True)
-    tagline = html_manipulator.remove_html_tags(tagline_html)
+        tagline_html = html_manipulator.use_regex(IMDB_TAGLINE_REGEX, imdb_html, True)
+        tagline = html_manipulator.remove_html_tags(tagline_html)
 
-    year = html_manipulator.use_regex(IMDB_YEAR_REGEX, imdb_html, True)
-    if year:
-        year = int(year)
+        year = html_manipulator.use_regex(IMDB_YEAR_REGEX, imdb_html, True)
+        if year:
+            year = int(year)
 
-    # Dump values into dictionary
-    return_dict = {
-        "video_type":           video_type,
-        "year":                 year,
-        "title":                title,
-        "tagline":              tagline,
-        "rating":               rating,
-        "score":                score,
-        "length":               length,
-        "imdb_poster_url":      imdb_poster_url,
-        "imdb_id":              imdb_id,
-        "budget":               budget,
-        "plot":                 plot,
-        "aspect_ratio":         aspect_ratio,
-        "genre_list":           genre_list,
-        "writer_list":          writer_list,
-        "director_list":        director_list,
-        "star_list":            star_list,
-    }
+        # Dump values into dictionary
+        return_dict = {
+            "video_type":           video_type,
+            "year":                 year,
+            "title":                title,
+            "tagline":              tagline,
+            "rating":               rating,
+            "score":                score,
+            "length":               length,
+            "imdb_poster_url":      imdb_poster_url,
+            "imdb_id":              imdb_id,
+            "budget":               budget,
+            "plot":                 plot,
+            "aspect_ratio":         aspect_ratio,
+            "genre_list":           genre_list,
+            "writer_list":          writer_list,
+            "director_list":        director_list,
+            "star_list":            star_list,
+        }
 
-    if video_type == IMDB_TYPE_TV_EPISODE:
-        return_dict["season"] = season
-        return_dict["episode"] = episode
-        return_dict["show_title"] = show_title
-        return_dict["tv_episode_index"] = tv_episode_index
-        return_dict["tv_episode_total"] = tv_episode_total
-    elif video_type == IMDB_TYPE_TV_SERIES:
-        return_dict["creator_list"] = creator_list
-        return_dict["tv_total_seasons"] = tv_total_seasons
-    elif video_type == IMDB_TYPE_MOVIE:
-        return_dict["gross"] = gross
+        if video_type == IMDB_TYPE_TV_EPISODE:
+            return_dict["season"] = season
+            return_dict["episode"] = episode
+            return_dict["show_title"] = show_title
+            return_dict["tv_episode_index"] = tv_episode_index
+            return_dict["tv_episode_total"] = tv_episode_total
+        elif video_type == IMDB_TYPE_TV_SERIES:
+            return_dict["creator_list"] = creator_list
+            return_dict["tv_total_seasons"] = tv_total_seasons
+        elif video_type == IMDB_TYPE_MOVIE:
+            return_dict["gross"] = gross
 
     return return_dict
 

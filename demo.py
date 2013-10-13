@@ -11,31 +11,61 @@ def parse_title(search_title, search_year='', ebert_link=''):
     print "%s (%s)" % (search_title, search_year)
 
     # Get IMDB data
-    imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, search_year)
-    title = imdb_title_obj_dict["title"]
-    media_type = imdb_title_obj_dict["video_type"]
-    if imdb_title_obj_dict["year"]:
-        year = imdb_title_obj_dict["year"]
+    print ebert_link
+    # If we are relying on Roger Ebert for the year then we must check the range around the year to combat inaccuracy
+    if ebert_link:
+        search_year = int(search_year)
+        search_year_list = [search_year, search_year - 1, search_year + 1, search_year - 2, search_year + 2]
+        for current_search_year in search_year_list:
+            print "%s %s" % (search_title, current_search_year)
+            try:
+                imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, current_search_year)
+            except AttributeError:
+                continue
+
     else:
-        year = ''
+        imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, search_year)
 
-    # Print IMDB data
-    print ''
-    print '--------------------------------------'
-    print title
-    print ''
-    for i, j in imdb_title_obj_dict.iteritems():
-        print "%s:\t\t%s" % (i, j)
+    # If we can't get the IMDB scrape completed then there is no point in continuing
+    if imdb_title_obj_dict:
+        title = imdb_title_obj_dict["title"]
+        media_type = imdb_title_obj_dict["video_type"]
+        if imdb_title_obj_dict["year"]:
+            year = imdb_title_obj_dict["year"]
+        else:
+            year = ''
 
-    print '--------------------------------------'
+        # Print IMDB data
+        print ''
+        print '--------------------------------------'
+        print title
+        print ''
+        for i, j in imdb_title_obj_dict.iteritems():
+            print "%s:\t\t%s" % (i, j)
 
-    if media_type == "TV Series":
-        season_list = range(1, imdb_title_obj_dict["tv_total_seasons"])
-        season_title_list = ["Season %s" % season_index for season_index in season_list]
-        # Print Metacritic data for each season
-        for season_title in season_title_list:
-            print season_title
-            metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, season=season_title)
+        print '--------------------------------------'
+
+        if media_type == "TV Series":
+            season_list = range(1, imdb_title_obj_dict["tv_total_seasons"])
+            season_title_list = ["Season %s" % season_index for season_index in season_list]
+            # Print Metacritic data for each season
+            for season_title in season_title_list:
+                print season_title
+                metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, season=season_title)
+                if metacritic_obj_dict:
+                    print '#########################################'
+                    print ' METACRITIC '
+                    for i, j in metacritic_obj_dict.iteritems():
+                        print "%s:\t\t%s" % (i, j)
+
+                    print '#########################################'
+
+
+        # netacritic, rogerebert, and rottentomatoes only take movies
+        if media_type == "Movie":
+            # Get Metacritic data
+            metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, year)
+            # Print Metacritic data
             if metacritic_obj_dict:
                 print '#########################################'
                 print ' METACRITIC '
@@ -44,45 +74,31 @@ def parse_title(search_title, search_year='', ebert_link=''):
 
                 print '#########################################'
 
-
-    # netacritic, rogerebert, and rottentomatoes only take movies
-    if media_type == "Movie":
-        # Get Metacritic data
-        metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, year)
-        # Print Metacritic data
-        if metacritic_obj_dict:
-            print '#########################################'
-            print ' METACRITIC '
-            for i, j in metacritic_obj_dict.iteritems():
-                print "%s:\t\t%s" % (i, j)
-
-            print '#########################################'
-
-        # Get Rottentomatoes data
-        rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title, year)
-        # Print Rottentomatoes data
-        if rottentomatoes_obj_dict:
-            print "''''''''''''''f''''''''''''''''''''''''''''''"
-            print ' ROTTEN TOMATOES '
-            for i, j in rottentomatoes_obj_dict.iteritems():
-                print "%s:\t\t%s" % (i, j)
-
-            print "''''''''''''''''''''''''''''''''''''''''''''"
-
-        if ebert_link:
-            # Get Rogerebert Data
-            rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(ebert_link)
-            # Print Rogerebert Data
-            if rogerebert_obj_dict:
-                print "============================================"
-                print ' ROGEREBERT '
-                for i, j in rogerebert_obj_dict.iteritems():
+            # Get Rottentomatoes data
+            rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title, year)
+            # Print Rottentomatoes data
+            if rottentomatoes_obj_dict:
+                print "''''''''''''''f''''''''''''''''''''''''''''''"
+                print ' ROTTEN TOMATOES '
+                for i, j in rottentomatoes_obj_dict.iteritems():
                     print "%s:\t\t%s" % (i, j)
 
-                print "============================================"
+                print "''''''''''''''''''''''''''''''''''''''''''''"
 
-    print '***********************************************************************************'
-    print ''
+            if ebert_link:
+                # Get Rogerebert Data
+                rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(ebert_link)
+                # Print Rogerebert Data
+                if rogerebert_obj_dict:
+                    print "============================================"
+                    print ' ROGEREBERT '
+                    for i, j in rogerebert_obj_dict.iteritems():
+                        print "%s:\t\t%s" % (i, j)
+
+                    print "============================================"
+
+        print '***********************************************************************************'
+        print ''
 
 
 if __name__ == '__main__':
