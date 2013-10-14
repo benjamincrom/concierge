@@ -92,6 +92,6 @@ def use_regex(given_regex, target_str, can_be_null):
 
     except (AttributeError, TypeError):
         if not can_be_null:
-            raise "REGEX_NOT_FOUND_ERROR % given_regex.pattern"
+            raise Exception("REGEX_NOT_FOUND_ERROR % given_regex.pattern")
 
     return return_str
