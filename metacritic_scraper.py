@@ -45,9 +45,10 @@ def scrape_metacritic(title, year='', season=''):
             else:
                 metacritic_release_year = None
 
-	if year:
-	    year_list = range(int(year) - 2, year + 3)
-	else:
+        # Allow for a range of years (+/- 2) to correct for error
+        if year:
+            year_list = range(int(year) - 2, int(year) + 3)
+        else:
             year_list = []
 
         # Return values only if the movie release year matches the metacritic release year or if title is a TV Season

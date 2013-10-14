@@ -48,11 +48,14 @@ def scrape_rottentomatoes(title, year):
     if rottentomatoes_review_html and re.search(title, rottentomatoes_review_html):
         rottentomatoes_year_str = html_manipulator.use_regex(ROTTENTOMATOES_YEAR_REGEX, rottentomatoes_review_html, 
                                                              True)
+        # Allow for a range of years (+/- 2) to correct for error
         if rottentomatoes_year_str:
             rottentomatoes_year = int(rottentomatoes_year_str)
+            rottentomatoes_year_list = range(rottentomatoes_year - 2, rottentomatoes_year + 3)
         else:
-            rottentomatoes_year = None
-        if rottentomatoes_year == year:
+            rottentomatoes_year_list = []
+
+        if year in rottentomatoes_year_list:
             rottentomatoes_all_critics_match = ROTTENTOMATOES_ALL_CRITICS_REGEX.search(rottentomatoes_review_html)
             if rottentomatoes_all_critics_match:
                 return_dict["all_critics_meter"] = float(rottentomatoes_all_critics_match.groups()[0]) / 100.0
