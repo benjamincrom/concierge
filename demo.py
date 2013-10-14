@@ -56,7 +56,6 @@ def parse_title(search_title, search_year='', ebert_link=''):
 
                     print '#########################################'
 
-
         # rogerebert and rottentomatoes only have good data for movies
         if media_type == "Movie":
             year_list = [year, year - 1, year + 1, year - 2, year + 2]
