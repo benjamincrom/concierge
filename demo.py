@@ -60,7 +60,12 @@ def parse_title(search_title, search_year='', ebert_link=''):
         # rogerebert and rottentomatoes only have good data for movies
         if media_type == "Movie":
             # Get Metacritic data
-            metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, year)
+            metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, search_year)
+            for current_search_year in search_year_list:
+                metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, current_search_year)
+                if metacritic_obj_dict:
+                    break
+
             # Print Metacritic data
             if metacritic_obj_dict:
                 print '#########################################'
@@ -71,7 +76,12 @@ def parse_title(search_title, search_year='', ebert_link=''):
                 print '#########################################'
 
             # Get Rottentomatoes data
-            rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title, year)
+            rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title, search_year)
+            for current_search_year in search_year_list:
+                rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title, current_search_year)
+                if rottentomatoes_obj_dict:
+                    break
+
             # Print Rottentomatoes data
             if rottentomatoes_obj_dict:
                 print "''''''''''''''f''''''''''''''''''''''''''''''"
