@@ -65,6 +65,13 @@ def parse_title(search_title, search_year='', ebert_link=''):
                 if metacritic_obj_dict:
                     break
 
+            if not metacritic_obj_dict:
+                for current_year in year_list:
+                    metacritic_obj_dict = metacritic_scraper.scrape_metacritic(search_title, current_year)
+                    if metacritic_obj_dict:
+                        break
+
+
             # Print Metacritic data
             if metacritic_obj_dict:
                 print '#########################################'
@@ -79,6 +86,12 @@ def parse_title(search_title, search_year='', ebert_link=''):
                 rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(title, current_year)
                 if rottentomatoes_obj_dict:
                     break
+
+            if not rottentomatoes_obj_dict:
+                for current_year in year_list:
+                    rottentomatoes_obj_dict = rottentomatoes_scraper.scrape_rottentomatoes(search_title, current_year)
+                    if rottentomatoes_obj_dict:
+                        break
 
             # Print Rottentomatoes data
             if rottentomatoes_obj_dict:
