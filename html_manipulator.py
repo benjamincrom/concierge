@@ -47,7 +47,8 @@ def get_top_google_result_url(search_string):
     formatted_search_string = search_string.replace(' ', '+').replace('&', '')
     json_str = urllib2.urlopen(GOOGLE_QUERY_URL % formatted_search_string).read()
     json_obj = json.loads(json_str)
-    top_result_url = str(json_obj['items'][0]['link'])
+    if 'items' in json_obj:
+        top_result_url = str(json_obj['items'][0]['link'])
 
     return top_result_url
 
