@@ -1,13 +1,14 @@
 #!/usr/bin/python
 
 
+import json
 import re
 import urllib2
 
 from HTMLParser import HTMLParser
 
 
-GOOGLE_QUERY_URL = "http://www.google.com/search?q=%s"
+GOOGLE_QUERY_URL = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCMGfdDaSfjqv5zYoS0mTJnOT3e9MURWkU&cx=017381156867331432490:g58htnlfkuk&q=%s"
 REGEX_NOT_FOUND_ERROR = "ERROR: Target regex '%s' not found--this value cannot be null"
 RETRIEVE_HTML_ERROR = "ERROR: URL '%s' cannot be properly retrieved"
 
@@ -44,8 +45,9 @@ def get_top_google_result_url(search_string):
     """
     top_result_url = None
     formatted_search_string = search_string.replace(' ', '+').replace('&', '')
-    html = retrieve_html_from_url(GOOGLE_QUERY_URL % formatted_search_string)
-    top_result_url = use_regex(GOOGLE_REGEX_SEARCH, html, True)
+    json_str = urllib2.urlopen(GOOGLE_QUERY_URL % formatted_search_string).read()
+    json_obj = json.loads(json_str)
+    top_result_url = str(json_obj['items'][0]['link'])
 
     return top_result_url
 

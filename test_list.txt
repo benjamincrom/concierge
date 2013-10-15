@@ -1,3 +1,18 @@
+http://www.rogerebert.com/reviews/-dollars-1971;$ (Dollars);1971
+http://www.rogerebert.com/reviews/1000000-duck-1971;$1,000,000 Duck;1971
+http://www.rogerebert.com/reviews/the-burbs-1989;The 'Burbs;1989
+http://www.rogerebert.com/reviews/round-midnight-1986;'Round Midnight;1986
+http://www.rogerebert.com/reviews/til-there-was-you-1997;'Til There Was You;1997
+http://www.rogerebert.com/reviews/untitled-2009;(Untitled);2009
+http://www.rogerebert.com/reviews/-and-justice-for-all-1979;... and Justice for All;1979
+http://www.rogerebert.com/reviews/10-1979;10;1979
+http://www.rogerebert.com/reviews/10-things-i-hate-about-you-1999;10 Things I Hate About You;1999
+http://www.rogerebert.com/reviews/100-rifles-1969;100 Rifles;1969
+http://www.rogerebert.com/reviews/101-dalmatians-1996;101 Dalmatians;1996
+http://www.rogerebert.com/reviews/101-dalmatians-1991;101 Dalmatians;1991
+http://www.rogerebert.com/reviews/102-dalmatians-2000;102 Dalmatians;2000
+http://www.rogerebert.com/reviews/the-11th-hour-2007;The 11th Hour;2007
+http://www.rogerebert.com/reviews/12-2009;12;2009
 http://www.rogerebert.com/reviews/zhou-yus-train-2004;Zhou Yu's Train;2004
 http://www.rogerebert.com/reviews/zodiac-2007;Zodiac;2007
 http://www.rogerebert.com/reviews/zombieland-2009;Zombieland;2009

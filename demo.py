@@ -12,10 +12,10 @@ def parse_title(search_title, search_year='', ebert_link=''):
     print "%s (%s)" % (search_title, search_year)
     # Get IMDB data 
     imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, search_year)
-    # If nothing is found then check the range around the search year to correct for inaccuracy
+    # If nothing is found then check the range below the search year to correct for inaccuracy
     if search_year and not imdb_title_obj_dict:
         search_year = int(search_year)
-        search_year_list = [search_year - 1, search_year + 1, search_year - 2, search_year + 2]
+        search_year_list = [search_year - 1, search_year - 2]
         for current_search_year in search_year_list:
             imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, current_search_year)
             if imdb_title_obj_dict:
@@ -58,7 +58,7 @@ def parse_title(search_title, search_year='', ebert_link=''):
 
         # rogerebert and rottentomatoes only have good data for movies
         if media_type == "Movie":
-            year_list = [year, year - 1, year + 1, year - 2, year + 2]
+            year_list = [year, year - 1, year - 2]
             # Get Metacritic data
             for current_year in year_list:
                 metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, current_year)
