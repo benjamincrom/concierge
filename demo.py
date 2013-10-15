@@ -5,6 +5,7 @@ import imdb_scraper
 import metacritic_scraper
 import roger_ebert_scraper
 import rottentomatoes_scraper
+import time
 
 
 def parse_title(search_title, search_year='', ebert_link=''):
@@ -119,6 +120,15 @@ def parse_title(search_title, search_year='', ebert_link=''):
 
 if __name__ == '__main__':
     lines = open('test_list.txt').readlines()
+    times = []
     for line in lines:
         (ebert_review_url, ebert_title, ebert_year) = line.split(';')
+        before = time.time()
         parse_title(ebert_title.strip(), ebert_year.strip(), ebert_review_url.strip())
+        after = time.time()
+        print "Time: %s" % (after - before)
+        times.append(after - before)
+
+    avg = sum(times)/len(times)
+    print "AVG: %s" % avg
+
