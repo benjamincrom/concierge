@@ -17,8 +17,8 @@ IMDB_LENGTH_REGEX = re.compile("itemprop=\"duration\".*?>(\d+) min<")
 IMDB_RATING_REGEX = re.compile("itemprop=\"contentRating\" content=\"(.+?)\"></span>")
 IMDB_SCORE_REGEX = re.compile("<span itemprop=\"ratingValue\">([0-9]*\.?[0-9]+)</span>")
 IMDB_TITLE_REGEX = re.compile("itemprop=\"name\">(.+?)</span>")  # not null
-IMDB_TV_EPISODE_REGEX = re.compile("\s+TV Episode\s+")
-IMDB_TV_SERIES_REGEX = re.compile("\s+TV Series\s+")
+IMDB_TV_EPISODE_REGEX = re.compile("<div class=\"infobar\">\s+TV Episode\s+&nbsp;-&nbsp;")
+IMDB_TV_SERIES_REGEX = re.compile("<div class=\"infobar\">\s+TV Series\s+&nbsp;-&nbsp;")
 IMDB_WIDTH_HEIGHT_REGEX = re.compile(".*?([0-9]*\.?[0-9]+).*?:.*?([0-9]*\.?[0-9]+).*?")
 
 IMDB_ASPECT_RATIO_REGEX = re.compile("<h4 class=\"inline\">Aspect Ratio:</h4>(.+?)<", re.DOTALL)
@@ -86,10 +86,12 @@ def scrape_imdb_data(search_title, year=''):
         # TV Series exclusively have creators
         elif video_type == IMDB_TYPE_TV_SERIES:
             creator_str = html_manipulator.use_regex(IMDB_CREATOR_STR_REGEX, imdb_html, True)
-            creator_list = _get_list_of_names(creator_str)
+            if creator_str:
+                creator_list = _get_list_of_names(creator_str)
 
             tv_total_seasons_str = html_manipulator.use_regex(IMDB_TOTAL_SEASONS_REGEX, imdb_html, True)
-            tv_total_seasons = int(tv_total_seasons_str)
+            if tv_total_seasons_str:
+                tv_total_seasons = int(tv_total_seasons_str)
 
         # Movies exclusively have gross
         elif video_type == IMDB_TYPE_MOVIE:
@@ -104,7 +106,10 @@ def scrape_imdb_data(search_title, year=''):
         budget = html_manipulator.use_regex(IMDB_BUDGET_REGEX, imdb_budget_html, True)
 
         score_str = html_manipulator.use_regex(IMDB_SCORE_REGEX, imdb_html, True)
-        score = float(score_str)/10.0
+        if score_str:
+            score = float(score_str)/10.0
+        else:
+            score = None
 
         aspect_ratio_str = html_manipulator.use_regex(IMDB_ASPECT_RATIO_REGEX, imdb_html, True)
         aspect_ratio = _get_aspect_ratio_float_from_str(aspect_ratio_str)
