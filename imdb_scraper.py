@@ -101,8 +101,10 @@ def scrape_imdb_data(search_title, year=''):
         imdb_poster_url = html_manipulator.use_regex(IMDB_POSTER_REGEX, imdb_html, True)
         length = html_manipulator.use_regex(IMDB_LENGTH_REGEX, imdb_html, True)
         rating = html_manipulator.use_regex(IMDB_RATING_REGEX, imdb_html, True)
-        score = html_manipulator.use_regex(IMDB_SCORE_REGEX, imdb_html, True)
         budget = html_manipulator.use_regex(IMDB_BUDGET_REGEX, imdb_budget_html, True)
+
+        score_str = html_manipulator.use_regex(IMDB_SCORE_REGEX, imdb_html, True)
+        score = float(score_str)/10.0
 
         aspect_ratio_str = html_manipulator.use_regex(IMDB_ASPECT_RATIO_REGEX, imdb_html, True)
         aspect_ratio = _get_aspect_ratio_float_from_str(aspect_ratio_str)

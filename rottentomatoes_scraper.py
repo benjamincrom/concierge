@@ -6,10 +6,6 @@ import html_manipulator
 import re
 
 
-# Set locale to UTF8 US English
-locale.setlocale(locale.LC_ALL, 'en_US.UTF8')
-
-
 ROTTENTOMATOES_QUERY_STRING = "site:rottentomatoes.com %s (%s)"
 
 ROTTENTOMATOES_ALL_CRITICS_REGEX = re.compile(
@@ -76,6 +72,6 @@ def scrape_rottentomatoes(title, year):
             if rottentomatoes_audience_match:
                 return_dict["audience_meter"] = float(rottentomatoes_audience_match.groups()[0]) / 100.0
                 return_dict["audience_avg_score"] = float(rottentomatoes_audience_match.groups()[1]) / 5.0
-                return_dict["audience_total"] = locale.atoi(rottentomatoes_audience_match.groups()[2])
+                return_dict["audience_total"] = int(rottentomatoes_audience_match.groups()[2].replace(',',''))
 
     return return_dict
