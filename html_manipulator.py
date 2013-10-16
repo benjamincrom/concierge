@@ -41,9 +41,9 @@ def get_top_google_result_url(search_string):
     """Return the url for the top google result returned when using this search string as a query.
 
     This method prefers the top entry of 'Results for Similar Searches' if that section is present on the page.
-    Returns None if no Google results are returned.
+    Returns '' if no Google results are returned.
     """
-    top_result_url = None
+    top_result_url = ''
     formatted_search_string = search_string.replace(' ', '+').replace('&', '')
     json_str = urllib2.urlopen(GOOGLE_QUERY_URL % formatted_search_string).read()
     json_obj = json.loads(json_str)
@@ -55,7 +55,7 @@ def get_top_google_result_url(search_string):
 
 def retrieve_html_from_url(url):
     """Return the raw html found at the given URL"""
-    html = None
+    html = ''
     if url:
         try:
             req = urllib2.Request(url, headers=SPOOFED_HEADERS)
@@ -72,7 +72,7 @@ def retrieve_html_from_url(url):
 
 def remove_html_tags(html_str):
     """Removes all html tags from the given string"""
-    return_str = None
+    return_str = ''
     if html_str:
         s = MLStripper()
         s.feed(html_str.decode('latin-1').encode('ascii', 'ignore'))
@@ -84,10 +84,10 @@ def remove_html_tags(html_str):
 def use_regex(given_regex, target_str, can_be_null):
     """Searches for given regex in target string and returns the first group if the regex is found.
 
-    Returns None if the given rexex is not found and can_be_null is True.
+    Returns '' if the given rexex is not found and can_be_null is True.
     Throws exception if given regex is not found and can_be_null is False.
     """
-    return_str = None
+    return_str = ''
     try:
         match = given_regex.search(target_str)
         if match:

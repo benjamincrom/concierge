@@ -11,7 +11,6 @@ from google.appengine.ext import db
 from google.appengine.api import users
 
 
-"""
 class NameOccupation(db.Model):
     name = db.StringProperty()
     occupation = db.StringProperty()
@@ -32,34 +31,32 @@ class Series(db.Model):
     creator = db.ReferenceProperty(NameOccupation)
     season_key_list = db.ListProperty(db.Key)
 
-
 class Season(db.Model):
     season_number = db.IntegerProperty()
     total_episodes_in_season = db.IntegerProperty()
     series = db.ReferenceProperty(Series)
     review_key_list = db.ListProperty(db.Key)
 
-"""
 class Video(db.Model):
     title = db.StringProperty()
-    year = db.IntegerProperty()
-    length = db.IntegerProperty()
     poster_url = db.StringProperty()
-    plot = db.StringProperty()
+    plot = db.TextProperty()
     tagline = db.StringProperty()
     gross = db.StringProperty()
     imdb_id = db.StringProperty()
-    score = db.FloatProperty()
     budget = db.StringProperty()
-    aspect_ratio = db.FloatProperty()
     video_type = db.StringProperty()
     rating = db.StringProperty()
+    genre_list = db.StringListProperty()
+    aspect_ratio = db.FloatProperty()
+    score = db.FloatProperty()
     episode_number_in_season = db.IntegerProperty()
     episode_number_in_total = db.IntegerProperty()
-    genre_list = db.StringListProperty()
-    #season = db.ReferenceProperty(Season)
+    year = db.IntegerProperty()
+    length = db.IntegerProperty()
     name_occupation_key_list = db.ListProperty(db.Key)
     review_key_list = db.ListProperty(db.Key)
+    season = db.ReferenceProperty(Season)
 
 
 class MainPage(webapp2.RequestHandler):
@@ -94,29 +91,6 @@ class MainPage(webapp2.RequestHandler):
                 else:
                     year = ''
 
-
-                v = Video(
-                    title=imdb_title_obj_dict["title"],
-                    score=imdb_title_obj_dict["score"],
-                    year=imdb_title_obj_dict["year"],
-                    length=imdb_title_obj_dict["length"],
-                    #imdb_id=imdb_title_obj_dict["imdb_id"],
-                    #poster_url=imdb_title_obj_dict["imdb_poster_url"],
-                    plot=imdb_title_obj_dict["plot"],
-                    tagline=imdb_title_obj_dict["tagline"],
-                    gross=imdb_title_obj_dict["gross"],
-                    #budget=imdb_title_obj_dict["budget"],
-                    #aspect_ratio=imdb_title_obj_dict["aspect_ratio"],
-                    #video_type=imdb_title_obj_dict["video_type"],
-                    #rating=imdb_title_obj_dict["rating"],
-                    #genre_list=imdb_title_obj_dict["genre_list"],
-                    #name_occupation_key_list=person_role_key_list,
-                )
-                v.put()
-
-                self.response.write(imdb_title_obj_dict)
-
-"""
                 # Print IMDB data
                 director_role_list = [(director, "Director") for director in imdb_title_obj_dict["director_list"]]
                 writer_role_list = [(writer, "Writer") for writer in imdb_title_obj_dict["writer_list"]]
@@ -128,10 +102,31 @@ class MainPage(webapp2.RequestHandler):
                     n = NameOccupation(
                         name=person,
                         occupation=role,
-                    )
+                        )
                     key = n.put()
                     person_role_key_list.append(key)
-"""
+
+                self.response.write(imdb_title_obj_dict)
+                self.response.write('YAHHOOOOO!')
+
+                v = Video(
+                    title=imdb_title_obj_dict["title"],
+                    score=imdb_title_obj_dict["score"],
+                    year=imdb_title_obj_dict["year"],
+                    length=imdb_title_obj_dict["length"],
+                    rating=imdb_title_obj_dict["rating"],
+                    imdb_id=imdb_title_obj_dict["imdb_id"],
+                    poster_url=imdb_title_obj_dict["imdb_poster_url"],
+                    plot=imdb_title_obj_dict["plot"],
+                    tagline=imdb_title_obj_dict["tagline"],
+                    gross=imdb_title_obj_dict["gross"],
+                    budget=imdb_title_obj_dict["budget"],
+                    video_type=imdb_title_obj_dict["video_type"],
+                    aspect_ratio=imdb_title_obj_dict["aspect_ratio"],
+                    genre_list=imdb_title_obj_dict["genre_list"],
+                    name_occupation_key_list=person_role_key_list,
+                )
+                v.put()
 """
                 # If this is a TV Series then get the Metacritic data for every season
                 if media_type == "TV Series":

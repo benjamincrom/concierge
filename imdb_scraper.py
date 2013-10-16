@@ -65,14 +65,14 @@ def scrape_imdb_data(search_title, year=''):
         imdb_budget_html = html_manipulator.retrieve_html_from_url(imdb_budget_url)
 
         # Initialize media_type exclusive data
-        tv_episode_index = None
-        tv_episode_total = None
-        show_title = None
-        season = None
-        episode = None
-        creator_list = None
-        tv_total_seasons = None
-        gross = None
+        tv_episode_index = ''
+        tv_episode_total = ''
+        show_title = ''
+        season = ''
+        episode = ''
+        creator_list = ''
+        tv_total_seasons = ''
+        gross = ''
         # TV Episodes exclusively have show title, episode, season, index, total
         if video_type == IMDB_TYPE_TV_EPISODE:
             title_season_episode_match = IMDB_TV_TITLE_SEASON_EPISODE_REGEX.search(imdb_html)
@@ -101,7 +101,6 @@ def scrape_imdb_data(search_title, year=''):
             raise Exception(IMDB_INVALID_TYPE_ERROR % title)
 
         imdb_poster_url = html_manipulator.use_regex(IMDB_POSTER_REGEX, imdb_html, True)
-        length = html_manipulator.use_regex(IMDB_LENGTH_REGEX, imdb_html, True)
         rating = html_manipulator.use_regex(IMDB_RATING_REGEX, imdb_html, True)
         budget = html_manipulator.use_regex(IMDB_BUDGET_REGEX, imdb_budget_html, True)
 
@@ -109,7 +108,7 @@ def scrape_imdb_data(search_title, year=''):
         if score_str:
             score = float(score_str)/10.0
         else:
-            score = None
+            score = ''
 
         aspect_ratio_str = html_manipulator.use_regex(IMDB_ASPECT_RATIO_REGEX, imdb_html, True)
         aspect_ratio = _get_aspect_ratio_float_from_str(aspect_ratio_str)
@@ -135,6 +134,12 @@ def scrape_imdb_data(search_title, year=''):
         year = html_manipulator.use_regex(IMDB_YEAR_REGEX, imdb_html, True)
         if year:
             year = int(year)
+
+        length = html_manipulator.use_regex(IMDB_LENGTH_REGEX, imdb_html, True)
+        if length:
+            length = int(length)
+        else:
+            length = None
 
         # Dump values into dictionary
         return_dict = {
@@ -184,7 +189,7 @@ def _determine_imdb_video_type(imdb_html):
 
 def _get_aspect_ratio_float_from_str(aspect_ratio_str):
     """Returns a float describing the aspect ratio given a text string describing the aspect ratio"""
-    aspect_ratio = None
+    aspect_ratio = ''
     if aspect_ratio_str:
         width_height_match = IMDB_WIDTH_HEIGHT_REGEX.search(aspect_ratio_str)
         if width_height_match:
@@ -196,7 +201,8 @@ def _get_aspect_ratio_float_from_str(aspect_ratio_str):
 def _get_list_of_names(name_str):
     """Returns a python list of names given an IMDB HTML list of names"""
     if name_str:
+        name_str_ascii = name_str.encode('ascii')
         name_list = IMDB_NAME_LIST_REGEX.findall(name_str)
     else:
-        name_list = None
+        name_list = ''
     return name_list

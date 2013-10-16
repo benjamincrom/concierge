@@ -44,7 +44,7 @@ def scrape_metacritic(title, year='', season=''):
             if metacritic_release_year_str:
                 metacritic_release_year = int(metacritic_release_year_str)
             else:
-                metacritic_release_year = None
+                metacritic_release_year = ''
 
         # Allow for a range of years (+/- 2) to correct for error
         if year:
