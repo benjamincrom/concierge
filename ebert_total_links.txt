@@ -1,3 +1,99 @@
+http://www.rogerebert.com/reviews/-dollars-1971;$ (Dollars);1971
+http://www.rogerebert.com/reviews/1000000-duck-1971;$1,000,000 Duck;1971
+http://www.rogerebert.com/reviews/the-burbs-1989;The 'Burbs;1989
+http://www.rogerebert.com/reviews/round-midnight-1986;'Round Midnight;1986
+http://www.rogerebert.com/reviews/til-there-was-you-1997;'Til There Was You;1997
+http://www.rogerebert.com/reviews/untitled-2009;(Untitled);2009
+http://www.rogerebert.com/reviews/-and-justice-for-all-1979;... and Justice for All;1979
+http://www.rogerebert.com/reviews/10-1979;10;1979
+http://www.rogerebert.com/reviews/10-things-i-hate-about-you-1999;10 Things I Hate About You;1999
+http://www.rogerebert.com/reviews/100-rifles-1969;100 Rifles;1969
+http://www.rogerebert.com/reviews/101-dalmatians-1996;101 Dalmatians;1996
+http://www.rogerebert.com/reviews/101-dalmatians-1991;101 Dalmatians;1991
+http://www.rogerebert.com/reviews/102-dalmatians-2000;102 Dalmatians;2000
+http://www.rogerebert.com/reviews/the-11th-hour-2007;The 11th Hour;2007
+http://www.rogerebert.com/reviews/12-2009;12;2009
+http://www.rogerebert.com/reviews/12-monkeys-1996;12 Monkeys;1996
+http://www.rogerebert.com/reviews/127-hours-2010;127 Hours;2010
+http://www.rogerebert.com/reviews/13-assassins-2011;13 Assassins;2011
+http://www.rogerebert.com/reviews/13-conversations-about-one-thing-2002;13 Conversations About One Thing;2002
+http://www.rogerebert.com/reviews/13-ghosts-2001;13 Ghosts;2001
+http://www.rogerebert.com/reviews/13-going-on-30-2004;13 going on 30;2004
+http://www.rogerebert.com/reviews/the-13th-warrior-1999;The 13th Warrior;1999
+http://www.rogerebert.com/reviews/1492-conquest-of-paradise-1992;1492: Conquest Of Paradise;1992
+http://www.rogerebert.com/reviews/15-minutes-2001;15 Minutes;2001
+http://www.rogerebert.com/reviews/16-blocks-2006;16 Blocks;2006
+http://www.rogerebert.com/reviews/17-1968;17;1968
+http://www.rogerebert.com/reviews/17-again-2009;17 Again;2009
+http://www.rogerebert.com/reviews/1776-1972;1776;1972
+http://www.rogerebert.com/reviews/18-again-1988;18 Again!;1988
+http://www.rogerebert.com/reviews/187-1997;187;1997
+http://www.rogerebert.com/reviews/1900-1977;1900;1977
+http://www.rogerebert.com/reviews/1941-1979;1941;1979
+http://www.rogerebert.com/reviews/1984-1984;1984;1984
+http://www.rogerebert.com/reviews/2-days-in-the-valley-1996;2 Days In The Valley;1996
+http://www.rogerebert.com/reviews/2-days-in-new-york-2012;2 Days in New York;2012
+http://www.rogerebert.com/reviews/2-days-in-paris-2007;2 Days in Paris;2007
+http://www.rogerebert.com/reviews/2-fast-2-furious-2003;2 Fast 2 Furious;2003
+http://www.rogerebert.com/reviews/20-dates-1999;20 Dates;1999
+http://www.rogerebert.com/reviews/200-cigarettes-1999;200 Cigarettes;1999
+http://www.rogerebert.com/reviews/200-motels-1971;200 Motels;1971
+http://www.rogerebert.com/reviews/2010-1984;2010;1984
+http://www.rogerebert.com/reviews/2012-2009;2012;2009
+http://www.rogerebert.com/reviews/2046-2005;2046;2005
+http://www.rogerebert.com/reviews/21-grams-2003;21 Grams;2003
+http://www.rogerebert.com/reviews/21-jump-street-2012;21 Jump Street;2012
+http://www.rogerebert.com/reviews/21-and-a-wakeup-2009;21 and a Wakeup;2009
+http://www.rogerebert.com/reviews/24-hour-party-people-2002;24 Hour Party People;2002
+http://www.rogerebert.com/reviews/the-24-hour-woman-1999;The 24 Hour Woman;1999
+http://www.rogerebert.com/reviews/28-days-2000;28 Days;2000
+http://www.rogerebert.com/reviews/28-days-later-2003;28 Days Later;2003
+http://www.rogerebert.com/reviews/28-up-1986;28 Up;1986
+http://www.rogerebert.com/reviews/29th-street-1991;29th Street;1991
+http://www.rogerebert.com/reviews/3-2011;3;2011
+http://www.rogerebert.com/reviews/3-men-and-a-cradle-1986;3 Men And A Cradle;1986
+http://www.rogerebert.com/reviews/3-ninjas-kick-back-1994;3 Ninjas Kick Back;1994
+http://www.rogerebert.com/reviews/30-days-of-night-2007;30 Days of Night;2007
+http://www.rogerebert.com/reviews/30-minutes-or-less-2011;30 Minutes or Less;2011
+http://www.rogerebert.com/reviews/300-2006;300;2006
+http://www.rogerebert.com/reviews/3000-miles-to-graceland-2001;3000 Miles To Graceland;2001
+http://www.rogerebert.com/reviews/35-shots-of-rum-2010;35 Shots of Rum;2010
+http://www.rogerebert.com/reviews/35-up-1992;35 Up;1992
+http://www.rogerebert.com/reviews/36-fillette-1989;36 Fillette;1989
+http://www.rogerebert.com/reviews/39-pounds-of-love-2005;39 Pounds of Love;2005
+http://www.rogerebert.com/reviews/310-to-yuma-2007;3:10 to Yuma;2007
+http://www.rogerebert.com/reviews/4-little-girls-1997;4 Little Girls;1997
+http://www.rogerebert.com/reviews/4-months-3-weeks-and-2-days-2008;4 Months, 3 Weeks and 2 Days;2008
+http://www.rogerebert.com/reviews/forty-carats-1973;40 Carats;1973
+http://www.rogerebert.com/reviews/40-days-and-40-nights-2002;40 Days And 40 Nights;2002
+http://www.rogerebert.com/reviews/the-40-year-old-virgin-2005;The 40-Year-Old Virgin;2005
+http://www.rogerebert.com/reviews/42-up-2000;42 Up;2000
+http://www.rogerebert.com/reviews/45365-2010;45365;2010
+http://www.rogerebert.com/reviews/48-hrs-1982;48 Hrs.;1982
+http://www.rogerebert.com/reviews/49-up-2006;49 Up;2006
+http://www.rogerebert.com/reviews/5-days-of-war-2011;5 Days of War;2011
+http://www.rogerebert.com/reviews/50-first-dates-2004;50 First Dates;2004
+http://www.rogerebert.com/reviews/5050-2011;50/50;2011
+http://www.rogerebert.com/reviews/500-days-of-summer-2009;(500) Days of Summer;2009
+http://www.rogerebert.com/reviews/51-birch-street-2006;51 Birch Street;2006
+http://www.rogerebert.com/reviews/52-pick-up-1986;52 Pick-Up;1986
+http://www.rogerebert.com/reviews/56-up-2013;56 Up;2013
+http://www.rogerebert.com/reviews/the-6th-day-2000;The 6th Day;2000
+http://www.rogerebert.com/reviews/8-12-women-2000;8 1/2 Women;2000
+http://www.rogerebert.com/reviews/8-heads-in-a-duffle-bag-1997;8 Heads In A Duffle Bag;1997
+http://www.rogerebert.com/reviews/8-mile-2002;8 Mile;2002
+http://www.rogerebert.com/reviews/8-seconds-1994;8 Seconds;1994
+http://www.rogerebert.com/reviews/8-women-2002;8 Women;2002
+http://www.rogerebert.com/reviews/84-charing-cross-road-1987;84 Charing Cross Road;1987
+http://www.rogerebert.com/reviews/84-charlie-mopic-1989;84 Charlie MoPic;1989
+http://www.rogerebert.com/reviews/8mm-1999;8mm;1999
+http://www.rogerebert.com/reviews/9-2009;9;2009
+http://www.rogerebert.com/reviews/9-12-weeks-1986;9 1/2 Weeks;1986
+http://www.rogerebert.com/reviews/9-songs-2005;9 Songs;2005
+http://www.rogerebert.com/reviews/9500-liberty-2010;9500 Liberty;2010
+http://www.rogerebert.com/reviews/a-cry-in-the-dark-1988;A Cry in the Dark;1988
+http://www.rogerebert.com/reviews/a-glimpse-inside-the-mind-of-charles-swan-iii-2013;A Glimpse Inside the Mind of Charles Swan III;2013
+http://www.rogerebert.com/reviews/a-month-by-the-lake-1995;A Month by the Lake;1995
 http://www.rogerebert.com/reviews/a-place-at-the-table-2013;A Place at the Table;2013
 http://www.rogerebert.com/reviews/a-slipping-down-life-2004;A Slipping-Down Life;2004
 http://www.rogerebert.com/reviews/the-a-team-2010;The A-Team;2010

@@ -119,7 +119,7 @@ def parse_title(search_title, search_year='', ebert_link=''):
 
 
 if __name__ == '__main__':
-    lines = open('test_list.txt').readlines()
+    lines = open('ebert_link_list.txt').readlines()
     times = []
     for line in lines:
         (ebert_review_url, ebert_title, ebert_year) = line.split(';')
