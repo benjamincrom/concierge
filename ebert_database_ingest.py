@@ -9,6 +9,7 @@ import rottentomatoes_scraper
 
 
 INPUT_FILE = 'test_list.txt'
+MOVIE_MEDIA_TYPE = 'Movie'
 OUTPUT_FILE = 'formatted_titles.txt'
 
 
@@ -26,27 +27,16 @@ def parse_title(search_title, out_file, search_year='', ebert_link=''):
 
     # If we can't get the IMDB scrape completed then there is no point in continuing
     if imdb_title_obj_dict:
-        rottentomatoes_obj_dict = {}
-        metacritic_obj_dict = {}
-
         title = imdb_title_obj_dict["title"]
-        media_type = imdb_title_obj_dict["video_type"]
-        if imdb_title_obj_dict["year"]:
-            year = int(imdb_title_obj_dict["year"])
-        else:
-            year = ''
-
-        # If this is a TV Series then get the Metacritic data for every season
-        if media_type == "TV Series":
-            season_list = range(1, imdb_title_obj_dict["tv_total_seasons"] + 1)
-            season_title_list = ["Season %s" % season_index for season_index in season_list]
-            # Scrape Metacritic data for each season
-            for season_title in season_title_list:
-                metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, season=season_title)
-
-        # rogerebert and rottentomatoes only have good data for movies
-        if media_type == "Movie":
+        year = imdb_title_obj_dict["year"]
+        video_type = imdb_title_obj_dict["video_type"]
+	
+	if video_type == "Movie" and year:
+            year = int(year)
             year_list = [year, year - 1, year - 2]
+            rottentomatoes_obj_dict = {}
+            metacritic_obj_dict = {}
+
             # Get Metacritic data -- try both the IMDB title and the given search title
             for current_year in year_list:
                 metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, current_year)
@@ -75,12 +65,12 @@ def parse_title(search_title, out_file, search_year='', ebert_link=''):
             if ebert_link:
                 rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(ebert_link)
 
-        # Build json string containing all data and append to output file
-        return_dict = dict(imdb_title_obj_dict.items() + rottentomatoes_obj_dict.items() +
-                           metacritic_obj_dict.items() + rogerebert_obj_dict.items())
+            # Build json string containing all data and append to output file
+            return_dict = dict(imdb_title_obj_dict.items() + rottentomatoes_obj_dict.items() +
+                               metacritic_obj_dict.items() + rogerebert_obj_dict.items())
 
-        return_json_str = json.dumps(return_dict, sort_keys=True, indent=4, separators=(',', ': '))
-        out_file.write(return_json_str)
+            return_json_str = json.dumps(return_dict, sort_keys=True, indent=4, separators=(',', ': '))
+            out_file.write(return_json_str)
 
 
 if __name__ == '__main__':

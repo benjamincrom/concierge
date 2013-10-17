@@ -1,20 +1,2 @@
-http://www.rogerebert.com/reviews/crocodile-dundee-1986;Crocodile Dundee;1986
-http://www.rogerebert.com/reviews/crocodile-dundee-in-los-angeles-2001;Crocodile Dundee In Los Angeles;2001
-http://www.rogerebert.com/reviews/the-crocodile-hunter-collision-course-2002;The Crocodile Hunter: Collision Course;2002
 http://www.rogerebert.com/reviews/cromwell-1971;Cromwell;1971
 http://www.rogerebert.com/reviews/cronicas-2005;Cronicas;2005
-http://www.rogerebert.com/reviews/cronos-1994;Cronos;1994
-http://www.rogerebert.com/reviews/crooklyn-1994;Crooklyn;1994
-http://www.rogerebert.com/reviews/cropsey-2010;Cropsey;2010
-http://www.rogerebert.com/reviews/cross-creek-1984;Cross Creek;1984
-http://www.rogerebert.com/reviews/cross-my-heart-1987;Cross My Heart;1987
-http://www.rogerebert.com/reviews/crossing-delancey-1988;Crossing Delancey;1988
-http://www.rogerebert.com/reviews/the-crossing-guard-1995;The Crossing Guard;1995
-http://www.rogerebert.com/reviews/crossing-over-2009;Crossing Over;2009
-http://www.rogerebert.com/reviews/crossover-dreams-1985;Crossover Dreams;1985
-http://www.rogerebert.com/reviews/crossroads-1986;Crossroads;1986
-http://www.rogerebert.com/reviews/crouching-tiger-hidden-dragon-2000;Crouching Tiger, Hidden Dragon;2000
-http://www.rogerebert.com/reviews/croupier-2000;Croupier;2000
-http://www.rogerebert.com/reviews/the-crow-1994;The Crow;1994
-http://www.rogerebert.com/reviews/the-crucible-1996;The Crucible;1996
-http://www.rogerebert.com/reviews/cruel-intentions-1999;Cruel Intentions;1999
