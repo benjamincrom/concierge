@@ -15,6 +15,7 @@ OUTPUT_FILE = 'formatted_titles.txt'
 
 
 def parse_title(search_title, out_file, search_year='', ebert_link=''):
+    print search_title + " -- " + search_year
     # Get IMDB data
     imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, search_year)
     # If nothing is found then check the range (-2) below the search year to correct for inaccuracy
