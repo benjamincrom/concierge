@@ -8,6 +8,10 @@ import roger_ebert_scraper
 import rottentomatoes_scraper
 
 
+INPUT_FILE = 'test_list.txt'
+OUTPUT_FILE = 'formatted_titles.txt'
+
+
 def parse_title(search_title, out_file, search_year='', ebert_link=''):
     # Get IMDB data
     imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, search_year)
@@ -68,11 +72,11 @@ def parse_title(search_title, out_file, search_year='', ebert_link=''):
             if ebert_link:
                 rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(ebert_link)
 
+        # Build json string containing all data and append to output file
         return_dict = dict(imdb_title_obj_dict.items() + rottentomatoes_obj_dict.items() +
                            metacritic_obj_dict.items() + rogerebert_obj_dict.items())
         return_json_str = json.dumps(return_dict, sort_keys=True, indent=4, separators=(',', ': '))
         out_file.write(return_json_str)
-
 
 
 if __name__ == '__main__':
