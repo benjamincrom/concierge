@@ -54,7 +54,6 @@ def scrape_metacritic(title, year='', season=''):
 
         # Return values only if the movie release year matches the metacritic release year or if title is a TV Season
         if season or metacritic_release_year in year_list:
-            print metacritic_release_year_str
             metacritic_metascore_match = METACRITIC_METASCORE_REGEX.search(metacritic_review_html)
             if metacritic_metascore_match:
                 return_dict["metacritic_metascore_meter"] = float(metacritic_metascore_match.group(1)) / 100.0

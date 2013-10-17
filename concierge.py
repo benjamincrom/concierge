@@ -15,6 +15,7 @@ class NameOccupation(db.Model):
     name = db.StringProperty()
     occupation = db.StringProperty()
 
+
 class Review(db.Model):
     review_content = db.TextProperty()
     review_score = db.StringProperty()
@@ -31,11 +32,13 @@ class Series(db.Model):
     creator = db.ReferenceProperty(NameOccupation)
     season_key_list = db.ListProperty(db.Key)
 
+
 class Season(db.Model):
     season_number = db.IntegerProperty()
     total_episodes_in_season = db.IntegerProperty()
     series = db.ReferenceProperty(Series)
     review_key_list = db.ListProperty(db.Key)
+
 
 class Video(db.Model):
     title = db.StringProperty()
@@ -106,9 +109,6 @@ class MainPage(webapp2.RequestHandler):
                     key = n.put()
                     person_role_key_list.append(key)
 
-                self.response.write(imdb_title_obj_dict)
-                self.response.write('YAHHOOOOO!')
-
                 v = Video(
                     title=imdb_title_obj_dict["title"],
                     score=imdb_title_obj_dict["score"],
@@ -127,7 +127,7 @@ class MainPage(webapp2.RequestHandler):
                     name_occupation_key_list=person_role_key_list,
                 )
                 v.put()
-"""
+
                 # If this is a TV Series then get the Metacritic data for every season
                 if media_type == "TV Series":
                     season_list = range(1, imdb_title_obj_dict["tv_total_seasons"] + 1)
