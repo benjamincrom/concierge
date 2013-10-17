@@ -1,0 +1,758 @@
+{
+    "all_critics_avg_score": 0.48,
+    "all_critics_fresh": 56,
+    "all_critics_meter": 0.36,
+    "all_critics_rotten": 101,
+    "all_critics_total": 157,
+    "aspect_ratio": 2.35,
+    "audience_avg_score": 0.62,
+    "audience_meter": 0.57,
+    "audience_total": 32770118,
+    "budget": "$76,000,000 (estimated)",
+    "director_list": [
+        "John Singleton"
+    ],
+    "formatted_review_text": "<p>John Singleton's \"2 Fast 2 Furious\" tells a story so shamelessly preposterous all we can do is shake our heads in disbelief. Consider that the big climax involves a Miami druglord who hires two street racers to pick up bags full of money in North Beach and deliver them in the Keys, and adds, \"You make it, I'll personally hand you $100 Gs at the finish line.\" Hell, for 10 Gs, I'd rent a van at the Aventura Mall and deliver the goods myself.</p><p>But this is not an ordinary delivery. The drivers are expected to drive at speeds ranging from 100 mph to jet-assisted takeoff velocities, which of course might attract the attention of the police, so the druglord has to arrange a 15-minute \"window\" with a corrupt cop, who he persuades by encouraging a rat to eat its way into his intestines. Does it strike you that this man is going to a lot of extra trouble? Despite the persuasive rat, the cops do chase the speed-racers, but they have anticipated this, and drive their cars into a vast garage, after which dozens or hundreds of other supercharged vehicles emerge from the garage, confusing the cops with a high-speed traffic jam. Oh, and some guys in monster trucks crush a lot of squad cars first. It is my instinct that the owners of monster trucks and street machines treat them with tender loving care, and don't casually volunteer to help out a couple of guys (one they've never seen before) by crashing their vehicles into police cars. You can get arrested for that.</p><p>Does it sound like I'm complaining? I'm not complaining. I'm grinning. \"2 Fast 2 Furious\" is a video game crossed with a buddy movie, a bad cop-good cop movie, a Miami druglord movie, a chase movie and a comedy. It doesn't have a brain in its head, but it's made with skill and style and, boy, is it fast and furious.</p><p>How much like a video game is it? The two drivers are named Brian <a href=\"http://www.rogerebert.com/cast-and-crew/oconnor\">O&#x27;Connor</a> (<a href=\"http://www.rogerebert.com/cast-and-crew/paul-walker\">Paul Walker</a>) and Roman Pearce (Tyrese). As they race down city streets at one-fifth the speed of sound, they talk to each other. They can't hear each other, but that doesn't matter, because what they say is exactly the kind of stuff that avatars say in video games. I took some notes: \"Let's see what this thing can do!\" \"Watch this, bro!\" \"Let's see if you still got it, Brian!\" \"How you like them apples!?\" Walker returns from the original \"<a href=\"http://www.rogerebert.com/reviews/the-fast-and-the-furious-2001\">The Fast and the Furious</a>\" (2001), which established <a href=\"http://www.rogerebert.com/cast-and-crew/vin-diesel\">Vin Diesel</a> as a star. Rather than appear in this movie, about cops infiltrating his car gang to bust the drug cartel, Diesel decided instead to make \"<a href=\"http://www.rogerebert.com/reviews/a-man-apart-2003\">A Man Apart</a>,\" playing a cop fighting the drug cartel. Oddly enough, F&amp;F2 is the better movie.</p><p>Walker's co-star is Tyrese, aka <a href=\"http://www.rogerebert.com/cast-and-crew/tyrese-gibson\">Tyrese Gibson</a>, who was so good in Singleton's \"<a href=\"http://www.rogerebert.com/reviews/baby-boy-2001\">Baby Boy</a>\" (2001) and is the engine that drives \"2 Fast 2 Furious\" with energy and charisma. He's like an angrier Vin Diesel. Walker, who gets top billing in both movies, is pleasant but not compelling, sort of a <a href=\"http://www.rogerebert.com/cast-and-crew/don-johnson\">Don Johnson</a> lite.</p><p>Other key roles are by <a href=\"http://www.rogerebert.com/cast-and-crew/cole-hauser\">Cole Hauser</a> as Carter Verone, the druglord, whose Colombian parents didn't name him after Jimmy, since he's too old for that, but possibly after Mother Maybelle; and <a href=\"http://www.rogerebert.com/cast-and-crew/eva-mendes\">Eva Mendes</a>, as Monica Fuentes, the sexy undercover cop who has been on Verone's payroll for nine months and is either sleeping with him or is a sensational conversationalist.</p><p>O'Connor and Pearce are teamed up to work undercover as drivers for Verone, and promised that their records will be cleaned up if the mission succeeds. First they have to win their jobs. Verone assembles several teams of drivers and tells them he left a package in his red Ferrari at an auto pound 20 miles away. First team back with the package \"gets the opportunity to work with me.\" That sets off a high-speed race down Route 95 during which one car is crushed under the wheels of a truck, several more crash, and various racers and, presumably, civilians are killed. O'Connor and Pearce return with the package. As they're driving back, they don't even seem to pass the scene of the incredible carnage they caused in the opposite lanes; just as well, because at 120 mph you don't want to hit a gapers' block.</p><p>All of the chases involve the apparently inexhaustible supply of squad cars in South Florida. There's also a traffic jam in the sky, involving police and news helicopters. At one point a copter broadcaster hears a loud noise, looks up, and says \"what was that?\" but we never find out what it was, perhaps because the movie is just too fast and too furious to slow down for a helicopter crash.</p>",
+    "genre_list": [
+        "Action",
+        "Crime",
+        "Thriller"
+    ],
+    "gross": "$127,154,901",
+    "imdb_id": "tt0322259",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTIyMDUwMDc4OF5BMl5BanBnXkFtZTYwNTY2Nzk5._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 107,
+    "metacritic_metascore_meter": 0.38,
+    "metacritic_metascore_total": 35,
+    "metacritic_userscore_meter": 0.6,
+    "metacritic_userscore_total": 200,
+    "plot": "Brian O'Conner and childhood friend Roman Pearce are re-united by the FBI to bring down a Miami drug exporter in exchange for clear records.",
+    "rating": "PG-13",
+    "review_author": "Roger Ebert",
+    "review_date": "2003-06-06",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.54,
+    "star_list": [
+        "Paul Walker",
+        "Tyrese Gibson",
+        "Cole Hauser"
+    ],
+    "tagline": "How fast do you like it?",
+    "title": "2 Fast 2 Furious",
+    "top_critics_avg_score": 0.49000000000000005,
+    "top_critics_fresh": 14,
+    "top_critics_meter": 0.38,
+    "top_critics_rotten": 23,
+    "top_critics_total": 37,
+    "video_type": "Movie",
+    "writer_list": [
+        "Gary Scott Thompson",
+        "Michael Brandt"
+    ],
+    "year": 2003
+}{
+    "all_critics_avg_score": 0.6799999999999999,
+    "all_critics_fresh": 100,
+    "all_critics_meter": 0.85,
+    "all_critics_rotten": 17,
+    "all_critics_total": 117,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.72,
+    "audience_meter": 0.7,
+    "audience_total": 49978,
+    "budget": "",
+    "director_list": [
+        "Julie Delpy"
+    ],
+    "formatted_review_text": "<p><span style=\"line-height: 1.45em;\">I once gave flowers to a French girl and was told they were \"flagrant.\" When Marion, the character played by <a href=\"http://www.rogerebert.com/cast-and-crew/julie-delpy\">Julie Delpy</a> in \"2 Days in Paris\" makes mistakes like that, she knows what she's doing. If her relationship with her lover Jack is coming apart at the seams, that's her with a little thimble and needle, pulling out the stitches. The movie covers the end of a European vacation which was intended to mend their relationship, and the holiday has gone badly. Sometimes when you want to know, really know, somebody, you find out that actually you'd rather not.</span><br></p><p>Jack (<a href=\"http://www.rogerebert.com/cast-and-crew/adam-goldberg\">Adam Goldberg</a>) had a bad time in Venice. How can that be? Was it <a href=\"http://www.rogerebert.com/cast-and-crew/woody-allen\">Woody Allen</a> who said the worst sex he ever had wasn't that bad? Same with bad trips to Venice. Jack got severe diarrhea, and tried Marion's patience by taking photos of everything, apparently, except the diarrhea itself. Has he never heard of Imodium, that word along with \"taxi\" and \"OK\" that gets most Americans around the world? And did he think he was needed to remedy the world's tragic shortage of photos of Venice?</p><p>But never mind. The last two days of the holiday are to be spent in Paris, Marion's hometown, before they return to New York, where they now live. They move in upstairs from Marion's parents, Anna and Jeannot (played by Delpy's real parents, <a href=\"http://www.rogerebert.com/cast-and-crew/marie-pillet\">Marie Pillet</a> and <a href=\"http://www.rogerebert.com/cast-and-crew/albert-delpy\">Albert Delpy</a>). Culture shock sets in at the first meal, braised rabbit. You'd think Anna and Jeannot could try the merciful American tactic of calling it \"chicken\" but perhaps when you serve the rabbit head along with its eyeballs, it looks like a chicken that has been fed too many hormones.</p><p>Marion and Jack wander about Paris, talking in that way that lovers have when they're beginning to get on each other's nerves. But, no, this is not a retread of Richard Linklater's \"<a href=\"http://www.rogerebert.com/reviews/before-sunset-2004\">Before Sunset</a>\" (2004), in which Delpy and <a href=\"http://www.rogerebert.com/cast-and-crew/ethan-hawke\">Ethan Hawke</a> walked and talked around Paris. It is a contemplation of incompatibility, as Paris brings out a side of Marion that Jack has never quite seen: Is she a radical political activist and a shameless slut, or does she only act like one? She runs into old boyfriends so often it makes Paris seem like a small town, and attacks one of them, in a restaurant, for taking a sex vacation to Thailand.</p><p>At home, her father quizzes Jack on French culture, and her mother is so eager to wash and press his clothes that he barely has time to get out of them. Both of Delpy's parents are professional actors, and so these are only performances, I hope. In addition to casting her parents, Delpy puts her mark on this film in many other ways: She starred, directed, wrote, edited, co-produced, composed the score and sang a song. When a women takes that many jobs, we slap her down for vanity. When a man does, we call him the new <a href=\"http://www.rogerebert.com/cast-and-crew/orson-welles\">Orson Welles</a>.</p><p>Delpy in fact has made a smart film with an edge to it; her Jack and Marion reveal things about themselves they never thought they'd tell anybody, and we wonder why they ever went out on a second date. Much has been made of the similarities between Delpy here and <a href=\"http://www.rogerebert.com/cast-and-crew/diane-keaton\">Diane Keaton</a> in \"<a href=\"http://www.rogerebert.com/reviews/great-movie-annie-hall-1977\">Annie Hall</a>\" but if Delpy's character found a spider as big as a Buick in the bathroom, she'd braise it and serve it up for lunch.</p><p>Which is an oblique way of saying that Julie Delpy is an original, a woman who refuses to be defined or limited. Her first great roles were in Bertrand Tavernier's \"<a href=\"http://www.rogerebert.com/reviews/beatrice-1988\">Beatrice</a>\" (1987), Agnieszka Holland's \"Europa Europa\" (1990) and Krzysztof Kieslowski's \"<a href=\"http://www.rogerebert.com/reviews/white-1994\">White</a>\" (1994); she was in Linklater's \"<a href=\"http://www.rogerebert.com/reviews/before-sunrise-1995\">Before Sunrise</a>\" \"<a href=\"http://www.rogerebert.com/reviews/waking-life-2001-1\">Waking Life</a>\" and \"Before Sunset\" and she dumped <a href=\"http://www.rogerebert.com/cast-and-crew/bill-murray\">Bill Murray</a> at the beginning of Jim Jarmusch's \"<a href=\"http://www.rogerebert.com/reviews/broken-flowers-2005\">Broken Flowers</a>.\" In between, she studied film at NYU and made herself available for 30 student productions.</p><p>What she has done here is avoid all temptation to recycle the usual lovers-in-Paris possibilities, and has created two original, quirky characters so obsessed with their differences that Paris is almost a distraction. I don't think I heard a single accordion in the whole film.</p>",
+    "genre_list": [
+        "Comedy",
+        "Drama",
+        "Romance"
+    ],
+    "gross": "$4,432,981",
+    "imdb_id": "tt0841044",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMjAyNTY3NTcyOF5BMl5BanBnXkFtZTcwMTcyMjM1MQ@@._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 96,
+    "metacritic_metascore_meter": 0.67,
+    "metacritic_metascore_total": 30,
+    "metacritic_userscore_meter": 0.6599999999999999,
+    "metacritic_userscore_total": 63,
+    "plot": "Marion and Jack try to rekindle their relationship with a visit to Paris, home of Marion's parents -- and several of her ex-boyfriends.",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "2007-08-23",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.6799999999999999,
+    "star_list": [
+        "Julie Delpy",
+        "Adam Goldberg",
+        "Daniel Brhl"
+    ],
+    "tagline": "He knew Paris was for lovers. He just didn't think they were all hers.",
+    "title": "2 Days in Paris",
+    "top_critics_avg_score": 0.6900000000000001,
+    "top_critics_fresh": 36,
+    "top_critics_meter": 0.88,
+    "top_critics_rotten": 5,
+    "top_critics_total": 41,
+    "video_type": "Movie",
+    "writer_list": [
+        "Julie Delpy"
+    ],
+    "year": 2007
+}{
+    "all_critics_avg_score": 0.48,
+    "all_critics_fresh": 12,
+    "all_critics_meter": 0.38,
+    "all_critics_rotten": 20,
+    "all_critics_total": 32,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.62,
+    "audience_meter": 0.49,
+    "audience_total": 532,
+    "budget": "$60,000 (estimated)",
+    "director_list": [
+        "Myles Berkowitz"
+    ],
+    "formatted_review_text": "<p>\"Twenty Dates'' tells the story of <a href=\"http://www.rogerebert.com/cast-and-crew/myles-berkowitz\">Myles Berkowitz</a>, a man who wants to make a film, and to fall in love. These areas are his \"two greatest failures, professional and personal,'' so he decides to make a film about going out on 20 dates. By the film's end, he has won the love of the lovely Elisabeth--maybe--but his professional life is obviously still a failure.</p><p>The film has the obnoxious tone of a boring home movie narrated by a guy shouting in your ear. We learn how he gets a $60,000 investment from a man named Elie Samaha and uses it to hire a cameraman and a sound man to follow him around on his dates. Elie is never seen on film, but is taped with an (allegedly) hidden recorder while he threatens Berkowitz, complains about the quality of the footage, and insists on sex, stars--and a scene with <a href=\"http://www.rogerebert.com/cast-and-crew/tia-carrere\">Tia Carrere</a>.</p><p>Elie has a point. Even though $60,000 is a low budget, you can't exactly see the money up there on the screen. I've seen features shot for half as much that were more impressive. What's worse is that Berkowitz loses our trust early in the film and never regains it. I don't know how much of this film is real, if any of it is. Some scenes are admittedly staged and others feel that way.</p><p>Even though Berkowitz presumably displays himself in his best light, I couldn't find a moment when he said anything of charm or interest to one of his dates. He's surprised when one woman is offended to learn she's being photographed with a hidden camera, and when another one delivers an (unseen) hand wound that requires 20 stitches. The movie's best dialogue is: \"I could have sworn that Karen and I had fallen in love. And now, it's never to be, because I couldn't ever get close to her--at least not closer than 90 feet, which was specified in the restraining order.'' One of his dates, Stephanie, is a Hollywood wardrobe mistress. He asks her for free costumes for his movie (if it's a doc, why does it need costumes?). She leaves for the restroom, \"and I never saw her again.'' Distraught, he consults Robert <a href=\"http://www.rogerebert.com/cast-and-crew/mckay\">McKay</a>, a writing teacher, and McKay gives him theories about screen romance, which are irrelevant, of course, to an allegedly true-life documentary.</p><p>And what about Elie? He sounds unpleasant, vulgar and tasteless (although no more so than many Hollywood producers). But why are we shown the outside of the county jail during his last conversation? Is he inside? What for? He promises to supply Tia Carrere, who indeed turns up in the film, describing Elie as a \"very good friend.'' She may want to change her number.</p><p>There's a 1996 film available on video named \"Me &amp; My Matchmaker,'' about a filmmaker who consults a matchmaker and goes on dates that he films himself. It is incomparably more entertaining, funny, professional, absorbing, honest, revealing, surprising and convincing than \"20 Dates.'' It works wonderfully to demonstrate just how incompetent and annoying \"20 Dates'' really is.</p>",
+    "genre_list": [
+        "Biography",
+        "Comedy",
+        "Romance"
+    ],
+    "gross": "$536,767",
+    "imdb_id": "tt0138987",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTY1MTIyMzI1Ml5BMl5BanBnXkFtZTYwNzg1Mzk5._V1_SY313_CR1,0,214,313_.jpg",
+    "length": 87,
+    "metacritic_metascore_meter": 0.36,
+    "metacritic_metascore_total": 19,
+    "plot": "A documentary type film about the dates Myles has gone on as he tries to find out how to find love in the future.",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "1999-03-12",
+    "review_percent_score": 0.125,
+    "review_source": "RogerEbert.com",
+    "score": 0.48,
+    "star_list": [
+        "Myles Berkowitz",
+        "Elisabeth Wagner",
+        "Richard Arlook"
+    ],
+    "tagline": "All Myles Berkowitz wanted was a chance to save his career and his love life. What he got was... 20 Dates",
+    "title": "20 Dates",
+    "top_critics_avg_score": 0.32,
+    "top_critics_fresh": 0,
+    "top_critics_meter": 0.0,
+    "top_critics_rotten": 11,
+    "top_critics_total": 11,
+    "video_type": "Movie",
+    "writer_list": [
+        "Myles Berkowitz"
+    ],
+    "year": 1998
+}{
+    "all_critics_avg_score": 0.45,
+    "all_critics_fresh": 17,
+    "all_critics_meter": 0.29,
+    "all_critics_rotten": 42,
+    "all_critics_total": 59,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.6,
+    "audience_meter": 0.53,
+    "audience_total": 31867,
+    "budget": "$6,000,000 (estimated)",
+    "director_list": [
+        "Risa Bramon Garcia"
+    ],
+    "formatted_review_text": "<p>All those cigarettes, and nobody knows how to smoke. Everybody in \"200 Cigarettes'' smokes nearly all the time, but none of them show any style or flair with their cigarettes. And the cinematographer doesn't know how to light smoke to make it look great.</p><p>He should have studied \"Out of the Past'' (1947), the greatest cigarette-smoking movie of all time. The trick, as demonstrated by <a href=\"http://www.rogerebert.com/cast-and-crew/jacques-tourneur\">Jacques Tourneur</a> and his cameraman, Nicholas Musuraca, is to throw a lot of light into the empty space where the characters are going to exhale. When they do, they produce great white clouds of smoke, which express their moods, their personalities and their energy levels. There were guns in \"Out of the Past,'' but the real hostility came when <a href=\"http://www.rogerebert.com/cast-and-crew/robert-mitchum\">Robert Mitchum</a> and <a href=\"http://www.rogerebert.com/cast-and-crew/kirk-douglas\">Kirk Douglas</a> smoked at each other.</p><p>The cast of \"200 Cigarettes'' reads like a roll call of hot talent. They're the kinds of young stars who are on lots of magazine covers and have Web pages devoted to them, and so they know they will live forever, and are immune to the diseases of smoking. I wish them well. But if they must smoke in the movies, can't they at least be great smokers, like my mother was? When she was smoking, you always knew exactly how she felt because of the way she used her cigarette and her hands and the smoke itself as props to help her express herself. She should have been good; she learned from <a href=\"http://www.rogerebert.com/cast-and-crew/bette-davis\">Bette Davis</a> movies.</p><p>The stars of \"200 Cigarettes,'' on the other hand, belong to the suck-and-blow school of smokeology. They inhale, not too deeply, and exhale, not too convincingly, and they squint in their closeups while smoke curls up from below the screen. Their smoke emerges as small, pale, noxious gray clouds. When Robert Mitchum exhaled at a guy, the guy ducked out of the way.</p><p>I suppose there will be someone who counts the cigarettes in \"200 Cigarettes,'' to see if there are actually 200. That will at least be something to do during the movie, which is a lame and labored conceit about an assortment of would-be colorful characters on their way to a New Year's Eve party in 1981. Onto the pyre of this dreadful film are thrown the talents of such as <a href=\"http://www.rogerebert.com/cast-and-crew/ben-affleck\">Ben Affleck</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/casey-affleck\">Casey Affleck</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/janeane-garofalo\">Janeane Garofalo</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/courtney-love\">Courtney Love</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/gaby-hoffmann\">Gaby Hoffmann</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/kate-hudson\">Kate Hudson</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/martha-plimpton\">Martha Plimpton</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/paul-rudd\">Paul Rudd</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/guillermo-diaz\">Guillermo Diaz</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/brian-mccardie\">Brian McCardie</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/jay-mohr\">Jay Mohr</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/christina-ricci\">Christina Ricci</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/angela-featherstone\">Angela Featherstone</a> and others equally unlucky.</p><p>Ricci and Love have the kinds of self-contained personalities that hew out living space for their characters no matter where they find themselves, but the others are pretty much lost. The witless screenplay provides its characters with aimless dialogue and meaningless confrontations, and they are dressed not like people who might have been alive in 1981, but like people going to a costume party where 1981 is the theme.</p><p>Seeing a film like this helps you to realize that actors are empty vessels waiting to be filled with characters and dialogue. As people, they are no doubt much smarter and funnier than the cretins in this film. I am reminded of Gene Siskel's bottom-line test for a film: \"Is this movie more entertaining than a documentary of the same people having lunch?'' Here they are contained by small ideas and arch dialogue, and lack the juice of life. Maybe another 200 cigarettes would have helped; coughing would be better than some of this dialogue.</p>",
+    "genre_list": [
+        "Comedy",
+        "Drama",
+        "Romance"
+    ],
+    "gross": "$6,851,636",
+    "imdb_id": "tt0137338",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMjA2NDgwMDg4Ml5BMl5BanBnXkFtZTcwMzc1NjUyMQ@@._V1_SY317_CR3,0,214,317_.jpg",
+    "length": 101,
+    "metacritic_metascore_meter": 0.33,
+    "metacritic_metascore_total": 26,
+    "metacritic_userscore_meter": 0.71,
+    "metacritic_userscore_total": 15,
+    "plot": "A collection of twentysomethings try to cope with relationships, loneliness, desire and their individual neuroses.",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "1999-02-26",
+    "review_percent_score": 0.125,
+    "review_source": "RogerEbert.com",
+    "score": 0.5599999999999999,
+    "star_list": [
+        "Ben Affleck",
+        "Casey Affleck",
+        "Dave Chappelle"
+    ],
+    "tagline": "It's 11:59 on New Year's Eve. Do you know where your date is?",
+    "title": "200 Cigarettes",
+    "top_critics_avg_score": 0.39,
+    "top_critics_fresh": 5,
+    "top_critics_meter": 0.25,
+    "top_critics_rotten": 15,
+    "top_critics_total": 20,
+    "video_type": "Movie",
+    "writer_list": [
+        "Shana Larsen"
+    ],
+    "year": 1999
+}{
+    "all_critics_avg_score": 0.62,
+    "all_critics_fresh": 4,
+    "all_critics_meter": 0.67,
+    "all_critics_rotten": 2,
+    "all_critics_total": 6,
+    "aspect_ratio": 1.66,
+    "audience_avg_score": 0.72,
+    "audience_meter": 0.68,
+    "audience_total": 1616,
+    "budget": "$679,000 (estimated)",
+    "director_list": [
+        "Tony Palmer",
+        "Frank Zappa"
+    ],
+    "formatted_review_text": "<p>\"Ladies and gentlemen, you can go mad on the road. That is precisely what this film is all about.\" -A voice, probably <a href=\"http://www.rogerebert.com/cast-and-crew/frank-zappa\">Frank Zappa</a>'s, in \"200 Motels\"</p>\r<p>We have been hearing for a long time that videotape is going to revolutionize filmmaking, and now here is the vanguard of the revolution. Whatever else it may be, Frank Zappa's \"200 Motels\" is a joyous, fanatic, slightly weird experiment in the uses of the color videotape process. If there is more that can be done with videotape, I do not want to be there when they do it.</p>\r<p>The movie is a kind of magical mystery trip through all the motels, concert halls, cities, states and groupies of a road tour of the Mothers of Invention. No attempt is made at documentary accuracy (to make a thunderous understatement). All of the cities are lumped together into Centerville, \"a real nice place to raise your kids up,\" and the sanity of the film can be gauged by the fact that <a href=\"http://www.rogerebert.com/cast-and-crew/ringo-starr\">Ringo Starr</a> plays Frank Zappa as \"a very large dwarf.\"</p>\r<p>Zappa's mixture of mediums -- rock, electronic music, the Royal Philharmonic, dance, overlapping visuals -- pushes the videotape process almost to its extremes. Zappa's kind of mixture isn't new (Harry Partch's \"Celebrations on the Courthouse Square,\" an experimental 1962 stage production, anticipates everything in \"200 Motels\"). But mixing it on film is new.</p>\r<p>Videotape reportedly allowed Zappa to film the entire movie in about a week, to do a lot of the editing and montage in the camera and to use cheap videotape for his final editing before transferring the whole thing to a surprisingly high-quality 35mm image. Because videotape made it so easy to slosh on more special effects, Zappa wasn't stingy; some people may find the movie's multidimensional feel too overbearing.</p>\r<p>In a way, maybe, overbearing is the word for this movie. It assaults the mind with everything on hand. When there are moments of relative calm -- say, during the animated sequence, or during the rare moments when only one image is on the screen we find ourselves actually catching our mental breath. The movie is so unrelentingly high that you even wish for intermissions.</p>\r<p>Still, the music is there, a lot of it, and because the movie doesn't stop for the music or anything we never get the sense that this is an illustrated album. It is also not another record of a road tour; It breaks with the tradition of \"<a href=\"http://www.rogerebert.com/reviews/dont-look-back-1998\">Don&#x27;t Look Back</a>,\" \"<a href=\"http://www.rogerebert.com/reviews/mad-dogs-and-englishmen-1971\">Mad Dogs and Englishmen</a>\" and the rock festival movies. It is also not quite in the same family tree as the Beatles movie, but it's in a tree, all right. One with enough branches for everyone but wild tigers snapping at your toes.</p>\r<p>\"200 Motels\" is not the kind of movie you have to see more than once. It is the kind of movie you can barely see once: not because it's simple, but became it's so complicated that you finally realize you aren't meant to get everything and sort everything out. It is a full wall of sight-and-sound input, and the experience of the input -- not its content, is what Zappa's giving us. \"200 Motels\" is out of Howard Johnson by Tinker Bell, with Aquarius setting.</p>",
+    "genre_list": [
+        "Comedy",
+        "Fantasy",
+        "Music"
+    ],
+    "gross": "",
+    "imdb_id": "tt0066732",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTM3MDI3Mzc0Nl5BMl5BanBnXkFtZTcwNjA4OTEzNA@@._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 98,
+    "plot": "\"Touring makes you crazy,\" Frank Zappa says, explaining that the idea for this film came to him while the Mothers of Invention were touring. The story, interspersed with performances by the...                See full summary",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "1971-11-29",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.54,
+    "star_list": [
+        "Mark Volman",
+        "Howard Kaylan",
+        "Ian Underwood"
+    ],
+    "tagline": "",
+    "title": "200 Motels",
+    "top_critics_avg_score": 0.6,
+    "top_critics_fresh": 3,
+    "top_critics_meter": 0.6,
+    "top_critics_rotten": 2,
+    "top_critics_total": 5,
+    "video_type": "Movie",
+    "writer_list": [
+        "Frank Zappa",
+        "Tony Palmer"
+    ],
+    "year": 1971
+}{
+    "all_critics_avg_score": 0.58,
+    "all_critics_fresh": 21,
+    "all_critics_meter": 0.66,
+    "all_critics_rotten": 11,
+    "all_critics_total": 32,
+    "aspect_ratio": 2.35,
+    "audience_avg_score": 0.64,
+    "audience_meter": 0.58,
+    "audience_total": 24711,
+    "budget": "$28,000,000 (estimated)",
+    "director_list": [
+        "Peter Hyams"
+    ],
+    "formatted_review_text": "<p>All those years ago, when \"<a href=\"http://www.rogerebert.com/reviews/great-movie-2001-a-space-odyssey-1968\">2001: A Space Odyssey</a>\" was first released, I began my review with a few lines from a poem by e.e. cummings:</p><p>I'd rather learn from one bird how to sing than teach ten thousand stars how not to dance.</p><p>That was my response to the people who said they couldn't understand \"2001,\" that it made no sense and that it was one long exercise in self-indulgence by <a href=\"http://www.rogerebert.com/cast-and-crew/stanley-kubrick\">Stanley Kubrick</a>, who had sent a man to the stars, only to abandon him inside some sort of extraterrestrial hotel room. I felt that the poetry of \"2001\" was precisely in its mystery, and that to explain everything was to ruin everything -- like the little boy who cut open his drum to see what made it bang.</p><p>\"2001\" came out in the late 1960s, that legendary time when yuppies were still hippies, and they went to see the movie a dozen times and slipped up to the front of the theater and lay flat on their backs on the floor, so that the sound-and-light trip in the second half of the movie could wash over them and they could stagger to the exits and whisper \"far out\" to one another in quiet ecstasy. Now comes \"2010,\" a continuation of the Kubrick film, directed by <a href=\"http://www.rogerebert.com/cast-and-crew/peter-hyams\">Peter Hyams</a>, whose background is in more pragmatic projects such as \"Outland,\" the <a href=\"http://www.rogerebert.com/cast-and-crew/sean-connery\">Sean Connery</a> space station thriller. The story is by <a href=\"http://www.rogerebert.com/cast-and-crew/arthur-c-clarke\">Arthur C. Clarke</a> (who, truth to tell, I always have suspected was a little bewildered by what Kubrick did to his original ideas). \"2010\" is very much a 1980s movie. It doesn't match the poetry and the mystery of the original film, but it does continue the story, and it offers sound, pragmatic explanations for many of the strange and visionary things in \"2001\" that had us arguing endlessly through the nights of 1968.</p><p>This is, in short, a movie that tries to teach ten thousand stars how not to dance. There were times when I almost wanted to cover my ears. Did I really want to know (a) why HAL 9000 disobeyed Dave's orders? or (b) the real reason for the Discovery's original mission? or (c) what the monoliths were trying to tell us? Not exactly. And yet we live in a most practical time, and they say every decade gets the movies it deserves. What we get in \"2010\" is not an artistic triumph, but it is a triumph of hardware, of special effects, of slick, exciting filmmaking. This is a movie that owes more to <a href=\"http://www.rogerebert.com/cast-and-crew/george-lucas\">George Lucas</a> than to Stanley Kubrick, more to \"Star Wars\" than to Also Sprach Zarathustra. It has an ending that is infuriating, not only in its simplicity, but in its inadequacy to fulfill the sense of anticipation, the sense of wonder we felt at the end of \"2001.\"</p><p>And yet the truth must be told: This is a good movie. Once we've drawn our lines, once we've made it absolutely clear that \"2001\" continues to stand absolutely alone as one of the greatest movies ever made, once we have freed \"2010\" of the comparisons with Kubrick's masterpiece, what we are left with is a good-looking, sharp-edged, entertaining, exciting space opera -- a superior film of the Star Trek genre.</p><p>Because \"2010\" depends so much upon its story, it would be unfair to describe more than the essentials: A joint Soviet-American expedition sets out for the moons of Jupiter to investigate the fate of the Discovery, its crew, and its on-board computer HAL 9000. There is tension on board between the American leader (<a href=\"http://www.rogerebert.com/cast-and-crew/roy-scheider\">Roy Scheider</a>) and the Soviet captain (<a href=\"http://www.rogerebert.com/cast-and-crew/helen-mirren\">Helen Mirren</a>), and it's made worse because back on Earth, the superpowers are on the brink of nuclear war over Central America. If Kubrick sometimes seemed to be making a bloodless movie with faceless characters, Hyams pays a great deal of attention to story and personality. But only one of the best moments in his movie grows out of character (the touching scene where a Soviet and an American hold onto each other for dear life during a terrifying crisis). The other great moments are special-effects achievements: a space walk threatened by vertigo, the awesome presence of Jupiter, and a spectacular flight through the planet's upper atmosphere.</p><p>It is possible that no conclusion to \"2010\" could be altogether satisfying, especially to anyone who still remembers the puzzling, awesome simplicity of the Star Child turning to regard us at the end of \"2001.\" This sequel has its work cut out for it. And the screenplay compounds the difficulty by repeatedly informing us that \"something wonderful\" is about to happen. After we've been told several times about that wonderful prospect, we're ready for something really wonderful, and we don't get it. We get a disappointingly mundane conclusion worthy of a 1950s sci-fi movie, not a sequel to \"2001.\" I, for one, was disappointed that the monoliths would deign to communicate with men at all -- let alone that they would use English, or send their messages via a video screen, like the latest generation of cable news.</p><p>So. You have to make some distinctions in your mind. In one category, \"2001: A Space Odyssey\" remains inviolate, one of the handful of true film masterpieces. In a more temporal sphere, \"2010\" qualifies as superior entertainment, a movie more at home with technique than poetry, with character than with mystery, a movie that explains too much and leaves too little to our sense of wonderment, but a good movie all the same. If I nevertheless sound less than ecstatic, maybe it's because the grave eyes of the \"2001\" Star Child still haunt me, with their promise that perhaps someday man would learn to teach ten thousand stars how to sing.</p>",
+    "genre_list": [
+        "Sci-Fi",
+        "Thriller"
+    ],
+    "gross": "$40,200,000",
+    "imdb_id": "tt0086837",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTI0MDkwMDY0MV5BMl5BanBnXkFtZTYwMzU1Mjc4._V1_SY214_SX144_.jpg",
+    "length": 116,
+    "plot": "A joint U.S.-Soviet expedition is sent to Jupiter to learn what happened to the Discovery.",
+    "rating": "PG",
+    "review_author": "Roger Ebert",
+    "review_date": "1984-01-01",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.67,
+    "star_list": [
+        "Roy Scheider",
+        "John Lithgow",
+        "Helen Mirren"
+    ],
+    "tagline": "In the very near future a small group of Americans and Russians set out on the greatest adventure of them all... To see if there is life beyond the stars",
+    "title": "2010",
+    "top_critics_avg_score": 0.67,
+    "top_critics_fresh": 3,
+    "top_critics_meter": 0.5,
+    "top_critics_rotten": 3,
+    "top_critics_total": 6,
+    "video_type": "Movie",
+    "writer_list": [
+        "Arthur C. Clarke",
+        "Peter Hyams"
+    ],
+    "year": 1984
+}{
+    "all_critics_avg_score": 0.5,
+    "all_critics_fresh": 93,
+    "all_critics_meter": 0.39,
+    "all_critics_rotten": 145,
+    "all_critics_total": 238,
+    "aspect_ratio": 2.35,
+    "audience_avg_score": 0.6599999999999999,
+    "audience_meter": 0.53,
+    "audience_total": 503293,
+    "budget": "$200,000,000 (estimated)",
+    "director_list": [
+        "Roland Emmerich"
+    ],
+    "formatted_review_text": "<p><span style=\"line-height: 1.45em;\">It's not so much that the Earth is destroyed, but that it's done so thoroughly. \"2012,\" the mother of all disaster movies (and the father, and the extended family) spends half an hour on ominous set-up scenes (scientists warn, strange events occur, prophets rant and of course a family is introduced) and then unleashes two hours of cataclysmic special events hammering the Earth relentlessly.</span><br></p><p>This is fun. \"2012\" delivers what it promises, and since no sentient being will buy a ticket expecting anything else, it will be, for its audiences, one of the most satisfactory films of the year. It even has real actors in it. Like all the best disaster movies, it's funniest at its most hysterical. You think you've seen end-of-the-world movies? This one ends the world, stomps on it, grinds it up and spits it out.</p><p>It also continues a recent trend toward the wholesale destruction of famous monuments. <a href=\"http://www.rogerebert.com/cast-and-crew/roland-emmerich\">Roland Emmerich</a>, the director and co-writer, has been vandalizing monuments for years, as in \"<a href=\"http://www.rogerebert.com/reviews/independence-day-1996\">Independence Day</a>,\" \"The Day After Tomorrow\" and \"<a href=\"http://www.rogerebert.com/reviews/godzilla-1998\">Godzilla</a>.\" I still hold a grudge against him for that one because he provided New York with a Mayor Ebert and didn't have Godzilla step on me and then squish me.</p><p>In all disaster movies, landmarks fall like dominos. The Empire State Building is made of rubber. The Golden Gate Bridge collapses like clockwork. Big Ben ticks his last. The Eiffel Tower? <i>Quel dommage!</i></p><p>Memo to anyone on the National Mall: When the Earth's crust is shifting, don't stand within range of the Washington Monument. Chicago is often spared; we aren't as iconic as Manhattan. There's little in Los Angeles distinctive enough to be destroyed, but it all goes, anyway.</p><p>Emmerich thinks on a big scale. Yes, he destroys regular stuff. It will come as little surprise (because at this writing the film's trailer on YouTube alone had more than 7,591,413 views) that the aircraft carrier John F. Kennedy rides a tsunami onto the White House. When St. Peter's Basilica is destroyed, Leonardo's God and Adam are split apart just where their fingers touch (the ceiling of the Sistine Chapel having been moved into St. Peter's for the occasion). Then when Emmerich gets warmed up, the globe's tectonic plates shift thousands of miles, water covers the planet, and a giraffe walks aboard an ark.</p><p>Also on board are the humans chosen to survive, including all the characters who have not already been crushed, drowned or fallen into great crevices opening up in the Earth. These include the heroic Jackson Curtis (<a href=\"http://www.rogerebert.com/cast-and-crew/john-cusack\">John Cusack</a>) and his estranged wife, Kate (<a href=\"http://www.rogerebert.com/cast-and-crew/amanda-peet\">Amanda Peet</a>); President Wilson (<a href=\"http://www.rogerebert.com/cast-and-crew/danny-glover\">Danny Glover</a>), his chief science adviser, Adrian Helmsley (<a href=\"http://www.rogerebert.com/cast-and-crew/chiwetel-ejiofor\">Chiwetel Ejiofor</a>), and his chief of staff, Carl Anheuser (<a href=\"http://www.rogerebert.com/cast-and-crew/oliver-platt\">Oliver Platt</a>).</p><p>Many gigantic arks have been secretly constructed inside the Himalayas by the Chinese, funded by a global consortium, and they're the only chance of the human race surviving. Along with the animals on board, there's the maybe well-named Noah (Liam James). In theory, ark ticketholders represent a cross-section of the globe, chosen democratically. In practice, Carl Anheuser pulls strings to benefit the rich and connected, and wants to strand desperate poor people on the dock. I'm thinking, Emmerich often has a twist when he names villains, like Mayor Ebert from \"Godzilla.\" So how did this villain get his name? What does \"Anheuser\" make you think of?</p><p>Such questions pale by comparison with more alarming events. The tectonic plates shift so violently scientists can almost see them on Google Earth. This havoc requires stupendous special effects. Emmerich's budget was $250 million, and \"2012\" may contain more f/x in total running time than any other film. They're impressive. Not always <i>convincing,</i> because how can the flooding of the Himalayas be made convincing? And Emmerich gives us time to regard the effects and appreciate them, even savor them, unlike the ADD generation and its quick-cutting Bay-cams.</p><p>Emmmerich also constructs dramatic real-scale illusions, as when an earthquake fissure splits a grocery store in half. Cusack is the hero in an elaborate sequence involving his desperate attempts to unblock a jammed hydraulic lift that threatens to sink the ark. He does a lot of heroic stuff in this film, especially for a novelist, like leaping a van over a yawning chasm and riding a small plane through roiling clouds of earthquake dust.</p><p>The bottom line is: The movie gives you your money's worth. Is it a masterpiece? No. Is it one of the year's best? No. Does Emmerich hammer it together with his elbows from parts obtained from the Used Disaster Movie Store? Yes. But is it about as good as a movie in this genre can be? Yes. No doubt it will inflame fears about our demise on Dec. 21, 2012. I'm worried, too. I expect that to be even worse than Y2K.</p>",
+    "genre_list": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+    ],
+    "gross": "$166,112,167",
+    "imdb_id": "tt1190080",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTY0MjEyODQzMF5BMl5BanBnXkFtZTcwMTczMjQ4Mg@@._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 158,
+    "metacritic_metascore_meter": 0.49,
+    "metacritic_metascore_total": 34,
+    "metacritic_userscore_meter": 0.55,
+    "metacritic_userscore_total": 510,
+    "plot": "A frustrated writer struggles to keep his family alive when a series of global catastrophes threatens to annihilate mankind.",
+    "rating": "PG-13",
+    "review_author": "Roger Ebert",
+    "review_date": "2009-11-11",
+    "review_percent_score": 0.875,
+    "review_source": "RogerEbert.com",
+    "score": 0.5700000000000001,
+    "star_list": [
+        "John Cusack",
+        "Thandie Newton",
+        "Chiwetel Ejiofor"
+    ],
+    "tagline": "How would the governments of our planet prepare 6 billion people for the end of the world...? They wouldn't.",
+    "title": "2012",
+    "top_critics_avg_score": 0.48,
+    "top_critics_fresh": 14,
+    "top_critics_meter": 0.32,
+    "top_critics_rotten": 30,
+    "top_critics_total": 44,
+    "video_type": "Movie",
+    "writer_list": [
+        "Roland Emmerich",
+        "Harald Kloser"
+    ],
+    "year": 2009
+}{
+    "all_critics_avg_score": 0.74,
+    "all_critics_fresh": 94,
+    "all_critics_meter": 0.85,
+    "all_critics_rotten": 17,
+    "all_critics_total": 111,
+    "aspect_ratio": 2.35,
+    "audience_avg_score": 0.78,
+    "audience_meter": 0.83,
+    "audience_total": 45785,
+    "budget": "$12,000,000 (estimated)",
+    "director_list": [
+        "Kar Wai Wong"
+    ],
+    "formatted_review_text": "<p><i>Jam yesterday and jam tomorrow, but never jam today.</i> <b>-- Alice in Wonderland</b></p><p>It is always too early or too late for love in a Wong Kar Wai film, and his characters spend their days in yearnings and regrets. \"<a href=\"http://www.rogerebert.com/reviews/in-the-mood-for-love-2001\">In the Mood for Love</a>\" (2001) brought that erotic sadness to a kind of perfection in its story of a man and a woman who live in hotel rooms next to each other, and want to become lovers but never do, because his wife and her husband are lovers, and \"for us to do the same thing would mean we are no better than they are.\" Yes, but no worse, and perhaps happier. Isn't it strange, that most of the truths about love are banal?</p><p>\"2046,\" Wong's new film, is an indirect, oblique continuation of the earlier one. It stars <a href=\"http://www.rogerebert.com/cast-and-crew/tony-leung\">Tony Leung</a> as Chow Mo Wan, also the name of his character in \"In the Mood for Love,\" and there is a brief role for <a href=\"http://www.rogerebert.com/cast-and-crew/maggie-cheung\">Maggie Cheung</a>, his co-star in that film; they are not necessarily playing the same characters. There was also a room 2046 in the other film, so there are subterranean connections between the two, but they operate something like the express train to the year 2046 in this one: All memories are there in the future, we are told, but no one has ever returned.</p><p>No one, except for the narrator, who tells us about it. We gather that \"2046\" is the name of a science fiction novel being written by Chow. It is also the room next to his in the hotel where much of this movie takes place -- a room lived in by a series of women he loves. Not coincidentally, 2046 is also the year set by China for the expiration of Hong Kong's quasi-independence from the mainland. Does that make the movie \"2046\" a parable about Hong Kong? You could find parallels, I'm sure, but that doesn't seem to be the point. Chow observes that if he hadn't seen the number 2046 on a room, he wouldn't have started his futuristic novel, and it is just barely possible that Wong is telling us this movie was inspired when he asked himself what happened in Room 2046 after \"In the Mood for Love\" was over. Or before it began. Whatever.</p><p>These speculations are probably of no help in understanding the movie, which exists primarily as a visual style imposed upon beautiful faces; Josef von Sternberg's obsession with <a href=\"http://www.rogerebert.com/cast-and-crew/marlene-dietrich\">Marlene Dietrich</a> is mirrored here by Wong Kar Wai's fascination with the beauty of <a href=\"http://www.rogerebert.com/cast-and-crew/ziyi-zhang\">Ziyi Zhang</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/gong-li\">Gong Li</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/faye-wong\">Faye Wong</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/carina-lau\">Carina Lau</a> and Maggie Cheung, and in the careworn eyes and tired smile of Tony Leung, his Bogart. Like von Sternberg, he films his actors mostly in closeup and medium shot, with baroque architectural details in the background, with cigarette smoke constantly coiling through the air. There are a lot of foreground screens (doorjambs, draperies, walls, furniture) to add texture and detail while concealing parts of those faces. The film is in lurid colors, a pulp counterpoint to the elegance of the action. Why Nat King Cole's version of \"The Christmas Song\" is heard two or three times is unclear; his songs were also heard in \"In the Mood for Love.\"</p><p>The story is either briefly summarized, or too complicated to be attempted. Briefly: Chow (Leung) leaves Singapore and Su Li Zhen (Gong Li): \"We have no prospects here, so I'll see how things are in Hong Kong.\" She does not follow. In Hong Kong, he moves into the hotel, and meets a series of women: Lulu (Lau), a prostitute whose murder lingers as a troubling mystery throughout the film; Jing (Wong), daughter of the hotel owner, and <a href=\"http://www.rogerebert.com/cast-and-crew/bai-ling\">Bai Ling</a> (Zhang), a prostitute who becomes Chow's confidante as they drown their sorrows, preferring drink to sex. All of these relationships are seen in carefully composed shots that seem to be remembering the characters more than seeing them. One spectacular shot shows Jing from above and behind, smoking a cigarette and listening to an opera. Its composition is really the subject of the shot.</p><p>An example of complications: Jing is in love with a Japanese man, and earlier in the movie appears as an anime idol in the futuristic story within the story, where she has the same Japanese lover. The Japanese man is the film's original narrator, although later it appears the sci-fi story is being written by Chow, inspired by the present-day Jing and her lover. Whether and why this story is being written, and how the future world of 2046 shares a function with the present Room 2046, is an inviting mystery: Do we define the future as a place in our minds where things can happen later, or be shelved, or be hoped for, or be delayed?</p><p>Since it is by Wong Kar Wai, \"2046\" is visually stunning. He uses three cinematographers but one style, that tries to evoke mood more than meaning. The movie as a whole, unfortunately, never seems sure of itself. It's like a sketchbook. These are images, tones, dialogue and characters that Wong is sure of, and he practices them, but he does not seem very sure why he is making the movie, or where it should end.</p><p>\"2046\" arrived at the last minute at Cannes 2003, after missing its earlier screenings; the final reel reportedly arrived at the airport almost as the first was being shown. It was said to be unfinished, and indeed there were skeletal special effects that now appear in final form, but perhaps it was never really finished in his mind. Perhaps he would have appreciated the luxury that <a href=\"http://www.rogerebert.com/cast-and-crew/woody-allen\">Woody Allen</a> had with \"<a href=\"http://www.rogerebert.com/reviews/great-movie-crimes-and-misdemeanors-1989\">Crimes and Misdemeanors</a>\"; he looked at the first cut of the film, threw out the first act, called the actors back and reshot, focusing on what turned out to be the central story. Watching \"2046,\" I wonder what it could possibly mean to anyone not familiar with Wong's work and style. Unlike \"In the Mood for Love,\" it is not a self-contained film, although it's certainly a lovely meander.</p>",
+    "genre_list": [
+        "Drama",
+        "Fantasy",
+        "Romance",
+        "Sci-Fi"
+    ],
+    "gross": "$261,481",
+    "imdb_id": "tt0212712",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMzY1MjkzNDY4MF5BMl5BanBnXkFtZTcwMzE1NzAzMQ@@._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 129,
+    "metacritic_metascore_meter": 0.78,
+    "metacritic_metascore_total": 34,
+    "metacritic_userscore_meter": 0.77,
+    "metacritic_userscore_total": 69,
+    "plot": "He was a writer. He thought he wrote about the future but it really was the past. In his novel, a mysterious train left for 2046 every once in a while. Everyone who went there had the same ...                See full summary",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "2005-09-01",
+    "review_percent_score": 0.625,
+    "review_source": "RogerEbert.com",
+    "score": 0.74,
+    "star_list": [
+        "Tony Leung Chiu Wai",
+        "Ziyi Zhang",
+        "Faye Wong"
+    ],
+    "tagline": "Where everything ends... and begins (Spanish translation)",
+    "title": "2046",
+    "top_critics_avg_score": 0.74,
+    "top_critics_fresh": 30,
+    "top_critics_meter": 0.86,
+    "top_critics_rotten": 5,
+    "top_critics_total": 35,
+    "video_type": "Movie",
+    "writer_list": [
+        "Kar Wai Wong"
+    ],
+    "year": 2004
+}{
+    "all_critics_avg_score": 0.75,
+    "all_critics_fresh": 143,
+    "all_critics_meter": 0.8,
+    "all_critics_rotten": 35,
+    "all_critics_total": 178,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.72,
+    "audience_meter": 0.82,
+    "audience_total": 208017,
+    "budget": "$20,000,000 (estimated)",
+    "director_list": [
+        "Alejandro Gonzlez Irritu"
+    ],
+    "formatted_review_text": "<p>\"21 Grams\" knows all about its story but only lets us discover it a little at a time. Well, every movie does that, but usually they tell their stories in chronological order, so we have the illusion that we're watching as the events happen to the characters. In this film everything has already happened, and it's as if God, or the director, is shuffling the deck after the game is over. Here is the question we have to answer: Is this approach better than telling the same story from beginning to end?</p><p>The film is by <a href=\"http://www.rogerebert.com/cast-and-crew/alejandro-gonzalez-inarritu\">Alejandro <a href=\"http://www.rogerebert.com/cast-and-crew/gonzalez-inarritu\">Gonzalez Inarritu</a></a>, the almost unreasonably talented Mexican filmmaker whose \"<a href=\"http://www.rogerebert.com/reviews/amores-perros-2001\">Amores Perros</a>\" (2000) was an enormous success. That film intercut three simultaneous stories, all centering on a traffic accident. \"21 Grams\" has three stories and a traffic accident, but the stories move back and forth in time, so that sometimes we know more than the characters, sometimes they know more than we do.</p><p>While the film is a virtuoso accomplishment of construction and editing, the technique has its limitations. Even though modern physics tells that time does not move from the past through the present into the future, entertaining that delusion is how we make sense of our perceptions. And it is invaluable for actors, who build their characters emotionally as events take place. By fracturing his chronology, Inarritu isolates key moments in the lives of his characters, so that they have to stand alone. There is a point at which this stops being a strategy and starts being a stunt.</p><p>\"21 Grams\" tells such a tormenting story, however, that it just about survives its style. It would have been more powerful in chronological order, and even as a puzzle it has a deep effect. Remembering it, we dismiss the structure and recall the events as they happened to the characters, and are moved by its three sad stories of characters faced with the implacable finality of life.</p><p>Because the entire movie depends on withholding information and revealing unexpected connections, it is fair enough to describe the characters but would be wrong to even hint at some of their relationships. <a href=\"http://www.rogerebert.com/cast-and-crew/sean-penn\">Sean Penn</a>, <a href=\"http://www.rogerebert.com/cast-and-crew/benicio-del-toro\">Benicio <a href=\"http://www.rogerebert.com/cast-and-crew/del-toro\">Del Toro</a></a> and <a href=\"http://www.rogerebert.com/cast-and-crew/naomi-watts\">Naomi Watts</a> play the key figures, and their spouses are crucial in ways that perhaps should not be described. Penn is Paul, a professor of mathematics (even that fact is withheld for a long time, and comes as a jolt because he does not seem much like one). He is dying of a heart condition, needs a transplant, is badgered by his wife (<a href=\"http://www.rogerebert.com/cast-and-crew/charlotte-gainsbourg\">Charlotte Gainsbourg</a>) to donate sperm so that she can have his baby -- after his death, she does not quite say.</p><p>Benicio Del Toro is Jack, a former convict who now rules his family with firm fundamentalist principles. He is using Jesus as a way of staying off drugs and alcohol; his wife (<a href=\"http://www.rogerebert.com/cast-and-crew/melissa-leo\">Melissa Leo</a>) is grateful for his recovery but dubious about his cure. The third story centers on Christina (Naomi Watts), first seen at a Narcotics Anonymous meeting; she has a husband (<a href=\"http://www.rogerebert.com/cast-and-crew/danny-huston\">Danny Huston</a>) and two daughters, and her life seems to be getting healthier and more stable until an event takes place that eventually links all of the characters in a situation that falls halfway between tragedy and fraught melodrama.</p><p>As you watch this film you are absorbed and involved, sometimes deeply moved; acting does not get much better than the work done here by Penn, Del Toro and Watts, and their individual moments have astonishing impact. But in the closing passages, as the shape of the underlying structure becomes clear, a vague dissatisfaction sets in. You wonder if Inarritu took you the long way around, running up mileage on his storyteller's taxi meter. Imagining how heartbreaking the conclusion would have been if we had arrived at it in the ordinary way by starting at the beginning, I felt as if an unnecessary screen of technique had been placed between the story and the audience. </p><p>Yet I do not want to give the wrong impression: This is an accomplished and effective film despite my reservations. It grips us, moves us, astonishes us. Some of the revelations do benefit by coming as surprises. But artists often grow by learning what to leave out (the great example is Ozu). I have a feeling that Inarritu's fractured technique, which was so impressive in his first film and is not so satisfactory in this one, may inspire impatience a third time around. He is so good that it's time for him to get out of his own way.</p>",
+    "genre_list": [
+        "Crime",
+        "Drama",
+        "Thriller"
+    ],
+    "gross": "$16,248,701",
+    "imdb_id": "tt0315733",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMjA4MjI2OTM5N15BMl5BanBnXkFtZTcwNDA1NjUzMw@@._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 124,
+    "metacritic_metascore_meter": 0.7,
+    "metacritic_metascore_total": 41,
+    "metacritic_userscore_meter": 0.8,
+    "metacritic_userscore_total": 151,
+    "plot": "A freak accident brings together a critically ill mathematician, a grieving mother, and a born-again ex-con.",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "2003-11-25",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.77,
+    "star_list": [
+        "Sean Penn",
+        "Benicio Del Toro",
+        "Naomi Watts"
+    ],
+    "tagline": "How much does life weigh?",
+    "title": "21 Grams",
+    "top_critics_avg_score": 0.79,
+    "top_critics_fresh": 34,
+    "top_critics_meter": 0.87,
+    "top_critics_rotten": 5,
+    "top_critics_total": 39,
+    "video_type": "Movie",
+    "writer_list": [
+        "Guillermo Arriaga"
+    ],
+    "year": 2003
+}{
+    "all_critics_avg_score": 0.72,
+    "all_critics_fresh": 176,
+    "all_critics_meter": 0.85,
+    "all_critics_rotten": 32,
+    "all_critics_total": 208,
+    "aspect_ratio": 2.35,
+    "audience_avg_score": 0.8,
+    "audience_meter": 0.82,
+    "audience_total": 238920,
+    "budget": "$42,000,000 (estimated)",
+    "director_list": [
+        "Phil Lord",
+        "Chris Miller"
+    ],
+    "formatted_review_text": "<p>Here's the last movie I was expecting with this title. In other words, \"21 Jump Street\" is pretty good. There seemed to be little demand for a movie spinoff of the crime drama that ran on Fox from 1987 to 1991, and which had an early starring role for <a href=\"http://www.rogerebert.com/cast-and-crew/johnny-depp\">Johnny Depp</a>. Perhaps realizing that, the filmmakers have abandoned any pretense of being faithful to the series, and turned to a mashup of screwball comedy, action and \"<a href=\"http://www.rogerebert.com/reviews/the-odd-couple-1968\">The Odd Couple</a>\" formula.</p><p>The couple here are Schmidt and Jenko (<a href=\"http://www.rogerebert.com/cast-and-crew/jonah-hill\">Jonah Hill</a> and <a href=\"http://www.rogerebert.com/cast-and-crew/channing-tatum\">Channing Tatum</a>), who were opposites in high school and still are eight years later. In high school, Schmidt was a pudgy nerd who wore braces and couldn't get his mouth to work while trying to ask a girl to the prom. Jenko was a good-looking jock to whom all things came easily; unfortunately, he was the dim bulb in the chandelier. </p><p>In a brief prologue, the movie spares us the tiresome routine where the jock makes life miserable for the nerd; all he does is snicker with everyone else when poor Schmidt gets tongue-tied. They have no reason to be enemies, because they're from different planets. When we meet them again, they're both in the police academy, where Schmidt aces all the exams and fails everything physical, and Jenko does the opposite. That makes them both misfits, and they feel a growing camaraderie. </p><p>After an unpromising start as bicycle-riding cops on park patrol, they're exiled to an undercover unit investigating a dangerous new drug infiltrating a local high school. The captain in charge (<a href=\"http://www.rogerebert.com/cast-and-crew/ice-cube\">Ice Cube</a>) is the typical police veteran who can't believe the incompetence of these losers. I should mention that his name is Dickson  inevitable in a movie papered with dick jokes. The male member, having gone unmentioned during most of the cinema's first 110 years, now co-stars in many comedies.</p><p>But back to the story. It often strikes me that the actors in high school movies look too old. But Schmidt and Jenko look really too old, and the movie isn't shy about pointing that out. Indeed, one of the pleasures of \"21 Jump Street\" is that the screenplay by <a href=\"http://www.rogerebert.com/cast-and-crew/michael-bacall\">Michael Bacall</a> and Jonah Hill is happy to point out all of its improbabilities; the premise is preposterous to begin with, and they run with that.</p><p>Jonah Hill, nominated for an Oscar for \"<a href=\"http://www.rogerebert.com/reviews/moneyball-2011\">Moneyball</a>,\" has become a movie star by demonstrating that it's not so much how you look as how well you look it. He has an endearing appeal in early scenes where he uses close-cropped blond hair in a pathetic attempt to look cool. Hill lost a lot of weight to appear in this movie, but he's one of those guys who will never be described as thin. Channing Tatum, however, has a reverse handicap: He's improbably handsome and has a (real) name that sounds manufactured by a press agent. Their attempt to pass themselves off as brothers supplies a running gag.</p><p>There might have been a temptation to write Schmidt and Jenko as rivals, but it's more effective here to develop them as friends who screw up together. They were pre-enrolled by Capt. Dickson in hand-picked classes, but trouble starts when they can't remember their undercover names and are assigned to each other's classes. That means Schmidt ends up playing Peter Pan in drama class, and Jenko is in advanced chemistry. </p><p>Apparently the conviction that we got high school all wrong is universal. Now Schmidt and Jenko get a fresh start, and Schmidt even gets another chance to ask a girl (sweet <a href=\"http://www.rogerebert.com/cast-and-crew/brie-larson\">Brie Larson</a>) to the prom. Meanwhile, they're seeking the source of drugs in the high school, which inevitably involves chase scenes and a motorcycle gang including a fat bald guy with high-rider handlebars. As usual, the chases and explosions are boring. </p><p>A disastrous party with abuse is funny, as the movie uses bizarre graphics to illustrate the various stages users go through while using the new mystery drug. What it all comes down to is a funnier and sweeter movie than I had any way of expecting, and the debut of Channing Tatum as an actor who can play comedy. He deadpans so well here he might start looking at Cary Grant movies for remake ideas.</p>",
+    "genre_list": [
+        "Action",
+        "Comedy",
+        "Crime"
+    ],
+    "gross": "$138,447,667",
+    "imdb_id": "tt1232829",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTc3NzQ3OTg3NF5BMl5BanBnXkFtZTcwMjk5OTcxNw@@._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 109,
+    "metacritic_metascore_meter": 0.69,
+    "metacritic_metascore_total": 41,
+    "metacritic_userscore_meter": 0.75,
+    "metacritic_userscore_total": 480,
+    "plot": "A pair of underachieving cops are sent back to a local high school to blend in and bring down a synthetic drug ring.",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "2012-03-14",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.71,
+    "star_list": [
+        "Jonah Hill",
+        "Channing Tatum",
+        "Ice Cube"
+    ],
+    "tagline": "The only thing getting blown tonight is their cover.",
+    "title": "21 Jump Street",
+    "top_critics_avg_score": 0.7,
+    "top_critics_fresh": 38,
+    "top_critics_meter": 0.9,
+    "top_critics_rotten": 4,
+    "top_critics_total": 42,
+    "video_type": "Movie",
+    "writer_list": [
+        "Michael Bacall",
+        "Jonah Hill"
+    ],
+    "year": 2012
+}{
+    "aspect_ratio": "",
+    "audience_avg_score": 0.82,
+    "audience_meter": 0.83,
+    "audience_total": 47,
+    "budget": "$3,000,000 (estimated)",
+    "director_list": [
+        "Chris McIntyre"
+    ],
+    "formatted_review_text": "<p>I learn that <a href=\"http://www.rogerebert.com/cast-and-crew/chris-mcintyre\">Chris McIntyre</a> served in Vietnam and that \"21 and a Wakeup,\" set in an Army hospital in the waning days of the war, is based on events that he experienced and heard about. I'm sure his motivations were heartfelt, but his film is awkward and disjointed, and outstays its welcome.</p><p>It stars <a href=\"http://www.rogerebert.com/cast-and-crew/amy-acker\">Amy Acker</a> as a dedicated young Army nurse named Caitlin Murphy, assigned to an Army combat field hospital. She considers her profession a vocation, as indeed it is. Vocations and an Army career don't always go hand in hand, and bureaucracy often wins out. Enforcing the Army way is the uptight and unfortunately named Maj. Rose Thorn (<a href=\"http://www.rogerebert.com/cast-and-crew/faye-dunaway\">Faye Dunaway</a>), who seems opposed to innovation, improvisation, inspiration and any other inclinations Caitlin might have in mind.</p><p>Her character is emblematic of the film's problems. I suspect McIntyre was so happy to enlist a star like Dunaway that it never occurred to him she's inappropriate for the role. God help me if I mention the age of an actress, but let me observe that Dunaway is about my age, and I consider myself beyond the age for optimum combat service.</p><p>Even more unfortunately, McIntyre hasn't written a believable character. I doubt Maj. Thorn as a nurse and as an officer. Her primary function seems to be materializing in a self-contained shot while issuing stiff formal announcements somewhat in the tone of a judge at a debutante charity function. She's stiffly poised in many shots; we can almost hear \"Ready for your closeup, Miss Dunaway.\"</p><p>But let's stop right there. Faye Dunaway is a fine actress and has been miscast in a badly written role. Amy Acker and other leading characters have been well-cast in equally badly written roles. In contrast to the energy and life that <a href=\"http://www.rogerebert.com/cast-and-crew/robert-altman\">Robert Altman</a> brought to his combat hospital in \"MASH,\" this film plays like a series of fond anecdotes trundled onstage without much relationship to one another.</p><p>Some of them strain credulity. McIntyre may indeed know about a nurse who went AWOL with a civilian war correspondent (<a href=\"http://www.rogerebert.com/cast-and-crew/todd-cahoon\">Todd Cahoon</a>) on an unauthorized visit to Cambodia. Such a trip may even have happened. But I didn't believe it.</p><p>I also didn't believe the punctuality with which critically wounded soldiers are rushed onscreen at crucial moments in the action, in order to punctuate dialogue. These emergencies are tended to by medical personnel who seem like nothing so much as actors impersonating characters they've seen on TV.</p><p>McIntyre has enlisted an experienced cast, including <a href=\"http://www.rogerebert.com/cast-and-crew/ed-begley\">Ed Begley</a> Jr., <a href=\"http://www.rogerebert.com/cast-and-crew/wes-studi\">Wes Studi</a> and <a href=\"http://www.rogerebert.com/cast-and-crew/ben-vereen\">Ben Vereen</a>, and while Vereen creates a convincing human, none of them create convincing characters. How can they? They're pawns on a storyboard. The film lacks a sense of time and place.</p><p>I discover on IMDb that \"21 and a Wakeup\" was actually filmed on location in Vietnam, but its Southeast Asia looks nowhere near as convincing as the locations of Coppola's \"<a href=\"http://www.rogerebert.com/reviews/great-movie-apocalypse-now-1979\">Apocalypse Now</a>\" and Stone's \"<a href=\"http://www.rogerebert.com/reviews/platoon-1986\">Platoon</a>\" (shot in the Philippines) or Herzog's \"<a href=\"http://www.rogerebert.com/reviews/rescue-dawn-2007\">Rescue Dawn</a>\" (Thailand).</p><p>Maybe I'm being too cynical. Perhaps I'll hear from nurses who served in Vietnam and inform me it was just like this. Even if it was, the film plays like an assortment of stories that someone might tell you, \"You ought to make a movie about that someday.\"</p>",
+    "genre_list": [
+        "Drama",
+        "War"
+    ],
+    "gross": "",
+    "imdb_id": "tt1268161",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/G/01/imdb/images/logos/imdb_fb_logo-1730868325._V379391653_.png",
+    "length": 123,
+    "plot": "The film is based on real events, focusing on the lives of three young nurses, one of whom undertakes a treacherous journey up the Mekong River to Cambodia to save a very young ...                See full summary",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "2009-10-27",
+    "review_percent_score": 0.375,
+    "review_source": "RogerEbert.com",
+    "score": 0.63,
+    "star_list": [
+        "Amy Acker",
+        "Danica McKellar",
+        "Faye Dunaway"
+    ],
+    "tagline": "",
+    "title": "21 and a Wake-Up",
+    "video_type": "Movie",
+    "writer_list": [
+        "Chris McIntyre"
+    ],
+    "year": 2009
+}{
+    "all_critics_avg_score": 0.73,
+    "all_critics_fresh": 85,
+    "all_critics_meter": 0.86,
+    "all_critics_rotten": 14,
+    "all_critics_total": 99,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.76,
+    "audience_meter": 0.84,
+    "audience_total": 34410,
+    "budget": "",
+    "director_list": [
+        "Michael Winterbottom"
+    ],
+    "formatted_review_text": "<p>\"24 Hour Party People,\" which tells the story of the Manchester music scene from the first Sex Pistols concert until the last bankruptcy, shines with a kind of inspired madness. It is based on fact, but Americans who don't know the facts will have no trouble identifying with the sublime posturing of its hero, a television personality named Tony Wilson, who takes himself seriously in a way that is utterly impossible to take seriously.</p>\r<p>Wilson, a real man, is played by <a href=\"http://www.rogerebert.com/cast-and-crew/steve-coogan\">Steve Coogan</a>, who plays a Wilsonoid TV personality on British TV. That sort of through-the-looking-glass mixing of reality and fancy makes the movie somehow more true than a factual documentary would have been. Wilson is a lanky man with the face of a sincere beagle, a flop of hair over his right eyebrow, and an ability to read banal TV copy as if it has earth-shaking profundity. He's usually the only man in the room wearing a suit and tie, but he looks like he put them on without reading the instructions. He is so heartfelt about his lunacies that we understand, somehow, that his mind deals with contradictions by embracing them.</p>\r<p>As the film opens, Wilson is attending the first, legendary Sex Pistols concert in Manchester, England. Here and elsewhere, director <a href=\"http://www.rogerebert.com/cast-and-crew/michael-winterbottom\">Michael Winterbottom</a> subtly blends real newsreel footage with fictional characters so they all fit convincingly into the same shot. Wilson is transfixed by the Pistols as they sing \"Anarchy in the U.K.\" and sneer at British tradition. He tells the camera that everyone in the audience will leave the room transformed and inspired, and then the camera pans to show a total of 42 people, two or three of them half-heartedly dancing in the aisles.</p>\r<p>Wilson features the Pistols and other bands on his Manchester TV show. Because of a ban by London TV, his show becomes the only venue for punk rock. Turns out he was right about the Pistols. They let loose something that changed rock music. And they did it in the only way that Wilson could respect, by thoroughly screwing up everything they did, and ending in bankruptcy and failure, followed by Sid Vicious' spectacular murder-suicide flameout. The Sex Pistols became successful because they failed; if they had succeeded, they would have sold out, or become diluted or commercial. I saw Johnny Rotten a few years ago at Sundance, still failing, and it made me feel proud of him.</p>\r<p>Tony Wilson, who preaches \"anarchism\" not as a political position but as an emotional state, knows he has seen the future. He joins with two partners to form Factory Records, which would become one of the most important and least financially successful recording companies in history, and joyously signs the contract in his blood (while declaring \"we will have no contracts\"). His bands include Joy Division (renamed New Order after the suicide of its lead singer) and Happy Mondays. His company opens a rave club, the Hacienda, which goes broke because the customers ignore the cash bars and spend all their money on Ecstasy.</p>\r<p>Wilson hardly cares. When the club closes, he addresses the final night's crowd: \"Before you leave, I ask you to invade the offices and loot them.\" When he meets with investors who want to buy Factory Records, they are startled to learn he has nothing to sell--no contracts, no back catalog, nothing. \"We are not really a company,\" he explains helpfully. \"We are an experiment in human nature. I protected myself from the dilemma of selling out by having nothing to sell.\" This is a lovable character, all the more so because his conversation uses the offhand goofy non-sequiturs of real speech, instead of being channeled into a narrow lane of movie dialogue. The writer, <a href=\"http://www.rogerebert.com/cast-and-crew/frank-cottrell-boyce\">Frank Cottrell Boyce</a>, gives Wilson a distinctive voice we come to love. \"I went to Cambridge University!\" he tells one of his broadcast bosses. \"I'm a serious journalist, living in one of the most important times in human history.\" Yes, but the next day he's interviewing a midget elephant trainer. He explains how the invention of broccoli funded the James Bond movies (there is a shred of truth there, actually). He quotes Plutarch and William Blake, he says one of his singers is a poet equal to Yeats, he looks at empty concert halls and observes hopefully that there were only 12 people at the Last Supper (13, actually, counting the talent). And he is courageous in the face of daunting setbacks, pushing on optimistically into higher realms of failure.</p>\r<p>The movie works so well because it evokes genuine, not manufactured, nostalgia. It records a time when the inmates ran the asylum, when music lovers got away with murder. It loves its characters. It understands what the Sex Pistols started, and what the 1990s destroyed. And it gets a certain tone right. It kids itself. At one point, Wilson looks straight at the camera and tells us that a scene is missing, \"but it will probably be on the DVD.\" As the screenwriter of an ill-fated Sex Pistols movie, I met Rotten, Vicious, Paul Cook, Steve Jones and their infamous manager, Malcolm McLaren, and brushed the fringe of their world. I could see there was no plan, no strategy, no philosophy, just an attitude. If a book on the Sex Pistols had an upraised middle finger on the cover, it wouldn't need any words inside. And yet Tony Wilson goes to see the Pistols and sees before him a delirious opportunity to--to what? Well, obviously, to live in one of the most important times in human history, and to make your mark on it by going down in glorious flames.</p>",
+    "genre_list": [
+        "Biography",
+        "Comedy",
+        "Drama",
+        "Music"
+    ],
+    "gross": "$1,130,379",
+    "imdb_id": "tt0274309",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTM3ODYwOTMwOF5BMl5BanBnXkFtZTYwODQ1Mzk5._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 117,
+    "metacritic_metascore_meter": 0.85,
+    "metacritic_metascore_total": 29,
+    "metacritic_userscore_meter": 0.75,
+    "metacritic_userscore_total": 37,
+    "plot": "In 1976, Tony Wilson sets up Factory Records and brings Manchester's music to the world.",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "2002-08-16",
+    "review_percent_score": 1.0,
+    "review_source": "RogerEbert.com",
+    "score": 0.72,
+    "star_list": [
+        "Steve Coogan",
+        "Lennie James",
+        "John Thomson"
+    ],
+    "tagline": "The unbelievably true story of one man, one movement, the music and madness that was Manchester.",
+    "title": "24 Hour Party People",
+    "top_critics_avg_score": 0.75,
+    "top_critics_fresh": 29,
+    "top_critics_meter": 0.94,
+    "top_critics_rotten": 2,
+    "top_critics_total": 31,
+    "video_type": "Movie",
+    "writer_list": [
+        "Frank Cottrell Boyce"
+    ],
+    "year": 2002
+}{
+    "all_critics_avg_score": 0.5700000000000001,
+    "all_critics_fresh": 7,
+    "all_critics_meter": 0.47,
+    "all_critics_rotten": 8,
+    "all_critics_total": 15,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.72,
+    "audience_meter": 0.58,
+    "audience_total": 77,
+    "budget": "$2,500,000 (estimated)",
+    "director_list": [
+        "Nancy Savoca"
+    ],
+    "formatted_review_text": "<p>The look in Grace's eyes is hard to describe as she watches her daughter, Lily, take her first steps, and no wonder: She's seeing it on video. She missed her daughter's first birthday and the first steps, because she was arrested trying to jump over a subway turnstile with a birthday present. And she yelled at the cop, because she was so frustrated after a crazy day at work and then the struggle to find the toy, one of those overnight sensations that inspire buying panics at Toys-R-Us.</p><p>Grace, played at top speed by <a href=\"http://www.rogerebert.com/cast-and-crew/rosie-perez\">Rosie Perez</a>, is a TV producer just finishing her first year as a working mom. She's at the end of her rope.</p><p>First came the surprise news that she was pregnant. Then her husband, the co-host of a local morning show, announced her pregnancy on TV. Then the executive producer (Patti LuPone) found out she's expected to deliver in November: \"During sweeps!'' Then the show made her pregnancy a ratings-winner on cable, and it got picked up by a network. Meanwhile, Grace has been running herself ragged, trying to keep up.</p><p>Her mom smiles at Grace's faith that she can be a mother and hold a full-time job: \"I remember when you were born. I was gonna write my novel while you slept.'' But Grace tries to juggle both lives, although hiring a nanny is an alarming experience: \"So far all we've met are Nazi nurses, and emotionally disturbed women with no skills.'' To balance her experience, there's the case of her new assistant, Madeline (<a href=\"http://www.rogerebert.com/cast-and-crew/marianne-jean-baptiste\">Marianne Jean-Baptiste</a>), who is returning to the workforce after taking time out for a family, and whose husband (<a href=\"http://www.rogerebert.com/cast-and-crew/wendell-pierce\">Wendell Pierce</a>) is playing househusband, not without grumbles.</p><p>\"The 24 Hour Woman'' is a message picture wrapped inside a screwball comedy, with an touch of satire aimed at TV talk shows. It doesn't all work, but it happens so fast we don't get stuck in the awkward parts. Rosie Perez's Grace is the engine that pulls the story, with so much energy she seems to vibrate. Some will see her character as exaggerated. Not me. She's half Brooklynite-half TV producer, and from what I've seen of both species, hyperactivity is built in.</p><p>The only person on the show more driven than Grace is the Patti LuPone character, named Joan Marshall, who has true tunnel vision and cares only about ratings and programming gimmicks (one of her segment titles: \"Romancing the Stone: How to Kick-Start Your Man's Love Machine''). The message of the movie is that new mothers who want to work are pretty much on their own. They get more lip-service than real help from their husbands, and fellow females at work are running too hard to pause for sisterhood. \"Take your baby and go home,'' Joan shouts at her at one point. \"I got a show to do here.'' The movie's not an idealized Ms. magazine vision of a working mom breast-feeding between conference calls. Its message is more Darwinian: Motherhood releases powerful drives in a woman, which are good for her children but bad for her career. No matter how hard Grace tries, she can't get rid of the guilt when she's not with her baby. And the other people in her life, who do not share these mother's instincts, simply do not care as much or at all.</p><p>The movie was directed and co-written by <a href=\"http://www.rogerebert.com/cast-and-crew/nancy-savoca\">Nancy Savoca</a>, who in three earlier films also considered social institutions through a woman's eyes. Her \"True Love'' (1989) was about a bride who suddenly understood that she was being sacrificed on the altar of her family's expectations. Her \"Dogfight'' (1991) was about a woman who discovers she has been asked out on a date as part of a contest--four guys on their way to Vietnam are trying to see who can pick up the homeliest girl. And \"Household Saints'' (1993) was about a grandmother who was a devout Catholic, a mother and a husband who had drifted into secular ways, and a granddaughter who literally wanted to be a saint. Behavior that would have seemed admirable to the grandmother seemed like insanity to the mother.</p><p>Now comes \"The 24 Hour Woman,'' which probably contains some of Savoca's own experiences. Her casting of Rosie Perez is a good one, because Perez is the most grounded of actors; you can't find the slightest hint of theory or conceit in her performances, which seem founded on total identification with character. She isn't a \"working woman'' or a \"Puerto Rican yuppie,'' but simply Grace Santos, with her marriage, her kid and her job. She doesn't have time for abstractions.</p><p>This isn't the kind of movie that would make a working woman think twice about having a child. It would make her think twice about having a job. If that's reactionary, then tough luck: What's a mom going to do when little Lily starts crying and only one person can comfort her?</p>",
+    "genre_list": [
+        "Comedy"
+    ],
+    "gross": "$109,148",
+    "imdb_id": "tt0138279",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMjE5NjY2Njg0NV5BMl5BanBnXkFtZTcwMjg3OTYyMQ@@._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 93,
+    "plot": "Grace tries to be the perfect mother and TV producer but finds trouble in juggling both.",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "1999-02-19",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.5599999999999999,
+    "star_list": [
+        "Rosie Perez",
+        "Marianne Jean-Baptiste",
+        "Patti LuPone"
+    ],
+    "tagline": "A story about getting everything you want and what comes next",
+    "title": "The 24 Hour Woman",
+    "top_critics_avg_score": 0.5900000000000001,
+    "top_critics_fresh": 3,
+    "top_critics_meter": 0.6,
+    "top_critics_rotten": 2,
+    "top_critics_total": 5,
+    "video_type": "Movie",
+    "writer_list": [
+        "Nancy Savoca",
+        "Richard Guay"
+    ],
+    "year": 1999
+}{
+    "all_critics_avg_score": 0.48,
+    "all_critics_fresh": 26,
+    "all_critics_meter": 0.31,
+    "all_critics_rotten": 57,
+    "all_critics_total": 83,
+    "aspect_ratio": 1.37,
+    "audience_avg_score": 0.58,
+    "audience_meter": 0.51,
+    "audience_total": 318599,
+    "budget": "$43,000,000 (estimated)",
+    "director_list": [
+        "Betty Thomas"
+    ],
+    "formatted_review_text": "<p>Every drunk considers himself a special case, unique, an exception to the rules. Odd, since for the practicing alcoholic, daily life is mostly unchanging, an attempt to negotiate daily responsibilities while drinking enough but not too much. When this attempt fails, as it often does, it results in events that the drunk thinks make him colorful. True variety comes only with sobriety. Plus, now he can remember it.</p><p>This is the lesson learned by Gwen Cummings, the character played by <a href=\"http://www.rogerebert.com/cast-and-crew/sandra-bullock\">Sandra Bullock</a> in \"28 Days.\" As the story opens, her life is either wild and crazy or confused and sad, depending on where you stand. She parties all night with her boyfriend Jasper (<a href=\"http://www.rogerebert.com/cast-and-crew/dominic-west\">Dominic West</a>). After the clubs, the drinks, the designer drugs, they commence what may turn out to be sex, if they can stay awake long enough. Then a candle starts a fire, which they extinguish with champagne. What a ball.</p><p>In the morning, Gwen's day begins with a pass at the refrigerator so smooth and practiced she hardly seems to even open it while extracting a cold beer. Gwen is an accident waiting to happen--to herself or innocent bystanders. Her victim is her sister Lily (<a href=\"http://www.rogerebert.com/cast-and-crew/elizabeth-perkins\">Elizabeth Perkins</a>). \"Gwen, you make it impossible to love you,\" Lily says when she arrives late at the church for Lily's wedding. At the reception, Gwen delivers an insulting toast, knocks over the cake while dancing, steals a limousine to go buy another cake and crashes it into a house. Not a good day.</p><p>Cut to Serenity Glen, where Gwen has been sentenced to 28 days of rehab in lieu of jail time. The PA system makes a running commentary out of \"MASH\"-style announcements. The patients do a lot of peppy group singing (too much, if you ask me). \"I don't have a health problem,\" Gwen protests. \"I play Ultimate Frisbee twice a week.\" The patients include the usual cuckoo's nest of colorful characters, although they're a little more plausible than in most inmate populations. We meet Daniel (<a href=\"http://www.rogerebert.com/cast-and-crew/reni-santoni\">Reni Santoni</a>), a doctor who pumped his own stomach to control his drinking and wound up giving himself an emergency tracheotomy. Gerhardt (<a href=\"http://www.rogerebert.com/cast-and-crew/alan-tudyk\">Alan Tudyk</a>), prissy and critical, a dancer and coke addict. And Andrea (Azura Skye), Gwen's teenage roommate.</p><p>Gwen's counselor is Cornell, played by <a href=\"http://www.rogerebert.com/cast-and-crew/steve-buscemi\">Steve Buscemi</a>, who inspires a grin when we see him in a movie because he's usually good for strange scenes and dialogue. Not this time; he plays the role straight, revealing toughness and a certain weary experience, as if all of Gwen's cherished kookiness is for him a very, very old joke. There's a nice scene where she says exactly the wrong things to him before discovering he's her counselor.</p><p>Another fellow patient is Eddie Boone (<a href=\"http://www.rogerebert.com/cast-and-crew/viggo-mortensen\">Viggo Mortensen</a>), a baseball pitcher with a substance abuse problem. Of course they begin a tentative, unstated courtship. Jasper, on weekend visits, misunderstands (\"Where are all the celebrities?\" he asks on his first arrival, looking around for <a href=\"http://www.rogerebert.com/cast-and-crew/elizabeth-taylor\">Elizabeth Taylor</a>). Of course there is a fight. This subplot is predictable, but made perceptive because Gwen and Eddie illustrate the lifeboat mentality in which sailors on the ship of rehab have only each other to cling to.</p><p>The movie was written by <a href=\"http://www.rogerebert.com/cast-and-crew/susannah-grant\">Susannah Grant</a>, who also wrote Julia Roberts' hit film \"<a href=\"http://www.rogerebert.com/reviews/erin-brockovich-2000\">Erin Brockovich</a>.\" I differed with \"Erin\" for the same reason I like \"28 Days\": the tone of the central character. I found that Roberts, enormously likable although she is, upstaged the material in \"Erin Brockovich\" by unwise costume choices and scenes that were too obviously intended as showcases. Bullock brings a kind of ground-level vulnerability to \"28 Days\" that doesn't make her into a victim but simply into one more suitable case for treatment. Bullock, like Roberts, is likable, but in \"28 Days\" at least that's not the point.</p><p>Note: \"28 Days\" is rated PG-13 and might be effective as a cautionary tale for teens.</p>",
+    "genre_list": [
+        "Comedy",
+        "Drama"
+    ],
+    "gross": "$37,035,515",
+    "imdb_id": "tt0191754",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTYwMDA1NjAxMF5BMl5BanBnXkFtZTYwODc3MTU3._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 103,
+    "metacritic_metascore_meter": 0.46,
+    "metacritic_metascore_total": 26,
+    "metacritic_userscore_meter": 0.67,
+    "metacritic_userscore_total": 23,
+    "plot": "A big-city newspaper columnist is forced to enter a drug and alcohol rehab center after ruining her sister's wedding and crashing a stolen limousine.",
+    "rating": "PG-13",
+    "review_author": "Roger Ebert",
+    "review_date": "2000-04-14",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.58,
+    "star_list": [
+        "Sandra Bullock",
+        "Viggo Mortensen",
+        "Dominic West"
+    ],
+    "tagline": "The Life of the Party... before she got a life.",
+    "title": "28 Days",
+    "top_critics_avg_score": 0.49000000000000005,
+    "top_critics_fresh": 9,
+    "top_critics_meter": 0.38,
+    "top_critics_rotten": 15,
+    "top_critics_total": 24,
+    "video_type": "Movie",
+    "writer_list": [
+        "Susannah Grant"
+    ],
+    "year": 2000
+}{
+    "all_critics_avg_score": 0.73,
+    "all_critics_fresh": 188,
+    "all_critics_meter": 0.87,
+    "all_critics_rotten": 27,
+    "all_critics_total": 215,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.72,
+    "audience_meter": 0.82,
+    "audience_total": 475328,
+    "budget": "$8,000,000 (estimated)",
+    "director_list": [
+        "Danny Boyle"
+    ],
+    "formatted_review_text": "<p>Activists set lab animals free from their cages--only to learn, too late, that they're infected with a \"rage\" virus that turns them into frothing, savage killers. The virus quickly spreads to human beings, and when a man named Jim (<a href=\"http://www.rogerebert.com/cast-and-crew/cillian-murphy\">Cillian Murphy</a>) awakens in an empty hospital and walks outside, he finds a deserted London. In a series of astonishing shots, he wanders Piccadilly Circus and crosses Westminster Bridge with not another person in sight, learning from old wind-blown newspapers of a virus that turned humanity against itself.</p><p>So opens \"28 Days Later,\" which begins as a great science fiction film and continues as an intriguing study of human nature. The ending is disappointing--an action shoot-out, with characters chasing one another through the headquarters of a rogue Army unit--but for most of the way, it's a great ride. I suppose movies like this have to end with the good and evil characters in a final struggle. The audience wouldn't stand for everybody being dead at the end, even though that's the story's logical outcome.</p><p>Director <a href=\"http://www.rogerebert.com/cast-and-crew/danny-boyle\">Danny Boyle</a> (\"Train-spotting\") shoots on video to give his film an immediate, documentary feel, and also no doubt to make it affordable; a more expensive film would have had more standard action heroes, and less time to develop the quirky characters. Spend enough money on this story, and it would have the depth of \"<a href=\"http://www.rogerebert.com/reviews/armageddon-1998\">Armageddon</a>.\" Alex Garland's screenplay develops characters who seem to have a reality apart from their role in the plot--whose personalities help decide what they do, and why.</p><p>Jim is the everyman, a bicycle messenger whose nearly fatal traffic accident probably saves his life. Wandering London, shouting (unwisely) for anyone else, he eventually encounters Selena (<a href=\"http://www.rogerebert.com/cast-and-crew/naomie-harris\">Naomie Harris</a>) and Mark (<a href=\"http://www.rogerebert.com/cast-and-crew/noah-huntley\">Noah Huntley</a>), who have avoided infection and explain the situation. (Mark: \"OK, Jim, I've got some bad news.\") Selena, a tough-minded black woman who is a realist, says the virus had spread to France and America before the news broadcasts ended; if someone is infected, she explains, you have 20 seconds to kill them before they turn into a berserk, devouring zombie.</p><p>That 20-second limit serves three valuable story purposes: (a) It has us counting \"12 ... 11 ... 10\" in our minds at one crucial moment; (b) it eliminates the standard story device where a character can keep his infection secret; and (c) it requires the quick elimination of characters we like, dramatizing the merciless nature of the plague.</p><p>Darwinians will observe that a virus that acts within 20 seconds will not be an efficient survivor; the host population will soon be dead--and along with it, the virus. I think the movie's answer to this objection is that the \"rage virus\" did not evolve in the usual way, but was created through genetic manipulation in the Cambridge laboratory where the story begins.</p><p>Not that we are thinking much about evolution during the movie's engrossing central passages. Selena becomes the dominant member of the group, the toughest and least sentimental, enforcing a hard-boiled survivalist line. Good-hearted Jim would probably have died if he hadn't met her. Eventually they encounter two other survivors: A big, genial man named Frank (<a href=\"http://www.rogerebert.com/cast-and-crew/brendan-gleeson\">Brendan Gleeson</a>) and his teenage daughter Hannah (<a href=\"http://www.rogerebert.com/cast-and-crew/megan-burns\">Megan Burns</a>). They're barricaded in a high-rise apartment, and use their hand-cranked radio to pick up a radio broadcast from an Army unit near Manchester. Should they trust the broadcast and travel to what is described as a safe zone? The broadcast reminded me of that forlorn radio signal from the Northern Hemisphere that was picked up in post-A-bomb Australia in \"On the Beach.\" After some discussion, the group decides to take the risk, and they use Frank's taxi to drive to Manchester. This involves an extremely improbable sequence in which the taxi seems abler to climb over gridlocked cars in a tunnel, and another scene in which a wave of countless rats flees from zombies.</p><p>Those surviving zombies raise the question: How long can you live once you have the virus? Since London seems empty at the beginning, presumably the zombies we see were survivors until fairly recently. Another question: Since they run in packs, why don't they attack one another? That one, the movie doesn't have an answer for.</p><p>The Manchester roadblock, which is indeed maintained by an uninfected Army unit, sets up the third act, which doesn't live up to the promise of the first two. The officer in charge. Maj. Henry West (<a href=\"http://www.rogerebert.com/cast-and-crew/christopher-eccleston\">Christopher Eccleston</a>) invites them to join his men at one of those creepy movie dinners where the hosts are so genial that the guests get suspicious. And then... see for yourself.</p><p>Naomie Harris, a newcomer, is convincing as Selena, the rock at the center of the storm. We come to realize she was not born tough, but has made the necessary adjustments to the situation. In a lesser movie, there would be a love scene between Selena and Jim, but here the movie finds the right tone in a moment where she pecks him on the cheek, and he blushes. There is also a touching scene where she offers Valium to young Hannah. They are facing a cruel situation. \"To kill myself?\" Hannah asks. \"No. So you won't care as much.\" The conclusion is pretty standard. I can understand why Boyle avoided having everyone dead at the end, but I wish he'd had the nerve that <a href=\"http://www.rogerebert.com/cast-and-crew/john-sayles\">John Sayles</a> showed in \"<a href=\"http://www.rogerebert.com/reviews/limbo-1999\">Limbo</a>\" with his open ending. My imagination is just diabolical enough that when that jet fighter appears toward the end, I wish it had appeared, circled back--and opened fire.</p><p>But then I'm never satisfied. \"28 Days Later\" is a tough, smart, ingenious movie that leads its characters into situations where everything depends on their (and our) understanding of human nature.</p>",
+    "genre_list": [
+        "Horror",
+        "Sci-Fi",
+        "Thriller"
+    ],
+    "gross": "$45,063,889",
+    "imdb_id": "tt0289043",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BNzM2NDYwNjM3OF5BMl5BanBnXkFtZTYwNDYxNzk5._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 113,
+    "metacritic_metascore_meter": 0.73,
+    "metacritic_metascore_total": 39,
+    "metacritic_userscore_meter": 0.74,
+    "metacritic_userscore_total": 325,
+    "plot": "Four weeks after a mysterious, incurable virus spreads throughout the UK, a handful of survivors try to find sanctuary.",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "2003-06-27",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.76,
+    "star_list": [
+        "Cillian Murphy",
+        "Naomie Harris",
+        "Christopher Eccleston"
+    ],
+    "tagline": "Day 1: Exposure - Day 3: Infection - Day 8: Epidemic - Day 15: Evacuation - Day 20: Devastation",
+    "title": "28 Days Later...",
+    "top_critics_avg_score": 0.72,
+    "top_critics_fresh": 43,
+    "top_critics_meter": 0.9,
+    "top_critics_rotten": 5,
+    "top_critics_total": 48,
+    "video_type": "Movie",
+    "writer_list": [
+        "Alex Garland"
+    ],
+    "year": 2002
+}

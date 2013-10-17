@@ -13,7 +13,6 @@ IMDB_TYPE_TV_EPISODE = "TV Episode"
 IMDB_TYPE_TV_SERIES = "TV Series"
 
 IMDB_ID_REGEX = re.compile("www\.imdb\.com/title/(.+?)/")  # not null
-IMDB_LENGTH_REGEX = re.compile("itemprop=\"duration\".*?>(\d+) min<")
 IMDB_RATING_REGEX = re.compile("itemprop=\"contentRating\" content=\"(.+?)\"></span>")
 IMDB_SCORE_REGEX = re.compile("<span itemprop=\"ratingValue\">([0-9]*\.?[0-9]+)</span>")
 IMDB_TITLE_REGEX = re.compile("itemprop=\"name\">(.+?)</span>")  # not null
@@ -28,6 +27,7 @@ IMDB_DIRECTOR_STR_REGEX = re.compile("<h4 class=\"inline\">Directors?:</h4>(.+?)
 IMDB_GENRE_LIST_REGEX = re.compile("<a.*?> *(.+?) *<", re.DOTALL)
 IMDB_GENRE_STR_REGEX = re.compile("<h4 class=\"inline\">Genres?:</h4>(.+?)</div>", re.DOTALL)
 IMDB_GROSS_REGEX = re.compile("<h5>Gross</h5>.*?(\$.+?) \(USA\)", re.DOTALL)
+IMDB_LENGTH_REGEX = re.compile("itemprop=\"duration\".*?>.*?(\d+) min.*?<", re.DOTALL)
 IMDB_NAME_LIST_REGEX = re.compile("itemprop=\"name\">(.+?)<", re.DOTALL)
 IMDB_PLOT_REGEX = re.compile("itemprop=\"description\">(.+?)<div", re.DOTALL)
 IMDB_POSTER_REGEX = re.compile("<meta property='og:image' content=\"(.+?)\" />", re.DOTALL)

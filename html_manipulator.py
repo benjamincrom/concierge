@@ -78,7 +78,7 @@ def remove_html_tags(html_str):
         s.feed(html_str.decode('latin-1').encode('ascii', 'ignore'))
         return_str = s.get_data()
 
-    return return_str
+    return return_str.strip()
 
 
 def use_regex(given_regex, target_str, can_be_null):
