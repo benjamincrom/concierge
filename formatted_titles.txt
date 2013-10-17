@@ -1,0 +1,436 @@
+{
+    "all_critics_avg_score": 0.49000000000000005,
+    "all_critics_fresh": 3,
+    "all_critics_meter": 0.33,
+    "all_critics_rotten": 6,
+    "all_critics_total": 9,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.64,
+    "audience_meter": 0.54,
+    "audience_total": 439,
+    "budget": "",
+    "director_list": [
+        "Ken Russell"
+    ],
+    "formatted_review_text": "<p>I like what <a href=\"http://www.rogerebert.com/cast-and-crew/george-burns\">George Burns</a> said about his sex life: \"I got more laughs in bed than I ever got in vaudeville.\" Sex is an activity of great and serious importance to its participants, but as a spectator sport it has a strange way of turning into comedy. Look, for example, at Ken Russell's overwrought film \"Crimes of Passion\", in which good performances and an interesting idea are metamorphosed into one of the silliest movies in a long time.</p><p>Part of the fault for that lies with Russell. A great deal of the fault no doubt lies with the movie rating system, which required massive cuts in the movie before it could qualify for an R rating, and with New World Pictures, which was too chicken to release the movie with an X. But some of the fault also lies with the subject of sex itself, because there is nothing quite so ridiculous as someone else's sexual fantasies, and nothing as fascinating as our own.</p><p>The movie stars <a href=\"http://www.rogerebert.com/cast-and-crew/kathleen-turner\">Kathleen Turner</a> in a performance which must have taken a great deal of nerve and curiosity. She plays a woman with a dual identity: by day, she's a sophisticated fashion designer named Joanne, and by night she's a kinky hooker named China Blue. The psychological reasons behind this double existence are dished up out of the usual Freudian stew. Turner's day work is photographed in a matter-of-fact way. The nighttime street scene is seen by Russell, however, as a lurid film noir world of flashing red neon signs, garter belts, squirming sadomasochists, and perverts like the one played by <a href=\"http://www.rogerebert.com/cast-and-crew/anthony-perkins\">Anthony Perkins</a>, who proves in this movie that there is probably no role he would turn down because it would be bad for his image. Perkins plays a demented street preacher who sniffs uppers, hangs out in peep shows, and brandishes a murder weapon that looks like \"<a href=\"http://www.rogerebert.com/reviews/great-movie-jaws-1975\">Jaws</a>\" crossed with the latest electronic sex toy.</p><p>Perkins is just one of the clients who enlivens Turner's evenings. Others are more poignant as when Turner is hired by the wife of a dying man, who wants her husband to feel like a man for one last time. She enters the man's room, and as they begin to talk, a touchingly authentic atmosphere is established.</p><p>The purpose of \"Crimes of Passion\" was apparently to explore the further shores of sexual behavior. Because of the double standard of the movie ratings system, which prizes violence more highly than sex, a great deal of the behavior is missing from the movie, and what is left is a steamy, bloody thriller. I'm not sure that's what Russell had in mind. Anthony Perkins distorts most of the scenes he's in, with overacting so blatant that the plausibility of the whole movie is undermined. Turner tries. So does John Laughlin, as a square young husband who learns a lot from her about sex and love. but when \"Crimes of Passion\" is over, what's left? Not much. You know you're in trouble in a sex movie when you spend more time thinking about the parts they left out than the parts they put in.</p>",
+    "genre_list": [
+        "Drama",
+        "Romance",
+        "Thriller"
+    ],
+    "gross": "$2,912,945",
+    "imdb_id": "tt0087100",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMjAyNjAxNDYxNV5BMl5BanBnXkFtZTcwMTg5ODAzMQ@@._V1_SY317_CR5,0,214,317_.jpg",
+    "length": 107,
+    "plot": "The thirty year-old hard-worker Bobby Grady is married with two children with the frigid Amy Grady and their marriage is in crisis. Bobby is invited to work in the night shift for the owner...                See full summary\n    \n                        ",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "1984-01-01",
+    "review_percent_score": 0.375,
+    "review_source": "RogerEbert.com",
+    "score": 0.6,
+    "star_list": [
+        "Kathleen Turner",
+        "Anthony Perkins",
+        "Bruce Davison"
+    ],
+    "tagline": "Her name is China Blue. She is watched. She is worshipped.  And, she must remain a mystery.",
+    "title": "Crimes of Passion",
+    "video_type": "Movie",
+    "writer_list": [
+        "Barry Sandler"
+    ],
+    "year": 1984
+}{
+    "all_critics_avg_score": 0.64,
+    "all_critics_fresh": 83,
+    "all_critics_meter": 0.69,
+    "all_critics_rotten": 37,
+    "all_critics_total": 120,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.6599999999999999,
+    "audience_meter": 0.57,
+    "audience_total": 6527,
+    "budget": "",
+    "director_list": [
+        "Gregory Jacobs"
+    ],
+    "formatted_review_text": "<p>It comes down to this: \"Criminal\" is an English-language remake of \"<a href=\"http://www.rogerebert.com/reviews/nine-queens-2002\">Nine Queens</a>,\" an Argentinean film I saw in 2002 and remember well. \"Criminal\" follows the original fairly closely, and because I already knew the plot secrets, it couldn't work on me in its intended way. As the recycled characters, dialog and events turned up, there seemed to be an echo in the room.</p><p>The film may work for you. \"Nine Queens\" worked for me, and I gave it three stars. Much depends on whether you enjoy films that deliberately set out to mislead you. This one is a con about a con, and occupies the territory staked out so perfectly by such as David Mamet's \"<a href=\"http://www.rogerebert.com/reviews/great-movie-house-of-games-1987\">House of Games</a>\" and Ridley Scott's \"<a href=\"http://www.rogerebert.com/reviews/matchstick-men-2003\">Matchstick Men</a>.\" Odds are you'll have an inkling of what's going on under the surface, but the ending is likely to surprise you -- not in what it reveals, but in how it forces you to think again about parts you thought were on the level.</p><p><a href=\"http://www.rogerebert.com/cast-and-crew/john-c-reilly\">John C. Reilly</a> and <a href=\"http://www.rogerebert.com/cast-and-crew/diego-luna\">Diego Luna</a> co-star as Richard and Rodrigo, who meet in a casino when Richard, a veteran con-man, observes Rodrigo clumsily trying to trick waitresses into giving him his change twice. Richard steps in, tells casino security he's a cop, and leads Rodrigo away in handcuffs he conveniently carries in his pocket. Then he explains that he went to all his trouble because he needs a partner for a few days, and Rodrigo looks promising.\r<br>They warm up slowly, conning waiters and little old ladies, and then a larger quarry swims into view. Richard's sister Valerie (<a href=\"http://www.rogerebert.com/cast-and-crew/maggie-gyllenhaal\">Maggie Gyllenhaal</a>), who works in a hotel, calls him to say an old forger pal of his (<a href=\"http://www.rogerebert.com/cast-and-crew/zitto-kazann\">Zitto Kazann</a>) is sick in the men's room and needs help. That leads to Richard and Rodrigo's involvement in the forger's scheme to sell a counterfeit bank note to a wealthy collector named Hannigan (<a href=\"http://www.rogerebert.com/cast-and-crew/peter-mullan\">Peter Mullan</a>), who is staying in the hotel.</p><p>The plot as it uncoils is indeed ingenious. Like many such plots, it depends on outrageous coincidence, lucky timing and the ability to think through the con and come out on the other side. I'm convinced there's a logical flaw in the story structure, having to do with why Richard thinks he needs Rodrigo before he finds out what makes Rodrigo of interest to him. And no, that's not giving anything away, as you will discover when you see the film.\r<br>The actors do a good job of giving edge and momentum to the material: John C. Reilly is always in character (as his character, if you see what I mean), and Diego Luna, from \"<a href=\"http://www.rogerebert.com/reviews/y-tu-mama-tambien-2002\">Y Tu Mama Tambien</a>,\" walks a fine line between being a novice con man and being a very quick study. It's all done well. The director is <a href=\"http://www.rogerebert.com/cast-and-crew/gregory-jacobs\">Gregory Jacobs</a>, who has worked as an assistant director for <a href=\"http://www.rogerebert.com/cast-and-crew/steven-soderbergh\">Steven Soderbergh</a> (the film's producer) and no doubt learned a thing or two about cons on \"<a href=\"http://www.rogerebert.com/reviews/oceans-eleven-2001\">Ocean&#x27;s Eleven</a>\" and \"Out Of Sight.\" His decision to remake this recent film is defensible, since the plot of \"Nine Queens\" was what distinguished it and plots translate better than intangibles like, oh, say, artistry.</p><p>Because I had an excellent idea of what was really happening and why, however, the film couldn't work on me in its intended way. Some con-game films have such great dialogue (\"House of Games\") or such intense acting (\"Matchstick Men\") that they work entirely apart from the con. But \"Criminal\" needs the element of puzzlement and surprise. Since you have probably not seen \"Nine Queens\" (which grossed less than $2 million at the North American box office), \"Criminal\" will be new to you, and I predict you'll like the remake about as much as I liked the original -- three stars' worth. If, however, you've seen \"Nine Queens,\" you may agree that some journeys, however entertaining, need only be taken once.</p>",
+    "genre_list": [
+        "Comedy",
+        "Crime",
+        "Drama",
+        "Thriller"
+    ],
+    "gross": "$923,426",
+    "imdb_id": "tt0362526",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTg0OTAyODI1NF5BMl5BanBnXkFtZTcwMjU4NzYyMQ@@._V1_SY317_CR17,0,214,317_.jpg",
+    "length": 87,
+    "metacritic_metascore_meter": 0.61,
+    "metacritic_metascore_total": 35,
+    "metacritic_userscore_meter": 0.58,
+    "metacritic_userscore_total": 11,
+    "plot": "Two con artists try to swindle a currency collector by selling him a counterfeit copy of an extremely rare currency bill.    \n                        ",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "2004-09-10",
+    "review_percent_score": 0.625,
+    "review_source": "RogerEbert.com",
+    "score": 0.64,
+    "star_list": [
+        "John C. Reilly",
+        "Diego Luna",
+        "Maggie Gyllenhaal"
+    ],
+    "tagline": "Ever get the feeling you're being played?",
+    "title": "Criminal",
+    "top_critics_avg_score": 0.67,
+    "top_critics_fresh": 27,
+    "top_critics_meter": 0.73,
+    "top_critics_rotten": 10,
+    "top_critics_total": 37,
+    "video_type": "Movie",
+    "writer_list": [
+        "Fabin Bielinsky",
+        "Gregory Jacobs"
+    ],
+    "year": 2004
+}{
+    "all_critics_avg_score": 0.45999999999999996,
+    "all_critics_fresh": 3,
+    "all_critics_meter": 0.33,
+    "all_critics_rotten": 6,
+    "all_critics_total": 9,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.6,
+    "audience_meter": 0.33,
+    "audience_total": 945,
+    "budget": "",
+    "director_list": [
+        "Martin Campbell"
+    ],
+    "formatted_review_text": "<p>Criminal Law is a textbook example of a movie going wrong before our very eyes, because of the curious failure of the filmmakers to realize that you can toy with an audience only so long before the audience grows resentful. What happens is this. The movie has success, at an early moment, with that standard thriller editing device, the False Alarm. This is a cliche in three beats (so frequently used that I also discuss it in another of this weekends openings, <a href=\"http://www.rogerebert.com/reviews/horror-show-1989\">Horror Show</a>).</p>\r<p>The way it always goes is, first we get a scare. Then it turns out the scare was nothing - only a cat, say, or a shadow. Then, just while were laughing at being so foolishly taken in, the real scare leaps out at us.</p>\r<p>The False Alarm has worked time and again in the movies, from film noir to <a href=\"http://www.rogerebert.com/reviews/wait-until-dark-1968\">Wait Until Dark</a> to <a href=\"http://www.rogerebert.com/reviews/great-movie-jaws-1975\">Jaws</a> to countless slasher films.</p>\r<p>But it will not work if you overuse it. As a general rule, I doubt if it can be used more than twice in the same movie before the audience begins to grow too conscious of it. Criminal Law uses it at least six or seven times, and the last half hour of the film is so heavily loaded with False Alarms that I could feel the audience growing restless and finally rebellious: What were they seeing here, a movie or some kind of a Pavlovian response test? Perhaps the films director, <a href=\"http://www.rogerebert.com/cast-and-crew/martin-campbell\">Martin Campbell</a>, wasnt fully aware of how much he was overemploying the device. But didnt the editor, <a href=\"http://www.rogerebert.com/cast-and-crew/christopher-wimble\">Christopher Wimble</a>, realize what was happening? Its the editors job to backstop the director on such matters as pacing and tone and to ask embarrassing questions about how much an audience can be expected to take. What happens during the course of Criminal Law is almost painful to watch, as the film first grabs the audience, then fascinates it, then begins to make it uneasy and ends by completely alienating it. This movie ought to be shown in film schools as a textbook example of how to throw away the audiences sympathy.</p>\r<p>The story involves a convoluted relationship between a cocky young criminal lawyer named Ben Chase (<a href=\"http://www.rogerebert.com/cast-and-crew/gary-oldman\">Gary Oldman</a>) and a slimy, spoiled rich boy named Martin Thiel (<a href=\"http://www.rogerebert.com/cast-and-crew/kevin-bacon\">Kevin Bacon</a>), whom Chase is defending against a murder charge. Did Martin commit the crime? Quite possibly. But Chase is able to use courtroom theatrics to question the reliability of eyewitnesses, and Martin goes free. Then a strange cat-and-mouse game begins, in which Martin seems to be testing Chases loyalty and friendship. Without revealing too much of the plot, I can say that Martin leads Chase down a violent trail of evidence that seems to indicate another murder has been committed - and then all of the evidence suggests that the killer was the lawyer himself.</p>\r<p>The movie explains this process with a generous serving of Freudian cliches (Martins mother is an abortionist; all of his victims are women who have had abortions), but the psychology is essentially just to throw us off the trail. This is one of those movies where you gain deep insights into the personality of a character, only to have the mystery solved by the discovery of a secret tunnel. I didnt mind the tunnel. In fact, I rather enjoyed it. What I resented was the way the movie began to manipulate the audience with the False Alarm gimmick, applied again and again until there were rustlings in the dark, and murmurs of discontent.</p>\r<p>Its a shame such good performances were lost by the runaway use of gimmicks. Oldman (<a href=\"http://www.rogerebert.com/reviews/A-love-story-forged-in-hell\">Sid and Nancy</a>, <a href=\"http://www.rogerebert.com/reviews/prick-up-your-ears-1987\">Prick Up Your Ears</a>) is probably the best of the young British actors, and Bacon is very effective here at projecting a likable, ingratiating young man while suggesting a sickness deep within. Some of their scenes together have an eerie charge (I have a very special relationship with him, the lawyer says, gloating at one point about his client - not fully realizing how special). But then the movie disintegrates into bad laughs. What a lesson in the importance of tone.</p>",
+    "genre_list": [
+        "Crime",
+        "Thriller"
+    ],
+    "gross": "$9,974,446",
+    "imdb_id": "tt0097125",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTI0MTAxNTIzN15BMl5BanBnXkFtZTYwMzg3Mjg5._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 117,
+    "plot": "Oldman plays a lawyer who defends a killer, but, soon after he wins he finds out that the killer is guilty.    \n                        ",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "1989-04-28",
+    "review_percent_score": 0.5,
+    "review_source": "RogerEbert.com",
+    "score": 0.5599999999999999,
+    "star_list": [
+        "Gary Oldman",
+        "Kevin Bacon",
+        "Tess Harper"
+    ],
+    "tagline": "Whoever fights monsters should see to it that in the process he does not become a monster. - Nietzsche.",
+    "title": "Criminal Law",
+    "video_type": "Movie",
+    "writer_list": [
+        "Mark Kasdan"
+    ],
+    "year": 1988
+}{
+    "all_critics_avg_score": 0.75,
+    "all_critics_fresh": 63,
+    "all_critics_meter": 0.86,
+    "all_critics_rotten": 10,
+    "all_critics_total": 73,
+    "aspect_ratio": 1.66,
+    "audience_avg_score": 0.74,
+    "audience_meter": 0.77,
+    "audience_total": 1484,
+    "budget": "",
+    "director_list": [
+        "Jafar Panahi"
+    ],
+    "formatted_review_text": "<p>The success of \"Crimson Gold\" depends to an intriguing degree on the performance of its leading actor, a large, phlegmatic man who embodies the rule that an object at rest will stay at rest until some other force sets it into motion. The character, named Hussein and played by <a href=\"http://www.rogerebert.com/cast-and-crew/hussein-emadeddin\">Hussein Emadeddin</a>, is a pizza deliveryman in Tehran, Iran, heavy-set, tall, undemonstrative. He sits where he sits as if planted there, and when he rides his scooter around the city streets, he doesn't lean and dart like most scooter drivers, but seems at one with his machine in implacable motion. When he smokes, he is like an automaton programmed to move the cigarette toward and away from his lips.</p><p>He has a friend named Ali (<a href=\"http://www.rogerebert.com/cast-and-crew/kamyar-sheissi\">Kamyar Sheissi</a>). We meet Ali for the first time in a tea house, where he produces a purse he has just found. Its contents are disappointing -- a broken gold ring. Another man overhears their conversation, assumes they stole the purse and delivers a little lecture on the morality of theft. He believes the rewards should suit the crime; you should not put your targets through a great deal of suffering just to relieve them of pocket change.</p><p>Hussein, who is engaged to Ali's sister, seems an unlikely candidate for marriage. We learn indirectly that he was wounded in the Iraq-Iran war, and Ali refers to his \"medication.\" Perhaps that accounts for his sphinxlike detachment; he acts as little as it is possible to act and yet, paradoxically, we can't take our eyes off him.</p><p>The film uses Hussein and his life as a lens to look at Tehran today. The director, <a href=\"http://www.rogerebert.com/cast-and-crew/jafar-panahi\">Jafar Panahi</a>, also made \"<a href=\"http://www.rogerebert.com/reviews/the-circle-2001\">The Circle</a>,\" a film showing the impossibility of being a single woman in modern Iran without having a man to explain your status. It was written by <a href=\"http://www.rogerebert.com/cast-and-crew/abbas-kiarostami\">Abbas Kiarostami</a>, the best-known Iranian director, and includes his trademark: long, unbroken shots of a character driving somewhere. In this case, it is Hussein on his scooter, sometimes with Ali as a passenger.</p><p>Hussein lives a solitary existence in an untidy little flat, venturing out at night to deliver pizzas. One night he delivers a stack of pizzas to the penthouse of an apartment building in a wealthy neighborhood. He is greeted at the door by the occupant (<a href=\"http://www.rogerebert.com/cast-and-crew/pourang-nakhayi\">Pourang Nakhayi</a>), who complains that \"the women have gone\" and he doesn't need the pizza. But he invites Hussein in, asks him to eat the pizza, and talks obsessively about himself: how his parents lived in the apartment only for a month before moving overseas, how he has just returned to Iran and finds it not organized to his liking, how women are crazy and unpredictable.</p><p>Hussein eats steadily and regards him. Later, as the man is on the telephone, he walks around the apartment (he has never been so high up in his life), looks at the skyline, visits a bathroom more luxurious than any he could imagine, dives fully clothed into the swimming pool, and is seen later wrapped in towels.</p><p>When he leaves the apartment, he goes directly to a jewelry store that he and Ali had visited twice before. The first time, they wanted to get a price on the gold ring, and were treated rudely and with suspicion by the store owner and guard. Returning, wearing ties and with Ali's sister along, they said they were shopping for a wedding ring -- but were treated rudely again; it is a high-end store and they look like low-end people.</p><p>After he leaves the high-rise apartment, Hussein returns to the store. We already know much of what will happen now, because \"Crimson Gold\" opens with a version of the same scene it closed with. But I will not discuss the opening (and closing) because they proceed with a kind of implacable logic. What seems impulsive and reckless at the beginning of the film takes on a certain logic after we have spent some time in Hussein's company. In his case, still waters run deep and cold. He has been still and implacable for the entire film, but now we understand he was not frozen, but waiting.</p><p><b>Note:</b> In real life, Hussein Emadeddin, a non-actor, is a paranoid schizophrenic. Having learned this information, I felt obliged to share it with you, but the film does not refer to the disease; perhaps Jafar Panahi found that Emadeddin's demeanor, whatever its source, provided the kind of detachment he needed for his character. Hussein (the character) is doubly effective because he does not seem to be an active participant in the story, but an observer carried along by the currents of chance.</p>",
+    "genre_list": [
+        "Drama",
+        "Thriller"
+    ],
+    "gross": "$147,844",
+    "imdb_id": "tt0371280",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTQ5Njg3NDc3OF5BMl5BanBnXkFtZTcwNjA0OTUyMQ@@._V1_SY317_CR4,0,214,317_.jpg",
+    "length": 95,
+    "metacritic_metascore_meter": 0.81,
+    "metacritic_metascore_total": 26,
+    "metacritic_userscore_meter": 0.71,
+    "metacritic_userscore_total": 8,
+    "plot": "An Iranian pizza delivery man sees the worst of corruption and social unbalance in his city and is driven to crime.    \n                        ",
+    "rating": "UNRATED",
+    "review_author": "Roger Ebert",
+    "review_date": "2004-04-16",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.74,
+    "star_list": [
+        "Hossain Emadeddin",
+        "Kamyar Sheisi",
+        "Azita Rayeji"
+    ],
+    "tagline": "",
+    "title": "Crimson Gold",
+    "top_critics_avg_score": 0.8,
+    "top_critics_fresh": 26,
+    "top_critics_meter": 0.96,
+    "top_critics_rotten": 1,
+    "top_critics_total": 27,
+    "video_type": "Movie",
+    "writer_list": [
+        "Abbas Kiarostami"
+    ],
+    "year": 2003
+}{
+    "all_critics_avg_score": 0.6,
+    "all_critics_fresh": 36,
+    "all_critics_meter": 0.68,
+    "all_critics_rotten": 17,
+    "all_critics_total": 53,
+    "aspect_ratio": 2.35,
+    "audience_avg_score": 0.7,
+    "audience_meter": 0.69,
+    "audience_total": 15341,
+    "budget": "$31,734 (USA) (",
+    "director_list": [
+        "Mathieu Kassovitz"
+    ],
+    "formatted_review_text": "<p>If the makers of the next Hannibal Lecter picture don't hire <a href=\"http://www.rogerebert.com/cast-and-crew/mathieu-kassovitz\">Mathieu Kassovitz</a> to direct it, they're mad. His new thriller \"The Crimson Rivers\" is a breathtaking exercise in the macabre, a gruesome thriller with quirky cops and a killer of Lecterian complexity, and even when the movie is perfect nonsense, it's so voluptuous that you're grateful to be watching it anyway. This is the work of a natural filmmaker.</p><p>The film begins with parallel stories involving two cops, who eventually meet. One is Niemans (<a href=\"http://www.rogerebert.com/cast-and-crew/jean-reno\">Jean Reno</a>), a famed investigator from Paris, such a lone wolf that when he's asked about his unit, he says, \"I'm the unit.\" The other is Kerkerian (<a href=\"http://www.rogerebert.com/cast-and-crew/vincent-cassel\">Vincent Cassel</a>), a provincial policeman.</p><p>Niemans is investigating the murder of a man who is found hanging 150 feet in the air in the fetal position, blinded, his hands amputated. Kerkerian is investigating the desecration of a tomb containing a child whose mother said she was killed by the devil.</p><p>The investigations are in a spectacularly forlorn valley in the French Alps, where a famous university clings to the slopes. The children of its teachers go to school here, and eventually become professors themselves; there are hints of problems with inbreeding. The university dean is the \"mayor of the valley,\" and he haughtily tells Niemans: \"We all live in perfect harmony. To accuse one of us is to accuse all of us, including me.\" </p><p>Niemans has nobody he wants to accuse. The murder is baffling. \"The hands and eyes are the body parts that belong to us alone,\" the surgeon tells him after the autopsy, adding that in his opinion the victim was tortured for hours. Plodding through his investigation, morose, inward, afraid of dogs, Niemans meets Kerkerian and then meets him again. Why do their two cases seem to lead to the same places? </p><p>The movie is as good-looking as any film this year. It is cold, wet and gray, like \"<a href=\"http://www.rogerebert.com/reviews/great-movie-the-silence-of-the-lambs-1991\">The Silence of the Lambs</a>,\" and its mountain fastness doesn't look like a place for a ski holiday, but like a place where you could be lost and never found. Kassovitz's camera gives us the sensation of these peaks and altitudes by moving with uncanny grace through high empty spaces: There was one shot that had me frankly baffled about where the camera could possibly be positioned.</p><p>Notice, too, how an innocuous visit to a university library somehow becomes a venture into the research room of hell. The room is architecturally beautiful (so is the university--Guernon, in Modane-Avrieux), but Kassovitz and his cinematographer, <a href=\"http://www.rogerebert.com/cast-and-crew/thierry-arbogast\">Thierry Arbogast</a>, somehow light it and move through it so that every innocent student seems to glance up from satanic studies. The entire university--the grounds, the labs, the dean's office--has this unwholesome quality, and if you could figure out how Kassovitz does it you'd learn something about the craft of filmmaking, because he starts with a picture postcard.</p><p>The two cops establish a grumpy, monosyllabic relationship, based on the isolationist Niemans' gradual realization that Kerkerian is not a complete fool. There is a moment when they visit a grubby little rental apartment where somehow Kassovitz conjures suspense out of thin air. And a scene where Niemans and a local woman mountaineer lower themselves down a sheer ice face to find a 10-year-old sample of acid rain, needed as a clue. They find another clue: a second victim.</p><p>All of this, alas, eventually yields a solution to the mystery.</p><p>Along the way we have been much too interested in current developments to bother formulating our own hypothesis. When the answer comes, it comes all in a package, like one of Sherlock Holmes' wrap-ups for the admiring Watson. The dialogue is such a rush, indeed, that I was reminded of Russ Meyer's analysis of \"Vixen': \"I put all the socially redeeming stuff in one speech at the end, so the audience knows when that comes on, it's safe to leave.\" </p><p>What Kassovitz may be doing here, consciously or not, is demonstrating that we go to a mystery thriller for the wind up, not the delivery. All the fun is in the atmosphere, the set-up, the surprises and murky sense of danger. The whodunit part is usually either (a) too predictable, or (b) so unpredictable it's a cheat.</p><p>Joseph Conrad said he didn't like popular adventure stories because they were all based on accidents -- random adventures, not generated by the nature of the characters. For almost all of its length, \"The Crimson Rivers\" is anchored by the natures of Niemans and Kerkerian, as tested by criminal events.</p><p>Kassovitz holds off telling us whodunit as long as possible, and then grits his teeth like a runner who finds a puddle at the finish line. Look at this movie and tell me this director shouldn't have a date with <a href=\"http://www.rogerebert.com/cast-and-crew/anthony-hopkins\">Anthony Hopkins</a>.</p>",
+    "genre_list": [
+        "Crime",
+        "Mystery",
+        "Thriller"
+    ],
+    "gross": "$69,316",
+    "imdb_id": "tt0228786",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTIwMzYzMzYyM15BMl5BanBnXkFtZTcwOTQyMTcxMQ@@._V1_SY317_CR1,0,214,317_.jpg",
+    "length": 106,
+    "metacritic_metascore_meter": 0.49,
+    "metacritic_metascore_total": 19,
+    "metacritic_userscore_meter": 0.72,
+    "metacritic_userscore_total": 11,
+    "plot": "Parisian murder detective commissioner Pierre Niemans is called to Gueron, a self-sufficient, prestigious university in a mountain valley, to investigate the murder on 32-year old professor...                See full summary\n    \n                        ",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "2001-08-10",
+    "review_percent_score": 0.875,
+    "review_source": "RogerEbert.com",
+    "score": 0.6799999999999999,
+    "star_list": [
+        "Jean Reno",
+        "Vincent Cassel",
+        "Nadia Fars"
+    ],
+    "tagline": "Evil rises to new heights.",
+    "title": "The Crimson Rivers",
+    "top_critics_avg_score": 0.5,
+    "top_critics_fresh": 7,
+    "top_critics_meter": 0.41,
+    "top_critics_rotten": 10,
+    "top_critics_total": 17,
+    "video_type": "Movie",
+    "writer_list": [
+        "Jean-Christophe Grang",
+        "Mathieu Kassovitz"
+    ],
+    "year": 2000
+}{
+    "all_critics_avg_score": 0.75,
+    "all_critics_fresh": 40,
+    "all_critics_meter": 0.87,
+    "all_critics_rotten": 6,
+    "all_critics_total": 46,
+    "aspect_ratio": 2.35,
+    "audience_avg_score": 0.7,
+    "audience_meter": 0.78,
+    "audience_total": 59411,
+    "budget": "$53,000,000 (estimated)",
+    "director_list": [
+        "Tony Scott"
+    ],
+    "formatted_review_text": "<p></p><p>There's an early scene in \"Crimson Tide\" when the\rcharacters are playing a trivia game, remembering the stars of early submarine\rmovies like \"Run Silent, Run Deep.\" It's clever, showing how the crew\rmembers of the U.S. nuclear submarine Alabama have formed many of their images\rof the silent service at the movies.</p><p>It's\ralso daring: This movie is inviting comparison with the classics, and although\rit doesn't mention \"<a href=\"http://www.rogerebert.com/reviews/das-boot-1997\">Das Boot</a>\" or \"The Hunt for Red\rOctober,\" it could have: This movie is in the same skillful tradition.</p><p>The\rtradition includes a strong commander, and the Alabama possesses a legend:\rCapt. Ramsey (<a href=\"http://www.rogerebert.com/cast-and-crew/gene-hackman\">Gene Hackman</a>), who trained under the legendary Adm. Hyman\rRickover, father of the nuclear submarine, and is now nearing the end of his\ractive duty. Ramsey, known for chewing up subordinates, is also famous for his\rlittle dog, a <a href=\"http://www.rogerebert.com/cast-and-crew/jack-russell\">Jack Russell</a> terrier that is allowed to lift its little leg\rwherever it pleases.</p><p>As\rthe movie opens, the Alabama gets a new second in command: Lt. Cmdr. Hunter\r(<a href=\"http://www.rogerebert.com/cast-and-crew/denzel-washington\">Denzel Washington</a>). In an early interview with Ramsey, the old-timer strikes a\rvaguely sinister note; Hackman is a master at seeming genial and friendly while\rmasking deeper, darker thoughts. The sub sets out to sea, and during a\rdiscussion around the dinner table, Hunter makes the mistake of telling Ramsey,\r\"In my humble opinion, in the nuclear world the true enemy is war\ritself.\" These words will haunt him. Ramsey tests the younger man,and when a fire breaks out in the\rsubmarine's galley, the captain chooses that moment to order an onboard drill.\rHunter questions the decision, saying he would have attended to the fire first,\rbefore calling a drill. Ramsey says he saw the fire as an opportunity to test\rthe ability of his men to function under chaotic conditions.</p><p>And,\rhe adds, while the junior officer is free to disagree, he should never do so in\rfront of the enlisted men: \"We're here to preserve democracy, not to\rpractice it.\" A coded message is received. Russian rebel troops have\rseized control of nuclear missile silos, and the Alabama is placed on full war\ralert. Its job, if it receives a verified command message, will be to fire its\rnuclear missiles at the land-based targets in a preemptive strike. Meanwhile,\rin an exchange of missiles with an enemy sub, the Alabama's radio apparatus is\rtemporarily disabled, but not before a confirmed message has been received that\rorders the sub to ready its missiles for firing.</p><p>Now\rdeep silence reigns beneath the ocean. The sub, cut off from its chain of\rcommand, may be the only deterrent to a Russian nuclear attack. Should the\rcaptain seize the initiative and order a launch? He can do that only if his\rsecond-in-command agrees, and Hunter doesn't. That's the basic set-up in\r\"Crimson Tide,\" an uncommonly intelligent dramatization about the\rchoices, dangers and duties of nuclear warfare.</p><p>The\rmovie has the usual trappings of submarine adventure pictures: emergency\rflooding, near-hits, the danger of sinking below a safe depth. Director Tony\rScott (\"<a href=\"http://www.rogerebert.com/reviews/top-gun-1986\">Top Gun</a>\") handles these scenes with skill, and yet they're\rnot at the heart of Michael Schiffer's screenplay. Instead, the movie develops\ralong ideological lines, as Ramsey and Hunter - both absolutely convinced\rthey're right - attempt to gain control of the submarine. Is the captain guilty\rof a procedural violation, or is his second in command guilty of mutiny? Oddly\renough, \"Crimson Tide\" develops into an actors' picture, not just an\raction movie. There are a lot of special effects, high-tech gadgets and violent\rstandoffs, yes, but the movie is really a battle between two wills. Hackman and\rWashington are well-matched, and although my sympathies were with the\rWashington character (faced with the prospect of a billion deaths, it is best\rto err on the side of caution), I could understand the logic of the senior\rofficer. Hackman's Ramsey is not a warmonger or a mad dog, but an officer so\robsessed with following orders that even an incomplete one has a message, just\rfor him.</p><p>In\ra large supporting cast, <a href=\"http://www.rogerebert.com/cast-and-crew/george-dzundza\">George Dzundza</a> stands out as Cob, the officer who must\rside with Hunter or Ramsey, and who places proper procedure higher than his\ropinion of either man's position.</p><p>His\rbest scene comes as he monitors a depth gauge that shows the Alabama sinking to\rhull-crushing pressures. As it appears inevitable that the sub will be\rdestroyed, he makes an interesting actor's choice: Instead of allowing his\rvoice to grow tense or exciting, he flattens it into a disinterested monotone\rof resignation. That works even better to underline the tension.</p><p>What's\runique about \"Crimson Tide\" is that it doesn't offer clear-cut\rchoices between good and evil. Hackman may be violating procedures, but perhaps\rhe has good reasons. Washington, fearing to unleash war, may leave his country\runprotected.</p><p>Even\rthe ending is intriguingly even-handed. This is the rare kind of war movie that\rnot only thrills people while they're watching it, but invites them to leave\rthe theater actually discussing the issues.</p><p></p>",
+    "genre_list": [
+        "Action",
+        "Drama",
+        "Thriller"
+    ],
+    "gross": "$91,400,000",
+    "imdb_id": "tt0112740",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMjY4NDQxMjcwNV5BMl5BanBnXkFtZTcwNDA1MjA0MQ@@._V1_SY317_CR6,0,214,317_.jpg",
+    "length": 116,
+    "metacritic_metascore_meter": 0.66,
+    "metacritic_metascore_total": 20,
+    "metacritic_userscore_meter": 0.78,
+    "metacritic_userscore_total": 14,
+    "plot": "On a US nuclear missile sub, a young first officer stages a mutiny to prevent his trigger happy captain from launching his missiles before confirming his orders to do so.    \n                        ",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "1995-05-12",
+    "review_percent_score": 0.875,
+    "review_source": "RogerEbert.com",
+    "score": 0.72,
+    "star_list": [
+        "Gene Hackman",
+        "Denzel Washington",
+        "Matt Craven"
+    ],
+    "tagline": "In the face of the ultime nuclear showdown, one man has absolute power and one man will do anything to stop him",
+    "title": "Crimson Tide",
+    "top_critics_avg_score": 0.8,
+    "top_critics_fresh": 11,
+    "top_critics_meter": 0.92,
+    "top_critics_rotten": 1,
+    "top_critics_total": 12,
+    "video_type": "Movie",
+    "writer_list": [
+        "Michael Schiffer",
+        "Richard P. Henrick"
+    ],
+    "year": 1995
+}{
+    "all_critics_avg_score": 0.64,
+    "all_critics_fresh": 10,
+    "all_critics_meter": 0.59,
+    "all_critics_rotten": 7,
+    "all_critics_total": 17,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.5599999999999999,
+    "audience_meter": 0.29,
+    "audience_total": 1280,
+    "budget": "$12,000,000 (estimated)",
+    "director_list": [
+        "Sidney Lumet"
+    ],
+    "formatted_review_text": "<p>I have lettuce in my refrigerator that has a better chance of becoming conscious than this guy, says the young doctor in charge of Bed 5. The patient is in a persistent vegetative state. One of his daughters wants the hospital to pull the plug. The other daughter wants full life-support measures to be used, especially after its claimed that her fathers trembling hand is using Morse code to send the message, If you love me. OK, then: If you love him, what do you do? Young Dr. Ernst (<a href=\"http://www.rogerebert.com/cast-and-crew/james-spader\">James Spader</a>) gets input from old Dr. Butz (<a href=\"http://www.rogerebert.com/cast-and-crew/albert-brooks\">Albert Brooks</a>): Whats wrong with Bed 5? Hes all paid up, and hes got three insurance companies paying off his bills monthly. In other words, keep him alive as long as the moneys coming in. But, asks Ernst, should they carry out a procedure to allow the unconscious patient to be fed artificially? Butz is livid: You think just because someones going to die soon, we dont need to feed them? Ive news for you! Were all gonna to die! So why should any of us eat? This kind of collision between ethics and income is at the heart of <a href=\"http://www.rogerebert.com/cast-and-crew/sidney-lumet\">Sidney Lumet</a>s Critical Care, a smart, hard-edged movie about how insurance policies essentially dictate modern medical care. Spader plays Ernst as an exhausted third-year intern who has been a nerd all his life, and is belatedly enjoying an active sex life because the M.D. after his name has made him attractive to women. <a href=\"http://www.rogerebert.com/cast-and-crew/helen-mirren\">Helen Mirren</a> is Nurse Stella, the veteran in charge of the intensive care unit, and Bed 5s two daughters are the sexpot Felicia (<a href=\"http://www.rogerebert.com/cast-and-crew/kyra-sedgwick\">Kyra Sedgwick</a>) and the devout Connie (<a href=\"http://www.rogerebert.com/cast-and-crew/margo-martindale\">Margo Martindale</a>).</p>\r<p>The film is a stimulating mix of a medical drama and a courtroom showdown, with broad comedy from Brooks, a little sexual blackmail, and a touching subplot involving another terminally ill patient who thinks he is being visited by the devil. Underlining the sense of heightened and limited reality, the ICU in the movie is bathed in white light, like the command deck of a heavenly spaceship, and essentially contains only the two patients and their problems.</p>\r<p>The other patient (<a href=\"http://www.rogerebert.com/cast-and-crew/jeffrey-wright\">Jeffrey Wright</a>) has rejected two kidneys and has lost any will to live. Hes in pain and despair, and although there is no hope for him, he is being kept alive because the hospital can profitably transplant kidneys into him indefinitely. Nurse Stella sympathizes with him, but he also must deal with the pep talks of the Furnaceman (<a href=\"http://www.rogerebert.com/cast-and-crew/wallace-shawn\">Wallace Shawn</a>), who tempts him to die, and a good nun (<a href=\"http://www.rogerebert.com/cast-and-crew/anne-bancroft\">Anne Bancroft</a>) who holds out the hope of reconciliation. His case is played as a sober counterpoint to the drama in Bed 5, and Mirren is wonderful in her quiet scenes with the dying young man.</p>\r<p>Spaders Dr. Ernst, meanwhile, is in a tug-of-war between Bed 5s daughters and the alcoholic Dr. Butz (Just make sure you dont have money for health care and youll die happy in your own kingsized bed!). Ernst invites Felicia out to dinner and their relationship progresses even though he half-heartedly protests that ethics forbid him from discussing her fathers case. In a scene cleverly written by Steven Schwartz, she uses sex to get what she needs.</p>\r<p>The dutiful daughter Connie, on the other hand, swears her father is communicating with her and will snap out of his coma at any moment. Could either daughter be motivated by the terms of Bed 5s $10 million trust fund? Will Ernsts career be ruined? The movie debates its issues with a sharpness and cynicism not often seen, and steps wrong only once, with Connies parting line of dialogue, which is an inappropriate clinker.</p>\r<p>Of all the characters, I liked Brooks Dr. Butz the best. He inhabits a cluttered office under the eaves of the old wing of the hospital, pouring himself drinks out of the office bottle and denying charges that he is a chronic alcoholic. If I were a chronic alcoholic, Id have, ah ... whatever you call it ...  Short-term memory loss? asks Ernst.</p>",
+    "genre_list": [
+        "Comedy",
+        "Drama"
+    ],
+    "gross": "$141,853",
+    "imdb_id": "tt0118901",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMjA4MjUyMzA5OF5BMl5BanBnXkFtZTcwNTk5OTcxMQ@@._V1_SY317_CR4,0,214,317_.jpg",
+    "length": 107,
+    "plot": "Werner Ernst is a young hospital resident who becomes embroiled in a legal battle between two half-sisters who are fighting over the care of their comatose father. But are they really ...                See full summary\n    \n                        ",
+    "rating": "R",
+    "review_author": "Roger Ebert",
+    "review_date": "1997-10-31",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.5900000000000001,
+    "star_list": [
+        "James Spader",
+        "Kyra Sedgwick",
+        "Helen Mirren"
+    ],
+    "tagline": "At Memorial Hospital no one ever dies... Until their insurance runs out.",
+    "title": "Critical Care",
+    "top_critics_avg_score": 0.74,
+    "top_critics_fresh": 8,
+    "top_critics_meter": 0.8,
+    "top_critics_rotten": 2,
+    "top_critics_total": 10,
+    "video_type": "Movie",
+    "writer_list": [
+        "Richard Dooling",
+        "Steven Schwartz"
+    ],
+    "year": 1997
+}{
+    "all_critics_avg_score": 0.52,
+    "all_critics_fresh": 8,
+    "all_critics_meter": 0.57,
+    "all_critics_rotten": 6,
+    "all_critics_total": 14,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.54,
+    "audience_meter": 0.43,
+    "audience_total": 52714,
+    "budget": "$2,000,000 (estimated)",
+    "director_list": [
+        "Stephen Herek"
+    ],
+    "formatted_review_text": "<p>If perfect fools can hold driver's licenses, why can't creatures from outer space be just as dumb? And if they are bounty hunters, why shouldn't they be trigger-happy, firing at everything that moves, like a television set, for example? We always assume that visitors from other worlds will be far more intelligent than we are, but maybe they'll just turn out to have faster means of intergalactic travel.</p><p>In the opening scenes of \"Critters,\" a spaceship is approaching a barren asteroid that has been converted into a prison. It is carrying on board several of the dreaded Krites, who are furry little bowling balls with dozens of rows of sharp teeth. The Krites escape, take over the ship and land on Earth. And bounty hunters follow them here, while the nasty little critters are terrorizing the countryside.</p><p>What this gives us is a truly ambitious ripoff of not one but four recent science-fiction movies: \"<a href=\"http://www.rogerebert.com/reviews/gremlins-1984\">Gremlins</a>,\" \"<a href=\"http://www.rogerebert.com/reviews/great-movie-et-the-extra-terrestrial-1982\">E.T. The Extra-Terrestrial</a>\" (1982), \"The Terminator\" and \"<a href=\"http://www.rogerebert.com/reviews/starman-1984\">Starman</a>.\" We get the critters from \"Gremlins,\" and from \"Starman\" we get the notion that an alien can assume the outward appearance of a human being. (That is a particularly attractive quality for an alien, especially in a low-budget picture, because then you can hire an actor and claim he is inhabited by an alien and you can save a lot of money on special effects.) From \"E. T.,\" there is <a href=\"http://www.rogerebert.com/cast-and-crew/dee-wallace\">Dee Wallace</a> Stone, who played Henry Thomas's mother in that film. Here she is the equally dubious and harried mother of young <a href=\"http://www.rogerebert.com/cast-and-crew/scott-grimes\">Scott Grimes</a>, a plucky kid who goes into battle against the invaders.</p><p>The movie takes place in a small town and the surrounding countryside, where the vicious little furballs start attacking everything that moves. They have a lot of tricks at their command: They can eat you like a piranha, shoot darts at you from their foreheads, and curl up into a ball and roll away.</p><p>That leads up to the big scene in the bowling alley, where we expect that someone's going to reach down and pick up a critter instead of a ball. But as it turns out, that scene contains other surprises.</p><p>We meet the folks in the area. There's the friendly farmer (<a href=\"http://www.rogerebert.com/cast-and-crew/billy-green-bush\">Billy Green Bush</a>), his wife (Stone), son (Grimes) and daughter (Nadine Van Der Velde). They live on a farm that gives the critters their first haven, and there's the obligatory scary scene where the father goes down in the basement with his flashlight to see what's making the noise.</p><p>Meanwhile, the local lawman (that dependably slimy character actor M. Emmet Walsh) notices that strange things are happening in his territory. Two strangers from out of town have turned up and started to blast everybody away. And dang if one of them doesn't look exactly like the local minister! The other one soon assumes the outward appearance of the village idiot.</p><p>All of these plot threads move inexorably toward the final showdown, but what's interesting is the way the movie refuses to be just a thriller. The director, <a href=\"http://www.rogerebert.com/cast-and-crew/stephen-herek\">Stephen Herek</a>, likes to break the mood occasionally with a one-liner out of left field, and he gives the critters some of the funniest lines. What makes \"Critters\" more than a ripoff are its humor and its sense of style. This is a movie made by people who must have had fun making it.</p>",
+    "genre_list": [
+        "Action",
+        "Comedy",
+        "Horror",
+        "Sci-Fi",
+        "Thriller"
+    ],
+    "gross": "$13,167,232",
+    "imdb_id": "tt0090887",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMTU5MDUwMDA3OF5BMl5BanBnXkFtZTcwMDY2MjAwMQ@@._V1_SY317_CR4,0,214,317_.jpg",
+    "length": 82,
+    "plot": "A race of small, furry aliens make lunch out of the locals in a farming town.    \n                        ",
+    "rating": "PG-13",
+    "review_author": "Roger Ebert",
+    "review_date": "1986-04-11",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.58,
+    "star_list": [
+        "Dee Wallace",
+        "M. Emmet Walsh",
+        "Billy Green Bush"
+    ],
+    "tagline": "They eat so fast, you don't have time to scream.",
+    "title": "Critters",
+    "video_type": "Movie",
+    "writer_list": [
+        "Domonic Muir",
+        "Stephen Herek"
+    ],
+    "year": 1986
+}{
+    "all_critics_avg_score": 0.44000000000000006,
+    "all_critics_fresh": 3,
+    "all_critics_meter": 0.33,
+    "all_critics_rotten": 6,
+    "all_critics_total": 9,
+    "aspect_ratio": 1.85,
+    "audience_avg_score": 0.54,
+    "audience_meter": 0.38,
+    "audience_total": 19091,
+    "budget": "$4,500,000 (estimated)",
+    "director_list": [
+        "Mick Garris"
+    ],
+    "formatted_review_text": "<p>\"Critters 2: The Main Course\" is a movie about furry little hand puppets with lots of teeth, who are held up to salad bars by invisible puppeteers while large numbers of actors scream and pronounce unlikely dialogue. It lacks all of the style and sense of fun of the original \"<a href=\"http://www.rogerebert.com/reviews/critters-1986\">Critters</a>\" (1986) and has no reason for existence - aside, of course, from the fact that \"Critters\" is a brand name and this is the current model.</p>\r<p>I mention the hand puppets because they are so obvious. Unlike the original film, which was a genuinely entertaining ripoff of \"E.T.,\" \"<a href=\"http://www.rogerebert.com/reviews/starman-1984\">Starman</a>,\" \"The Terminator\" and \"<a href=\"http://www.rogerebert.com/reviews/gremlins-1984\">Gremlins</a>,\" this movie is not even a competent ripoff of \"Critters.\" It is quite obvious, in many shots, that the critters - who are about the size of a bowling ball and have lots of teeth - are lined up along the edges of tables and other flat surfaces so that unseen puppeteers can operate them. It is rare to see a critter moving anywhere on his own, except as a ball being pulled along by an invisible string. The critters in the first movie had personality. In this movie, they're only props.</p>\r<p>The plot is as before. The Cripes, a toothy, voracious race of interstellar garbage disposal units, have landed on Earth. They are followed here by bounty hunters, who blast them down with weapons that look as if they were made out of old tail pipes. The bounty hunters can assume the appearance of actual human beings, which means that the producers didn't have to spend any extra money on special makeup; all they had to do was hire an actor and say that he was an alien.</p>\r<p>Anyway, the Cripes attack the same town they attacked the first time around. And the movie attacks the same plot it attacked the first time around, right down to the cantankerous local sheriff and the townspeople who band together to fight the invasion. But while the first movie had considerable wit, this one is a demoralized enterprise from beginning to end. And it particularly misses the presence of M. Emmet Walsh, who played the sheriff in the first film with his usual oily charm.</p>\r<p>Which leads me to a helpful suggestion: In the case of a movie like \"Critters 2,\" the story is by definition utterly inconsequential.</p>\r<p>The only element from the original movie that interests the financial backers is the title. Since \"Critters 2\" can be used as a title by anyone who holds the copyright to \"Critters,\" and the title alone will lure people into the theater, why bother with a mere retread? Why not have some fun? My suggestion for \"Critters 3\": Make it a satire on sleazoid critter movies, starring the hapless and unseen employees who operate the hand puppets. Take us backstage. Show us the crummy special effects, but make fun of them. Pillory the crass financial guys who cynically demand a no-brainer remake. Make the hero a bright young film school grad who dreams that his version of \"Critters\" will win an Oscar.</p>\r<p>Opportunities for satire are everywhere. In \"Critters 2\" there is an amazingly bad sequence in which all of the critters roll themselves up into one gigantic ball and roll out to flatten the town. Anyone reading this review would write a funny scene about the difficulties of manufacturing and operating a critter ball. What is it made out of? Does it smell? Do the local dogs have a tendency to pay it rude visits? What happens if you're an extra who has to be crushed by the hairy ball and you have severe allergies? And so on, right down to the pecking order between puppeteers who operate the critters who are stars, and others who are relegated to the obscure critters.</p>\r<p>I make these notes only to illustrate the bankruptcy of imagination that is behind \"Critters 2.\" The makers of this film could not generate a single idea that was not provided for them by the makers of the original film. They went into the project with a ripoff on their mind. Since there is inevitably going to be a \"Critters 3,\" I offer my story ideas free of charge to whoever is condemned to make it. My payment will come on the day when I do not have to sit through yet another remake of this exhausted material. If you want to dedicate the film to me, that would be nice.</p>",
+    "genre_list": [
+        "Comedy",
+        "Horror",
+        "Sci-Fi",
+        "Thriller"
+    ],
+    "gross": "$3,813,293",
+    "imdb_id": "tt0094919",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BMjAwMDUxNjMwMV5BMl5BanBnXkFtZTcwNTMwMTYyMQ@@._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 86,
+    "plot": "Eggs of the small, furry alien carnivores are left behind on Earth and, after hatching, set their appetites on the next neighboring town.    \n                        ",
+    "rating": "PG-13",
+    "review_author": "Roger Ebert",
+    "review_date": "1988-04-29",
+    "review_percent_score": 0.25,
+    "review_source": "RogerEbert.com",
+    "score": 0.49000000000000005,
+    "star_list": [
+        "Scott Grimes",
+        "Liane Curtis",
+        "Terrence Mann"
+    ],
+    "tagline": "The most illegal aliens of all are back -- and they're hungrier than ever.",
+    "title": "Critters 2",
+    "video_type": "Movie",
+    "writer_list": [
+        "David Twohy",
+        "Mick Garris"
+    ],
+    "year": 1988
+}
