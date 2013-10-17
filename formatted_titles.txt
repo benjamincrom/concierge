@@ -4365,3 +4365,38 @@
     ],
     "year": 1995
 }
+{
+    "aspect_ratio": "",
+    "budget": "",
+    "director_list": [
+        "Kristi Jacobson",
+        "Lori Silverbush"
+    ],
+    "formatted_review_text": "<p>Eat your vegetables, they're good for you. That's what we were told as kids. Documentaries are sometimes deemed the broccoli of cinema: more nutritional than enjoyable. \"A Place at the Table,\" however, is a good documentary that is good for you.</p>\r<p>The bad news is that broccoli and bananas are neither available nor affordable for many Americans. That's the message of <a href=\"http://www.rogerebert.com/cast-and-crew/kristi-jacobson\">Kristi Jacobson</a> and Lori Silverbush's \"A Place at the Table,\" a necessary report on the national issue of hunger.</p>\r<p>\"The relative price of fresh fruits and vegetables has gone up by 40 percent since 1980, while the relative price of processed foods has gone down by about 40 percent,\" states Marion Nestle, a nutrition and public health professor. \"We're spending $20 billion a year on agricultural subsidies for the wrong foods.\" </p>\r<p>\"A Place at the Table\" uncovers other contradictions. \"Mississippi has the highest rate of obesity,\" an onscreen title card notes. Bad diets often are the result of low income and cheap, processed food. About 50 million Americans \"don't know where their next meal is coming from,\" as \"food insecurity\" is defined. This costs our country $167 billion annually.</p>\r<p>\"If we don't change the direction we're heading, this generation will be the first to live sicker and die younger than their parents' generation,\" testifies a congressional committee member. The filmmakers find persuasive advocates from such groups as No Kid Hungry Campaign, Physician Task Force on Hunger in America, and Center for Food Policy and Obesity. </p>\r<p>Talking heads include the authors of \"Stuffed and Starved: Markets, Power and the Hidden Battle for the World's Food System\" and \"Breadlines Knee-Deep in Wheat: Food Assistance in the Great Depression.\" Participant Media, the film's co-producer, is releasing its own book, as it did in 2008 with the film \"Food, Inc.\"</p>\r<p>Actor <a href=\"http://www.rogerebert.com/cast-and-crew/jeff-bridges\">Jeff Bridges</a>, who founded the End Hunger Network 30 years ago, also appears in the film.</p>\r<p>In \"A Place at the Table,\" we meet a Philadelphia mother unable to feed her two kids, an overweight yet undernourished girl in rural Mississippi, and a fifth-grader in Colorado who imagines help from a reality TV show. \"Have you heard of the 'Extreme Makeover Home Edition'?\" Rosie asks. \"I always have a dream almost every night. I just wish they would come and actually rescue us from our house.\"</p>\r<p>Meanwhile, food banks nationwide numbered 200 in 1980. Now there are 40,000. Where is our government, ask anti-hunger activists. Back in 1968, CBS correspondent Charles Kuralt stated in the doc \"Hunger in America\" that \"the most basic human need must become a human right.\"</p>\r<p>Hunger is a crisis \"our own government is ashamed of acknowledging,\" argues Bridges. \"If another country was doing this to our kids, we would be at war. It's just insane.\"</p>",
+    "genre_list": [
+        "Documentary"
+    ],
+    "gross": "$230,522",
+    "imdb_id": "tt1736049",
+    "imdb_poster_url": "http://ia.media-imdb.com/images/M/MV5BOTg1NTk5MDU0N15BMl5BanBnXkFtZTcwNzA0ODE4OA@@._V1_SX214_CR0,0,214,317_.jpg",
+    "length": 84,
+    "metacritic_metascore_meter": 0.68,
+    "metacritic_metascore_total": 19,
+    "plot": "A documentary that investigates incidents of hunger experienced by millions of Americans, and proposed solutions to the problem.",
+    "rating": "PG",
+    "review_author": "Bill Stamets",
+    "review_date": "2013-02-27",
+    "review_percent_score": 0.75,
+    "review_source": "RogerEbert.com",
+    "score": 0.64,
+    "star_list": [
+        "Jeff Bridges",
+        "Tom Colicchio",
+        "Ken Cook"
+    ],
+    "tagline": "One nation. Underfed.",
+    "title": "A Place at the Table",
+    "video_type": "Movie",
+    "writer_list": "",
+    "year": 2012
+}
