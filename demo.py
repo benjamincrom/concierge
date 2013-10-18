@@ -58,7 +58,7 @@ def parse_title(search_title, search_year='', ebert_link=''):
                     print '#########################################'
 
         # rogerebert and rottentomatoes only have good data for movies
-        if media_type == "Movie":
+        if media_type == "Movie" and year:
             year_list = [year, year - 1, year - 2]
             # Get Metacritic data
             for current_year in year_list:
