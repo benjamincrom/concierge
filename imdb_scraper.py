@@ -58,6 +58,7 @@ def scrape_imdb_data(search_title, year=''):
     title = html_manipulator.use_regex(IMDB_TITLE_REGEX, imdb_html, True)
     if imdb_id and title:
         # Set video type (cannot be null)
+        title = title.replace('*','')
         video_type = _determine_imdb_video_type(imdb_html)
 
         # Scrape IMDB budget page for this title
