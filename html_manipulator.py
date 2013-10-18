@@ -63,7 +63,7 @@ def retrieve_html_from_url(url):
         except (AttributeError, UnicodeDecodeError):
             print RETRIEVE_HTML_ERROR % url
             raise
-        except urllib2.URLError as e:
+        except (urllib2.URLError, socket.error) as e:
             print RETRIEVE_HTML_ERROR % url
             print e.reason
 
