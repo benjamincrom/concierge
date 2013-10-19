@@ -12,6 +12,7 @@ from HTMLParser import HTMLParser
 GOOGLE_QUERY_URL = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCMGfdDaSfjqv5zYoS0mTJnOT3e9MURWkU&cx=017381156867331432490:g58htnlfkuk&q=%s"
 REGEX_NOT_FOUND_ERROR = "ERROR: Target regex '%s' not found--this value cannot be null"
 RETRIEVE_HTML_ERROR = "ERROR: URL '%s' cannot be properly retrieved"
+RETRIEVE_QUERY_ERROR = "ERROR: Query '%s' cannot be properly retrieved"
 
 SPOOFED_HEADERS = {
     'User-Agent':           'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko)'
@@ -46,10 +47,16 @@ def get_top_google_result_url(search_string):
     """
     top_result_url = ''
     formatted_search_string = search_string.replace(' ', '+').replace('&', '')
-    json_str = urllib2.urlopen(GOOGLE_QUERY_URL % formatted_search_string).read()
-    json_obj = json.loads(json_str)
-    if 'items' in json_obj:
-        top_result_url = str(json_obj['items'][0]['link'])
+    try:
+        json_str = urllib2.urlopen(GOOGLE_QUERY_URL % formatted_search_string).read()
+    except urllib2.HTTPError:
+        json_str = ''
+        print RETRIEVE_QUERY_ERROR % search_string
+        
+    if json_str:
+        json_obj = json.loads(json_str)
+        if 'items' in json_obj:
+            top_result_url = str(json_obj['items'][0]['link'])
 
     return top_result_url
 
