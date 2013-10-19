@@ -3,6 +3,7 @@
 
 import json
 import re
+import socket
 import urllib2
 
 from HTMLParser import HTMLParser
@@ -65,7 +66,6 @@ def retrieve_html_from_url(url):
             raise
         except (urllib2.URLError, socket.error) as e:
             print RETRIEVE_HTML_ERROR % url
-            print e.reason
 
     return html
 
