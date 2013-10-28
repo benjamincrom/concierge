@@ -1,16 +1,10 @@
 #!/usr/bin/python
 
 
-import imdb_scraper
-import metacritic_scraper
-import roger_ebert_scraper
-import rottentomatoes_scraper
-
 import json
 import webapp2
 
 from google.appengine.ext import db
-from google.appengine.api import users
 
 
 class NameOccupation(db.Model):
@@ -49,7 +43,7 @@ class Video(db.Model):
     tagline = db.StringProperty()
     gross = db.StringProperty()
     imdb_id = db.StringProperty()
-    budget = db.StringProperty()
+    budget = db.TextProperty()
     video_type = db.StringProperty()
     rating = db.StringProperty()
     genre_list = db.StringListProperty()
@@ -69,40 +63,53 @@ class MainPage(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'text/plain'
         self.response.write('Hello, World!')
         
-        json_str_list = open('json_titles.txt','r').readlines()
+        json_str_list = open('json_titles.txt', 'r').readlines()
         json_obj_list = [json.loads(this_str) for this_str in json_str_list]
-        for obj_dict in json_obj_list:
-
+        for dict_obj in json_obj_list:
             # Print IMDB data
-            director_role_list = [(director, "Director") for director in obj_dict["director_list"]]
-            writer_role_list = [(writer, "Writer") for writer in obj_dict["writer_list"]]
-            star_role_list = [(star, "Star") for star in obj_dict["star_list"]]
+            director_role_list = [(director, "Director") for director in dict_obj["director_list"]]
+            writer_role_list = [(writer, "Writer") for writer in dict_obj["writer_list"]]
+            star_role_list = [(star, "Star") for star in dict_obj["star_list"]]
             person_role_list = director_role_list + writer_role_list + star_role_list
             person_role_key_list = []
 
-            for (person,role) in person_role_list:
-                n = NameOccupation(
-                    name=person,
-                    occupation=role,
-                    )
-                key = n.put()
+            if not dict_obj["score"]:
+                dict_obj["score"] = None
+
+            if not dict_obj["aspect_ratio"]:
+                dict_obj["aspect_ratio"] = None
+
+            if not dict_obj["year"]:
+                dict_obj["year"] = None
+
+            if not dict_obj["length"]:
+                dict_obj["score"] = None
+
+            for (person, role) in person_role_list:
+                # Check if entry is already in database and get key if it is
+                query = NameOccupation.all().filter('name =', person).filter('occupation =', role)
+                key = query.get(keys_only=True)
+                if not key:
+                    n = NameOccupation(name=person, occupation=role)
+                    key = n.put()
                 person_role_key_list.append(key)
 
+
             v = Video(
-                title=imdb_title_obj_dict["title"],
-                score=imdb_title_obj_dict["score"],
-                year=imdb_title_obj_dict["year"],
-                length=imdb_title_obj_dict["length"],
-                rating=imdb_title_obj_dict["rating"],
-                imdb_id=imdb_title_obj_dict["imdb_id"],
-                poster_url=imdb_title_obj_dict["imdb_poster_url"],
-                plot=imdb_title_obj_dict["plot"],
-                tagline=imdb_title_obj_dict["tagline"],
-                gross=imdb_title_obj_dict["gross"],
-                budget=imdb_title_obj_dict["budget"],
-                video_type=imdb_title_obj_dict["video_type"],
-                aspect_ratio=imdb_title_obj_dict["aspect_ratio"],
-                genre_list=imdb_title_obj_dict["genre_list"],
+                score=dict_obj["score"],
+                aspect_ratio=dict_obj["aspect_ratio"],
+                year=dict_obj["year"],
+                length=dict_obj["length"],
+                title=dict_obj["title"],
+                rating=dict_obj["rating"],
+                imdb_id=dict_obj["imdb_id"],
+                poster_url=dict_obj["imdb_poster_url"],
+                plot=dict_obj["plot"],
+                tagline=dict_obj["tagline"],
+                gross=dict_obj["gross"],
+                budget=dict_obj["budget"],
+                video_type=dict_obj["video_type"],
+                genre_list=dict_obj["genre_list"],
                 name_occupation_key_list=person_role_key_list,
             )
             v.put()
