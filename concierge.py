@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 
+import datetime
 import json
 import webapp2
 
@@ -13,7 +14,7 @@ class NameOccupation(db.Model):
 
 
 class Review(db.Model):
-    review_score = db.StringProperty()
+    review_score = db.FloatProperty()
     review_author = db.StringProperty()
     review_source = db.StringProperty()
     review_content = db.TextProperty()
@@ -72,6 +73,7 @@ class MainPage(webapp2.RequestHandler):
             star_role_list = [(star, "Star") for star in dict_obj["star_list"]]
             person_role_list = director_role_list + writer_role_list + star_role_list
             person_role_key_list = []
+            review_key_list = []
 
             if not dict_obj["score"]:
                 dict_obj["score"] = None
@@ -94,6 +96,66 @@ class MainPage(webapp2.RequestHandler):
                     key = n.put()
                 person_role_key_list.append(key)
 
+            # Ebert Review
+            if 'formatted_review_text' in dict_obj:
+                ebert_review_date = datetime.datetime.strptime(str(dict_obj['review_date']), "%Y-%m-%d").date()
+                r = Review(
+                    review_score=dict_obj['review_percent_score'],
+                    review_author=dict_obj['review_author'],
+                    review_source=dict_obj['review_source'],
+                    review_content=dict_obj['formatted_review_text'],
+                    review_date=ebert_review_date,
+                )
+                ebert_review_key = r.put()
+                review_key_list.append(ebert_review_key)
+
+            # Metacritic Review
+            if 'metacritic_metascore_meter' in dict_obj:
+                r = Review(
+                    review_score=dict_obj['metacritic_metascore_meter'],
+                    review_content=str(dict_obj['metacritic_metascore_total']),
+                    review_source='Metacritic Metascore',
+                )
+                metacritic_metascore_key = r.put()
+                review_key_list.append(metacritic_metascore_key)
+
+            if 'metacritic_userscore_meter' in dict_obj:
+                r = Review(
+                    review_score=dict_obj['metacritic_userscore_meter'],
+                    review_content=str(dict_obj['metacritic_userscore_total']),
+                    review_source='Metacritic Userscore',
+                )
+                metacritic_userscore_key = r.put()
+                review_key_list.append(metacritic_userscore_key)
+
+            # Rottentomatoes Review
+            if 'audience_meter' in dict_obj:
+                r = Review(
+                    review_score=dict_obj['audience_meter'],
+                    review_content="%s (%s)" % (dict_obj['audience_avg_score'], dict_obj['audience_total']),
+                    review_source='Rottentomatoes Audience Meter',
+                )
+                rottentomatoes_audience_key = r.put()
+                review_key_list.append(rottentomatoes_audience_key)
+
+            if 'top_critics_rotten' in dict_obj:
+                r = Review(
+                    review_score=dict_obj['top_critics_meter'],
+                    review_content="%s (+%s, -%s)" % (dict_obj['top_critics_avg_score'], dict_obj['top_critics_fresh'], dict_obj['top_critics_rotten']),
+                    review_source='Rottentomatoes Top Critics',
+                )
+                rottentomatoes_top_critics_key = r.put()
+                review_key_list.append(rottentomatoes_top_critics_key)
+
+            if 'all_critics_rotten' in dict_obj:
+                r = Review(
+                    review_score=dict_obj['all_critics_meter'],
+                    review_content="%s (+%s, -%s)" % (dict_obj['all_critics_avg_score'], dict_obj['all_critics_fresh'], dict_obj['all_critics_rotten']),
+                    review_source='Rottentomatoes All Critics',
+                )
+                rottentomatoes_all_critics_key = r.put()
+                review_key_list.append(rottentomatoes_all_critics_key)
+
             v = Video(
                 score=dict_obj["score"],
                 aspect_ratio=dict_obj["aspect_ratio"],
@@ -110,6 +172,7 @@ class MainPage(webapp2.RequestHandler):
                 video_type=dict_obj["video_type"],
                 genre_list=dict_obj["genre_list"],
                 name_occupation_key_list=person_role_key_list,
+                review_key_list=review_key_list,
             )
             v.put()
 
