@@ -41,7 +41,7 @@ class Video(db.Model):
     poster_url = db.StringProperty()
     plot = db.TextProperty()
     tagline = db.StringProperty()
-    gross = db.StringProperty()
+    gross = db.TextProperty()
     imdb_id = db.StringProperty()
     budget = db.TextProperty()
     video_type = db.StringProperty()
