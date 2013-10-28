@@ -13,10 +13,10 @@ class NameOccupation(db.Model):
 
 
 class Review(db.Model):
-    review_content = db.TextProperty()
     review_score = db.StringProperty()
     review_author = db.StringProperty()
     review_source = db.StringProperty()
+    review_content = db.TextProperty()
     review_date = db.DateProperty()
 
 
