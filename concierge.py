@@ -94,7 +94,6 @@ class MainPage(webapp2.RequestHandler):
                     key = n.put()
                 person_role_key_list.append(key)
 
-
             v = Video(
                 score=dict_obj["score"],
                 aspect_ratio=dict_obj["aspect_ratio"],
