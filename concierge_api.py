@@ -1,9 +1,7 @@
 
 
-import datetime
 import endpoints
 import models
-
 
 from protorpc import messages
 from protorpc import message_types
@@ -50,14 +48,14 @@ class VideoMessageCollection(messages.Message):
 class ConciergeApi(remote.Service):
     """Concierge API v1."""
 
+    @staticmethod
     @endpoints.method(message_types.VoidMessage, VideoMessageCollection,
                       path='concierge', http_method='GET', name='videos.listVideos')
     def list_videos(self, unused_request):
         video_message_collection_obj = VideoMessageCollection(item_list=[])
-
         video_query = models.Video.all()
         for q in video_query.run(limit=50):
-            # Get occupation data in a dict
+            # Get occupation data into a dict
             occupation_dict = {}
             for name_occupation_key in q.name_occupation_key_list:
                 occupation_obj = models.NameOccupation.get(name_occupation_key)
@@ -66,7 +64,7 @@ class ConciergeApi(remote.Service):
 
                 occupation_dict[occupation_obj.occupation].append(occupation_obj.name)
 
-            # Get Video data
+            # Get video data into message object
             this_video_message = VideoMessage(poster_url=q.poster_url,
                                               title=q.title,
                                               plot=q.plot,
@@ -83,13 +81,13 @@ class ConciergeApi(remote.Service):
                                               genre_list=q.genre_list,
                                               occupation_list=[],
                                               review_list=[])
-
+            # Get occupation data out of dict and into message objects
             for occupation in occupation_dict:
                 this_occupation_obj = OccupationMessage(occupation=occupation,
                                                         name=occupation_dict[occupation])
                 this_video_message.occupation_list.append(this_occupation_obj)
 
-            # Add reviews to return dictionary
+            # Get reviews into message objects
             review_obj_list = models.Review.all().ancestor(q)
             for review_obj in review_obj_list:
                 if review_obj.review_date is None:
