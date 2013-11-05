@@ -8,8 +8,12 @@ handlers:
 # Endpoints handler
 - url: /_ah/spi/.*
   script: concierge_api.application
-- url: /.*
+
+- url: /
   script: concierge_web.application
+
+- url: /app
+  static_dir: app
 
 libraries:
 - name: pycrypto

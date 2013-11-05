@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="conciergeApp">
+<head>
+  <meta charset="utf-8">
+  <title>Google Phone Gallery</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="VideoListCtrl">
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span2">
+        <!--Sidebar content-->
+
+        Search: <input ng-model="query">
+
+      </div>
+      <div class="span10">
+        <!--Body content-->
+
+        <ul class="video_list">
+          <li ng-repeat="video in video_list | filter:query" class="thumbnail">
+            <a href="#/video_list/{{video.imdb_id}}" class="thumb"><img ng-src="{{video.poster_url}}">
+            <a href="#/video_list/{{video.imdb_id}}">{{video.title}}</a>
+            <p>{{video.plot}}</p>
+<!--            <p>Video Type: {{video.video_type}}</p>
+            <p>Tagline: {{video.tagline}}</p>
+            <p>Rating: {{video.rating}}</p>
+            <p>Budget: {{video.budget}}</p>
+            <p>Gross: {{video.gross}}</p>
+            <p>Aspect Ratio: {{video.aspect_ratio}}</p>
+            <p>Length: {{video.length}}</p>
+            <p>Genre List: {{video.genre_list}}</p>
+            <p>Year: {{video.year}}</p>
+            <p>Score: {{video.score}}</p>-->
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

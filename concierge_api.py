@@ -41,7 +41,7 @@ class VideoMessage(messages.Message):
 
 
 class VideoMessageCollection(messages.Message):
-    item_list = messages.MessageField(VideoMessage, 1, repeated=True)
+    video_list = messages.MessageField(VideoMessage, 1, repeated=True)
 
 
 @endpoints.api(name='concierge', version='v1')
@@ -52,7 +52,7 @@ class ConciergeApi(remote.Service):
     @endpoints.method(message_types.VoidMessage, VideoMessageCollection,
                       path='concierge', http_method='GET', name='videos.listVideos')
     def list_videos(self, unused_request):
-        video_message_collection_obj = VideoMessageCollection(item_list=[])
+        video_message_collection_obj = VideoMessageCollection(video_list=[])
         video_query = models.Video.all()
         for q in video_query.run(limit=50):
             # Get occupation data into a dict
@@ -100,7 +100,7 @@ class ConciergeApi(remote.Service):
                                             review_date=str(review_obj.review_date))
                 this_video_message.review_list.append(this_review)
 
-            video_message_collection_obj.item_list.append(this_video_message)
+            video_message_collection_obj.video_list.append(this_video_message)
 
         return video_message_collection_obj
 

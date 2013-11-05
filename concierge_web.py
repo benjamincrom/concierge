@@ -12,7 +12,7 @@ class MainPage(webapp2.RequestHandler):
         self.response.write('<html><head></head><body>')
 
         video_query = models.Video.all()
-        for q in video_query.run(limit=500):
+        for q in video_query.run(limit=100):
             genre_str = ''
             for genre in q.genre_list:
                 if genre_str:
@@ -58,7 +58,8 @@ class MainPage(webapp2.RequestHandler):
 
             for review_obj in review_obj_list:
                 self.response.write('<tr><td><br /></td><td></td></tr>')
-                self.response.write('<tr><td>%s: </td><td><strong>%s</strong></td></tr>' % (review_obj.review_source, 
+                self.response.write('<tr><td>%s: </td><td><strong>%s</strong></td></tr>' % (review_obj.review_source,
+                                                                                            review_obj.review_score))
                 if review_obj.review_author:
                     self.response.write('<tr><td></td><td>%s</td></tr>' % review_obj.review_author)
 
