@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-var conciergeApp = angular.module('conciergeApp', []);
+var conciergeApp = angular.module('conciergeApp', ['ngSanitize']);
 
 conciergeApp.controller('VideoListCtrl', function VideoListCtrl($scope, $http) {
   $http.get('../_ah/api/concierge/v1/concierge').success(function(data) {

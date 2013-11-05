@@ -2,10 +2,11 @@
 <html lang="en" ng-app="conciergeApp">
 <head>
   <meta charset="utf-8">
-  <title>Google Phone Gallery</title>
+  <title>Concierge Movie List</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-sanitize.js"></script>
   <script src="js/controllers.js"></script>
 </head>
 <body ng-controller="VideoListCtrl">
@@ -23,19 +24,35 @@
 
         <ul class="video_list">
           <li ng-repeat="video in video_list | filter:query" class="thumbnail">
-            <a href="#/video_list/{{video.imdb_id}}" class="thumb"><img ng-src="{{video.poster_url}}">
-            <a href="#/video_list/{{video.imdb_id}}">{{video.title}}</a>
+            <a href="http://www.imdb.com/title/{{video.imdb_id}}" class="thumb"><img ng-src="{{video.poster_url}}">
+            <a href="http://www.imdb.com/title/{{video.imdb_id}}">{{video.title}}</a>
             <p>{{video.plot}}</p>
-<!--            <p>Video Type: {{video.video_type}}</p>
-            <p>Tagline: {{video.tagline}}</p>
-            <p>Rating: {{video.rating}}</p>
-            <p>Budget: {{video.budget}}</p>
-            <p>Gross: {{video.gross}}</p>
-            <p>Aspect Ratio: {{video.aspect_ratio}}</p>
-            <p>Length: {{video.length}}</p>
-            <p>Genre List: {{video.genre_list}}</p>
-            <p>Year: {{video.year}}</p>
-            <p>Score: {{video.score}}</p>-->
+            <table>
+            <tr><td>Video Type: </td><td>{{video.video_type}}</td></tr>
+            <tr><td>Tagline: </td><td>{{video.tagline}}</td></tr>
+            <tr><td>Rating: </td><td>{{video.rating}}</td></tr>
+            <tr><td>Budget: </td><td>{{video.budget}}</td></tr>
+            <tr><td>Gross: </td><td>{{video.gross}}</td></tr>
+            <tr><td>Aspect Ratio: </td><td>{{video.aspect_ratio}}</td></tr>
+            <tr><td>Length: </td><td>{{video.length}}</td></tr>
+            <tr><td>Genre List: </td><td>{{video.genre_list}}</td></tr>
+            <tr><td>Year: </td><td>{{video.year}}</td></tr>
+            <tr><td>Score: </td><td><strong>{{video.score}}</strong></td></tr>
+            <tr ng-repeat="occupation in video.occupation_list">
+                <td valign="top">{{occupation.occupation}}(s): </td>
+                <td><p style="display:inline" ng-repeat="this_name in occupation.name">{{this_name}}<br></p></td>
+            </tr>
+            <tr><td></td><td><br /></td></tr>
+            <tr ng-repeat="review in video.review_list">
+                <td valign="top">{{review.review_source}}:  </td>
+                <td>
+                    <p><strong>{{review.review_score}}</strong></p>
+                    <p ng-bind-html="review.review_content"></p>
+                    <p>{{review.review_author}} {{review.review_date}}</p>
+                </td>
+            </tr>
+            <tr><td></td><td><br /></td></tr>
+            </table>
           </li>
         </ul>
 

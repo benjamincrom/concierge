@@ -35,7 +35,7 @@ class VideoMessage(messages.Message):
     score = messages.FloatField(11)
     length = messages.IntegerField(12)
     year = messages.IntegerField(13)
-    genre_list = messages.StringField(14, repeated=True)
+    genre_list = messages.StringField(14)
     occupation_list = messages.MessageField(OccupationMessage, 15, repeated=True)
     review_list = messages.MessageField(ReviewMessage, 16, repeated=True)
 
@@ -64,6 +64,7 @@ class ConciergeApi(remote.Service):
 
                 occupation_dict[occupation_obj.occupation].append(occupation_obj.name)
 
+            genre_list_str = unwrap_list(q.genre_list)
             # Get video data into message object
             this_video_message = VideoMessage(poster_url=q.poster_url,
                                               title=q.title,
@@ -78,7 +79,7 @@ class ConciergeApi(remote.Service):
                                               score=q.score,
                                               length=q.length,
                                               year=q.year,
-                                              genre_list=q.genre_list,
+                                              genre_list=genre_list_str,
                                               occupation_list=[],
                                               review_list=[])
             # Get occupation data out of dict and into message objects
@@ -88,7 +89,7 @@ class ConciergeApi(remote.Service):
                 this_video_message.occupation_list.append(this_occupation_obj)
 
             # Get reviews into message objects
-            review_obj_list = models.Review.all().ancestor(q)
+            review_obj_list = models.Review.all().ancestor(q).order('review_source')
             for review_obj in review_obj_list:
                 if review_obj.review_date is None:
                     review_obj.review_date = ''
@@ -103,6 +104,17 @@ class ConciergeApi(remote.Service):
             video_message_collection_obj.video_list.append(this_video_message)
 
         return video_message_collection_obj
+
+
+def unwrap_list(this_list):
+    return_str = ''
+    for item in this_list:
+        if return_str:
+            return_str += ', '
+
+        return_str += item
+
+    return return_str
 
 
 application = endpoints.api_server([ConciergeApi])
