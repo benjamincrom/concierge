@@ -9,7 +9,7 @@ handlers:
 - url: /_ah/spi/.*
   script: concierge_api.application
 - url: /.*
-  script: concierge.application
+  script: concierge_web.application
 
 libraries:
 - name: pycrypto
