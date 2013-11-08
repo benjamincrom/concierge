@@ -12,7 +12,7 @@ class MainPage(webapp2.RequestHandler):
         self.response.write('<html><head></head><body>')
 
         video_query = models.Video.all()
-        for q in video_query.run(limit=100):
+        for q in video_query.run(limit=100),
             genre_str = ''
             for genre in q.genre_list:
                 if genre_str:

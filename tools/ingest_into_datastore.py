@@ -19,7 +19,7 @@ class MainPage(webapp2.RequestHandler):
             # 'v' is our main video object for each title
             # All reviews are children of v
             # All collaborators are NameOccupation foreign keys in a list
-            video_key_name = str(dict_obj['title']) + '-' + str(dict_obj['year'])
+            video_key_name = str(dict_obj['imdb_id'])
             v = Video(key_name=video_key_name)
 
             # Print IMDB data

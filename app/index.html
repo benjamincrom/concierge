@@ -6,8 +6,9 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
   <script src="lib/angular/angular-sanitize.js"></script>
-  <script src="js/controllers.js"></script>
+  <script src="js/app.js"></script>
 </head>
 <body ng-controller="VideoListCtrl">
 
@@ -22,39 +23,26 @@
       <div class="span10">
         <!--Body content-->
 
-        <ul class="video_list">
-          <li ng-repeat="video in video_list | filter:query" class="thumbnail">
-            <a href="http://www.imdb.com/title/{{video.imdb_id}}" class="thumb"><img ng-src="{{video.poster_url}}">
-            <a href="http://www.imdb.com/title/{{video.imdb_id}}">{{video.title}}</a>
-            <p>{{video.plot}}</p>
-            <table>
-            <tr><td>Video Type: </td><td>{{video.video_type}}</td></tr>
-            <tr><td>Tagline: </td><td>{{video.tagline}}</td></tr>
-            <tr><td>Rating: </td><td>{{video.rating}}</td></tr>
-            <tr><td>Budget: </td><td>{{video.budget}}</td></tr>
-            <tr><td>Gross: </td><td>{{video.gross}}</td></tr>
-            <tr><td>Aspect Ratio: </td><td>{{video.aspect_ratio}}</td></tr>
-            <tr><td>Length: </td><td>{{video.length}}</td></tr>
-            <tr><td>Genre List: </td><td>{{video.genre_list}}</td></tr>
-            <tr><td>Year: </td><td>{{video.year}}</td></tr>
-            <tr><td>Score: </td><td><strong>{{video.score}}</strong></td></tr>
-            <tr ng-repeat="occupation in video.occupation_list">
-                <td valign="top">{{occupation.occupation}}(s): </td>
-                <td><p style="display:inline" ng-repeat="this_name in occupation.name">{{this_name}}<br></p></td>
-            </tr>
-            <tr><td></td><td><br /></td></tr>
-            <tr ng-repeat="review in video.review_list">
-                <td valign="top">{{review.review_source}}:  </td>
-                <td>
-                    <p><strong>{{review.review_score}}</strong></p>
-                    <p ng-bind-html="review.review_content"></p>
-                    <p>{{review.review_author}} {{review.review_date}}</p>
-                </td>
-            </tr>
-            <tr><td></td><td><br /></td></tr>
-            </table>
-          </li>
-        </ul>
+        <table width="1200">
+          <tr>
+              <td><strong>Title</strong></td>
+              <td><strong>Year</strong></td>
+              <td><strong>Genre</strong></td>
+              <td><strong>Ebert Score</strong></td>
+              <td><strong>Rottentomatoes Score</strong></td>
+              <td><strong>Metacritic Score</strong></td>
+              <td><strong>IMDB Score</strong></td>
+          </tr>
+          <tr ng-repeat="video in video_list | filter:query">
+            <td><a href="display_video.html?request_id={{video.imdb_id}}">{{video.title}}</a></td>
+            <td>{{video.year}}</td>
+            <td>{{video.genre_list_str}}</td>
+            <td>{{video.ebert_score}}</td>
+            <td>{{video.rottentomatoes_score}}</td>
+            <td>{{video.metacritic_score}}</td>
+            <td>{{video.imdb_score}}</td>
+          </tr>
+       </table>
 
       </div>
     </div>
