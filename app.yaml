@@ -9,9 +9,6 @@ handlers:
 - url: /_ah/spi/.*
   script: concierge_api.application
 
-- url: /
-  script: concierge_web.application
-
 - url: /app
   static_dir: app
 

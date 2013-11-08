@@ -1,14 +1,16 @@
 'use strict';
 
-/* Controllers */
+/* App */
 var conciergeApp = angular.module('conciergeApp', [
     'ngSanitize',
 ]);
 
+/* Config */
 conciergeApp.config(function($locationProvider){
     $locationProvider.html5Mode(true).hashPrefix('!');
 });
 
+/* Controllers */
 conciergeApp.controller('VideoListCtrl',
   function VideoListCtrl($scope, $http) {
     $http.get('../_ah/api/concierge/v1/concierge_list').success(function(data) {
