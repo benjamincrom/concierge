@@ -2,6 +2,7 @@
 
 /* App */
 var conciergeApp = angular.module('conciergeApp', [
+    'ui.bootstrap',
     'ngSanitize',
     'ngTable'
 ]);
@@ -38,7 +39,7 @@ conciergeApp.controller('VideoListCtrl',
 
 conciergeApp.controller('DisplayVideoCtrl',
     function DisplayVideoCtrl($scope, $http, $location) {
-        var link_prefix = "../_ah/api/concierge/v1/concierge_display/";
+        var link_prefix = "/_ah/api/concierge/v1/concierge_display/";
         var link = link_prefix.concat($location.search().request_id)
         $http.get(link).success(function(data) {
             $scope.video = data;

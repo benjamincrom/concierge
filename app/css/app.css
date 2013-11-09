@@ -4,6 +4,10 @@ body {
   padding-top: 20px;
 }
 
+#example{
+    margin:40px;
+}
+
 tr:nth-child(odd)		{ background-color:#eee; }
 tr:nth-child(even)		{ background-color:#fff; }
 
