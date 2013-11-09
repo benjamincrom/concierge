@@ -4,6 +4,9 @@ body {
   padding-top: 20px;
 }
 
+tr:nth-child(odd)		{ background-color:#eee; }
+tr:nth-child(even)		{ background-color:#fff; }
+
 .video_list {
   list-style: none;
 }

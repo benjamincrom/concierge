@@ -2,6 +2,7 @@
 
 import endpoints
 import models
+import webapp2
 
 from google.appengine.api.datastore import Key
 from protorpc import messages
@@ -79,7 +80,7 @@ class ConciergeApi(remote.Service):
     def list_videos(self, unused_request):
         row_message_collection_obj = RowMessageCollection(row_list=[])
         video_query = models.Video.all()
-        for video_obj in video_query.run(limit=50):
+        for video_obj in video_query.run(limit=100):
             this_row = RowMessage(title=video_obj.title,
                                   year=video_obj.year,
                                   genre_list_str=unwrap_list(video_obj.genre_list),
@@ -166,4 +167,8 @@ def unwrap_list(this_list):
 
 
 application = endpoints.api_server([ConciergeApi])
+
+redirect = webapp2.WSGIApplication([
+    webapp2.Route('/<:.*>', webapp2.RedirectHandler, defaults={'_uri': '/app/index.html'}),
+], debug=False)
 

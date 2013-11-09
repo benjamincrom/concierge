@@ -5,45 +5,29 @@
   <title>Concierge Movie List</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/ng-table.css">
   <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular/angular-route.js"></script>
   <script src="lib/angular/angular-sanitize.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/ng-table.js"></script>
 </head>
 <body ng-controller="VideoListCtrl">
 
   <div class="container-fluid">
     <div class="row-fluid">
-      <div class="span2">
-        <!--Sidebar content-->
-
-        Search: <input ng-model="query">
-
-      </div>
       <div class="span10">
         <!--Body content-->
-
-        <table width="1200">
-          <tr>
-              <td><strong>Title</strong></td>
-              <td><strong>Year</strong></td>
-              <td><strong>Genre</strong></td>
-              <td><strong>Ebert Score</strong></td>
-              <td><strong>Rottentomatoes Score</strong></td>
-              <td><strong>Metacritic Score</strong></td>
-              <td><strong>IMDB Score</strong></td>
-          </tr>
-          <tr ng-repeat="video in video_list | filter:query">
-            <td><a href="display_video.html?request_id={{video.imdb_id}}">{{video.title}}</a></td>
-            <td>{{video.year}}</td>
-            <td>{{video.genre_list_str}}</td>
-            <td>{{video.ebert_score}}</td>
-            <td>{{video.rottentomatoes_score}}</td>
-            <td>{{video.metacritic_score}}</td>
-            <td>{{video.imdb_score}}</td>
+        <table ng-table="tableParams" class="table">
+          <tr ng-repeat="video in $data | filter:query">
+            <td width="20%" data-title="'Title'" sortable="'title'"><a href="display_video.html?request_id={{video.imdb_id}}">{{video.title}}</a></td>
+            <td width="12%" data-title="'Year'" sortable="'year'">{{video.year}}</td>
+            <td width="20%" data-title="'Genre'" sortable="'genre_list_str'">{{video.genre_list_str}}</td>
+            <td width="12%" data-title="'Ebert'" sortable="'ebert_score'">{{video.ebert_score | number:2}}</td>
+            <td width="12%" data-title="'RottenTomatoes'" sortable="'rottentomatoes_score'">{{video.rottentomatoes_score | number:2}}</td>
+            <td width="12%" data-title="'Metacritic'" sortable="'metacritic_score'">{{video.metacritic_score | number:2}}</td>
+            <td width="12%" data-title="'IMDB'" sortable="'imdb_score'">{{video.imdb_score | number:2}}</td>
           </tr>
        </table>
-
       </div>
     </div>
   </div>
