@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b8ad401-5aec-4d2a-8e1b-3733b8f0810f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/01.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/01.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/02.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/02.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101flv/02a.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101flv/02a.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/03.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/03.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/04.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/04.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma-Anne.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma-Anne.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma-Promo.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma-Promo.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma1.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma1.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma2.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma2.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma3.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma3.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma4.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/Sarcoma4.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/SarcomaQA.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/sarcoma/SarcomaQA.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101flv/SkinUnderPlayStopSeekMuteVol.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101flv/SkinUnderPlayStopSeekMuteVol.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/pd/ali.mp4" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/pd/ali.mp4" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/phenotype/apoevideo.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/phenotype/apoevideo.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/relfinder/cousins.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/relfinder/cousins.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/snpselection/omim/data" afterPath="/workspace/bcrom/current-all/snpselection/omim/data" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/drewolanoff580x326.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/drewolanoff580x326.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/haywardrobinson580x326.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/haywardrobinson580x326.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/interconnected.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/interconnected.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/neil_jolie.mp4" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/neil_jolie.mp4" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/pd/pd-anne.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/pd/pd-anne.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/pd/pd-patient.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/pd/pd-patient.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/phenotype/pdvideo.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/phenotype/pdvideo.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/personal.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/personal.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/ph_outofafrica.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/ph_outofafrica.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/ph_prologue.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/ph_prologue.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/ph_storm.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/ph_storm.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101flv/player23.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101flv/player23.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/playhead.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/playhead.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/playhead01.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/playhead01.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/playhead02.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/playhead02.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/playhead03.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/playhead03.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/playhead04.swf" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/gen101/playhead04.swf" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/faq/registrationflow.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/faq/registrationflow.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/researchrev/rr_video.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/researchrev/rr_video.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/sorenjacobsen580x326.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/sorenjacobsen580x326.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/susanminihane.flv" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/testimony/susanminihane.flv" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/jak2/video_01.mp4" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/jak2/video_01.mp4" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/jak2/video_02.mp4" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/jak2/video_02.mp4" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/websites/23andme/res/movie/jak2/video_03.mp4" afterPath="/workspace/bcrom/current-all/websites/23andme/res/movie/jak2/video_03.mp4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/.htaccess" afterPath="$PROJECT_DIR$/app/lib/angular/docs/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/AUTO.$injector.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/AUTO.$injector.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/AUTO.$provide.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/AUTO.$provide.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/AUTO.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/AUTO.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/advancedform.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/advancedform.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular-cookies.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular-cookies.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular-cookies.min.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular-cookies.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular-loader.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular-loader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular-loader.min.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular-loader.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular-mocks.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular-mocks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular-resource.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular-resource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular-resource.min.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular-resource.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular-sanitize.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular-sanitize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular-sanitize.min.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular-sanitize.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular-scenario.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular-scenario.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.IModule.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.IModule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.bind.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.bind.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.bootstrap.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.bootstrap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.copy.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.copy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.element.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.element.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.equals.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.equals.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.extend.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.extend.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.forEach.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.forEach.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.fromJson.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.fromJson.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.identity.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.identity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.injector.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.injector.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isArray.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isArray.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isDate.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isDate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isDefined.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isDefined.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isElement.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isElement.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isFunction.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isFunction.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isNumber.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isNumber.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isObject.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isObject.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isString.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isString.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isUndefined.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.isUndefined.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.lowercase.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.lowercase.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/app/lib/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.mock.TzDate.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.mock.TzDate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.mock.dump.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.mock.dump.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.mock.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.mock.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.mock.inject.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.mock.inject.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.mock.module.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.mock.module.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.module.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.module.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.noop.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.noop.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.toJson.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.toJson.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.uppercase.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.uppercase.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.version.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/angular.version.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/app.css" afterPath="$PROJECT_DIR$/app/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/appcache-offline.manifest" afterPath="$PROJECT_DIR$/app/lib/angular/docs/appcache-offline.manifest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/appcache.manifest" afterPath="$PROJECT_DIR$/app/lib/angular/docs/appcache.manifest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/bootstrap.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/bootstrap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/buzz.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/buzz.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/compiler.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/compiler.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/concepts.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/concepts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/concierge_api.py" afterPath="$PROJECT_DIR$/concierge_api.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/misc/contribute.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/misc/contribute.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/deeplinking.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/deeplinking.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.e2e-testing.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.e2e-testing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.mvc.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.mvc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.mvc.understanding_controller.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.mvc.understanding_controller.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.mvc.understanding_model.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.mvc.understanding_model.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.mvc.understanding_view.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.mvc.understanding_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.$location.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.$location.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.creating_services.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.creating_services.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.injecting_controllers.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.injecting_controllers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.managing_dependencies.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.managing_dependencies.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.testing_services.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.testing_services.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.understanding_services.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.services.understanding_services.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.css-styling.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.css-styling.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.databinding.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.databinding.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.filters.creating_filters.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.filters.creating_filters.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.filters.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.filters.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.filters.using_filters.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.filters.using_filters.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.templates.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.unit-testing.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/dev_guide.unit-testing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/di.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/di.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/directive.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/directive.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/display_video.html" afterPath="$PROJECT_DIR$/app/display_video.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/css/doc_widgets.css" afterPath="$PROJECT_DIR$/app/lib/angular/docs/css/doc_widgets.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/docs-scenario.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/docs-scenario.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/docs-scenario.js" afterPath="$PROJECT_DIR$/app/lib/angular/docs/docs-scenario.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/css/docs.css" afterPath="$PROJECT_DIR$/app/lib/angular/docs/css/docs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/js/docs.js" afterPath="$PROJECT_DIR$/app/lib/angular/docs/js/docs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/misc/downloading.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/misc/downloading.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/expression.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/expression.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/misc/faq.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/misc/faq.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/form.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/forms.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/forms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/helloworld.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/helloworld.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/i18n.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/i18n.html" />
+      <change type="MODIFICATION" beforePath="/workspace/bcrom/current-all/tools/compute/clrun/modules/ibd_recompute_module.py" afterPath="/workspace/bcrom/current-all/tools/compute/clrun/modules/ibd_recompute_module.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/ie.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/ie.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/index-debug.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/index-debug.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/index-jq-debug.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/index-jq-debug.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/index-jq-nocache.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/index-jq-nocache.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/index-jq.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/index-jq.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/index-nocache.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/index-nocache.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/index.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/index.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/index.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/index.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/index.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/introduction.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/introduction.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/module.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/module.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/mvc.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/cookbook/mvc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$anchorScroll.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$anchorScroll.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$cacheFactory.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$cacheFactory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$compile.directive.Attributes.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$compile.directive.Attributes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$compile.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$compile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$compileProvider.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$compileProvider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$controller.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$controller.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$controllerProvider.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$controllerProvider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$document.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$document.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$exceptionHandler.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$exceptionHandler.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$filter.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$filter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$filterProvider.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$filterProvider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$http.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$http.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$httpBackend.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$httpBackend.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$interpolate.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$interpolate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$interpolateProvider.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$interpolateProvider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$locale.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$locale.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$location.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$location.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$locationProvider.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$locationProvider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$log.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$log.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$parse.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$parse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$q.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$q.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$rootElement.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$rootElement.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$rootScope.Scope.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$rootScope.Scope.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$rootScope.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$rootScope.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$rootScopeProvider.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$rootScopeProvider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$templateCache.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$templateCache.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$timeout.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$timeout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$window.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.$window.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:a.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:a.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:form.FormController.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:form.FormController.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:form.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.checkbox.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.checkbox.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.email.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.email.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.number.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.number.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.radio.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.radio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.text.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.text.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.url.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:input.url.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngApp.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngApp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngBind.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngBind.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngBindTemplate.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngBindTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngChange.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngChange.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngChecked.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngChecked.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngClass.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngClass.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngClassEven.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngClassEven.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngClassOdd.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngClassOdd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngClick.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngClick.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngCloak.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngCloak.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngController.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngController.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngCsp.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngCsp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngDblclick.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngDblclick.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngDisabled.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngDisabled.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngForm.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngForm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngHide.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngHide.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngHref.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngHref.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngInclude.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngInclude.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngInit.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngInit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngKeydown.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngKeydown.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngKeypress.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngKeypress.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngKeyup.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngKeyup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngList.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngModel.NgModelController.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngModel.NgModelController.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngModel.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngModel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMousedown.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMousedown.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMouseenter.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMouseenter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMouseleave.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMouseleave.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMousemove.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMousemove.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMouseover.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMouseover.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMouseup.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngMouseup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngNonBindable.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngNonBindable.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngPluralize.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngPluralize.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngReadonly.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngReadonly.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngRepeat.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngRepeat.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngSelected.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngSelected.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngShow.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngShow.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngSrc.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngSrc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngStyle.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngStyle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngSubmit.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngSubmit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngSwitch.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngSwitch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngTransclude.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:ngTransclude.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:script.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:script.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:select.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:textarea.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.directive:textarea.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:currency.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:currency.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:date.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:date.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:filter.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:filter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:json.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:json.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:limitTo.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:limitTo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:lowercase.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:lowercase.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:number.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:number.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:orderBy.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:orderBy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:uppercase.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.filter:uppercase.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ng.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngCookies.$cookieStore.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngCookies.$cookieStore.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngCookies.$cookies.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngCookies.$cookies.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngCookies.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngCookies.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.$exceptionHandler.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.$exceptionHandler.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.$exceptionHandlerProvider.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.$exceptionHandlerProvider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.$httpBackend.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.$httpBackend.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.$log.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.$log.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.$timeout.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.$timeout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMock.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMockE2E.$httpBackend.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMockE2E.$httpBackend.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMockE2E.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngMockE2E.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngResource.$resource.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngResource.$resource.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngResource.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngResource.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngSanitize.$sanitize.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngSanitize.$sanitize.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngSanitize.filter:linky.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngSanitize.filter:linky.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngSanitize.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/api/ngSanitize.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/overview.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/overview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/scope.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/guide/scope.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/sitemap.xml" afterPath="$PROJECT_DIR$/app/lib/angular/docs/sitemap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/misc/started.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/misc/started.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_00.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_00.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_01.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_01.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_02.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_02.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_03.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_03.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_04.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_04.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_05.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_05.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_06.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_06.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_07.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_07.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_08.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_08.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_09.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_09.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_10.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_11.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/step_11.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/the_end.html" afterPath="$PROJECT_DIR$/app/lib/angular/docs/partials/tutorial/the_end.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/version.json" afterPath="$PROJECT_DIR$/app/lib/angular/version.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/angular/version.txt" afterPath="$PROJECT_DIR$/app/lib/angular/version.txt" />
+    </list>
+    <ignored path="concierge.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/concierge$concierge.coverage" NAME="concierge Coverage Results" MODIFIED="1383948325870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="concierge" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="15" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+              <folding>
+                <marker date="1383949305447" expanded="true" signature="85:246" placeholder="handlers:" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="concierge_api.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/concierge_api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="128" column="0" selection-start="5404" selection-end="5404" vertical-scroll-proportion="1.6877912" vertical-offset="493" max-vertical-offset="2754">
+              <folding>
+                <element signature="e#2#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="89" selection-start="1204" selection-end="1204" vertical-scroll-proportion="-18.666666" vertical-offset="0" max-vertical-offset="828">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="display_video.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/display_video.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="0" selection-start="2362" selection-end="2362" vertical-scroll-proportion="-26.074074" vertical-offset="160" max-vertical-offset="1206">
+              <folding>
+                <element signature="n#style#0;n#p#0;n#td#1;n#tr#10;n#table#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/helloworld_api.py" />
+        <option value="$PROJECT_DIR$/concierge.py" />
+        <option value="$PROJECT_DIR$/app/phones/phones.json" />
+        <option value="$PROJECT_DIR$/app/clipboard" />
+        <option value="$PROJECT_DIR$/tools/ingest_into_datastore.py" />
+        <option value="$PROJECT_DIR$/app/test.html" />
+        <option value="$PROJECT_DIR$/app/js/controllers.js" />
+        <option value="$PROJECT_DIR$/concierge_web.py" />
+        <option value="$PROJECT_DIR$/app/redirector.html" />
+        <option value="$PROJECT_DIR$/app.yaml" />
+        <option value="$PROJECT_DIR$/app/js/app.js" />
+        <option value="$PROJECT_DIR$/app/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/app/css/app.css" />
+        <option value="$PROJECT_DIR$/app/display_video.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/concierge_api.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1918" />
+    <option name="height" value="1198" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Bash</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concierge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concierge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concierge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concierge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concierge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concierge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concierge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concierge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concierge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="/workspace/bcrom/current-all" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings>
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="concierge" />
+      </PyConsoleSettings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Bash.make_playground_1_from_local.sh (2)">
+    <configuration default="false" name="make_playground_1_from_local.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/current-all/tools/dev" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="current-all" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/current-all/tools/dev/make_playground_1_from_local.sh" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="BashRunner" />
+      <ConfigurationWrapper RunnerId="BashRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="make_playground_1_from_local.sh (1)" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/current-all/tools/dev" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="current-all" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/current-all/tools/dev/make_playground_1_from_local.sh" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="BashRunner" />
+      <ConfigurationWrapper RunnerId="BashRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="make_playground_1_from_local.sh (2)" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="/workspace/bcrom/current-all/tools/dev" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="current-all" />
+      <option name="SCRIPT_NAME" value="/workspace/bcrom/current-all/tools/dev/make_playground_1_from_local.sh" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="BashRunner" />
+      <ConfigurationWrapper RunnerId="BashRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="concierge" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="current-all" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="concierge" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="concierge" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="concierge" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="concierge" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="concierge" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="concierge" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="concierge" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="concierge" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="concierge" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="App Engine server.concierge" />
+      <item index="1" class="java.lang.String" itemvalue="Bash.make_playground_1_from_local.sh" />
+      <item index="2" class="java.lang.String" itemvalue="Bash.make_playground_1_from_local.sh (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Bash.make_playground_1_from_local.sh (2)" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Bash.make_playground_1_from_local.sh (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Bash.make_playground_1_from_local.sh (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Bash.make_playground_1_from_local.sh" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b8ad401-5aec-4d2a-8e1b-3733b8f0810f" name="Default" comment="" />
+      <created>1383591931814</created>
+      <updated>1383591931814</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1918" height="1198" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14702815" sideWeight="0.7814815" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.6703704" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21851853" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.6703704" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14702815" sideWeight="0.7814815" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21851853" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tools/ingest_into_datastore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="50" selection-start="915" selection-end="915" vertical-scroll-proportion="0.38154614" vertical-offset="162" max-vertical-offset="2538">
+          <folding>
+            <element signature="e#20#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="5" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.6745956" vertical-offset="11" max-vertical-offset="1062">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/ng-table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1038">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="15" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+          <folding>
+            <marker date="1383949305447" expanded="true" signature="85:246" placeholder="handlers:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///workspace/bcrom/current-all/tools/dev/make_playground_1_from_local.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4303" column="14" selection-start="78861" selection-end="78861" vertical-scroll-proportion="0.7811321" vertical-offset="76626" max-vertical-offset="89388">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/display_video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="2362" selection-end="2362" vertical-scroll-proportion="-26.074074" vertical-offset="160" max-vertical-offset="1206">
+          <folding>
+            <element signature="n#style#0;n#p#0;n#td#1;n#tr#10;n#table#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="89" selection-start="1204" selection-end="1204" vertical-scroll-proportion="-18.666666" vertical-offset="0" max-vertical-offset="828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concierge_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="0" selection-start="5404" selection-end="5404" vertical-scroll-proportion="1.6877912" vertical-offset="493" max-vertical-offset="2754">
+          <folding>
+            <element signature="e#2#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
