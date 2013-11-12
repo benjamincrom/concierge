@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Concierge Movie List</title>
-  <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/ng-table.css">
+  <link rel="stylesheet" href="css/app.css">
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-sanitize.js"></script>
   <script src="js/ui-bootstrap.js"></script>
@@ -24,18 +24,52 @@
         <!--Body content-->
         <table ng-table="tableParams" class="table" width="100%">
           <tr ng-repeat="video in $data">
-            <td width="20%" data-title="'Title'" sortable="'title'"><a href="display_video.html?request_id={{video.imdb_id}}" target="_self">{{video.title}}</a></td>
-            <td popover="display_video.html?request_id={{video.imdb_id}}" popover-trigger="mouseenter" width="12%" data-title="'Year'" sortable="'year'">{{video.year}}</td>
+            <td width="20%" data-title="'Title'" sortable="'title'">
+              <span tooltip-placement="bottom" 
+                  tooltip-html-unsafe="<img src={{video.poster_url}} class=thumb><br>
+                                       Director(s): <b>{{video.director_list_str}}</b><br>
+                                       Writer(s): <b>{{video.writer_list_str}}</b><br>
+                                       Star(s): <b>{{video.star_list_str}}</b><br>
+                                       Rating: <b>{{video.rating}}</b><br>
+                                       Aspect Ratio: <b>{{video.aspect_ratio}}</b><br>
+                                       Length: <b>{{video.length}}</b><br>
+                                       Genre: <b>{{video.genre_list_str}}</b><br>
+                                       Year: <b>{{video.year}}</b><br>
+                                       IMDB Score: <b>{{video.score}}</b><br>
+                                       Budget: <b>{{video.budget}}</b><br>
+                                       Gross: <b>{{video.gross}}</b><br>
+                                       Tagline: <b>{{video.tagline}}</b><br>">
+                <a href="display_video.html?request_id={{video.imdb_id}}" target="_self">{{video.title}}</a>
+             </span>
+            </td>
+            <td width="12%" data-title="'Year'" sortable="'year'">{{video.year}}</td>
             <td width="20%" data-title="'Genre'" sortable="'genre_list_str'">{{video.genre_list_str}}</td>
-            <td width="12%" data-title="'Ebert'" sortable="'ebert_score'">{{video.ebert_score | number:2}}</td>
-            <td width="12%" data-title="'RottenTomatoes'" sortable="'rottentomatoes_score'">{{video.rottentomatoes_score | number:2}}</td>
-            <td width="12%" data-title="'Metacritic'" sortable="'metacritic_score'">{{video.metacritic_score | number:2}}</td>
-            <td width="12%" data-title="'IMDB'" sortable="'imdb_score'">{{video.imdb_score | number:2}}</td>
+            <td width="12%" data-title="'Ebert'" sortable="'ebert_review.review_score'">
+              <span tooltip-placement="bottom" tooltip-html-unsafe="{{video.ebert_review.review_content}}{{video.ebert_review.review_date}}">{{video.ebert_review.review_score | number:2}}</span>
+            </td>
+            <td width="12%" data-title="'RottenTomatoes'" sortable="'rottentomatoes_top_critics_review.review_score'">
+              <span tooltip-placement="bottom" 
+                  tooltip-html-unsafe="Top Critics: <b>{{video.rottentomatoes_top_critics_review.review_score}}</b> -- 
+                                       {{video.rottentomatoes_top_critics_review.review_content}}<br>
+                                       All Critics: <b>{{video.rottentomatoes_all_critics_review.review_score}}</b> -- 
+                                       {{video.rottentomatoes_all_critics_review.review_content}}<br>
+                                       Audience: <b>{{video.rottentomatoes_audience_meter_review.review_score}}</b> -- 
+                                       {{video.rottentomatoes_audience_meter_review.review_content}}">
+                {{video.rottentomatoes_top_critics_review.review_score | number:2}}
+              </span>
+            </td>
+            <td width="12%" data-title="'Metacritic'" sortable="'metacritic_metascore_review.review_score'">
+              <span tooltip-placement="bottom" 
+                  tooltip-html-unsafe="Metascore: <b>{{video.metacritic_metascore_review.review_score}}</b> ({{video.metacritic_metascore_review.review_content}})<br>
+                                       Userscore: <b>{{video.metacritic_userscore_review.review_score}}</b> ({{video.metacritic_userscore_review.review_content}})">
+              {{video.metacritic_metascore_review.review_score | number:2}}
+              </span>
+            </td>
+            <td width="12%" data-title="'IMDB'" sortable="'score'">{{video.score | number:2}}</td>
           </tr>
        </table>
       </div>
     </div>
   </div>
-      <button popover="I appeared on mouse enter!" popover-trigger="mouseenter" class="btn">Mouseenter</button>
 </body>
 </html>

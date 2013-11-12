@@ -11,29 +11,16 @@ from protorpc import remote
 
 
 ROGEREBERT_REVIEW_SOURCE = 'RogerEbert.com'
-ROTTENTOMATOES_REVIEW_SOURCE = 'Rottentomatoes Top Critics'
-METACRITIC_REVIEW_SOURCE = 'Metacritic Metascore'
+ROTTENTOMATOES_TOP_CRITICS_SOURCE = 'Rottentomatoes Top Critics'
+ROTTENTOMATOES_ALL_CRITICS_SOURCE = 'Rottentomatoes All Critics'
+ROTTENTOMATOES_AUDIENCE_METER_SOURCE = 'Rottentomatoes Audience Meter'
+METACRITIC_METASCORE_SOURCE = 'Metacritic Metascore'
+METACRITIC_USERSCORE_SOURCE = 'Metacritic Userscore'
 
 REQUEST_RESOURCE_CONTAINER = endpoints.ResourceContainer(
     message_types.VoidMessage,
     request_id=messages.StringField(2, required=True)
 )
-
-
-class RowMessage(messages.Message):
-    title = messages.StringField(1)
-    year = messages.IntegerField(2)
-    genre_list_str = messages.StringField(3)
-    ebert_score = messages.FloatField(4)
-    rottentomatoes_score = messages.FloatField(5)
-    metacritic_score = messages.FloatField(6)
-    imdb_score = messages.FloatField(7)
-    imdb_id = messages.StringField(8)
-
-
-class OccupationMessage(messages.Message):
-    occupation = messages.StringField(1)
-    name = messages.StringField(2, repeated=True)
 
 
 class ReviewMessage(messages.Message):
@@ -58,64 +45,68 @@ class VideoMessage(messages.Message):
     score = messages.FloatField(11)
     length = messages.IntegerField(12)
     year = messages.IntegerField(13)
-    genre_list = messages.StringField(14)
-    occupation_list = messages.MessageField(OccupationMessage, 15, repeated=True)
-    review_list = messages.MessageField(ReviewMessage, 16, repeated=True)
+    genre_list_str = messages.StringField(14)
+    ebert_review = messages.MessageField(ReviewMessage, 16)
+    metacritic_metascore_review = messages.MessageField(ReviewMessage, 17)
+    metacritic_userscore_review = messages.MessageField(ReviewMessage, 18)
+    rottentomatoes_top_critics_review = messages.MessageField(ReviewMessage, 19)
+    rottentomatoes_all_critics_review = messages.MessageField(ReviewMessage, 20)
+    rottentomatoes_audience_meter_review = messages.MessageField(ReviewMessage, 21)
+    director_list_str = messages.StringField(22)
+    writer_list_str = messages.StringField(23)
+    star_list_str = messages.StringField(24)
+    
 
 
 class VideoMessageCollection(messages.Message):
     video_list = messages.MessageField(VideoMessage, 1, repeated=True)
 
 
-class RowMessageCollection(messages.Message):
-    row_list = messages.MessageField(RowMessage, 1, repeated=True)
-
-
 @endpoints.api(name='concierge', version='v1')
 class ConciergeApi(remote.Service):
     """Concierge API v1."""
     @staticmethod
-    @endpoints.method(message_types.VoidMessage, RowMessageCollection,
+    @endpoints.method(message_types.VoidMessage, VideoMessageCollection,
                       path='concierge_list', http_method='GET', name='videos.listVideos')
     def list_videos(self, unused_request):
-        row_message_collection_obj = RowMessageCollection(row_list=[])
+        video_message_collection_obj = VideoMessageCollection(video_list=[])
+
         video_query = models.Video.all()
-        for video_obj in video_query.run(limit=100):
-            this_row = RowMessage(title=video_obj.title,
-                                  year=video_obj.year,
-                                  genre_list_str=unwrap_list(video_obj.genre_list),
-                                  imdb_id=video_obj.imdb_id,
-                                  imdb_score=round(video_obj.score, 2))
-
-            review_obj_list = models.Review.all().ancestor(video_obj)
-            for review_obj in review_obj_list:
-                if review_obj.review_source == ROGEREBERT_REVIEW_SOURCE:
-                    this_row.ebert_score = round(review_obj.review_score, 2)
-                elif review_obj.review_source == ROTTENTOMATOES_REVIEW_SOURCE:
-                    this_row.rottentomatoes_score = round(review_obj.review_score, 2)
-                elif review_obj.review_source == METACRITIC_REVIEW_SOURCE:
-                    this_row.metacritic_score = round(review_obj.review_score, 2)
-
-            row_message_collection_obj.row_list.append(this_row)
-
-        return row_message_collection_obj
+        for q in video_query.run(limit=100):
+            video_message_collection_obj.video_list.append(self.get_video_message_from_query_obj(q))
+        
+        return video_message_collection_obj
 
     @staticmethod
     @endpoints.method(REQUEST_RESOURCE_CONTAINER, VideoMessage,
                       path='concierge_display/{request_id}', http_method='GET', name='videos.displayVideo')
     def display_video(self, request):
         q = models.Video.all().filter('imdb_id =', request.request_id).get()
+        return self.get_video_message_from_query_obj(q)
 
+    @classmethod
+    def get_video_message_from_query_obj(cls, q):
         # Get occupation data into a dict
-        occupation_dict = {}
+        director_list_str = ""
+        writer_list_str = ""
+        star_list_str = ""
         for name_occupation_key in q.name_occupation_key_list:
             occupation_obj = models.NameOccupation.get(name_occupation_key)
-            if occupation_obj.occupation not in occupation_dict:
-                occupation_dict[occupation_obj.occupation] = []
-
-            occupation_dict[occupation_obj.occupation].append(occupation_obj.name)
+            if occupation_obj.occupation == 'Director':
+                if director_list_str:
+                    director_list_str += ', '
+                director_list_str += occupation_obj.name
+            elif occupation_obj.occupation == 'Writer':
+                if writer_list_str:
+                    writer_list_str += ', '
+                writer_list_str += occupation_obj.name
+            elif occupation_obj.occupation == 'Star':
+                if star_list_str:
+                    star_list_str += ', '
+                star_list_str += occupation_obj.name
 
         genre_list_str = unwrap_list(q.genre_list)
+
         # Get video data into message object
         this_video_message = VideoMessage(poster_url=q.poster_url,
                                           title=q.title,
@@ -130,14 +121,10 @@ class ConciergeApi(remote.Service):
                                           score=round(q.score, 2),
                                           length=q.length,
                                           year=q.year,
-                                          genre_list=genre_list_str,
-                                          occupation_list=[],
-                                          review_list=[])
-        # Get occupation data out of dict and into message objects
-        for occupation in occupation_dict:
-            this_occupation_obj = OccupationMessage(occupation=occupation,
-                                                    name=occupation_dict[occupation])
-            this_video_message.occupation_list.append(this_occupation_obj)
+                                          genre_list_str=genre_list_str,
+                                          writer_list_str=writer_list_str,
+                                          director_list_str=director_list_str,
+                                          star_list_str=star_list_str)
 
         # Get reviews into message objects
         review_obj_list = models.Review.all().ancestor(q).order('review_source')
@@ -150,7 +137,19 @@ class ConciergeApi(remote.Service):
                                         review_author=review_obj.review_author,
                                         review_content=review_obj.review_content,
                                         review_date=str(review_obj.review_date))
-            this_video_message.review_list.append(this_review)
+
+            if review_obj.review_source == ROGEREBERT_REVIEW_SOURCE:
+                this_video_message.ebert_review = this_review
+            elif review_obj.review_source == METACRITIC_METASCORE_SOURCE:
+                this_video_message.metacritic_metascore_review = this_review
+            elif review_obj.review_source == METACRITIC_USERSCORE_SOURCE:
+                this_video_message.metacritic_userscore_review = this_review
+            elif review_obj.review_source == ROTTENTOMATOES_TOP_CRITICS_SOURCE:
+                this_video_message.rottentomatoes_top_critics_review = this_review
+            elif review_obj.review_source == ROTTENTOMATOES_ALL_CRITICS_SOURCE:
+                this_video_message.rottentomatoes_all_critics_review = this_review
+            elif review_obj.review_source == ROTTENTOMATOES_AUDIENCE_METER_SOURCE:
+                this_video_message.rottentomatoes_audience_meter_review = this_review
 
         return this_video_message
 

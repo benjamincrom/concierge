@@ -4,26 +4,27 @@ body {
   padding-top: 20px;
 }
 
-#example{
-    margin:40px;
-}
-
 tr:nth-child(odd)		{ background-color:#eee; }
 tr:nth-child(even)		{ background-color:#fff; }
 
-.video_list {
-  list-style: none;
-}
 
 .thumb {
   float: left;
   margin: -1em 1em 1.5em 0em;
   padding-bottom: 1em;
-  height: 350px;
   width: 200px;
+}
+
+.video_list {
+    list-style: none;
 }
 
 .video_list li {
   clear: both;
   padding-top: 15px;
+}
+
+.tooltip-inner {
+  max-width: 1000px !important;
+  text-align: left !important;
 }

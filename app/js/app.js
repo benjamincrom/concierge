@@ -23,12 +23,12 @@ conciergeApp.controller('VideoListCtrl',
                    "title": "asc"     // initial sorting
                 }
             }, {
-                total: data.row_list.length, // length of data
+                total: data.video_list.length, // length of data
                 getData: function($defer, params) {
                     // use build-in angular filter
                     var orderedData = params.sorting() ?
-                        $filter('orderBy')(data.row_list, params.orderBy()) :
-                        data.row_list;
+                        $filter('orderBy')(data.video_list, params.orderBy()) :
+                        data.video_list;
 
                     $defer.resolve(orderedData.slice((params.page() - 1) * params.count(), params.page() * params.count()));
                 }

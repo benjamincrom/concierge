@@ -26,35 +26,43 @@
             <p>{{video.plot}}</p>
             <table>
             <tr><td>Video Type: </td><td>{{video.video_type}}</td></tr>
-            <tr><td>Tagline: </td><td>{{video.tagline}}</td></tr>
+            <tr><td>Director(s): </td><td>{{video.director_list_str}}</td></tr>
+            <tr><td>Writer(s): </td><td>{{video.writer_list_str}}</td></tr>
+            <tr><td>Star(s): </td><td>{{video.star_list_str}}</td></tr>
             <tr><td>Rating: </td><td>{{video.rating}}</td></tr>
-            <tr><td>Budget: </td><td>{{video.budget}}</td></tr>
-            <tr><td>Gross: </td><td>{{video.gross}}</td></tr>
             <tr><td>Aspect Ratio: </td><td>{{video.aspect_ratio}}</td></tr>
             <tr><td>Length: </td><td>{{video.length}}</td></tr>
-            <tr><td>Genre List: </td><td>{{video.genre_list}}</td></tr>
+            <tr><td>Genre List: </td><td>{{video.genre_list_str}}</td></tr>
             <tr><td>Year: </td><td>{{video.year}}</td></tr>
             <tr><td>Score: </td><td><strong>{{video.score}}</strong></td></tr>
-            <tr ng-repeat="occupation in video.occupation_list">
-                <td valign="top">{{occupation.occupation}}(s): </td>
-                <td><p style="display:inline" ng-repeat="this_name in occupation.name">{{this_name}}<br></p></td>
-            </tr>
+            <tr><td>Budget: </td><td>{{video.budget}}</td></tr>
+            <tr><td>Gross: </td><td>{{video.gross}}</td></tr>
+            <tr><td>Tagline: </td><td>{{video.tagline}}</td></tr>
             <tr><td></td><td><br /></td></tr>
-            <tr ng-repeat="review in video.review_list">
-                <td valign="top">{{review.review_source}}:  </td>
-                <td>
-                    <p><strong>{{review.review_score}}</strong></p>
-                    <p ng-bind-html="review.review_content"></p>
-                    <p>{{review.review_author}} {{review.review_date}}</p>
-                </td>
-            </tr>
-            <tr><td></td><td><br /></td></tr>
+
+            <tr><td valign="top">{{video.ebert_review.review_source}}: </td><td><b>{{video.ebert_review.review_score}}</b><br /><br />
+            <div ng-bind-html="video.ebert_review.review_content"></div>
+            {{video.ebert_review.review_date}}<p><br></p></td></tr>
+
+            <tr><td valign="top">{{video.metacritic_metascore_review.review_source}}: </td><td><b>{{video.metacritic_metascore_review.review_score}}</b><br />
+            {{video.metacritic_metascore_review.review_content}}<p><br></p></td></tr>
+            <tr><td valign="top">{{video.metacritic_userscore_review.review_source}}: </td><td><b>{{video.metacritic_userscore_review.review_score}}</b><br />
+            {{video.metacritic_userscore_review.review_content}}<p><br></p></td></tr>
+
+            <tr><td valign="top">{{video.rottentomatoes_top_critics_review.review_source}}: </td><td><b>{{video.rottentomatoes_top_critics_review.review_score}}</b><br /><br />
+            {{video.rottentomatoes_top_critics_review.review_content}}<p><br></p></td></tr>
+            <tr><td valign="top">{{video.rottentomatoes_all_critics_review.review_source}}: </td><td><b>{{video.rottentomatoes_all_critics_review.review_score}}</b><br /><br />
+            {{video.rottentomatoes_all_critics_review.review_content}}<p><br></p></td></tr>
+            <tr><td valign="top">{{video.rottentomatoes_audience_meter_review.review_source}}: </td><td><b>{{video.rottentomatoes_audience_meter_review.review_score}}</b><br /><br />
+            {{video.rottentomatoes_audience_meter_review.review_content}}<p><br></p></td></tr>
+
             </table>
           </li>
         </ul>
       </div>
     </div>
   </div>
+
 
 </body>
 </html>
