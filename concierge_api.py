@@ -74,7 +74,7 @@ class ConciergeApi(remote.Service):
         video_message_collection_obj = VideoMessageCollection(video_list=[])
 
         video_query = models.Video.all()
-        for q in video_query.run(limit=100):
+        for q in video_query.run():
             video_message_collection_obj.video_list.append(self.get_video_message_from_query_obj(q))
         
         return video_message_collection_obj
@@ -92,6 +92,7 @@ class ConciergeApi(remote.Service):
         director_list_str = ""
         writer_list_str = ""
         star_list_str = ""
+
         for name_occupation_key in q.name_occupation_key_list:
             occupation_obj = models.NameOccupation.get(name_occupation_key)
             if occupation_obj.occupation == 'Director':
@@ -120,13 +121,15 @@ class ConciergeApi(remote.Service):
                                           video_type=q.video_type,
                                           aspect_ratio=str(q.aspect_ratio),
                                           imdb_id=q.imdb_id,
-                                          score=round(q.score, 2),
                                           length=q.length,
                                           year=q.year,
                                           genre_list_str=genre_list_str,
                                           writer_list_str=writer_list_str,
                                           director_list_str=director_list_str,
                                           star_list_str=star_list_str)
+
+        if q.score:
+            this_video_message.score = round(q.score, 2)
 
         # Get reviews into message objects
         review_obj_list = models.Review.all().ancestor(q).order('review_source')
