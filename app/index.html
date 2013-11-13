@@ -6,69 +6,151 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/ng-table.css">
   <link rel="stylesheet" href="css/app.css">
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular/angular-sanitize.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-sanitize.min.js"></script>
   <script src="js/ui-bootstrap.js"></script>
   <script src="js/ng-table.js"></script>
   <script src="js/app.js"></script>
 </head>
 <body ng-controller="VideoListCtrl">
-
   <div class="container-fluid">
     <div class="row-fluid">
+
       <div class="span2">
         <!--Sidebar content-->
         Search: <input>
       </div>
+
       <div class="span10">
         <!--Body content-->
         <table ng-table="tableParams" class="table" width="100%">
-          <tr ng-repeat="video in $data">
+          <tr ng-repeat="video in $data" ng-click="selected.video = video">
             <td width="20%" data-title="'Title'" sortable="'title'">
-              <span tooltip-placement="bottom" 
-                  tooltip-html-unsafe="<img src={{video.poster_url}} class=thumb><br>
-                                       Director(s): <b>{{video.director_list_str}}</b><br>
-                                       Writer(s): <b>{{video.writer_list_str}}</b><br>
-                                       Star(s): <b>{{video.star_list_str}}</b><br>
-                                       Rating: <b>{{video.rating}}</b><br>
-                                       Aspect Ratio: <b>{{video.aspect_ratio}}</b><br>
-                                       Length: <b>{{video.length}}</b><br>
-                                       Genre: <b>{{video.genre_list_str}}</b><br>
-                                       Year: <b>{{video.year}}</b><br>
-                                       IMDB Score: <b>{{video.score}}</b><br>
-                                       Budget: <b>{{video.budget}}</b><br>
-                                       Gross: <b>{{video.gross}}</b><br>
-                                       Tagline: <b>{{video.tagline}}</b><br>">
-                <a href="display_video.html?request_id={{video.imdb_id}}" target="_self">{{video.title}}</a>
-             </span>
+              <span tooltip-placement="bottom" style="display:block;overflow:auto"
+               tooltip-html-unsafe="<b>{{video.plot}}</b><br><br>
+                                   Director(s): <b>{{video.director_list_str}}</b><br>
+                                   Writer(s): <b>{{video.writer_list_str}}</b><br>
+                                   Star(s): <b>{{video.star_list_str}}</b><br>
+                                   Rating: <b>{{video.rating}}</b><br>
+                                   Aspect Ratio: <b>{{video.aspect_ratio}}</b><br>
+                                   Length: <b>{{video.length}}</b><br>
+                                   Budget: <b>{{video.budget}}</b><br>
+                                   Gross: <b>{{video.gross}}</b><br>
+                                   Tagline: <b>{{video.tagline}}</b><br>">
+                {{video.title}}
+              </span>
             </td>
-            <td width="12%" data-title="'Year'" sortable="'year'">{{video.year}}</td>
+            <td width="12%" data-title="'Year'" sortable="'year'" style="text-align: center">
+                {{video.year}}
+            </td>
             <td width="20%" data-title="'Genre'" sortable="'genre_list_str'">{{video.genre_list_str}}</td>
-            <td width="12%" data-title="'Ebert'" sortable="'ebert_review.review_score'">
-              <span tooltip-placement="bottom" tooltip-html-unsafe="{{video.ebert_review.review_content}}{{video.ebert_review.review_date}}">{{video.ebert_review.review_score | number:2}}</span>
+            <td width="12%" data-title="'Ebert'" sortable="'ebert_review.review_score'" style="text-align: center">
+              <span style="display:block;overflow:auto" tooltip-placement="bottom"
+               tooltip-html-unsafe="{{video.ebert_review.review_sample}}<br>{{video.ebert_review.review_date}}">
+                {{video.ebert_review.review_score | number:2}}
+              </span>
             </td>
-            <td width="12%" data-title="'RottenTomatoes'" sortable="'rottentomatoes_top_critics_review.review_score'">
-              <span tooltip-placement="bottom" 
-                  tooltip-html-unsafe="Top Critics: <b>{{video.rottentomatoes_top_critics_review.review_score}}</b> -- 
-                                       {{video.rottentomatoes_top_critics_review.review_content}}<br>
-                                       All Critics: <b>{{video.rottentomatoes_all_critics_review.review_score}}</b> -- 
-                                       {{video.rottentomatoes_all_critics_review.review_content}}<br>
-                                       Audience: <b>{{video.rottentomatoes_audience_meter_review.review_score}}</b> -- 
-                                       {{video.rottentomatoes_audience_meter_review.review_content}}">
+            <td width="12%" data-title="'RottenTomatoes'" sortable="'rottentomatoes_top_critics_review.review_score'" style="text-align: center">
+              <span tooltip-placement="bottom" style="display:block;overflow:auto"
+               tooltip-html-unsafe="Top Critics: <b>{{video.rottentomatoes_top_critics_review.review_score}}</b> --
+                                   {{video.rottentomatoes_top_critics_review.review_content}}<br>
+                                   All Critics: <b>{{video.rottentomatoes_all_critics_review.review_score}}</b> --
+                                   {{video.rottentomatoes_all_critics_review.review_content}}<br>
+                                   Audience: <b>{{video.rottentomatoes_audience_meter_review.review_score}}</b> --
+                                   {{video.rottentomatoes_audience_meter_review.review_content}}">
                 {{video.rottentomatoes_top_critics_review.review_score | number:2}}
               </span>
             </td>
-            <td width="12%" data-title="'Metacritic'" sortable="'metacritic_metascore_review.review_score'">
-              <span tooltip-placement="bottom" 
-                  tooltip-html-unsafe="Metascore: <b>{{video.metacritic_metascore_review.review_score}}</b> ({{video.metacritic_metascore_review.review_content}})<br>
-                                       Userscore: <b>{{video.metacritic_userscore_review.review_score}}</b> ({{video.metacritic_userscore_review.review_content}})">
-              {{video.metacritic_metascore_review.review_score | number:2}}
+            <td width="12%" data-title="'Metacritic'" sortable="'metacritic_metascore_review.review_score'" style="text-align: center">
+              <span tooltip-placement="bottom" style="display:block;overflow:auto"
+               tooltip-html-unsafe="Metascore: <b>{{video.metacritic_metascore_review.review_score}}</b>
+                                   ({{video.metacritic_metascore_review.review_content}})<br>
+                                   Userscore: <b>{{video.metacritic_userscore_review.review_score}}</b>
+                                   ({{video.metacritic_userscore_review.review_content}})">
+                {{video.metacritic_metascore_review.review_score | number:2}}
               </span>
             </td>
-            <td width="12%" data-title="'IMDB'" sortable="'score'">{{video.score | number:2}}</td>
+            <td width="12%" data-title="'IMDB'" sortable="'score'" style="text-align: center">
+              {{video.score | number:2}}
+            </td>
           </tr>
-       </table>
+        </table>
       </div>
+
+    </div>
+    <div class="row-fluid">
+
+      <div class="span2"></div>
+
+      <div ng-show="selected.video" class="span10" style="overflow: scroll; height: 500px">
+        <!--Body content-->
+        <a href="display_video.html?request_id={{selected.video.imdb_id}}" class="thumb" target="_self">
+        <img ng-src="{{selected.video.poster_url}}"></a>
+        <a href="display_video.html?request_id={{selected.video.imdb_id}}" target="_self">{{selected.video.title}}</a>
+        <p>{{selected.video.plot}}</p>
+        <table>
+          <tr><td>Video Type: </td><td>{{selected.video.video_type}}</td></tr>
+          <tr><td>Director(s): </td><td>{{selected.video.director_list_str}}</td></tr>
+          <tr><td>Writer(s): </td><td>{{selected.video.writer_list_str}}</td></tr>
+          <tr><td>Star(s): </td><td>{{selected.video.star_list_str}}</td></tr>
+          <tr><td>Rating: </td><td>{{selected.video.rating}}</td></tr>
+          <tr><td>Aspect Ratio: </td><td>{{selected.video.aspect_ratio}}</td></tr>
+          <tr><td>Length: </td><td>{{selected.video.length}}</td></tr>
+          <tr><td>Genre List: </td><td>{{selected.video.genre_list_str}}</td></tr>
+          <tr><td>Year: </td><td>{{selected.video.year}}</td></tr>
+          <tr><td>Score: </td><td><strong>{{selected.video.score}}</strong></td></tr>
+          <tr ng-show="selected.video.budget"><td>Budget: </td><td>{{selected.video.budget}}</td></tr>
+          <tr ng-show="selected.video.gross"><td>Gross: </td><td>{{selected.video.gross}}</td></tr>
+          <tr ng-show="selected.video.tagline"><td>Tagline: </td><td>{{selected.video.tagline}}</td></tr>
+          <tr><td></td><td><br /></td></tr>
+          <tr ng-show="selected.video.ebert_review.review_source">
+              <td valign="top">{{selected.video.ebert_review.review_source}}: </td>
+              <td>
+                <b>{{selected.video.ebert_review.review_score}}</b><br>
+                <div ng-bind-html="selected.video.ebert_review.review_content"></div>
+                {{selected.video.ebert_review.review_date}}<br><br>
+              </td>
+          </tr>
+          <tr ng-show="selected.video.rottentomatoes_top_critics_review.review_source">
+            <td valign="top">{{selected.video.rottentomatoes_top_critics_review.review_source}}: </td>
+            <td>
+              <b>{{selected.video.rottentomatoes_top_critics_review.review_score}}</b><br>
+              {{selected.video.rottentomatoes_top_critics_review.review_content}}<br><br>
+            </td>
+          </tr>
+
+          <tr ng-show="selected.video.rottentomatoes_all_critics_review.review_source">
+            <td valign="top">{{selected.video.rottentomatoes_all_critics_review.review_source}}: </td>
+            <td>
+              <b>{{selected.video.rottentomatoes_all_critics_review.review_score}}</b><br>
+              {{selected.video.rottentomatoes_all_critics_review.review_content}}<br><br>
+            </td>
+          </tr>
+          <tr ng-show="selected.video.rottentomatoes_audience_meter_review.review_source">
+            <td valign="top">{{selected.video.rottentomatoes_audience_meter_review.review_source}}: </td>
+            <td>
+              <b>{{selected.video.rottentomatoes_audience_meter_review.review_score}}</b><br>
+              {{selected.video.rottentomatoes_audience_meter_review.review_content}}<br><br>
+            </td>
+          </tr>
+
+          <tr ng-show="selected.video.metacritic_metascore_review.review_source">
+            <td valign="top">{{selected.video.metacritic_metascore_review.review_source}}: </td>
+            <td>
+              <b>{{selected.video.metacritic_metascore_review.review_score}}</b><br>
+              {{selected.video.metacritic_metascore_review.review_content}}<br><br>
+            </td>
+          </tr>
+          <tr ng-show="selected.video.metacritic_userscore_review.review_source">
+            <td valign="top">{{selected.video.metacritic_userscore_review.review_source}}: </td>
+            <td>
+              <b>{{selected.video.metacritic_userscore_review.review_score}}</b><br>
+              {{selected.video.metacritic_userscore_review.review_content}}<br><br>
+            </td>
+          </tr>
+        </table>
+      </div>
+
     </div>
   </div>
 </body>

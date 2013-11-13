@@ -4,9 +4,8 @@ body {
   padding-top: 20px;
 }
 
-tr:nth-child(odd)		{ background-color:#eee; }
-tr:nth-child(even)		{ background-color:#fff; }
-
+tr:nth-child(odd)		{ background-color:#dddddd; }
+tr:nth-child(even)		{ background-color:#eeeeee; }
 
 .thumb {
   float: left;
@@ -15,16 +14,7 @@ tr:nth-child(even)		{ background-color:#fff; }
   width: 200px;
 }
 
-.video_list {
-    list-style: none;
-}
-
-.video_list li {
-  clear: both;
-  padding-top: 15px;
-}
-
 .tooltip-inner {
-  max-width: 1000px !important;
+  max-width: 400px !important;
   text-align: left !important;
 }

@@ -2,7 +2,11 @@
   <dictionary name="bcrom">
     <words>
       <w>imdb</w>
+      <w>metacritic</w>
+      <w>metascore</w>
+      <w>rottentomatoes</w>
       <w>tagline</w>
+      <w>userscore</w>
     </words>
   </dictionary>
 </component>

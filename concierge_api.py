@@ -2,6 +2,7 @@
 
 import endpoints
 import models
+import re
 import webapp2
 
 from google.appengine.api.datastore import Key
@@ -17,6 +18,8 @@ ROTTENTOMATOES_AUDIENCE_METER_SOURCE = 'Rottentomatoes Audience Meter'
 METACRITIC_METASCORE_SOURCE = 'Metacritic Metascore'
 METACRITIC_USERSCORE_SOURCE = 'Metacritic Userscore'
 
+EBERT_REVIEW_SAMPLE_REGEX = re.compile("<p>(.*?)</p>", re.DOTALL)
+
 REQUEST_RESOURCE_CONTAINER = endpoints.ResourceContainer(
     message_types.VoidMessage,
     request_id=messages.StringField(2, required=True)
@@ -27,8 +30,9 @@ class ReviewMessage(messages.Message):
     review_source = messages.StringField(1)
     review_author = messages.StringField(2)
     review_content = messages.StringField(3)
-    review_date = messages.StringField(4)
-    review_score = messages.FloatField(5)
+    review_sample = messages.StringField(4)
+    review_date = messages.StringField(5)
+    review_score = messages.FloatField(6)
 
 
 class VideoMessage(messages.Message):
@@ -55,7 +59,6 @@ class VideoMessage(messages.Message):
     director_list_str = messages.StringField(22)
     writer_list_str = messages.StringField(23)
     star_list_str = messages.StringField(24)
-    
 
 
 class VideoMessageCollection(messages.Message):
@@ -128,7 +131,13 @@ class ConciergeApi(remote.Service):
 
         # Get reviews into message objects
         review_obj_list = models.Review.all().ancestor(q).order('review_source')
+
         for review_obj in review_obj_list:
+            review_sample = ''
+            review_sample_match = EBERT_REVIEW_SAMPLE_REGEX.search(review_obj.review_content)
+            if review_sample_match:
+                review_sample = review_sample_match.groups()[0].strip()
+
             if review_obj.review_date is None:
                 review_obj.review_date = ''
 
@@ -136,6 +145,7 @@ class ConciergeApi(remote.Service):
                                         review_score=round(review_obj.review_score, 2),
                                         review_author=review_obj.review_author,
                                         review_content=review_obj.review_content,
+                                        review_sample=review_sample,
                                         review_date=str(review_obj.review_date))
 
             if review_obj.review_source == ROGEREBERT_REVIEW_SOURCE:

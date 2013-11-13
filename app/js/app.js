@@ -16,6 +16,7 @@ conciergeApp.config(function($locationProvider){
 conciergeApp.controller('VideoListCtrl',
     function VideoListCtrl($scope, $http, $filter, ngTableParams) {
         $http.get('../_ah/api/concierge/v1/concierge_list').success(function(data) {
+            $scope.selected = {video: null};
             $scope.tableParams = new ngTableParams({
                 page: 1,            // show first page
                 count: 10,          // count per page
@@ -25,7 +26,7 @@ conciergeApp.controller('VideoListCtrl',
             }, {
                 total: data.video_list.length, // length of data
                 getData: function($defer, params) {
-                    // use build-in angular filter
+                    // use built-in angular filter
                     var orderedData = params.sorting() ?
                         $filter('orderBy')(data.video_list, params.orderBy()) :
                         data.video_list;
