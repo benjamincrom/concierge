@@ -74,7 +74,7 @@ class ConciergeApi(remote.Service):
         video_message_collection_obj = VideoMessageCollection(video_list=[])
 
         video_query = models.Video.all()
-        for q in video_query.run():
+        for q in video_query.run(limit=1000):
             video_message_collection_obj.video_list.append(self.get_video_message_from_query_obj(q))
         
         return video_message_collection_obj
