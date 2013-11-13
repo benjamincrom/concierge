@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b8ad401-5aec-4d2a-8e1b-3733b8f0810f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/app.css" afterPath="$PROJECT_DIR$/app/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/app.js" afterPath="$PROJECT_DIR$/app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/bcrom.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/bcrom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/concierge_api.py" afterPath="$PROJECT_DIR$/concierge_api.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/display_video.html" afterPath="$PROJECT_DIR$/app/display_video.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/ng-table.js" afterPath="$PROJECT_DIR$/app/js/ng-table.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="concierge.iws" />
@@ -35,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="53" selection-start="959" selection-end="959" vertical-scroll-proportion="0.2969543" vertical-offset="252" max-vertical-offset="2934">
+            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2934">
               <folding>
                 <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -50,6 +44,26 @@
                 <element signature="n#style#0;n#span#0;n#td#5;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#6;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ng-table.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/css/ng-table.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ng-table.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/ng-table.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="114" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="802">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/helloworld_api.py" />
         <option value="$PROJECT_DIR$/concierge.py" />
         <option value="$PROJECT_DIR$/app/phones/phones.json" />
         <option value="$PROJECT_DIR$/app/clipboard" />
@@ -90,6 +103,7 @@
         <option value="$PROJECT_DIR$/app/display_video.html" />
         <option value="$PROJECT_DIR$/app/css/app.css" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/js/ng-table.js" />
       </list>
     </option>
   </component>
@@ -581,13 +595,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/display_video.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="2499" selection-end="2499" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1332">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="0" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="648">
@@ -613,13 +620,6 @@
     <entry file="file://$PROJECT_DIR$/tools/ebert_database_ingest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/ng-table.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2653" selection-start="2769" selection-end="2769" vertical-scroll-proportion="0.04488778" vertical-offset="0" max-vertical-offset="802">
           <folding />
         </state>
       </provider>
@@ -684,7 +684,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="53" selection-start="959" selection-end="959" vertical-scroll-proportion="0.2969543" vertical-offset="252" max-vertical-offset="2934">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2934">
           <folding>
             <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -696,6 +696,22 @@
             <element signature="n#style#0;n#span#0;n#td#5;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#6;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/ng-table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/ng-table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="114" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="802">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
