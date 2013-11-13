@@ -5,7 +5,6 @@ import models
 import re
 import webapp2
 
-from google.appengine.api.datastore import Key
 from protorpc import messages
 from protorpc import message_types
 from protorpc import remote
