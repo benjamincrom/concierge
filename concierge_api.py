@@ -180,4 +180,3 @@ application = endpoints.api_server([ConciergeApi])
 redirect = webapp2.WSGIApplication([
     webapp2.Route('/<:.*>', webapp2.RedirectHandler, defaults={'_uri': '/app/index.html'}),
 ], debug=False)
-
