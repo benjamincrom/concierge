@@ -67,7 +67,7 @@ def retrieve_html_from_url(url):
     if url:
         try:
             req = urllib2.Request(url, headers=SPOOFED_HEADERS)
-            html = urllib2.urlopen(req).read().decode('latin-1').encode('ascii', 'ignore')
+            html = urllib2.urlopen(req).read() #.decode('latin-1').encode('ascii', 'ignore')
         except (AttributeError, UnicodeDecodeError):
             print RETRIEVE_HTML_ERROR % url
             raise

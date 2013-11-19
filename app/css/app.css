@@ -18,3 +18,7 @@ tr:nth-child(even)		{ background-color:#eeeeee; }
   max-width: 400px !important;
   text-align: left !important;
 }
+
+.video_table {
+    border-spacing:50px !important;
+}

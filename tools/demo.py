@@ -11,6 +11,7 @@ import time
 def parse_title(search_title, search_year='', ebert_link=''):
     print '***********************************************************************************'
     print "%s (%s)" % (search_title, search_year)
+    
     # Get IMDB data 
     imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, search_year)
     # If nothing is found then check the range below the search year to correct for inaccuracy
@@ -101,7 +102,7 @@ def parse_title(search_title, search_year='', ebert_link=''):
                     print "%s:\t\t%s" % (i, j)
 
                 print "''''''''''''''''''''''''''''''''''''''''''''"
-
+    
             if ebert_link:
                 # Get Rogerebert Data
                 rogerebert_obj_dict = roger_ebert_scraper.scrape_rogerebert_data(ebert_link)
@@ -111,15 +112,13 @@ def parse_title(search_title, search_year='', ebert_link=''):
                     print ' ROGEREBERT '
                     for i, j in rogerebert_obj_dict.iteritems():
                         print "%s:\t\t%s" % (i, j)
-
                     print "============================================"
-
-        print '***********************************************************************************'
-        print ''
+            print '***********************************************************************************'
+            print ''
 
 
 if __name__ == '__main__':
-    lines = open('ebert_link_list.txt').readlines()
+    lines = open('text_files/ebert_total_links.txt').readlines()
     times = []
     for line in lines:
         (ebert_review_url, ebert_title, ebert_year) = line.split(';')
