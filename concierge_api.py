@@ -83,8 +83,7 @@ class ConciergeApi(remote.Service):
     @endpoints.method(REQUEST_RESOURCE_CONTAINER, VideoMessage,
                       path='concierge_display/{request_id}', http_method='GET', name='videos.displayVideo')
     def display_video(self, request):
-        q = models.Video.all().filter('imdb_id =', request.request_id).get()
-        return self.get_video_message_from_query_obj(q)
+        return models.Video.get_by_key_name(request.request_id)
 
     @classmethod
     def get_video_message_from_query_obj(cls, q):
