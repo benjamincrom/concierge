@@ -1,69 +1,57 @@
 #!/usr/bin/python
 
 
+import re
+
 from google.appengine.ext import db
 from protorpc import messages
 
 
 ROGEREBERT_REVIEW_SOURCE = 'RogerEbert.com'
-ROTTENTOMATOES_TOP_CRITICS_SOURCE = 'Rottentomatoes Top Critics'
 ROTTENTOMATOES_ALL_CRITICS_SOURCE = 'Rottentomatoes All Critics'
 ROTTENTOMATOES_AUDIENCE_METER_SOURCE = 'Rottentomatoes Audience Meter'
+ROTTENTOMATOES_TOP_CRITICS_SOURCE = 'Rottentomatoes Top Critics'
 METACRITIC_METASCORE_SOURCE = 'Metacritic Metascore'
 METACRITIC_USERSCORE_SOURCE = 'Metacritic Userscore'
 
 
+EBERT_REVIEW_SAMPLE_REGEX = re.compile("<p>(.*?)</p>", re.DOTALL)
+
+
+# Appengine DB declaration
 class NameOccupation(db.Model):
     name = db.StringProperty()
     occupation = db.StringProperty()
 
 
 class Review(db.Model):
-    review_score = db.FloatProperty()
     review_author = db.StringProperty()
     review_source = db.StringProperty()
     review_content = db.TextProperty()
+    review_score = db.FloatProperty()
     review_date = db.DateProperty()
-
-
-class Series(db.Model):
-    series_name = db.StringProperty()
-    total_episodes_in_series = db.IntegerProperty()
-    total_seasons_in_series = db.IntegerProperty()
-    genre_list = db.StringListProperty()
-    creator = db.ReferenceProperty(NameOccupation)
-    season_key_list = db.ListProperty(db.Key)
-
-
-class Season(db.Model):
-    season_number = db.IntegerProperty()
-    total_episodes_in_season = db.IntegerProperty()
-    series = db.ReferenceProperty(Series)
-    review_key_list = db.ListProperty(db.Key)
 
 
 class Video(db.Model):
     title = db.StringProperty()
     poster_url = db.StringProperty()
-    plot = db.TextProperty()
     tagline = db.StringProperty()
-    gross = db.TextProperty()
     imdb_id = db.StringProperty()
-    budget = db.TextProperty()
     video_type = db.StringProperty()
     rating = db.StringProperty()
     genre_list = db.StringListProperty()
+    plot = db.TextProperty()
+    gross = db.TextProperty()
+    budget = db.TextProperty()
     aspect_ratio = db.FloatProperty()
     score = db.FloatProperty()
-    episode_number_in_season = db.IntegerProperty()
-    episode_number_in_total = db.IntegerProperty()
     year = db.IntegerProperty()
     length = db.IntegerProperty()
     name_occupation_key_list = db.ListProperty(db.Key)
     review_key_list = db.ListProperty(db.Key)
-    season = db.ReferenceProperty(Season)
 
 
+# Messaging object declarations
 class ReviewMessage(messages.Message):
     review_source = messages.StringField(1)
     review_author = messages.StringField(2)
@@ -84,19 +72,19 @@ class VideoMessage(messages.Message):
     video_type = messages.StringField(8)
     aspect_ratio = messages.StringField(9)
     imdb_id = messages.StringField(10)
-    score = messages.FloatField(11)
-    length = messages.IntegerField(12)
-    year = messages.IntegerField(13)
-    genre_list_str = messages.StringField(14)
-    ebert_review = messages.MessageField(ReviewMessage, 16)
-    metacritic_metascore_review = messages.MessageField(ReviewMessage, 17)
-    metacritic_userscore_review = messages.MessageField(ReviewMessage, 18)
-    rottentomatoes_top_critics_review = messages.MessageField(ReviewMessage, 19)
-    rottentomatoes_all_critics_review = messages.MessageField(ReviewMessage, 20)
-    rottentomatoes_audience_meter_review = messages.MessageField(ReviewMessage, 21)
-    director_list_str = messages.StringField(22)
-    writer_list_str = messages.StringField(23)
-    star_list_str = messages.StringField(24)
+    genre_list_str = messages.StringField(11)
+    director_list_str = messages.StringField(12)
+    writer_list_str = messages.StringField(13)
+    star_list_str = messages.StringField(14)
+    score = messages.FloatField(15)
+    length = messages.IntegerField(16)
+    year = messages.IntegerField(17)
+    ebert_review = messages.MessageField(ReviewMessage, 18)
+    metacritic_metascore_review = messages.MessageField(ReviewMessage, 19)
+    metacritic_userscore_review = messages.MessageField(ReviewMessage, 20)
+    rottentomatoes_top_critics_review = messages.MessageField(ReviewMessage, 21)
+    rottentomatoes_all_critics_review = messages.MessageField(ReviewMessage, 22)
+    rottentomatoes_audience_meter_review = messages.MessageField(ReviewMessage, 23)
 
 
 class VideoMessageCollection(messages.Message):

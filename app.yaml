@@ -16,7 +16,7 @@ handlers:
   static_dir: app
 
 - url: /.*
-  script: concierge_api.redirect
+  script: concierge_api.api_application
 
 libraries:
 - name: pycrypto

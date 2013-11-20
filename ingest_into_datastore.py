@@ -7,6 +7,7 @@ import webapp2
 
 import models
 
+
 INGEST_SUCCESS_MESSAGE = 'Ingest completed!'
 JSON_TITLES_FILE = 'tools/scraper/text_files/json_titles.txt'
 
@@ -25,31 +26,20 @@ class MainPage(webapp2.RequestHandler):
             video_key_name = str(dict_obj['imdb_id'])
             video_obj = models.Video(key_name=video_key_name)
 
-            # Store IMDB data in video_obj
-            director_role_list = [(director, "Director") for director in dict_obj["director_list"]]
-            writer_role_list = [(writer, "Writer") for writer in dict_obj["writer_list"]]
-            star_role_list = [(star, "Star") for star in dict_obj["star_list"]]
-            person_role_list = director_role_list + writer_role_list + star_role_list
-            person_role_key_list = []
-
-            # Initialize any missing video_obj fields to None
-            if not dict_obj["score"]:
-                dict_obj["score"] = None
-
-            if not dict_obj["aspect_ratio"]:
-                dict_obj["aspect_ratio"] = None
-
-            if not dict_obj["year"]:
-                dict_obj["year"] = None
-
-            if not dict_obj["length"]:
-                dict_obj["score"] = None
+            # Store all occupation data in NameOccupation objects and store all keys in a single list in this video_obj
+            occupation_dict = {"Director": dict_obj["director_list"],
+                               "Writer":   dict_obj["writer_list"],
+                               "Star":     dict_obj["star_list"]}
 
             # Create a NameOccupation obj for each writer, director, and star and append each key to a list in video_obj
-            for (person, role) in person_role_list:
-                person_role_key = str(person) + '-' + str(role)
-                name_occupation_obj = models.NameOccupation.get_or_insert(person_role_key, name=person, occupation=role)
-                person_role_key_list.append(name_occupation_obj.key())
+            person_role_key_list = []
+            for (role, person_list) in occupation_dict.iteritems():
+                for person in person_list:
+                    person_role_key = str(person) + '-' + str(role)
+                    name_occupation_obj = models.NameOccupation.get_or_insert(person_role_key,
+                                                                              name=person,
+                                                                              occupation=role)
+                    person_role_key_list.append(name_occupation_obj.key())
 
             # Store Ebert Review in a review_obj that is a child of this video_obj
             if 'formatted_review_text' in dict_obj:
@@ -64,7 +54,7 @@ class MainPage(webapp2.RequestHandler):
                 )
                 review_obj.put()
 
-            # Store Metacritic Review in a review_obj that is a child of this video_obj
+            # Store Metacritic Reviews in review objects that are children of this video_obj
             # (Metascore, Userscore)
             if 'metacritic_metascore_meter' in dict_obj:
                 review_obj = models.Review(
@@ -84,7 +74,7 @@ class MainPage(webapp2.RequestHandler):
                 )
                 review_obj.put()
 
-            # Store Rottentomatoes Review in a review_obj that is a child of this video_obj
+            # Store Rottentomatoes Reviews in review objects that are children of this video_obj
             # (Audience, Top Critics, All Critics)
             if 'audience_meter' in dict_obj:
                 review_obj = models.Review(
@@ -117,6 +107,20 @@ class MainPage(webapp2.RequestHandler):
                 )
                 review_obj.put()
 
+            # Initialize any missing video_obj fields to None
+            if not dict_obj["score"]:
+                dict_obj["score"] = None
+
+            if not dict_obj["aspect_ratio"]:
+                dict_obj["aspect_ratio"] = None
+
+            if not dict_obj["year"]:
+                dict_obj["year"] = None
+
+            if not dict_obj["length"]:
+                dict_obj["score"] = None
+
+            # Store IMDB data in video_obj
             video_obj.score = dict_obj["score"]
             video_obj.aspect_ratio = dict_obj["aspect_ratio"]
             video_obj.year = dict_obj["year"]

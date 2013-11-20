@@ -9,7 +9,8 @@ import urllib2
 from HTMLParser import HTMLParser
 
 
-GOOGLE_QUERY_URL = "https://www.googleapis.com/customsearch/v1?key=AIzaSyCMGfdDaSfjqv5zYoS0mTJnOT3e9MURWkU&cx=017381156867331432490:g58htnlfkuk&q=%s"
+GOOGLE_QUERY_URL = ("https://www.googleapis.com/customsearch/v1"
+                    "?key=AIzaSyCMGfdDaSfjqv5zYoS0mTJnOT3e9MURWkU&cx=017381156867331432490:g58htnlfkuk&q=%s")
 REGEX_NOT_FOUND_ERROR = "ERROR: Target regex '%s' not found--this value cannot be null"
 RETRIEVE_HTML_ERROR = "ERROR: URL '%s' cannot be properly retrieved"
 RETRIEVE_QUERY_ERROR = "ERROR: Query '%s' cannot be properly retrieved"
@@ -32,8 +33,8 @@ class MLStripper(HTMLParser):
         self.reset()
         self.fed = []
 
-    def handle_data(self, d):
-        self.fed.append(d)
+    def handle_data(self, data):
+        self.fed.append(data)
 
     def get_data(self):
         return ''.join(self.fed)
@@ -51,7 +52,7 @@ def get_top_google_result_url(search_string):
         json_str = urllib2.urlopen(GOOGLE_QUERY_URL % formatted_search_string).read()
     except urllib2.HTTPError:
         json_str = ''
-        print RETRIEVE_QUERY_ERROR % search_string
+        print(RETRIEVE_QUERY_ERROR % search_string)
         
     if json_str:
         json_obj = json.loads(json_str)
@@ -67,12 +68,12 @@ def retrieve_html_from_url(url):
     if url:
         try:
             req = urllib2.Request(url, headers=SPOOFED_HEADERS)
-            html = urllib2.urlopen(req).read() #.decode('latin-1').encode('ascii', 'ignore')
+            html = urllib2.urlopen(req).read()
         except (AttributeError, UnicodeDecodeError):
-            print RETRIEVE_HTML_ERROR % url
+            print(RETRIEVE_HTML_ERROR % url)
             raise
-        except (urllib2.URLError, socket.error) as e:
-            print RETRIEVE_HTML_ERROR % url
+        except (urllib2.URLError, socket.error):
+            print(RETRIEVE_HTML_ERROR % url)
 
     return html
 
