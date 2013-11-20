@@ -125,6 +125,7 @@ def _get_aspect_ratio_float_from_str(aspect_ratio_str):
         if width_height_match:
             (width, height) = width_height_match.groups()
             aspect_ratio = float(width) / float(height)
+			
     return aspect_ratio
 
 

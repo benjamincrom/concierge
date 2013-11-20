@@ -2,8 +2,9 @@
 
 
 import locale
-import html_manipulator
 import re
+
+import html_manipulator
 
 
 ROTTENTOMATOES_QUERY_STRING = "site:rottentomatoes.com %s (%s)"

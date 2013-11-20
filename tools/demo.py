@@ -1,11 +1,12 @@
 #!/usr/bin/python
 
 
+import time
+
 import imdb_scraper
 import metacritic_scraper
 import roger_ebert_scraper
 import rottentomatoes_scraper
-import time
 
 
 def parse_title(search_title, search_year="", ebert_link=""):
@@ -96,7 +97,9 @@ def parse_title(search_title, search_year="", ebert_link=""):
                     print " ROGEREBERT "
                     for i, j in rogerebert_obj_dict.iteritems():
                         print "%s:\t\t%s" % (i, j)
+						
                     print "============================================"
+					
             print "***********************************************************************************"
             print ""
 

@@ -81,4 +81,5 @@ if __name__ == "__main__":
     for line in lines:
         (ebert_review_url, ebert_title, ebert_year) = line.split(";")
         parse_title(ebert_title.strip(), output_file, ebert_year.strip(), ebert_review_url.strip())
+		
     output_file.close()
