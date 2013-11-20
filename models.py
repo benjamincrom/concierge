@@ -14,7 +14,6 @@ ROTTENTOMATOES_TOP_CRITICS_SOURCE = "Rottentomatoes Top Critics"
 METACRITIC_METASCORE_SOURCE = "Metacritic Metascore"
 METACRITIC_USERSCORE_SOURCE = "Metacritic Userscore"
 
-
 EBERT_REVIEW_SAMPLE_REGEX = re.compile("<p>(.*?)</p>", re.DOTALL)
 
 
