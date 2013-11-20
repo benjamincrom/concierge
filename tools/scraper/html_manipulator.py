@@ -11,9 +11,9 @@ from HTMLParser import HTMLParser
 
 GOOGLE_QUERY_URL = ("https://www.googleapis.com/customsearch/v1"
                     "?key=AIzaSyCMGfdDaSfjqv5zYoS0mTJnOT3e9MURWkU&cx=017381156867331432490:g58htnlfkuk&q=%s")
-REGEX_NOT_FOUND_ERROR = "ERROR: Target regex "%s" not found--this value cannot be null"
-RETRIEVE_HTML_ERROR = "ERROR: URL "%s" cannot be properly retrieved"
-RETRIEVE_QUERY_ERROR = "ERROR: Query "%s" cannot be properly retrieved"
+REGEX_NOT_FOUND_ERROR = "ERROR: Target regex \"%s\" not found--this value cannot be null"
+RETRIEVE_HTML_ERROR = "ERROR: URL \"%s\" cannot be properly retrieved"
+RETRIEVE_QUERY_ERROR = "ERROR: Query \"%s\" cannot be properly retrieved"
 
 SPOOFED_HEADERS = {
     "User-Agent":           "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko)"

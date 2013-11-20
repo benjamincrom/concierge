@@ -7,8 +7,8 @@ import re
 from datetime import datetime
 
 
-LOCAL_LINK_PREFIX = "<a href=""
-EBERT_LINK_PREFIX = "<a href="http://www.rogerebert.com"
+LOCAL_LINK_PREFIX = "<a href=\""
+EBERT_LINK_PREFIX = "<a href=\"http://www.rogerebert.com"
 EBERT_FULL_STAR = "icon-star-full"
 EBERT_GOOGLE_QUERY_STRING = "site:rogerebert.com %s %s"
 EBERT_HALF_STAR = "icon-star-half"
