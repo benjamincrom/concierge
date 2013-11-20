@@ -16,12 +16,12 @@ REQUEST_RESOURCE_CONTAINER = endpoints.ResourceContainer(
 )
 
 
-@endpoints.api(name='concierge', version='v1')
+@endpoints.api(name="concierge", version="v1")
 class ConciergeApi(remote.Service):
     """Concierge API v1."""
     @staticmethod
     @endpoints.method(message_types.VoidMessage, models.VideoMessageCollection,
-                      path='concierge_list', http_method='GET', name='videos.listVideos')
+                      path="concierge_list", http_method="GET", name="videos.listVideos")
     def list_videos(self, unused_request):
         video_message_collection_obj = models.VideoMessageCollection(video_list=[])
         video_query = models.Video.all()
@@ -32,7 +32,7 @@ class ConciergeApi(remote.Service):
 
     @staticmethod
     @endpoints.method(REQUEST_RESOURCE_CONTAINER, models.VideoMessage,
-                      path='concierge_display/{request_id}', http_method='GET', name='videos.displayVideo')
+                      path="concierge_display/{request_id}", http_method="GET", name="videos.displayVideo")
     def display_video(self, request):
         return models.Video.get_by_key_name(request.request_id)
 
@@ -44,13 +44,13 @@ class ConciergeApi(remote.Service):
         star_list_str = ""
         for name_occupation_key in query_obj.name_occupation_key_list:
             occupation_obj = models.NameOccupation.get(name_occupation_key)
-            if occupation_obj.occupation == 'Director':
+            if occupation_obj.occupation == "Director":
                 director_list_str = add_comma_if_needed(director_list_str)
                 director_list_str += occupation_obj.name
-            elif occupation_obj.occupation == 'Writer':
+            elif occupation_obj.occupation == "Writer":
                 writer_list_str = add_comma_if_needed(writer_list_str)
                 writer_list_str += occupation_obj.name
-            elif occupation_obj.occupation == 'Star':
+            elif occupation_obj.occupation == "Star":
                 star_list_str = add_comma_if_needed(star_list_str)
                 star_list_str += occupation_obj.name
 
@@ -78,16 +78,16 @@ class ConciergeApi(remote.Service):
             this_video_message.score = round(query_obj.score, 2)
 
         # Get reviews into message objects
-        review_obj_list = models.Review.all().ancestor(query_obj).order('review_source')
+        review_obj_list = models.Review.all().ancestor(query_obj).order("review_source")
 
         for review_obj in review_obj_list:
-            review_sample = ''
+            review_sample = ""
             review_sample_match = models.EBERT_REVIEW_SAMPLE_REGEX.search(review_obj.review_content)
             if review_sample_match:
                 review_sample = review_sample_match.groups()[0].strip()
 
             if review_obj.review_date is None:
-                review_obj.review_date = ''
+                review_obj.review_date = ""
 
             this_review = models.ReviewMessage(review_source=review_obj.review_source,
                                                review_score=round(review_obj.review_score, 2),
@@ -114,10 +114,10 @@ class ConciergeApi(remote.Service):
 
 def unwrap_list(this_list):
     """ Convert a python list to a comma separated string """
-    return_str = ''
+    return_str = ""
     for item in this_list:
         if return_str:
-            return_str += ', '
+            return_str += ", "
 
         return_str += str(item)
 
@@ -125,9 +125,9 @@ def unwrap_list(this_list):
 
 
 def add_comma_if_needed(this_str):
-    """ Append ', ' only if this string is not empty """
+    """ Append ", " only if this string is not empty """
     if this_str:
-        this_str += ', '
+        this_str += ", "
 
     return this_str
 

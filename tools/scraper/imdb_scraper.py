@@ -25,14 +25,14 @@ IMDB_GROSS_REGEX = re.compile("<h5>Gross</h5>.*?(\$.+?) \(USA\)", re.DOTALL)
 IMDB_LENGTH_REGEX = re.compile("itemprop=\"duration\".*?>.*?(\d+) min.*?<", re.DOTALL)
 IMDB_NAME_LIST_REGEX = re.compile("itemprop=\"name\">(.+?)<", re.DOTALL)
 IMDB_PLOT_REGEX = re.compile("itemprop=\"description\">(.+?)<div", re.DOTALL)
-IMDB_POSTER_REGEX = re.compile("<meta property='og:image' content=\"(.+?)\" />", re.DOTALL)
+IMDB_POSTER_REGEX = re.compile("<meta property="og:image" content=\"(.+?)\" />", re.DOTALL)
 IMDB_STAR_STR_REGEX = re.compile("<h4 class=\"inline\">Stars?:</h4>(.+?)</div>", re.DOTALL)
 IMDB_TAGLINE_REGEX = re.compile("Taglines:</h4>\n(.+?)\s*<", re.DOTALL)
 IMDB_WRITER_STR_REGEX = re.compile("<h4 class=\"inline\">Writers?:</h4>(.+?)</div>", re.DOTALL)
 IMDB_YEAR_REGEX = re.compile("itemprop=\"name\".+?<a href=\"/year/(\d+)/", re.DOTALL)
 
 
-def scrape_imdb_data(search_title, year=''):
+def scrape_imdb_data(search_title, year=""):
     """Return IMDB data for the given title and year in a dict"""
     return_dict = {}
 
@@ -44,7 +44,7 @@ def scrape_imdb_data(search_title, year=''):
     imdb_id = html_manipulator.use_regex(IMDB_ID_REGEX, imdb_url, True)
     title = html_manipulator.use_regex(IMDB_TITLE_REGEX, imdb_html, True)
     if imdb_id and title:
-        title = title.replace('*', '')  # Remove stars from title
+        title = title.replace("*", "")  # Remove stars from title
         video_type = IMDB_TYPE_MOVIE    # Set video type
 
         # Scrape IMDB budget page for this title
@@ -60,7 +60,7 @@ def scrape_imdb_data(search_title, year=''):
         if score_str:
             score = float(score_str)/10.0
         else:
-            score = ''
+            score = ""
 
         aspect_ratio_str = html_manipulator.use_regex(IMDB_ASPECT_RATIO_REGEX, imdb_html, True)
         aspect_ratio = _get_aspect_ratio_float_from_str(aspect_ratio_str)
@@ -119,7 +119,7 @@ def scrape_imdb_data(search_title, year=''):
 
 def _get_aspect_ratio_float_from_str(aspect_ratio_str):
     """Returns a float describing the aspect ratio given a text string describing the aspect ratio"""
-    aspect_ratio = ''
+    aspect_ratio = ""
     if aspect_ratio_str:
         width_height_match = IMDB_WIDTH_HEIGHT_REGEX.search(aspect_ratio_str)
         if width_height_match:
@@ -133,6 +133,6 @@ def _get_list_of_names(name_str):
     if name_str:
         name_list = IMDB_NAME_LIST_REGEX.findall(name_str)
     else:
-        name_list = ''
+        name_list = ""
 
     return name_list

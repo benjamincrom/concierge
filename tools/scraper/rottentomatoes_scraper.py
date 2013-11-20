@@ -72,6 +72,6 @@ def scrape_rottentomatoes(title, year):
             if rottentomatoes_audience_match:
                 return_dict["audience_meter"] = float(rottentomatoes_audience_match.groups()[0]) / 100.0
                 return_dict["audience_avg_score"] = float(rottentomatoes_audience_match.groups()[1]) / 5.0
-                return_dict["audience_total"] = int(rottentomatoes_audience_match.groups()[2].replace(',',''))
+                return_dict["audience_total"] = int(rottentomatoes_audience_match.groups()[2].replace(",",""))
 
     return return_dict

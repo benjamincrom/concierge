@@ -9,12 +9,12 @@ import roger_ebert_scraper
 import rottentomatoes_scraper
 
 
-INPUT_FILE = 'text_files/test_links.txt'
-MOVIE_MEDIA_TYPE = 'Movie'
-OUTPUT_FILE = 'text_files/formatted_titles.txt'
+INPUT_FILE = "text_files/test_links.txt"
+MOVIE_MEDIA_TYPE = "Movie"
+OUTPUT_FILE = "text_files/formatted_titles.txt"
 
 
-def parse_title(search_title, out_file, search_year='', ebert_link=''):
+def parse_title(search_title, out_file, search_year="", ebert_link=""):
     print(search_title + " -- " + search_year)
     # Get IMDB data
     imdb_title_obj_dict = imdb_scraper.scrape_imdb_data(search_title, search_year)
@@ -27,7 +27,7 @@ def parse_title(search_title, out_file, search_year='', ebert_link=''):
             if imdb_title_obj_dict:
                 break
 
-    # If we can't get the IMDB scrape completed then there is no point in continuing
+    # If we can"t get the IMDB scrape completed then there is no point in continuing
     if imdb_title_obj_dict:
         title = imdb_title_obj_dict["title"]
         year = imdb_title_obj_dict["year"]
@@ -71,14 +71,14 @@ def parse_title(search_title, out_file, search_year='', ebert_link=''):
             return_dict = dict(imdb_title_obj_dict.items() + rottentomatoes_obj_dict.items() +
                                metacritic_obj_dict.items() + rogerebert_obj_dict.items())
 
-            return_json_str = json.dumps(return_dict, sort_keys=True, indent=4, separators=(',', ': '))
+            return_json_str = json.dumps(return_dict, sort_keys=True, indent=4, separators=(",", ": "))
             out_file.write(return_json_str)
 
 
-if __name__ == '__main__':
-    output_file = open(OUTPUT_FILE, 'a')
+if __name__ == "__main__":
+    output_file = open(OUTPUT_FILE, "a")
     lines = open(INPUT_FILE).readlines()
     for line in lines:
-        (ebert_review_url, ebert_title, ebert_year) = line.split(';')
+        (ebert_review_url, ebert_title, ebert_year) = line.split(";")
         parse_title(ebert_title.strip(), output_file, ebert_year.strip(), ebert_review_url.strip())
     output_file.close()

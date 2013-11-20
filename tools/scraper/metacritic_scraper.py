@@ -19,7 +19,7 @@ METACRITIC_USERSCORE_REGEX = re.compile("<div class=\"score_summary.*?"
                                         re.DOTALL)
 
 
-def scrape_metacritic(title, year=''):
+def scrape_metacritic(title, year=""):
     """Scrape metacritic site for given title and year and return values in dict.
 
     Return values in dict if page exists.
@@ -37,7 +37,7 @@ def scrape_metacritic(title, year=''):
         if metacritic_release_year_str:
             metacritic_release_year = int(metacritic_release_year_str)
         else:
-            metacritic_release_year = ''
+            metacritic_release_year = ""
 
         # Allow for a range of years (+/- 2) to correct for error
         if year:

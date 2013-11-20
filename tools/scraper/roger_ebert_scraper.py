@@ -7,21 +7,21 @@ import re
 from datetime import datetime
 
 
-LOCAL_LINK_PREFIX = '<a href="'
-EBERT_LINK_PREFIX = '<a href="http://www.rogerebert.com'
-EBERT_FULL_STAR = 'icon-star-full'
+LOCAL_LINK_PREFIX = "<a href=""
+EBERT_LINK_PREFIX = "<a href="http://www.rogerebert.com"
+EBERT_FULL_STAR = "icon-star-full"
 EBERT_GOOGLE_QUERY_STRING = "site:rogerebert.com %s %s"
-EBERT_HALF_STAR = 'icon-star-half'
+EBERT_HALF_STAR = "icon-star-half"
 EBERT_REVIEW_NOT_FOUND = "There is no review on rogerebert.com for this title: %s"
 EBERT_REVIEW_URL = "http://www.rogerebert.com/reviews/%s"
 EBERT_SITE_TITLE = "RogerEbert.com"
-EBERT_URL_DELIMITER = '-'
+EBERT_URL_DELIMITER = "-"
 
-EBERT_AUTHOR_REGEX = re.compile('<meta content="(.+?)" name="author">')
-EBERT_DATE_REGEX = re.compile('itemprop="datePublished">(.+?)</time>')
+EBERT_AUTHOR_REGEX = re.compile("<meta content=\"(.+?)\" name=\"author\">")
+EBERT_DATE_REGEX = re.compile("itemprop=\"datePublished\">(.+?)</time>")
 
-EBERT_REVIEW_REGEX = re.compile('<div itemprop="reviewBody">(.+?)</div>', re.DOTALL)
-EBERT_STARS_REGEX = re.compile('itemprop="reviewRating"(.+?)</span>', re.DOTALL)
+EBERT_REVIEW_REGEX = re.compile("<div itemprop=\"reviewBody\">(.+?)</div>", re.DOTALL)
+EBERT_STARS_REGEX = re.compile("itemprop=\"reviewRating\"(.+?)</span>", re.DOTALL)
 
 
 def scrape_rogerebert_data(ebert_review_url):
@@ -43,7 +43,7 @@ def scrape_rogerebert_data(ebert_review_url):
 
             review_date_match = EBERT_DATE_REGEX.search(ebert_review_html)
             review_date_string = review_date_match.groups()[0]
-            review_datetime = datetime.strptime(review_date_string, '%B %d, %Y')
+            review_datetime = datetime.strptime(review_date_string, "%B %d, %Y")
             review_date = review_datetime.date()
 
             return_dict = {
@@ -67,6 +67,6 @@ def _compute_ebert_percent_score(review_stars_string):
 
 def _format_ebert_review_text(review_html):
     """Remove newlines from ebert review HTML and change local links to global links so the HTML can be reused"""
-    review_html_no_newlines = review_html.replace('\n', '')
+    review_html_no_newlines = review_html.replace("\n", "")
     formatted_review_html = review_html_no_newlines.replace(LOCAL_LINK_PREFIX, EBERT_LINK_PREFIX)
     return formatted_review_html

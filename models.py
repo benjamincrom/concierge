@@ -7,12 +7,12 @@ from google.appengine.ext import db
 from protorpc import messages
 
 
-ROGEREBERT_REVIEW_SOURCE = 'RogerEbert.com'
-ROTTENTOMATOES_ALL_CRITICS_SOURCE = 'Rottentomatoes All Critics'
-ROTTENTOMATOES_AUDIENCE_METER_SOURCE = 'Rottentomatoes Audience Meter'
-ROTTENTOMATOES_TOP_CRITICS_SOURCE = 'Rottentomatoes Top Critics'
-METACRITIC_METASCORE_SOURCE = 'Metacritic Metascore'
-METACRITIC_USERSCORE_SOURCE = 'Metacritic Userscore'
+ROGEREBERT_REVIEW_SOURCE = "RogerEbert.com"
+ROTTENTOMATOES_ALL_CRITICS_SOURCE = "Rottentomatoes All Critics"
+ROTTENTOMATOES_AUDIENCE_METER_SOURCE = "Rottentomatoes Audience Meter"
+ROTTENTOMATOES_TOP_CRITICS_SOURCE = "Rottentomatoes Top Critics"
+METACRITIC_METASCORE_SOURCE = "Metacritic Metascore"
+METACRITIC_USERSCORE_SOURCE = "Metacritic Userscore"
 
 
 EBERT_REVIEW_SAMPLE_REGEX = re.compile("<p>(.*?)</p>", re.DOTALL)
