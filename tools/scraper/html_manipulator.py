@@ -99,7 +99,7 @@ def use_regex(given_regex, target_str, can_be_null):
     try:
         match = given_regex.search(target_str)
         if match:
-            return_str = str(match.groups()[0]).strip()
+            return_str = str(match.group(1)).strip()
 
     except (AttributeError, TypeError):
         if not can_be_null:

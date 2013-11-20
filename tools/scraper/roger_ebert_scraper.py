@@ -31,18 +31,18 @@ def scrape_rogerebert_data(ebert_review_url):
     if ebert_review_html:
         review_text_match = EBERT_REVIEW_REGEX.search(ebert_review_html)
         if review_text_match:
-            review_text = review_text_match.groups()[0]
+            review_text = review_text_match.group(1)
             formatted_review_text = _format_ebert_review_text(review_text)
 
             review_author_match = EBERT_AUTHOR_REGEX.search(ebert_review_html)
-            review_author = review_author_match.groups()[0]
+            review_author = review_author_match.group(1)
 
             review_stars_match = EBERT_STARS_REGEX.search(ebert_review_html)
-            review_stars_string = review_stars_match.groups()[0]
+            review_stars_string = review_stars_match.group(1)
             review_percent_score = _compute_ebert_percent_score(review_stars_string)
 
             review_date_match = EBERT_DATE_REGEX.search(ebert_review_html)
-            review_date_string = review_date_match.groups()[0]
+            review_date_string = review_date_match.group(1)
             review_datetime = datetime.strptime(review_date_string, "%B %d, %Y")
             review_date = review_datetime.date()
 

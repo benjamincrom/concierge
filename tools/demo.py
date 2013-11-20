@@ -42,22 +42,6 @@ def parse_title(search_title, search_year="", ebert_link=""):
 
         print "--------------------------------------"
 
-        # If this is a TV Series then get the Metacritic data for every season
-        if media_type == "TV Series":
-            season_list = range(1, imdb_title_obj_dict["tv_total_seasons"] + 1)
-            season_title_list = ["Season %s" % season_index for season_index in season_list]
-            # Print Metacritic data for each season
-            for season_title in season_title_list:
-                print season_title
-                metacritic_obj_dict = metacritic_scraper.scrape_metacritic(title, season=season_title)
-                if metacritic_obj_dict:
-                    print "#########################################"
-                    print " METACRITIC "
-                    for i, j in metacritic_obj_dict.iteritems():
-                        print "%s:\t\t%s" % (i, j)
-
-                    print "#########################################"
-
         # rogerebert and rottentomatoes only have good data for movies
         if media_type == "Movie" and year:
             year_list = [year, year - 1, year - 2]

@@ -54,24 +54,24 @@ def scrape_rottentomatoes(title, year):
         if year in rottentomatoes_year_list:
             rottentomatoes_all_critics_match = ROTTENTOMATOES_ALL_CRITICS_REGEX.search(rottentomatoes_review_html)
             if rottentomatoes_all_critics_match:
-                return_dict["all_critics_meter"] = float(rottentomatoes_all_critics_match.groups()[0]) / 100.0
-                return_dict["all_critics_avg_score"] = float(rottentomatoes_all_critics_match.groups()[1]) / 10.0
-                return_dict["all_critics_total"] = int(rottentomatoes_all_critics_match.groups()[2])
-                return_dict["all_critics_fresh"] = int(rottentomatoes_all_critics_match.groups()[3])
-                return_dict["all_critics_rotten"] = int(rottentomatoes_all_critics_match.groups()[4])
+                return_dict["all_critics_meter"] = float(rottentomatoes_all_critics_match.group(1)) / 100.0
+                return_dict["all_critics_avg_score"] = float(rottentomatoes_all_critics_match.group(2)) / 10.0
+                return_dict["all_critics_total"] = int(rottentomatoes_all_critics_match.group(3))
+                return_dict["all_critics_fresh"] = int(rottentomatoes_all_critics_match.group(4))
+                return_dict["all_critics_rotten"] = int(rottentomatoes_all_critics_match.group(5))
 
             rottentomatoes_top_critics_match = ROTTENTOMATOES_TOP_CRITICS_REGEX.search(rottentomatoes_review_html)
             if rottentomatoes_top_critics_match:
-                return_dict["top_critics_meter"] = float(rottentomatoes_top_critics_match.groups()[0]) / 100.0
-                return_dict["top_critics_avg_score"] = float(rottentomatoes_top_critics_match.groups()[1]) / 10.0
-                return_dict["top_critics_total"] = int(rottentomatoes_top_critics_match.groups()[2])
-                return_dict["top_critics_fresh"] = int(rottentomatoes_top_critics_match.groups()[3])
-                return_dict["top_critics_rotten"] = int(rottentomatoes_top_critics_match.groups()[4])
+                return_dict["top_critics_meter"] = float(rottentomatoes_top_critics_match.group(1)) / 100.0
+                return_dict["top_critics_avg_score"] = float(rottentomatoes_top_critics_match.group(2)) / 10.0
+                return_dict["top_critics_total"] = int(rottentomatoes_top_critics_match.group(3))
+                return_dict["top_critics_fresh"] = int(rottentomatoes_top_critics_match.group(4))
+                return_dict["top_critics_rotten"] = int(rottentomatoes_top_critics_match.group(5))
 
             rottentomatoes_audience_match = ROTTENTOMATOES_AUDIENCE_REGEX.search(rottentomatoes_review_html)
             if rottentomatoes_audience_match:
-                return_dict["audience_meter"] = float(rottentomatoes_audience_match.groups()[0]) / 100.0
-                return_dict["audience_avg_score"] = float(rottentomatoes_audience_match.groups()[1]) / 5.0
-                return_dict["audience_total"] = int(rottentomatoes_audience_match.groups()[2].replace(",",""))
+                return_dict["audience_meter"] = float(rottentomatoes_audience_match.group(1)) / 100.0
+                return_dict["audience_avg_score"] = float(rottentomatoes_audience_match.group(2)) / 5.0
+                return_dict["audience_total"] = int(rottentomatoes_audience_match.group(3).replace(",",""))
 
     return return_dict

@@ -84,7 +84,7 @@ class ConciergeApi(remote.Service):
             review_sample = ""
             review_sample_match = models.EBERT_REVIEW_SAMPLE_REGEX.search(review_obj.review_content)
             if review_sample_match:
-                review_sample = review_sample_match.groups()[0].strip()
+                review_sample = review_sample_match.group(1).strip()
 
             if review_obj.review_date is None:
                 review_obj.review_date = ""
