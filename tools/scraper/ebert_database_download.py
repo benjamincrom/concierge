@@ -33,7 +33,7 @@ def parse_title(search_title, out_file, search_year="", ebert_link=""):
         year = imdb_title_obj_dict["year"]
         video_type = imdb_title_obj_dict["video_type"]
 
-        if video_type == "Movie" and year:
+        if video_type == MOVIE_MEDIA_TYPE and year:
             year = int(year)
             year_list = [year, year - 1, year - 2]
             rottentomatoes_obj_dict = {}
