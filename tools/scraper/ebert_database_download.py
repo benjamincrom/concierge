@@ -9,7 +9,7 @@ import roger_ebert_scraper
 import rottentomatoes_scraper
 
 
-INPUT_FILE = "text_files/test_links.txt"
+INPUT_FILE = "text_files/input_links.txt"
 MOVIE_MEDIA_TYPE = "Movie"
 OUTPUT_FILE = "text_files/formatted_titles.txt"
 
