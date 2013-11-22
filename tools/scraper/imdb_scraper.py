@@ -25,7 +25,7 @@ IMDB_GROSS_REGEX = re.compile("<h5>Gross</h5>.*?(\$.+?) \(USA\)", re.DOTALL)
 IMDB_LENGTH_REGEX = re.compile("itemprop=\"duration\".*?>.*?(\d+) min.*?<", re.DOTALL)
 IMDB_NAME_LIST_REGEX = re.compile("itemprop=\"name\">(.+?)<", re.DOTALL)
 IMDB_PLOT_REGEX = re.compile("itemprop=\"description\">(.+?)<div", re.DOTALL)
-IMDB_POSTER_REGEX = re.compile("<meta property=\"og:image\" content=\"(.+?)\" />", re.DOTALL)
+IMDB_POSTER_REGEX = re.compile("<meta property='og:image' content=\"(.+?)\" />", re.DOTALL)
 IMDB_STAR_STR_REGEX = re.compile("<h4 class=\"inline\">Stars?:</h4>(.+?)</div>", re.DOTALL)
 IMDB_TAGLINE_REGEX = re.compile("Taglines:</h4>\n(.+?)\s*<", re.DOTALL)
 IMDB_WRITER_STR_REGEX = re.compile("<h4 class=\"inline\">Writers?:</h4>(.+?)</div>", re.DOTALL)
@@ -53,6 +53,7 @@ def scrape_imdb_data(search_title, year=""):
 
         gross = html_manipulator.use_regex(IMDB_GROSS_REGEX, imdb_budget_html, True)
         imdb_poster_url = html_manipulator.use_regex(IMDB_POSTER_REGEX, imdb_html, True)
+        print IMDB_POSTER_REGEX.pattern
         rating = html_manipulator.use_regex(IMDB_RATING_REGEX, imdb_html, True)
         budget = html_manipulator.use_regex(IMDB_BUDGET_REGEX, imdb_budget_html, True)
 
