@@ -46,7 +46,7 @@
             <td width="20%" data-title="'Genre'" sortable="'genre_list_str'">{{video.genre_list_str}}</td>
             <td width="12%" data-title="'Ebert'" sortable="'ebert_review.review_score'" style="text-align: center">
               <span style="display:block;overflow:auto" tooltip-placement="bottom"
-               tooltip-html-unsafe="{{video.ebert_review.review_sample}}<br>{{video.ebert_review.review_date}}">
+               tooltip-html-unsafe="{{video.ebert_review.review_sample}}<br><br>{{video.ebert_review.review_date}}">
                 {{video.ebert_review.review_score | number:2}}
               </span>
             </td>

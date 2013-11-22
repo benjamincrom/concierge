@@ -34,11 +34,11 @@ class Review(db.Model):
 class Video(db.Model):
     title = db.StringProperty()
     poster_url = db.StringProperty()
-    tagline = db.StringProperty()
     imdb_id = db.StringProperty()
     video_type = db.StringProperty()
     rating = db.StringProperty()
     genre_list = db.StringListProperty()
+    tagline = db.TextProperty()
     plot = db.TextProperty()
     gross = db.TextProperty()
     budget = db.TextProperty()
