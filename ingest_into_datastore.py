@@ -23,7 +23,7 @@ class MainPage(webapp2.RequestHandler):
             # video_obj is our main video object for each title (keyed on IMDB ID)
             # Reviews are children of video_obj
             # Collaborators are stored as NameOccupation keys in a list in video_obj
-            video_key_name = str(dict_obj["imdb_id"])
+            video_key_name = unicode(dict_obj["imdb_id"])
             video_obj = models.Video(key_name=video_key_name)
 
             # Store all occupation data in NameOccupation objects and store all keys in a single list in this video_obj
@@ -35,7 +35,7 @@ class MainPage(webapp2.RequestHandler):
             person_role_key_list = []
             for (role, person_list) in occupation_dict.iteritems():
                 for person in person_list:
-                    person_role_key = str(person) + "-" + str(role)
+                    person_role_key = unicode(person) + "-" + unicode(role)
                     name_occupation_obj = models.NameOccupation.get_or_insert(person_role_key,
                                                                               name=person,
                                                                               occupation=role)
@@ -43,7 +43,7 @@ class MainPage(webapp2.RequestHandler):
 
             # Store Ebert Review in a review_obj that is a child of this video_obj
             if "formatted_review_text" in dict_obj:
-                ebert_review_date = datetime.datetime.strptime(str(dict_obj["review_date"]), "%Y-%m-%d").date()
+                ebert_review_date = datetime.datetime.strptime(unicode(dict_obj["review_date"]), "%Y-%m-%d").date()
                 review_obj = models.Review(
                     parent=video_obj,
                     review_score=dict_obj["review_percent_score"],
@@ -60,7 +60,7 @@ class MainPage(webapp2.RequestHandler):
                 review_obj = models.Review(
                     parent=video_obj,
                     review_score=dict_obj["metacritic_metascore_meter"],
-                    review_content=str(dict_obj["metacritic_metascore_total"]),
+                    review_content=unicode(dict_obj["metacritic_metascore_total"]),
                     review_source=models.METACRITIC_METASCORE_SOURCE,
                 )
                 review_obj.put()
@@ -69,7 +69,7 @@ class MainPage(webapp2.RequestHandler):
                 review_obj = models.Review(
                     parent=video_obj,
                     review_score=dict_obj["metacritic_userscore_meter"],
-                    review_content=str(dict_obj["metacritic_userscore_total"]),
+                    review_content=unicode(dict_obj["metacritic_userscore_total"]),
                     review_source=models.METACRITIC_USERSCORE_SOURCE,
                 )
                 review_obj.put()

@@ -9,14 +9,11 @@ handlers:
 - url: /_ah/spi/.*
   script: concierge_api.api_application
 
-- url: /ingest_into_datastore
+- url: /.*
   script: ingest_into_datastore.ingest_application
 
 - url: /app
   static_dir: app
-
-- url: /.*
-  script: concierge_api.api_application
 
 libraries:
 - name: pycrypto
