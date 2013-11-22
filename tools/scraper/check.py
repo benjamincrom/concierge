@@ -32,7 +32,7 @@ send_email()
 
 while True:
     time.sleep(210)
-    new_output = subprocess.check_output(["ssh", "cromulus@benjamincrom.com", "wc", "-l", "/home/cromulus/repos/concierge/formatted_titles.txt"])
+    new_output = subprocess.check_output(["wc", "-l", "/home/bcrom/GoogleDrive/git_repos/concierge/tools/scraper/text_files/formatted_titles.txt"])
     print new_output
     now = str(datetime.datetime.now())
     if new_output == old_output:

@@ -6947,7 +6947,7 @@ http://www.rogerebert.com/reviews/valkyrie-2008;Valkyrie;2008
 http://www.rogerebert.com/reviews/valley-girl-1983;Valley Girl;1983
 http://www.rogerebert.com/reviews/valley-of-the-dolls-1967;Valley of the Dolls;1967
 http://www.rogerebert.com/reviews/valmont-1989;Valmont;1989
-http://www.rogerebert.com/reviews/vamp-1986;V1986
+http://www.rogerebert.com/reviews/vamp-1986;Vamp;1986
 http://www.rogerebert.com/reviews/vampire-in-brooklyn-1995;Vampire In Brooklyn;1995
 http://www.rogerebert.com/reviews/the-van-1997;The Van;1997
 http://www.rogerebert.com/reviews/van-helsing-2004;Van Helsing;2004
