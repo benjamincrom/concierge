@@ -14,6 +14,7 @@ METACRITIC_METASCORE_REGEX = re.compile("<a class=\"metascore_anchor\".*?<div cl
 METACRITIC_RELEASE_YEAR_REGEX = re.compile("<span class=\"data\" itemprop=\"datePublished\">.*?(\d\d\d\d).*?</span>",
                                            re.DOTALL)
 METACRITIC_USERSCORE_REGEX = re.compile("<div class=\"score_summary.*?"
+                                        "<div class=\"userscore.*?"
                                         "<div class=\"metascore_w.*?>(\d*\.?\d+?)</.*?"
                                         ">based on</span>.*?>(\d+) Ratings",
                                         re.DOTALL)
@@ -55,6 +56,6 @@ def scrape_metacritic(title, year=""):
             metacritic_userscore_match = METACRITIC_USERSCORE_REGEX.search(metacritic_review_html)
             if metacritic_userscore_match:
                 return_dict["metacritic_userscore_meter"] = float(metacritic_userscore_match.group(1)) / 10.0
-                return_dict["metacritic_userscore_total"] = int(metacritic_userscore_match.group(2)) / 10.0
+                return_dict["metacritic_userscore_total"] = int(metacritic_userscore_match.group(2))
 
     return return_dict

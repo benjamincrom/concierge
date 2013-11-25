@@ -9,7 +9,7 @@ import models
 
 
 INGEST_SUCCESS_MESSAGE = "Ingest completed!"
-JSON_TITLES_FILE = "tools/scraper/text_files/json_titles.txt"
+JSON_TITLES_FILE = "tools/scraper/text_files/test_titles.txt"
 
 
 class MainPage(webapp2.RequestHandler):
