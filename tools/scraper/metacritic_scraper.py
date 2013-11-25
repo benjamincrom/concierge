@@ -55,6 +55,6 @@ def scrape_metacritic(title, year=""):
             metacritic_userscore_match = METACRITIC_USERSCORE_REGEX.search(metacritic_review_html)
             if metacritic_userscore_match:
                 return_dict["metacritic_userscore_meter"] = float(metacritic_userscore_match.group(1)) / 10.0
-                return_dict["metacritic_userscore_total"] = int(metacritic_userscore_match.group(2))
+                return_dict["metacritic_userscore_total"] = int(metacritic_userscore_match.group(2)) / 10.0
 
     return return_dict
