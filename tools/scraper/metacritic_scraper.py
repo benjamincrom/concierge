@@ -9,6 +9,7 @@ METACRITIC_QUERY_STRING = "site:metacritic.com %s - Metacritic"
 
 METACRITIC_METASCORE_REGEX = re.compile("<a class=\"metascore_anchor\".*?<div class=\"metascore_w.*?>(\d+)</.*?"
                                         "<span class=\"based\">based on</span>.*?"
+                                        "<span itemprop=\"reviewCount\">.*?(\d+).*?</span> Critics",
                                         re.DOTALL)
 METACRITIC_RELEASE_YEAR_REGEX = re.compile("<span class=\"data\" itemprop=\"datePublished\">.*?(\d\d\d\d).*?</span>",
                                            re.DOTALL)
