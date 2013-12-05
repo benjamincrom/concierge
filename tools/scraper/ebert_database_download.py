@@ -36,8 +36,9 @@ def parse_title(search_title, out_file, search_year="", ebert_link=""):
         if video_type == MOVIE_MEDIA_TYPE and year:
             year = int(year)
             year_list = [year, year - 1, year - 2]
-            rottentomatoes_obj_dict = {}
             metacritic_obj_dict = {}
+            rogerebert_obj_dict = {}
+            rottentomatoes_obj_dict = {}
 
             # Get Metacritic data -- try both the IMDB title and the given search title
             for current_year in year_list:
@@ -81,5 +82,5 @@ if __name__ == "__main__":
     for line in lines:
         (ebert_review_url, ebert_title, ebert_year) = line.split(";")
         parse_title(ebert_title.strip(), output_file, ebert_year.strip(), ebert_review_url.strip())
-		
+
     output_file.close()

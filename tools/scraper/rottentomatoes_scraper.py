@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
 
-import locale
 import re
 
 import html_manipulator
@@ -73,6 +72,6 @@ def scrape_rottentomatoes(title, year):
             if rottentomatoes_audience_match:
                 return_dict["audience_meter"] = float(rottentomatoes_audience_match.group(1)) / 100.0
                 return_dict["audience_avg_score"] = float(rottentomatoes_audience_match.group(2)) / 5.0
-                return_dict["audience_total"] = int(rottentomatoes_audience_match.group(3).replace(",",""))
+                return_dict["audience_total"] = int(rottentomatoes_audience_match.group(3).replace(",", ""))
 
     return return_dict
