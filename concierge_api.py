@@ -37,7 +37,6 @@ class ConciergeApi(remote.Service):
         video_obj = models.Video.get_by_key_name(request.request_id)
         return self.get_video_message_from_query_obj(video_obj)
 
-
     @classmethod
     def get_video_message_from_query_obj(cls, query_obj):
         # Get occupation data into a dict
