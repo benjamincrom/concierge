@@ -10,9 +10,15 @@ from protorpc import remote
 import models
 
 
-REQUEST_RESOURCE_CONTAINER = endpoints.ResourceContainer(
+ENTRY_REQUEST_RESOURCE_CONTAINER = endpoints.ResourceContainer(
     message_types.VoidMessage,
     request_id=messages.StringField(2, required=True)
+)
+
+LIST_REQUEST_RESOURCE_CONTAINER = endpoints.ResourceContainer(
+    message_types.VoidMessage,
+    count=messages.IntegerField(2),
+    page=messages.IntegerField(3)
 )
 
 
@@ -20,18 +26,18 @@ REQUEST_RESOURCE_CONTAINER = endpoints.ResourceContainer(
 class ConciergeApi(remote.Service):
     """Concierge API v1."""
     @staticmethod
-    @endpoints.method(message_types.VoidMessage, models.VideoMessageCollection,
+    @endpoints.method(LIST_REQUEST_RESOURCE_CONTAINER, models.VideoMessageCollection,
                       path="concierge_list", http_method="GET", name="videos.listVideos")
-    def list_videos(self, unused_request):
+    def list_videos(self, request):
         video_message_collection_obj = models.VideoMessageCollection(video_list=[])
         video_query = models.Video.all()
-        for this_query in video_query.run(limit=100):
+        for this_query in video_query.run(limit=request.count, offset=((request.page - 1) * request.count)):
             video_message_collection_obj.video_list.append(self.get_video_message_from_query_obj(this_query))
         
         return video_message_collection_obj
 
     @staticmethod
-    @endpoints.method(REQUEST_RESOURCE_CONTAINER, models.VideoMessage,
+    @endpoints.method(ENTRY_REQUEST_RESOURCE_CONTAINER, models.VideoMessage,
                       path="concierge_display/{request_id}", http_method="GET", name="videos.displayVideo")
     def display_video(self, request):
         video_obj = models.Video.get_by_key_name(request.request_id)
