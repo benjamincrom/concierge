@@ -32,7 +32,7 @@ conciergeApp.controller('VideoListCtrl',
                     $scope.video_list = data.video_list;
                     $timeout(function() {
                         // update table params
-                        params.total(data.video_list.total);
+                        // params.total(data.video_list.total);
                         // set new data
                         $defer.resolve(data.video_list.result);
                     }, 500);
@@ -51,3 +51,19 @@ conciergeApp.controller('DisplayVideoCtrl',
         });
     }
 );
+
+
+conciergeApp.directive('loadingContainer', function () {
+    return {
+        restrict: 'A',
+        scope: false,
+        link: function(scope, element, attrs) {
+            var loadingLayer = angular.element('<div class="loading"></div>');
+            element.append(loadingLayer);
+            element.addClass('loading-container');
+            scope.$watch(attrs.loadingContainer, function(value) {
+                loadingLayer.toggleClass('ng-hide', !value);
+            });
+        }
+    };
+});

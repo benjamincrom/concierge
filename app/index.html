@@ -22,10 +22,10 @@
         Search: <input>
       </div>
 
-      <div class="span10">
+      <div class="span10" ng-init="display.video = ''">
         <!--Body content-->
         <table ng-table="tableParams" class="table" width="100%">
-          <tr ng-repeat="video in video_list" ng-click="selected.video = video">
+          <tr ng-repeat="video in video_list" ng-click="display.video = video">
             <td width="20%" data-title="'Title'" sortable="'title'">
               <span tooltip-placement="bottom" style="display:block;overflow:auto"
                tooltip-html-unsafe="<b>{{video.plot}}</b><br><br>
@@ -39,6 +39,7 @@
                                    Gross: <b>{{video.gross}}</b><br>
                                    Tagline: <b>{{video.tagline}}</b><br>">
                 {{video.title}}
+                {{tableParams.settings().$loading}}
               </span>
             </td>
             <td width="12%" data-title="'Year'" sortable="'year'" style="text-align: center">
@@ -76,6 +77,7 @@
             </td>
           </tr>
         </table>
+        </div>
       </div>
 
     </div>
@@ -83,70 +85,70 @@
 
       <div class="span2"></div>
 
-      <div ng-show="selected.video" class="span10" style="overflow: scroll; height: 500px">
+      <div ng-show="display.video" class="span10" style="overflow: scroll; height: 500px">
         <!--Body content-->
-        <a href="display_video.html?request_id={{selected.video.imdb_id}}" class="thumb" target="_self">
-        <img ng-src="{{selected.video.poster_url}}"></a>
-        <a href="display_video.html?request_id={{selected.video.imdb_id}}" target="_self">{{selected.video.title}}</a>
-        <p>{{selected.video.plot}}</p>
+        <a href="display_video.html?request_id={{display.video.imdb_id}}" class="thumb" target="_self">
+        <img ng-src="{{display.video.poster_url}}"></a>
+        <a href="display_video.html?request_id={{display.video.imdb_id}}" target="_self">{{selected.video.title}}</a>
+        <p>{{display.video.plot}}</p>
         <table class="video_table">
-          <tr><td>Video Type: </td><td>{{selected.video.video_type}}</td></tr>
-          <tr><td>Director(s): </td><td>{{selected.video.director_list_str}}</td></tr>
-          <tr><td>Writer(s): </td><td>{{selected.video.writer_list_str}}</td></tr>
-          <tr><td>Star(s): </td><td>{{selected.video.star_list_str}}</td></tr>
-          <tr><td>Rating: </td><td>{{selected.video.rating}}</td></tr>
-          <tr><td>Aspect Ratio: </td><td>{{selected.video.aspect_ratio}}</td></tr>
-          <tr><td>Length: </td><td>{{selected.video.length}}</td></tr>
-          <tr><td>Genre List: </td><td>{{selected.video.genre_list_str}}</td></tr>
-          <tr><td>Year: </td><td>{{selected.video.year}}</td></tr>
-          <tr><td>Score: </td><td><strong>{{selected.video.score}}</strong></td></tr>
-          <tr ng-show="selected.video.budget"><td>Budget: </td><td>{{selected.video.budget}}</td></tr>
-          <tr ng-show="selected.video.gross"><td>Gross: </td><td>{{selected.video.gross}}</td></tr>
-          <tr ng-show="selected.video.tagline"><td>Tagline: </td><td>{{selected.video.tagline}}</td></tr>
+          <tr><td>Video Type: </td><td>{{display.video.video_type}}</td></tr>
+          <tr><td>Director(s): </td><td>{{display.video.director_list_str}}</td></tr>
+          <tr><td>Writer(s): </td><td>{{display.video.writer_list_str}}</td></tr>
+          <tr><td>Star(s): </td><td>{{display.video.star_list_str}}</td></tr>
+          <tr><td>Rating: </td><td>{{display.video.rating}}</td></tr>
+          <tr><td>Aspect Ratio: </td><td>{{display.video.aspect_ratio}}</td></tr>
+          <tr><td>Length: </td><td>{{display.video.length}}</td></tr>
+          <tr><td>Genre List: </td><td>{{display.video.genre_list_str}}</td></tr>
+          <tr><td>Year: </td><td>{{display.video.year}}</td></tr>
+          <tr><td>Score: </td><td><strong>{{display.video.score}}</strong></td></tr>
+          <tr ng-show="display.video.budget"><td>Budget: </td><td>{{selected.video.budget}}</td></tr>
+          <tr ng-show="display.video.gross"><td>Gross: </td><td>{{selected.video.gross}}</td></tr>
+          <tr ng-show="display.video.tagline"><td>Tagline: </td><td>{{selected.video.tagline}}</td></tr>
           <tr><td></td><td><br /></td></tr>
-          <tr ng-show="selected.video.ebert_review.review_source">
-              <td valign="top">{{selected.video.ebert_review.review_source}}: </td>
+          <tr ng-show="display.video.ebert_review.review_source">
+              <td valign="top">{{display.video.ebert_review.review_source}}: </td>
               <td>
-                <b>{{selected.video.ebert_review.review_score}}</b><br>
-                <div ng-bind-html="selected.video.ebert_review.review_content"></div>
-                {{selected.video.ebert_review.review_date}}<br><br>
+                <b>{{display.video.ebert_review.review_score}}</b><br>
+                <div ng-bind-html="display.video.ebert_review.review_content"></div>
+                {{display.video.ebert_review.review_date}}<br><br>
               </td>
           </tr>
-          <tr ng-show="selected.video.rottentomatoes_top_critics_review.review_source">
-            <td valign="top">{{selected.video.rottentomatoes_top_critics_review.review_source}}: </td>
+          <tr ng-show="display.video.rottentomatoes_top_critics_review.review_source">
+            <td valign="top">{{display.video.rottentomatoes_top_critics_review.review_source}}: </td>
             <td>
-              <b>{{selected.video.rottentomatoes_top_critics_review.review_score}}</b><br>
-              {{selected.video.rottentomatoes_top_critics_review.review_content}}<br><br>
+              <b>{{display.video.rottentomatoes_top_critics_review.review_score}}</b><br>
+              {{display.video.rottentomatoes_top_critics_review.review_content}}<br><br>
             </td>
           </tr>
 
-          <tr ng-show="selected.video.rottentomatoes_all_critics_review.review_source">
-            <td valign="top">{{selected.video.rottentomatoes_all_critics_review.review_source}}: </td>
+          <tr ng-show="display.video.rottentomatoes_all_critics_review.review_source">
+            <td valign="top">{{display.video.rottentomatoes_all_critics_review.review_source}}: </td>
             <td>
-              <b>{{selected.video.rottentomatoes_all_critics_review.review_score}}</b><br>
-              {{selected.video.rottentomatoes_all_critics_review.review_content}}<br><br>
+              <b>{{display.video.rottentomatoes_all_critics_review.review_score}}</b><br>
+              {{display.video.rottentomatoes_all_critics_review.review_content}}<br><br>
             </td>
           </tr>
-          <tr ng-show="selected.video.rottentomatoes_audience_meter_review.review_source">
-            <td valign="top">{{selected.video.rottentomatoes_audience_meter_review.review_source}}: </td>
+          <tr ng-show="display.video.rottentomatoes_audience_meter_review.review_source">
+            <td valign="top">{{display.video.rottentomatoes_audience_meter_review.review_source}}: </td>
             <td>
-              <b>{{selected.video.rottentomatoes_audience_meter_review.review_score}}</b><br>
-              {{selected.video.rottentomatoes_audience_meter_review.review_content}}<br><br>
+              <b>{{display.video.rottentomatoes_audience_meter_review.review_score}}</b><br>
+              {{display.video.rottentomatoes_audience_meter_review.review_content}}<br><br>
             </td>
           </tr>
 
-          <tr ng-show="selected.video.metacritic_metascore_review.review_source">
-            <td valign="top">{{selected.video.metacritic_metascore_review.review_source}}: </td>
+          <tr ng-show="display.video.metacritic_metascore_review.review_source">
+            <td valign="top">{{display.video.metacritic_metascore_review.review_source}}: </td>
             <td>
-              <b>{{selected.video.metacritic_metascore_review.review_score}}</b><br>
-              {{selected.video.metacritic_metascore_review.review_content}}<br><br>
+              <b>{{display.video.metacritic_metascore_review.review_score}}</b><br>
+              {{display.video.metacritic_metascore_review.review_content}}<br><br>
             </td>
           </tr>
-          <tr ng-show="selected.video.metacritic_userscore_review.review_source">
-            <td valign="top">{{selected.video.metacritic_userscore_review.review_source}}: </td>
+          <tr ng-show="display.video.metacritic_userscore_review.review_source">
+            <td valign="top">{{display.video.metacritic_userscore_review.review_source}}: </td>
             <td>
-              <b>{{selected.video.metacritic_userscore_review.review_score}}</b><br>
-              {{selected.video.metacritic_userscore_review.review_content}}<br><br>
+              <b>{{display.video.metacritic_userscore_review.review_score}}</b><br>
+              {{display.video.metacritic_userscore_review.review_content}}<br><br>
             </td>
           </tr>
         </table>
