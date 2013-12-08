@@ -13,7 +13,6 @@
   <link data-require="bootstrap-css@*" data-semver="3.0.0" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
 
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/app.js"></script>
 
 </head>
@@ -21,12 +20,12 @@
   <div class="container-fluid">
     <div class="row-fluid">
 
-      <div class="span2">
+      <div class="col-lg-2">
         <!--Sidebar content-->
         Search: <input>
       </div>
 
-      <div class="span10" ng-init="display.video = ''">
+      <div class="col-lg-10" ng-init="display.video = ''">
         <!--Body content-->
         <div loading-container="tableParams.settings().$loading">
         <table ng-table="tableParams" class="table" width="100%">
@@ -87,9 +86,9 @@
     </div>
     <div class="row-fluid">
 
-      <div class="span2"></div>
+      <div class="col-lg-2"></div>
 
-      <div ng-show="display.video" class="span10" style="overflow: scroll; height: 400px">
+      <div ng-show="display.video" class="col-lg-10" style="overflow: scroll; height: 400px">
         <!--Body content-->
         <a href="display_video.html?request_id={{display.video.imdb_id}}" class="thumb" target="_self">
         <img ng-src="{{display.video.poster_url}}"></a>
