@@ -20,7 +20,7 @@
   <div class="container-fluid">
     <div class="row-fluid">
 
-      <div class="col-lg-2">
+      <div class="col-lg-2" style="height:100%">
         <!--Sidebar content-->
         Search: <input>
       </div>
@@ -86,17 +86,20 @@
     </div>
     <div class="row-fluid">
 
-      <div class="col-lg-2"></div>
-
-      <div ng-show="display.video" class="col-lg-10" style="overflow: scroll; height: 400px">
+      <div class="col-lg-2" style="height:100%"></div>
+      <div ng-if="display.video" class="col-lg-10" style="overflow: scroll; height: 425px">
         <!--Body content-->
-        <div class="col-lg-2">
+        <div class="col-lg-2" style="height:100%">
+          <br />
           <a href="display_video.html?request_id={{display.video.imdb_id}}" class="thumb" target="_self">
           <img ng-src="{{display.video.poster_url}}"></a>
         </div>
+        <div-class="row-fluid">
         <a href="display_video.html?request_id={{display.video.imdb_id}}" target="_self">{{display.video.title}}</a>
         <p>{{display.video.plot}}</p>
-        <table class="video_table">
+        <div class="col-lg-5">
+        <div style="text-align: center"><b>IMDB Data</b></div>
+        <table class="video_table" width="575">
           <tr><td>Video Type: </td><td>{{display.video.video_type}}</td></tr>
           <tr><td>Director(s): </td><td>{{display.video.director_list_str}}</td></tr>
           <tr><td>Writer(s): </td><td>{{display.video.writer_list_str}}</td></tr>
@@ -107,19 +110,16 @@
           <tr><td>Genre List: </td><td>{{display.video.genre_list_str}}</td></tr>
           <tr><td>Year: </td><td>{{display.video.year}}</td></tr>
           <tr><td>Score: </td><td><strong>{{display.video.score}}</strong></td></tr>
-          <tr ng-show="display.video.budget"><td>Budget: </td><td>{{display.video.budget}}</td></tr>
-          <tr ng-show="display.video.gross"><td>Gross: </td><td>{{display.video.gross}}</td></tr>
-          <tr ng-show="display.video.tagline"><td>Tagline: </td><td>{{display.video.tagline}}</td></tr>
-          <tr><td></td><td><br /></td></tr>
-          <tr ng-show="display.video.ebert_review.review_source">
-              <td valign="top">{{display.video.ebert_review.review_source}}: </td>
-              <td>
-                <b>{{display.video.ebert_review.review_score}}</b><br>
-                <div ng-bind-html="display.video.ebert_review.review_content"></div>
-                {{display.video.ebert_review.review_date}}<br><br>
-              </td>
-          </tr>
-          <tr ng-show="display.video.rottentomatoes_top_critics_review.review_source">
+          <tr ng-if="display.video.budget"><td>Budget: </td><td>{{display.video.budget}}</td></tr>
+          <tr ng-if="display.video.gross"><td>Gross: </td><td>{{display.video.gross}}</td></tr>
+          <tr ng-if="display.video.tagline"><td>Tagline: </td><td>{{display.video.tagline}}</td></tr>
+          </table>
+        </div>
+        <div class="col-s-1"></div>
+        <div class="col-lg-3">
+          <div style="text-align: center"><b>Review Data</b></div>
+          <table class="video_table" width="375">
+          <tr ng-if="display.video.rottentomatoes_top_critics_review.review_source">
             <td valign="top">{{display.video.rottentomatoes_top_critics_review.review_source}}: </td>
             <td>
               <b>{{display.video.rottentomatoes_top_critics_review.review_score}}</b><br>
@@ -127,14 +127,14 @@
             </td>
           </tr>
 
-          <tr ng-show="display.video.rottentomatoes_all_critics_review.review_source">
+          <tr ng-if="display.video.rottentomatoes_all_critics_review.review_source">
             <td valign="top">{{display.video.rottentomatoes_all_critics_review.review_source}}: </td>
             <td>
               <b>{{display.video.rottentomatoes_all_critics_review.review_score}}</b><br>
               {{display.video.rottentomatoes_all_critics_review.review_content}}<br><br>
             </td>
           </tr>
-          <tr ng-show="display.video.rottentomatoes_audience_meter_review.review_source">
+          <tr ng-if="display.video.rottentomatoes_audience_meter_review.review_source">
             <td valign="top">{{display.video.rottentomatoes_audience_meter_review.review_source}}: </td>
             <td>
               <b>{{display.video.rottentomatoes_audience_meter_review.review_score}}</b><br>
@@ -142,21 +142,43 @@
             </td>
           </tr>
 
-          <tr ng-show="display.video.metacritic_metascore_review.review_source">
+          <tr ng-if="display.video.metacritic_metascore_review.review_source">
             <td valign="top">{{display.video.metacritic_metascore_review.review_source}}: </td>
             <td>
               <b>{{display.video.metacritic_metascore_review.review_score}}</b><br>
               {{display.video.metacritic_metascore_review.review_content}}<br><br>
             </td>
           </tr>
-          <tr ng-show="display.video.metacritic_userscore_review.review_source">
+          <tr ng-if="display.video.metacritic_userscore_review.review_source">
             <td valign="top">{{display.video.metacritic_userscore_review.review_source}}: </td>
             <td>
               <b>{{display.video.metacritic_userscore_review.review_score}}</b><br>
               {{display.video.metacritic_userscore_review.review_content}}<br><br>
             </td>
           </tr>
+          <tr ng-if="display.video.ebert_review.review_source">
+              <td valign="top">{{display.video.ebert_review.review_source}}: </td>
+              <td>
+                  <b>{{display.video.ebert_review.review_score}}</b><br /><br />
+              </td>
+          </tr>
         </table>
+        </div>
+        <div class="col-lg-10" style="clear: left">
+           <div class="col-lg-2" style="height:100%;"></div>
+           <div class="col-lg-8" style="position: relative; left: 30px;">
+        <br />
+        <div style="text-align: center; position: relative; left: 100px;"><b>Roger Ebert Review</b></div>
+        <table class="video_table" width="1000">
+          <tr ng-if="display.video.ebert_review.review_source">
+              <td>
+                  <div ng-bind-html="display.video.ebert_review.review_content"></div>
+                  {{display.video.ebert_review.review_date}}<br><br>
+              </td>
+          </tr>
+        </table>
+        </div>
+      </div>
       </div>
 
     </div>

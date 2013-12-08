@@ -23,6 +23,11 @@ tr:nth-child(even)		{ background-color:#eeeeee; }
     border-spacing:50px !important;
 }
 
+.video_table td {
+    padding-left:10px;
+    padding-right:10px;
+}
+
 .loading-container {
     position: relative;
 }
