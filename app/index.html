@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>Concierge Movie List</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/ng-table.css">
+    <script data-require="angular.js@*" data-semver="1.2.0-rc3-nonmin" src="http://code.angularjs.org/1.2.0-rc.3/angular.js"></script>
+    <script data-require="ng-table@*" data-semver="0.3.0" src="http://bazalt-cms.com/assets/ng-table/0.3.0/ng-table.js"></script>
+    <script data-require="angular-mocks@1.2.0-rc3" data-semver="1.2.0-rc3" src="//code.angularjs.org/1.2.0-rc.3/angular-mocks.js"></script>
+    <script data-require="angular-resource@1.2.0-rc.3" data-semver="1.2.0-rc.3" src="http://code.angularjs.org/1.2.0-rc.3/angular-resource.js"></script>
+    <link data-require="ng-table@*" data-semver="0.3.0" rel="stylesheet" href="http://bazalt-cms.com/assets/ng-table/0.3.0/ng-table.css" />
+    <link data-require="bootstrap-css@*" data-semver="3.0.0" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+
   <link rel="stylesheet" href="css/app.css">
-  <script src="lib/angular/angular.min.js"></script>
-  <script src="lib/angular/angular-resource.js"></script>
   <script src="lib/angular/angular-sanitize.min.js"></script>
   <script src="js/ui-bootstrap.js"></script>
-  <script src="js/ng-table.js"></script>
-  <script src="js/ng-table.map"></script>
   <script src="js/app.js"></script>
 </head>
 <body ng-controller="VideoListCtrl">
@@ -25,6 +26,7 @@
 
       <div class="span10" ng-init="display.video = ''">
         <!--Body content-->
+        <div loading-container="tableParams.settings().$loading">
         <table ng-table="tableParams" class="table" width="100%">
           <tr ng-repeat="video in video_list" ng-click="display.video = video">
             <td width="20%" data-title="'Title'" sortable="'title'">
