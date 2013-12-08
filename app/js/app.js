@@ -4,7 +4,8 @@
 var conciergeApp = angular.module('conciergeApp', [
     'ui.bootstrap',
     'ngSanitize',
-    'ngTable'
+    'ngTable',
+    'ngResource'
 ]);
 
 /* Config */
@@ -14,26 +15,29 @@ conciergeApp.config(function($locationProvider){
 
 /* Controllers */
 conciergeApp.controller('VideoListCtrl',
-    function VideoListCtrl($scope, $http, $filter, ngTableParams) {
-        $http.get('../_ah/api/concierge/v1/concierge_list?count=10&page=1').success(function(data) {
-            $scope.selected = {video: null};
-            $scope.tableParams = new ngTableParams({
-                page: 1,            // show first page
-                count: 10,          // count per page
-                sorting: {
-                   "title": "asc"     // initial sorting
-                }
-            }, {
-                total: data.video_list.length, // length of data
-                getData: function($defer, params) {
-                    // use built-in angular filter
-                    var orderedData = params.sorting() ?
-                        $filter('orderBy')(data.video_list, params.orderBy()) :
-                        data.video_list;
+    function VideoListCtrl($scope, $timeout, $resource, $http, $filter, ngTableParams) {
+        var Api = $resource('/_ah/api/concierge/v1/concierge_list');
 
-                    $defer.resolve(orderedData.slice((params.page() - 1) * params.count(), params.page() * params.count()));
-                }
-            });
+        $scope.tableParams = new ngTableParams({
+            page: 1,            // show first page
+            count: 10,          // count per page
+            sorting: {
+                name: 'asc'     // initial sorting
+            }
+        }, {
+            total: 7255,           // length of data
+            getData: function($defer, params) {
+                // ajax request to api
+                Api.get(params.url(), function(data) {
+                    $scope.video_list = data.video_list;
+                    $timeout(function() {
+                        // update table params
+                        params.total(data.video_list.total);
+                        // set new data
+                        $defer.resolve(data.video_list.result);
+                    }, 500);
+                });
+            }
         });
     }
 );
