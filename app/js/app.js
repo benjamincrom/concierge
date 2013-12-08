@@ -15,7 +15,7 @@ conciergeApp.config(function($locationProvider){
 /* Controllers */
 conciergeApp.controller('VideoListCtrl',
     function VideoListCtrl($scope, $http, $filter, ngTableParams) {
-        $http.get('../_ah/api/concierge/v1/concierge_list').success(function(data) {
+        $http.get('../_ah/api/concierge/v1/concierge_list?count=10&page=1').success(function(data) {
             $scope.selected = {video: null};
             $scope.tableParams = new ngTableParams({
                 page: 1,            // show first page

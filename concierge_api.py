@@ -18,7 +18,9 @@ ENTRY_REQUEST_RESOURCE_CONTAINER = endpoints.ResourceContainer(
 LIST_REQUEST_RESOURCE_CONTAINER = endpoints.ResourceContainer(
     message_types.VoidMessage,
     count=messages.IntegerField(2),
-    page=messages.IntegerField(3)
+    page=messages.IntegerField(3),
+    sort_field=messages.StringField(4),
+    sort_asc=messages.BooleanField(5)
 )
 
 
