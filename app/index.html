@@ -104,7 +104,7 @@
           <tr><td>Director(s): </td><td>{{display.video.director_list_str}}</td></tr>
           <tr><td>Writer(s): </td><td>{{display.video.writer_list_str}}</td></tr>
           <tr><td>Star(s): </td><td>{{display.video.star_list_str}}</td></tr>
-          <tr><td>Rating: </td><td>{{display.video.rating}}</td></tr>
+          <tr ng-if="display.video.rating"><td>Rating: </td><td>{{display.video.rating}}</td></tr>
           <tr><td>Aspect Ratio: </td><td>{{display.video.aspect_ratio}}</td></tr>
           <tr><td>Length: </td><td>{{display.video.length}}</td></tr>
           <tr><td>Genre List: </td><td>{{display.video.genre_list_str}}</td></tr>
