@@ -90,8 +90,10 @@
 
       <div ng-show="display.video" class="col-lg-10" style="overflow: scroll; height: 400px">
         <!--Body content-->
-        <a href="display_video.html?request_id={{display.video.imdb_id}}" class="thumb" target="_self">
-        <img ng-src="{{display.video.poster_url}}"></a>
+        <div class="col-lg-2">
+          <a href="display_video.html?request_id={{display.video.imdb_id}}" class="thumb" target="_self">
+          <img ng-src="{{display.video.poster_url}}"></a>
+        </div>
         <a href="display_video.html?request_id={{display.video.imdb_id}}" target="_self">{{display.video.title}}</a>
         <p>{{display.video.plot}}</p>
         <table class="video_table">
