@@ -90,7 +90,7 @@
         <!--Body content-->
         <a href="display_video.html?request_id={{display.video.imdb_id}}" class="thumb" target="_self">
         <img ng-src="{{display.video.poster_url}}"></a>
-        <a href="display_video.html?request_id={{display.video.imdb_id}}" target="_self">{{selected.video.title}}</a>
+        <a href="display_video.html?request_id={{display.video.imdb_id}}" target="_self">{{display.video.title}}</a>
         <p>{{display.video.plot}}</p>
         <table class="video_table">
           <tr><td>Video Type: </td><td>{{display.video.video_type}}</td></tr>
@@ -103,9 +103,9 @@
           <tr><td>Genre List: </td><td>{{display.video.genre_list_str}}</td></tr>
           <tr><td>Year: </td><td>{{display.video.year}}</td></tr>
           <tr><td>Score: </td><td><strong>{{display.video.score}}</strong></td></tr>
-          <tr ng-show="display.video.budget"><td>Budget: </td><td>{{selected.video.budget}}</td></tr>
-          <tr ng-show="display.video.gross"><td>Gross: </td><td>{{selected.video.gross}}</td></tr>
-          <tr ng-show="display.video.tagline"><td>Tagline: </td><td>{{selected.video.tagline}}</td></tr>
+          <tr ng-show="display.video.budget"><td>Budget: </td><td>{{display.video.budget}}</td></tr>
+          <tr ng-show="display.video.gross"><td>Gross: </td><td>{{display.video.gross}}</td></tr>
+          <tr ng-show="display.video.tagline"><td>Tagline: </td><td>{{display.video.tagline}}</td></tr>
           <tr><td></td><td><br /></td></tr>
           <tr ng-show="display.video.ebert_review.review_source">
               <td valign="top">{{display.video.ebert_review.review_source}}: </td>
