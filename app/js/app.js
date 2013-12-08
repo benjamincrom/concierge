@@ -22,7 +22,7 @@ conciergeApp.controller('VideoListCtrl',
             page: 1,            // show first page
             count: 10,          // count per page
             sorting: {
-                name: 'asc'     // initial sorting
+                title: 'asc'     // initial sorting
             }
         }, {
             total: 7255,           // length of data
@@ -31,14 +31,13 @@ conciergeApp.controller('VideoListCtrl',
                 Api.get(params.url(), function(data) {
                     $scope.video_list = data.video_list;
                     $timeout(function() {
-                        // update table params
                         // params.total(data.video_list.total);
-                        // set new data
                         $defer.resolve(data.video_list.result);
                     }, 500);
                 });
             }
         });
+
     }
 );
 
@@ -51,7 +50,6 @@ conciergeApp.controller('DisplayVideoCtrl',
         });
     }
 );
-
 
 conciergeApp.directive('loadingContainer', function () {
     return {
